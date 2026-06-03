@@ -1,0 +1,14 @@
+.tooltipster-noir 
+{
+    max-width: 300px;
+	border-radius: 4px; 
+	border: 2px solid #00234b;
+	background-color: #e5f1fe;
+	color: #000000;
+}
+.tooltipster-noir .tooltipster-content {
+	font-family: Verdana,Arial,sans-serif;
+	font-size: 10px;
+	line-height: 14px;
+	padding: 4px;
+}
