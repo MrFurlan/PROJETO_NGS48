@@ -1,0 +1,711 @@
+--------------------------------------------------------------------------------------------------------------------------------------------
+25/05/2024 22:39:31 - AcessaBanco - ConsultaDataSet - A propriedade ConnectionString não foi inicializada.
+--------------------------------------------------------------------------------------------------------------------------------------------
+25/05/2024 22:39:31 - AcessaBanco - ConsultaDataSet - A propriedade ConnectionString não foi inicializada.
+--------------------------------------------------------------------------------------------------------------------------------------------
+25/05/2024 22:39:58 - AcessaBanco - ConsultaDataSet - A propriedade ConnectionString não foi inicializada.
+--------------------------------------------------------------------------------------------------------------------------------------------
+25/05/2024 22:40:25 - AcessaBanco - ConsultaDataSet - A propriedade ConnectionString não foi inicializada.
+--------------------------------------------------------------------------------------------------------------------------------------------
+25/05/2024 22:41:19 - AcessaBanco - ConsultaDataSet - A propriedade ConnectionString não foi inicializada.
+--------------------------------------------------------------------------------------------------------------------------------------------
+06/06/2024 09:33:38 - AcessaBanco - ConsultaDataSet - Invalid column name 'Titulo_Id'.
+Invalid column name 'situacao'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+06/06/2024 09:33:38 - AcessaBanco - ConsultaDataSet - Invalid column name 'Titulo_Id'.
+Invalid column name 'situacao'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+06/06/2024 09:35:25 - AcessaBanco - ConsultaDataSet - Invalid object name 'ResumoFinanceiro'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+06/06/2024 11:58:48 - AcessaBanco - ConsultaDataSet - Invalid column name 'Titulo_Id'.
+Invalid column name 'situacao'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+06/06/2024 11:58:49 - AcessaBanco - ConsultaDataSet - Invalid column name 'Titulo_Id'.
+Invalid column name 'situacao'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+06/06/2024 19:43:49 - AcessaBanco - ConsultaDataSet - Invalid column name 'Titulo_Id'.
+Invalid column name 'situacao'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+06/06/2024 19:43:49 - AcessaBanco - ConsultaDataSet - Invalid column name 'Titulo_Id'.
+Invalid column name 'situacao'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+12/06/2024 15:34:13 - AcessaBanco - GravaBanco - String or binary data would be truncated.
+The statement has been terminated.
+--------------------------------------------------------------------------------------------------------------------------------------------
+12/06/2024 15:39:56 - AcessaBanco - GravaBanco - String or binary data would be truncated.
+The statement has been terminated.
+--------------------------------------------------------------------------------------------------------------------------------------------
+25/06/2024 11:33:40 - AcessaBanco - ConsultaDataSet - Invalid column name 'Getin1'.
+Invalid column name 'Getin2'.
+Invalid column name 'Getin3'.
+Invalid column name 'Getin4'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+25/06/2024 11:34:22 - AcessaBanco - ConsultaDataSet - Invalid column name 'Getin1'.
+Invalid column name 'Getin2'.
+Invalid column name 'Getin3'.
+Invalid column name 'Getin4'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+25/06/2024 11:34:22 - AcessaBanco - ConsultaDataSet - Invalid column name 'Getin1'.
+Invalid column name 'Getin2'.
+Invalid column name 'Getin3'.
+Invalid column name 'Getin4'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+25/06/2024 11:34:22 - AcessaBanco - ConsultaDataSet - Invalid column name 'Getin1'.
+Invalid column name 'Getin2'.
+Invalid column name 'Getin3'.
+Invalid column name 'Getin4'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+25/06/2024 11:34:22 - AcessaBanco - ConsultaDataSet - Invalid column name 'Getin1'.
+Invalid column name 'Getin2'.
+Invalid column name 'Getin3'.
+Invalid column name 'Getin4'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+25/06/2024 12:16:48 - AcessaBanco - ConsultaDataSet - Invalid column name 'Getin1'.
+Invalid column name 'Getin2'.
+Invalid column name 'Getin3'.
+Invalid column name 'Getin4'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+25/06/2024 12:16:48 - AcessaBanco - ConsultaDataSet - Invalid column name 'Getin1'.
+Invalid column name 'Getin2'.
+Invalid column name 'Getin3'.
+Invalid column name 'Getin4'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+25/06/2024 12:16:49 - AcessaBanco - ConsultaDataSet - Invalid column name 'Getin1'.
+Invalid column name 'Getin2'.
+Invalid column name 'Getin3'.
+Invalid column name 'Getin4'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+25/06/2024 12:16:49 - AcessaBanco - ConsultaDataSet - Invalid column name 'Getin1'.
+Invalid column name 'Getin2'.
+Invalid column name 'Getin3'.
+Invalid column name 'Getin4'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+25/06/2024 12:16:53 - AcessaBanco - ConsultaDataSet - Invalid column name 'Getin1'.
+Invalid column name 'Getin2'.
+Invalid column name 'Getin3'.
+Invalid column name 'Getin4'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+25/06/2024 12:16:54 - AcessaBanco - ConsultaDataSet - Invalid column name 'Getin1'.
+Invalid column name 'Getin2'.
+Invalid column name 'Getin3'.
+Invalid column name 'Getin4'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+25/06/2024 13:07:52 - AcessaBanco - ConsultaDataSet - Invalid column name 'Getin1'.
+Invalid column name 'Getin2'.
+Invalid column name 'Getin3'.
+Invalid column name 'Getin4'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+25/06/2024 13:07:52 - AcessaBanco - ConsultaDataSet - Invalid column name 'Getin1'.
+Invalid column name 'Getin2'.
+Invalid column name 'Getin3'.
+Invalid column name 'Getin4'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+25/06/2024 13:07:52 - AcessaBanco - ConsultaDataSet - Invalid column name 'Getin1'.
+Invalid column name 'Getin2'.
+Invalid column name 'Getin3'.
+Invalid column name 'Getin4'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+25/06/2024 13:07:53 - AcessaBanco - ConsultaDataSet - Invalid column name 'Getin1'.
+Invalid column name 'Getin2'.
+Invalid column name 'Getin3'.
+Invalid column name 'Getin4'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+25/06/2024 13:07:59 - AcessaBanco - ConsultaDataSet - Invalid column name 'Getin1'.
+Invalid column name 'Getin2'.
+Invalid column name 'Getin3'.
+Invalid column name 'Getin4'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+25/06/2024 13:07:59 - AcessaBanco - ConsultaDataSet - Invalid column name 'Getin1'.
+Invalid column name 'Getin2'.
+Invalid column name 'Getin3'.
+Invalid column name 'Getin4'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+25/06/2024 13:08:12 - AcessaBanco - ConsultaDataSet - Invalid column name 'Getin1'.
+Invalid column name 'Getin2'.
+Invalid column name 'Getin3'.
+Invalid column name 'Getin4'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+25/06/2024 13:08:12 - AcessaBanco - ConsultaDataSet - Invalid column name 'Getin1'.
+Invalid column name 'Getin2'.
+Invalid column name 'Getin3'.
+Invalid column name 'Getin4'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+25/06/2024 13:08:12 - AcessaBanco - ConsultaDataSet - Invalid column name 'Getin1'.
+Invalid column name 'Getin2'.
+Invalid column name 'Getin3'.
+Invalid column name 'Getin4'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+25/06/2024 13:11:12 - AcessaBanco - ConsultaDataSet - Invalid column name 'Getin1'.
+Invalid column name 'Getin2'.
+Invalid column name 'Getin3'.
+Invalid column name 'Getin4'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+25/06/2024 13:11:15 - AcessaBanco - ConsultaDataSet - Invalid column name 'Getin1'.
+Invalid column name 'Getin2'.
+Invalid column name 'Getin3'.
+Invalid column name 'Getin4'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+25/06/2024 13:11:15 - AcessaBanco - ConsultaDataSet - Invalid column name 'Getin1'.
+Invalid column name 'Getin2'.
+Invalid column name 'Getin3'.
+Invalid column name 'Getin4'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+25/06/2024 13:11:15 - AcessaBanco - ConsultaDataSet - Invalid column name 'Getin1'.
+Invalid column name 'Getin2'.
+Invalid column name 'Getin3'.
+Invalid column name 'Getin4'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+25/06/2024 13:11:27 - AcessaBanco - ConsultaDataSet - Invalid column name 'Getin1'.
+Invalid column name 'Getin2'.
+Invalid column name 'Getin3'.
+Invalid column name 'Getin4'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+25/06/2024 13:11:31 - AcessaBanco - ConsultaDataSet - Invalid column name 'Getin1'.
+Invalid column name 'Getin2'.
+Invalid column name 'Getin3'.
+Invalid column name 'Getin4'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+25/06/2024 13:13:16 - AcessaBanco - ConsultaDataSet - Invalid column name 'Getin1'.
+Invalid column name 'Getin2'.
+Invalid column name 'Getin3'.
+Invalid column name 'Getin4'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+25/06/2024 13:13:16 - AcessaBanco - ConsultaDataSet - Invalid column name 'Getin1'.
+Invalid column name 'Getin2'.
+Invalid column name 'Getin3'.
+Invalid column name 'Getin4'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+25/06/2024 13:13:16 - AcessaBanco - ConsultaDataSet - Invalid column name 'Getin1'.
+Invalid column name 'Getin2'.
+Invalid column name 'Getin3'.
+Invalid column name 'Getin4'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+25/06/2024 13:13:16 - AcessaBanco - ConsultaDataSet - Invalid column name 'Getin1'.
+Invalid column name 'Getin2'.
+Invalid column name 'Getin3'.
+Invalid column name 'Getin4'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+25/06/2024 13:13:17 - AcessaBanco - ConsultaDataSet - Invalid column name 'Getin1'.
+Invalid column name 'Getin2'.
+Invalid column name 'Getin3'.
+Invalid column name 'Getin4'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+25/06/2024 13:13:17 - AcessaBanco - ConsultaDataSet - Invalid column name 'Getin1'.
+Invalid column name 'Getin2'.
+Invalid column name 'Getin3'.
+Invalid column name 'Getin4'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+25/06/2024 13:14:14 - AcessaBanco - ConsultaDataSet - Invalid column name 'Getin1'.
+Invalid column name 'Getin2'.
+Invalid column name 'Getin3'.
+Invalid column name 'Getin4'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+25/06/2024 13:14:14 - AcessaBanco - ConsultaDataSet - Invalid column name 'Getin1'.
+Invalid column name 'Getin2'.
+Invalid column name 'Getin3'.
+Invalid column name 'Getin4'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+25/06/2024 13:14:14 - AcessaBanco - ConsultaDataSet - Invalid column name 'Getin1'.
+Invalid column name 'Getin2'.
+Invalid column name 'Getin3'.
+Invalid column name 'Getin4'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+25/06/2024 13:14:14 - AcessaBanco - ConsultaDataSet - Invalid column name 'Getin1'.
+Invalid column name 'Getin2'.
+Invalid column name 'Getin3'.
+Invalid column name 'Getin4'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+25/06/2024 13:14:15 - AcessaBanco - ConsultaDataSet - Invalid column name 'Getin1'.
+Invalid column name 'Getin2'.
+Invalid column name 'Getin3'.
+Invalid column name 'Getin4'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+25/06/2024 13:14:15 - AcessaBanco - ConsultaDataSet - Invalid column name 'Getin1'.
+Invalid column name 'Getin2'.
+Invalid column name 'Getin3'.
+Invalid column name 'Getin4'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+25/06/2024 13:18:27 - AcessaBanco - ConsultaDataSet - Invalid column name 'Getin1'.
+Invalid column name 'Getin2'.
+Invalid column name 'Getin3'.
+Invalid column name 'Getin4'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+25/06/2024 13:18:27 - AcessaBanco - ConsultaDataSet - Invalid column name 'Getin1'.
+Invalid column name 'Getin2'.
+Invalid column name 'Getin3'.
+Invalid column name 'Getin4'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+25/06/2024 13:18:27 - AcessaBanco - ConsultaDataSet - Invalid column name 'Getin1'.
+Invalid column name 'Getin2'.
+Invalid column name 'Getin3'.
+Invalid column name 'Getin4'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+25/06/2024 13:18:28 - AcessaBanco - ConsultaDataSet - Invalid column name 'Getin1'.
+Invalid column name 'Getin2'.
+Invalid column name 'Getin3'.
+Invalid column name 'Getin4'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+25/06/2024 13:18:28 - AcessaBanco - ConsultaDataSet - Invalid column name 'Getin1'.
+Invalid column name 'Getin2'.
+Invalid column name 'Getin3'.
+Invalid column name 'Getin4'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+25/06/2024 13:18:28 - AcessaBanco - ConsultaDataSet - Invalid column name 'Getin1'.
+Invalid column name 'Getin2'.
+Invalid column name 'Getin3'.
+Invalid column name 'Getin4'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+25/06/2024 13:22:25 - AcessaBanco - ConsultaDataSet - Invalid column name 'Getin1'.
+Invalid column name 'Getin2'.
+Invalid column name 'Getin3'.
+Invalid column name 'Getin4'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+25/06/2024 13:22:26 - AcessaBanco - ConsultaDataSet - Invalid column name 'Getin1'.
+Invalid column name 'Getin2'.
+Invalid column name 'Getin3'.
+Invalid column name 'Getin4'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+25/06/2024 13:22:26 - AcessaBanco - ConsultaDataSet - Invalid column name 'Getin1'.
+Invalid column name 'Getin2'.
+Invalid column name 'Getin3'.
+Invalid column name 'Getin4'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+25/06/2024 13:22:26 - AcessaBanco - ConsultaDataSet - Invalid column name 'Getin1'.
+Invalid column name 'Getin2'.
+Invalid column name 'Getin3'.
+Invalid column name 'Getin4'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+25/06/2024 13:22:26 - AcessaBanco - ConsultaDataSet - Invalid column name 'Getin1'.
+Invalid column name 'Getin2'.
+Invalid column name 'Getin3'.
+Invalid column name 'Getin4'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+25/06/2024 13:22:27 - AcessaBanco - ConsultaDataSet - Invalid column name 'Getin1'.
+Invalid column name 'Getin2'.
+Invalid column name 'Getin3'.
+Invalid column name 'Getin4'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+08/07/2024 20:46:19 - AcessaBanco - ConsultaDataSet - Invalid column name 'Titulo_Id'.
+Invalid column name 'situacao'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+08/07/2024 20:46:19 - AcessaBanco - ConsultaDataSet - Invalid column name 'Titulo_Id'.
+Invalid column name 'situacao'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+08/07/2024 20:57:15 - AcessaBanco - ConsultaDataSet - Invalid column name 'Titulo_Id'.
+Invalid column name 'situacao'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+08/07/2024 20:57:15 - AcessaBanco - ConsultaDataSet - Invalid column name 'Titulo_Id'.
+Invalid column name 'situacao'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+08/07/2024 20:59:06 - AcessaBanco - ConsultaDataSet - Invalid column name 'Titulo_Id'.
+Invalid column name 'situacao'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+08/07/2024 20:59:07 - AcessaBanco - ConsultaDataSet - Invalid column name 'Titulo_Id'.
+Invalid column name 'situacao'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+08/07/2024 21:38:39 - AcessaBanco - ConsultaDataSet - O thread estava sendo anulado.
+--------------------------------------------------------------------------------------------------------------------------------------------
+09/07/2024 09:22:33 - AcessaBanco - ConsultaDataSet - Erro de rede ou específico à instância ao estabelecer conexão com o SQL Server. O servidor não foi encontrado ou não estava acessível. Verifique se o nome da instância está correto e se o SQL Server está configurado para permitir conexões remotas. (provider: Named Pipes Provider, error: 40 - Não foi possível abrir uma conexão com o SQL Server)
+--------------------------------------------------------------------------------------------------------------------------------------------
+09/07/2024 09:22:54 - AcessaBanco - ConsultaDataSet - Erro de rede ou específico à instância ao estabelecer conexão com o SQL Server. O servidor não foi encontrado ou não estava acessível. Verifique se o nome da instância está correto e se o SQL Server está configurado para permitir conexões remotas. (provider: Named Pipes Provider, error: 40 - Não foi possível abrir uma conexão com o SQL Server)
+--------------------------------------------------------------------------------------------------------------------------------------------
+09/07/2024 09:22:57 - AcessaBanco - ConsultaDataSet - Erro de rede ou específico à instância ao estabelecer conexão com o SQL Server. O servidor não foi encontrado ou não estava acessível. Verifique se o nome da instância está correto e se o SQL Server está configurado para permitir conexões remotas. (provider: Named Pipes Provider, error: 40 - Não foi possível abrir uma conexão com o SQL Server)
+--------------------------------------------------------------------------------------------------------------------------------------------
+09/07/2024 09:22:57 - AcessaBanco - ConsultaDataSet - Erro de rede ou específico à instância ao estabelecer conexão com o SQL Server. O servidor não foi encontrado ou não estava acessível. Verifique se o nome da instância está correto e se o SQL Server está configurado para permitir conexões remotas. (provider: Named Pipes Provider, error: 40 - Não foi possível abrir uma conexão com o SQL Server)
+--------------------------------------------------------------------------------------------------------------------------------------------
+09/07/2024 09:23:54 - AcessaBanco - ConsultaDataSet - Erro de rede ou específico à instância ao estabelecer conexão com o SQL Server. O servidor não foi encontrado ou não estava acessível. Verifique se o nome da instância está correto e se o SQL Server está configurado para permitir conexões remotas. (provider: Named Pipes Provider, error: 40 - Não foi possível abrir uma conexão com o SQL Server)
+--------------------------------------------------------------------------------------------------------------------------------------------
+09/07/2024 09:23:57 - AcessaBanco - ConsultaDataSet - Erro de rede ou específico à instância ao estabelecer conexão com o SQL Server. O servidor não foi encontrado ou não estava acessível. Verifique se o nome da instância está correto e se o SQL Server está configurado para permitir conexões remotas. (provider: Named Pipes Provider, error: 40 - Não foi possível abrir uma conexão com o SQL Server)
+--------------------------------------------------------------------------------------------------------------------------------------------
+09/07/2024 09:23:58 - AcessaBanco - ConsultaDataSet - Erro de rede ou específico à instância ao estabelecer conexão com o SQL Server. O servidor não foi encontrado ou não estava acessível. Verifique se o nome da instância está correto e se o SQL Server está configurado para permitir conexões remotas. (provider: Named Pipes Provider, error: 40 - Não foi possível abrir uma conexão com o SQL Server)
+--------------------------------------------------------------------------------------------------------------------------------------------
+09/07/2024 09:23:58 - AcessaBanco - ConsultaDataSet - Erro de rede ou específico à instância ao estabelecer conexão com o SQL Server. O servidor não foi encontrado ou não estava acessível. Verifique se o nome da instância está correto e se o SQL Server está configurado para permitir conexões remotas. (provider: Named Pipes Provider, error: 40 - Não foi possível abrir uma conexão com o SQL Server)
+--------------------------------------------------------------------------------------------------------------------------------------------
+09/07/2024 09:24:58 - AcessaBanco - ConsultaDataSet - Erro de rede ou específico à instância ao estabelecer conexão com o SQL Server. O servidor não foi encontrado ou não estava acessível. Verifique se o nome da instância está correto e se o SQL Server está configurado para permitir conexões remotas. (provider: Named Pipes Provider, error: 40 - Não foi possível abrir uma conexão com o SQL Server)
+--------------------------------------------------------------------------------------------------------------------------------------------
+09/07/2024 09:25:00 - AcessaBanco - ConsultaDataSet - Erro de rede ou específico à instância ao estabelecer conexão com o SQL Server. O servidor não foi encontrado ou não estava acessível. Verifique se o nome da instância está correto e se o SQL Server está configurado para permitir conexões remotas. (provider: Named Pipes Provider, error: 40 - Não foi possível abrir uma conexão com o SQL Server)
+--------------------------------------------------------------------------------------------------------------------------------------------
+09/07/2024 09:25:01 - AcessaBanco - ConsultaDataSet - Erro de rede ou específico à instância ao estabelecer conexão com o SQL Server. O servidor não foi encontrado ou não estava acessível. Verifique se o nome da instância está correto e se o SQL Server está configurado para permitir conexões remotas. (provider: Named Pipes Provider, error: 40 - Não foi possível abrir uma conexão com o SQL Server)
+--------------------------------------------------------------------------------------------------------------------------------------------
+09/07/2024 09:25:01 - AcessaBanco - ConsultaDataSet - Erro de rede ou específico à instância ao estabelecer conexão com o SQL Server. O servidor não foi encontrado ou não estava acessível. Verifique se o nome da instância está correto e se o SQL Server está configurado para permitir conexões remotas. (provider: Named Pipes Provider, error: 40 - Não foi possível abrir uma conexão com o SQL Server)
+--------------------------------------------------------------------------------------------------------------------------------------------
+09/07/2024 09:25:55 - AcessaBanco - ConsultaDataSet - Erro de rede ou específico à instância ao estabelecer conexão com o SQL Server. O servidor não foi encontrado ou não estava acessível. Verifique se o nome da instância está correto e se o SQL Server está configurado para permitir conexões remotas. (provider: Named Pipes Provider, error: 40 - Não foi possível abrir uma conexão com o SQL Server)
+--------------------------------------------------------------------------------------------------------------------------------------------
+09/07/2024 09:27:46 - AcessaBanco - ConsultaDataSet - Erro de rede ou específico à instância ao estabelecer conexão com o SQL Server. O servidor não foi encontrado ou não estava acessível. Verifique se o nome da instância está correto e se o SQL Server está configurado para permitir conexões remotas. (provider: Named Pipes Provider, error: 40 - Não foi possível abrir uma conexão com o SQL Server)
+--------------------------------------------------------------------------------------------------------------------------------------------
+09/07/2024 09:27:48 - AcessaBanco - ConsultaDataSet - Erro de rede ou específico à instância ao estabelecer conexão com o SQL Server. O servidor não foi encontrado ou não estava acessível. Verifique se o nome da instância está correto e se o SQL Server está configurado para permitir conexões remotas. (provider: Named Pipes Provider, error: 40 - Não foi possível abrir uma conexão com o SQL Server)
+--------------------------------------------------------------------------------------------------------------------------------------------
+09/07/2024 09:27:48 - AcessaBanco - ConsultaDataSet - Erro de rede ou específico à instância ao estabelecer conexão com o SQL Server. O servidor não foi encontrado ou não estava acessível. Verifique se o nome da instância está correto e se o SQL Server está configurado para permitir conexões remotas. (provider: Named Pipes Provider, error: 40 - Não foi possível abrir uma conexão com o SQL Server)
+--------------------------------------------------------------------------------------------------------------------------------------------
+09/07/2024 09:30:07 - AcessaBanco - ConsultaDataSet - Ocorreu um erro no nível de transporte durante o recebimento de resultados do servidor. (provider: TCP Provider, error: 0 - O tempo limite do semáforo expirou.)
+--------------------------------------------------------------------------------------------------------------------------------------------
+09/07/2024 09:30:52 - AcessaBanco - ConsultaDataSet - Ocorreu um erro no nível de transporte durante o recebimento de resultados do servidor. (provider: TCP Provider, error: 0 - O tempo limite do semáforo expirou.)
+--------------------------------------------------------------------------------------------------------------------------------------------
+09/07/2024 09:31:55 - AcessaBanco - ConsultaDataSet - Ocorreu um erro no nível de transporte durante o recebimento de resultados do servidor. (provider: TCP Provider, error: 0 - O tempo limite do semáforo expirou.)
+--------------------------------------------------------------------------------------------------------------------------------------------
+09/07/2024 09:32:19 - AcessaBanco - ConsultaDataSet - Ocorreu um erro no nível de transporte durante o recebimento de resultados do servidor. (provider: TCP Provider, error: 0 - O tempo limite do semáforo expirou.)
+--------------------------------------------------------------------------------------------------------------------------------------------
+09/07/2024 09:39:47 - AcessaBanco - ConsultaDataSet - Ocorreu um erro no nível de transporte durante o recebimento de resultados do servidor. (provider: TCP Provider, error: 0 - O tempo limite do semáforo expirou.)
+--------------------------------------------------------------------------------------------------------------------------------------------
+09/07/2024 09:40:11 - AcessaBanco - ConsultaDataSet - Ocorreu um erro no nível de transporte durante o recebimento de resultados do servidor. (provider: TCP Provider, error: 0 - O tempo limite do semáforo expirou.)
+--------------------------------------------------------------------------------------------------------------------------------------------
+09/07/2024 09:40:37 - AcessaBanco - ConsultaDataSet - Ocorreu um erro no nível de transporte durante o recebimento de resultados do servidor. (provider: TCP Provider, error: 0 - O tempo limite do semáforo expirou.)
+--------------------------------------------------------------------------------------------------------------------------------------------
+09/07/2024 09:41:40 - AcessaBanco - ConsultaDataSet - Ocorreu um erro no nível de transporte durante o recebimento de resultados do servidor. (provider: TCP Provider, error: 0 - O tempo limite do semáforo expirou.)
+--------------------------------------------------------------------------------------------------------------------------------------------
+09/07/2024 09:44:21 - AcessaBanco - ConsultaDataSet - Ocorreu um erro no nível de transporte durante o recebimento de resultados do servidor. (provider: TCP Provider, error: 0 - O tempo limite do semáforo expirou.)
+--------------------------------------------------------------------------------------------------------------------------------------------
+09/07/2024 09:44:52 - AcessaBanco - ConsultaDataSet - Ocorreu um erro no nível de transporte durante o recebimento de resultados do servidor. (provider: TCP Provider, error: 0 - O tempo limite do semáforo expirou.)
+--------------------------------------------------------------------------------------------------------------------------------------------
+09/07/2024 09:45:19 - AcessaBanco - ConsultaDataSet - Ocorreu um erro no nível de transporte durante o recebimento de resultados do servidor. (provider: TCP Provider, error: 0 - O tempo limite do semáforo expirou.)
+--------------------------------------------------------------------------------------------------------------------------------------------
+09/07/2024 09:45:46 - AcessaBanco - ConsultaDataSet - Ocorreu um erro no nível de transporte durante o recebimento de resultados do servidor. (provider: TCP Provider, error: 0 - O tempo limite do semáforo expirou.)
+--------------------------------------------------------------------------------------------------------------------------------------------
+23/07/2024 11:01:16 - AcessaBanco - ConsultaDataSet - Invalid column name 'Titulo_Id'.
+Invalid column name 'situacao'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+23/07/2024 11:01:17 - AcessaBanco - ConsultaDataSet - Invalid column name 'Titulo_Id'.
+Invalid column name 'situacao'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+23/07/2024 11:51:05 - AcessaBanco - ConsultaDataSet - Invalid column name 'Titulo_Id'.
+Invalid column name 'situacao'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+23/07/2024 11:51:05 - AcessaBanco - ConsultaDataSet - Invalid column name 'Titulo_Id'.
+Invalid column name 'situacao'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+23/07/2024 11:51:29 - AcessaBanco - ConsultaDataSet - Invalid column name 'Titulo_Id'.
+Invalid column name 'situacao'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+23/07/2024 11:51:29 - AcessaBanco - ConsultaDataSet - Invalid column name 'Titulo_Id'.
+Invalid column name 'situacao'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+23/07/2024 11:58:43 - AcessaBanco - ConsultaDataSet - Invalid column name 'Titulo_Id'.
+Invalid column name 'situacao'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+23/07/2024 11:58:43 - AcessaBanco - ConsultaDataSet - Invalid column name 'Titulo_Id'.
+Invalid column name 'situacao'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+23/07/2024 11:58:52 - AcessaBanco - ConsultaDataSet - Invalid column name 'Titulo_Id'.
+Invalid column name 'situacao'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+23/07/2024 11:58:52 - AcessaBanco - ConsultaDataSet - Invalid column name 'Titulo_Id'.
+Invalid column name 'situacao'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+23/07/2024 11:59:29 - AcessaBanco - ConsultaDataSet - Invalid object name 'ResumoFinanceiro'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+31/07/2024 09:16:35 - AcessaBanco - ConsultaDataSet - Erro de rede ou específico à instância ao estabelecer conexão com o SQL Server. O servidor não foi encontrado ou não estava acessível. Verifique se o nome da instância está correto e se o SQL Server está configurado para permitir conexões remotas. (provider: Named Pipes Provider, error: 40 - Não foi possível abrir uma conexão com o SQL Server)
+--------------------------------------------------------------------------------------------------------------------------------------------
+31/07/2024 09:16:39 - AcessaBanco - ConsultaDataSet - Erro de rede ou específico à instância ao estabelecer conexão com o SQL Server. O servidor não foi encontrado ou não estava acessível. Verifique se o nome da instância está correto e se o SQL Server está configurado para permitir conexões remotas. (provider: Named Pipes Provider, error: 40 - Não foi possível abrir uma conexão com o SQL Server)
+--------------------------------------------------------------------------------------------------------------------------------------------
+31/07/2024 09:18:19 - AcessaBanco - ConsultaDataSet - Erro de rede ou específico à instância ao estabelecer conexão com o SQL Server. O servidor não foi encontrado ou não estava acessível. Verifique se o nome da instância está correto e se o SQL Server está configurado para permitir conexões remotas. (provider: Named Pipes Provider, error: 40 - Não foi possível abrir uma conexão com o SQL Server)
+--------------------------------------------------------------------------------------------------------------------------------------------
+31/07/2024 09:18:25 - AcessaBanco - ConsultaDataSet - Erro de rede ou específico à instância ao estabelecer conexão com o SQL Server. O servidor não foi encontrado ou não estava acessível. Verifique se o nome da instância está correto e se o SQL Server está configurado para permitir conexões remotas. (provider: Named Pipes Provider, error: 40 - Não foi possível abrir uma conexão com o SQL Server)
+--------------------------------------------------------------------------------------------------------------------------------------------
+31/07/2024 09:19:16 - AcessaBanco - ConsultaDataSet - Erro de rede ou específico à instância ao estabelecer conexão com o SQL Server. O servidor não foi encontrado ou não estava acessível. Verifique se o nome da instância está correto e se o SQL Server está configurado para permitir conexões remotas. (provider: Named Pipes Provider, error: 40 - Não foi possível abrir uma conexão com o SQL Server)
+--------------------------------------------------------------------------------------------------------------------------------------------
+06/08/2024 09:37:21 - AcessaBanco - ConsultaDataSet - Parameter '@TipoApuracao' was supplied multiple times.
+--------------------------------------------------------------------------------------------------------------------------------------------
+06/08/2024 09:37:22 - AcessaBanco - ConsultaDataSet - Parameter '@TipoApuracao' was supplied multiple times.
+--------------------------------------------------------------------------------------------------------------------------------------------
+06/08/2024 09:37:25 - AcessaBanco - ConsultaDataSet - Parameter '@TipoApuracao' was supplied multiple times.
+--------------------------------------------------------------------------------------------------------------------------------------------
+06/08/2024 09:38:22 - AcessaBanco - ConsultaDataSet - Parameter '@TipoApuracao' was supplied multiple times.
+--------------------------------------------------------------------------------------------------------------------------------------------
+03/03/2025 19:03:28 - AcessaBanco - ConsultaDataSet - Invalid column name 'Titulo_Id'.
+Invalid column name 'situacao'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+03/03/2025 19:03:28 - AcessaBanco - ConsultaDataSet - Invalid column name 'Titulo_Id'.
+Invalid column name 'situacao'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+03/03/2025 19:03:35 - AcessaBanco - ConsultaDataSet - Invalid column name 'Titulo_Id'.
+Invalid column name 'situacao'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+03/03/2025 19:03:35 - AcessaBanco - ConsultaDataSet - Invalid column name 'Titulo_Id'.
+Invalid column name 'situacao'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+14/03/2025 09:13:58 - AcessaBanco - ConsultaDataSet - Invalid column name 'Titulo_Id'.
+Invalid column name 'situacao'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+14/03/2025 09:13:58 - AcessaBanco - ConsultaDataSet - Invalid column name 'Titulo_Id'.
+Invalid column name 'situacao'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+21/05/2025 10:42:03 - AcessaBanco - ConsultaDataSet - Invalid column name 'DataFormatada'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+22/05/2025 10:48:32 - AcessaBanco - ConsultaDataSet - Erro de rede ou específico à instância ao estabelecer conexão com o SQL Server. O servidor não foi encontrado ou não estava acessível. Verifique se o nome da instância está correto e se o SQL Server está configurado para permitir conexões remotas. (provider: Named Pipes Provider, error: 40 - Não foi possível abrir uma conexão com o SQL Server)
+--------------------------------------------------------------------------------------------------------------------------------------------
+22/05/2025 10:50:41 - AcessaBanco - ConsultaDataSet - Erro de rede ou específico à instância ao estabelecer conexão com o SQL Server. O servidor não foi encontrado ou não estava acessível. Verifique se o nome da instância está correto e se o SQL Server está configurado para permitir conexões remotas. (provider: Named Pipes Provider, error: 40 - Não foi possível abrir uma conexão com o SQL Server)
+--------------------------------------------------------------------------------------------------------------------------------------------
+26/05/2025 14:29:08 - AcessaBanco - ConsultaDataSet - Erro de rede ou específico à instância ao estabelecer conexão com o SQL Server. O servidor não foi encontrado ou não estava acessível. Verifique se o nome da instância está correto e se o SQL Server está configurado para permitir conexões remotas. (provider: Named Pipes Provider, error: 40 - Não foi possível abrir uma conexão com o SQL Server)
+--------------------------------------------------------------------------------------------------------------------------------------------
+26/05/2025 16:25:01 - AcessaBanco - ConsultaDataSet - Incorrect syntax near the keyword 'AND'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+26/05/2025 16:26:01 - AcessaBanco - ConsultaDataSet - Incorrect syntax near the keyword 'AND'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+26/05/2025 16:36:26 - AcessaBanco - ConsultaDataSet - Incorrect syntax near the keyword 'AND'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+26/05/2025 16:36:36 - AcessaBanco - ConsultaDataSet - Incorrect syntax near the keyword 'AND'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+26/05/2025 16:36:38 - AcessaBanco - ConsultaDataSet - Incorrect syntax near the keyword 'AND'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+26/05/2025 16:36:46 - AcessaBanco - ConsultaDataSet - Incorrect syntax near the keyword 'AND'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+26/05/2025 16:37:23 - AcessaBanco - ConsultaDataSet - Incorrect syntax near the keyword 'AND'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+26/05/2025 16:37:31 - AcessaBanco - ConsultaDataSet - Incorrect syntax near the keyword 'AND'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+27/05/2025 21:38:09 - AcessaBanco - ConsultaDataSet - Invalid column name 'Representante_Id'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+27/05/2025 23:22:11 - AcessaBanco - ConsultaDataSet - Invalid column name 'Pedido'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+27/05/2025 23:55:51 - AcessaBanco - ConsultaDataSet - Conversion failed when converting date and/or time from character string.
+--------------------------------------------------------------------------------------------------------------------------------------------
+28/05/2025 00:13:00 - AcessaBanco - ConsultaDataSet - Incorrect syntax near the keyword 'WITH'.
+Incorrect syntax near the keyword 'with'. If this statement is a common table expression, an xmlnamespaces clause or a change tracking context clause, the previous statement must be terminated with a semicolon.
+--------------------------------------------------------------------------------------------------------------------------------------------
+28/05/2025 14:47:44 - AcessaBanco - ConsultaDataSet - Incorrect syntax near the keyword 'ORDER'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+28/05/2025 14:49:00 - AcessaBanco - ConsultaDataSet - Incorrect syntax near the keyword 'ORDER'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+28/05/2025 15:22:25 - AcessaBanco - ConsultaDataSet - Incorrect syntax near 'DESCs'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+28/05/2025 15:28:52 - AcessaBanco - ConsultaDataSet - Erro de rede ou específico à instância ao estabelecer conexão com o SQL Server. O servidor não foi encontrado ou não estava acessível. Verifique se o nome da instância está correto e se o SQL Server está configurado para permitir conexões remotas. (provider: Named Pipes Provider, error: 40 - Não foi possível abrir uma conexão com o SQL Server)
+--------------------------------------------------------------------------------------------------------------------------------------------
+28/05/2025 15:29:59 - AcessaBanco - ConsultaDataSet - Erro de rede ou específico à instância ao estabelecer conexão com o SQL Server. O servidor não foi encontrado ou não estava acessível. Verifique se o nome da instância está correto e se o SQL Server está configurado para permitir conexões remotas. (provider: Named Pipes Provider, error: 40 - Não foi possível abrir uma conexão com o SQL Server)
+--------------------------------------------------------------------------------------------------------------------------------------------
+28/05/2025 15:33:47 - AcessaBanco - ConsultaDataSet - Ocorreu um erro no nível de transporte durante o recebimento de resultados do servidor. (provider: TCP Provider, error: 0 - O tempo limite do semáforo expirou.)
+--------------------------------------------------------------------------------------------------------------------------------------------
+04/06/2025 23:10:11 - AcessaBanco - ConsultaDataSet - Invalid column name 'Titulo_Id'.
+Invalid column name 'situacao'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+04/06/2025 23:10:11 - AcessaBanco - ConsultaDataSet - Invalid column name 'Titulo_Id'.
+Invalid column name 'situacao'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+12/06/2025 19:59:18 - AcessaBanco - GravaBanco - String or binary data would be truncated.
+The statement has been terminated.
+--------------------------------------------------------------------------------------------------------------------------------------------
+12/06/2025 20:24:30 - AcessaBanco - ConsultaDataSet - Invalid column name 'Titulo_Id'.
+Invalid column name 'situacao'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+12/06/2025 20:24:30 - AcessaBanco - ConsultaDataSet - Invalid column name 'Titulo_Id'.
+Invalid column name 'situacao'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+12/06/2025 20:42:38 - AcessaBanco - ConsultaDataSet - Invalid column name 'Titulo_Id'.
+Invalid column name 'situacao'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+12/06/2025 20:42:38 - AcessaBanco - ConsultaDataSet - Invalid column name 'Titulo_Id'.
+Invalid column name 'situacao'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+23/06/2025 22:36:12 - AcessaBanco - ConsultaDataSet - Invalid column name 'Titulo_Id'.
+Invalid column name 'situacao'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+23/06/2025 22:36:12 - AcessaBanco - ConsultaDataSet - Invalid column name 'Titulo_Id'.
+Invalid column name 'situacao'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+23/06/2025 22:36:45 - AcessaBanco - ConsultaDataSet - Invalid column name 'Titulo_Id'.
+Invalid column name 'situacao'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+23/06/2025 22:36:45 - AcessaBanco - ConsultaDataSet - Invalid column name 'Titulo_Id'.
+Invalid column name 'situacao'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+23/06/2025 22:39:19 - AcessaBanco - ConsultaDataSet - Invalid column name 'Titulo_Id'.
+Invalid column name 'situacao'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+23/06/2025 22:39:19 - AcessaBanco - ConsultaDataSet - Invalid column name 'Titulo_Id'.
+Invalid column name 'situacao'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+24/06/2025 22:27:21 - AcessaBanco - GravaBanco - Incorrect syntax near the keyword 'WHERE'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+24/06/2025 23:02:01 - AcessaBanco - GravaBanco - Invalid column name 'Seguimento'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+25/06/2025 01:31:37 - AcessaBanco - ConsultaDataSet - Invalid column name 'Grupo_IdNF'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+25/06/2025 01:32:27 - AcessaBanco - ConsultaDataSet - Invalid column name 'Grupo_IdNF'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+25/06/2025 09:03:17 - AcessaBanco - ConsultaDataSet - Incorrect syntax near ')'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+25/06/2025 09:07:33 - AcessaBanco - ConsultaDataSet - Incorrect syntax near ')'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+25/06/2025 09:07:58 - AcessaBanco - ConsultaDataSet - Incorrect syntax near ')'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+25/06/2025 09:30:20 - AcessaBanco - ConsultaDataSet - Incorrect syntax near ')'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+25/06/2025 09:31:17 - AcessaBanco - ConsultaDataSet - Incorrect syntax near ')'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+25/06/2025 10:03:00 - AcessaBanco - ConsultaDataSet - Incorrect syntax near the keyword 'AND'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+25/06/2025 10:05:01 - AcessaBanco - ConsultaDataSet - Incorrect syntax near the keyword 'AND'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+25/06/2025 10:07:51 - AcessaBanco - ConsultaDataSet - The SUM function requires 1 argument(s).
+--------------------------------------------------------------------------------------------------------------------------------------------
+25/06/2025 10:08:01 - AcessaBanco - ConsultaDataSet - The SUM function requires 1 argument(s).
+--------------------------------------------------------------------------------------------------------------------------------------------
+26/06/2025 14:03:05 - AcessaBanco - ConsultaDataSet - Invalid column name 'DEVOLUCAO'.
+Invalid column name 'DEVOLUCAO'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+01/08/2025 12:48:48 - AcessaBanco - ConsultaDataSet - Invalid column name 'Titulo_Id'.
+Invalid column name 'situacao'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+01/08/2025 12:48:48 - AcessaBanco - ConsultaDataSet - Invalid column name 'Titulo_Id'.
+Invalid column name 'situacao'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+01/08/2025 12:53:41 - AcessaBanco - ConsultaDataSet - Invalid column name 'Titulo_Id'.
+Invalid column name 'situacao'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+01/08/2025 12:53:41 - AcessaBanco - ConsultaDataSet - Invalid column name 'Titulo_Id'.
+Invalid column name 'situacao'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+01/08/2025 12:53:50 - AcessaBanco - ConsultaDataSet - Invalid column name 'Titulo_Id'.
+Invalid column name 'situacao'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+01/08/2025 12:53:50 - AcessaBanco - ConsultaDataSet - Invalid column name 'Titulo_Id'.
+Invalid column name 'situacao'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+01/08/2025 12:56:18 - AcessaBanco - ConsultaDataSet - Invalid column name 'Titulo_Id'.
+Invalid column name 'situacao'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+01/08/2025 12:56:18 - AcessaBanco - ConsultaDataSet - Invalid column name 'Titulo_Id'.
+Invalid column name 'situacao'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+04/08/2025 21:42:21 - AcessaBanco - ConsultaDataSet - The identifier that starts with '
+			                AND NF.Movimento        >= '2025-07-01'
+			                AND NF.Movimento        <= '2025-07-29'
+			   ' is too long. Maximum length is 128.
+Unclosed quotation mark after the character string '
+			                AND NF.Movimento        >= '2025-07-01'
+			                AND NF.Movimento        <= '2025-07-29'
+			    '.
+Incorrect syntax near '
+			                AND NF.Movimento        >= '2025-07-01'
+			                AND NF.Movimento        <= '2025-07-29'
+			   '.
+--------------------------------------------------------------------------------------------------------------------------------------------
+04/08/2025 21:44:56 - AcessaBanco - ConsultaDataSet - The identifier that starts with '
+			                AND NF.Movimento        >= '2025-07-01'
+			                AND NF.Movimento        <= '2025-07-29'
+			   ' is too long. Maximum length is 128.
+Unclosed quotation mark after the character string '
+			                AND NF.Movimento        >= '2025-07-01'
+			                AND NF.Movimento        <= '2025-07-29'
+			    '.
+Incorrect syntax near '
+			                AND NF.Movimento        >= '2025-07-01'
+			                AND NF.Movimento        <= '2025-07-29'
+			   '.
+--------------------------------------------------------------------------------------------------------------------------------------------
+04/08/2025 22:46:45 - AcessaBanco - ConsultaDataSet - Ocorreu um erro no nível de transporte durante o recebimento de resultados do servidor. (provider: TCP Provider, error: 0 - O tempo limite do semáforo expirou.)
+--------------------------------------------------------------------------------------------------------------------------------------------
+04/08/2025 22:47:24 - AcessaBanco - ConsultaDataSet - Erro de rede ou específico à instância ao estabelecer conexão com o SQL Server. O servidor não foi encontrado ou não estava acessível. Verifique se o nome da instância está correto e se o SQL Server está configurado para permitir conexões remotas. (provider: Named Pipes Provider, error: 40 - Não foi possível abrir uma conexão com o SQL Server)
+--------------------------------------------------------------------------------------------------------------------------------------------
+04/08/2025 22:47:50 - AcessaBanco - ConsultaDataSet - Erro de rede ou específico à instância ao estabelecer conexão com o SQL Server. O servidor não foi encontrado ou não estava acessível. Verifique se o nome da instância está correto e se o SQL Server está configurado para permitir conexões remotas. (provider: Named Pipes Provider, error: 40 - Não foi possível abrir uma conexão com o SQL Server)
+--------------------------------------------------------------------------------------------------------------------------------------------
+11/08/2025 10:28:09 - AcessaBanco - GravaBanco - String or binary data would be truncated.
+The statement has been terminated.
+--------------------------------------------------------------------------------------------------------------------------------------------
+11/08/2025 10:34:53 - AcessaBanco - GravaBanco - String or binary data would be truncated.
+The statement has been terminated.
+--------------------------------------------------------------------------------------------------------------------------------------------
+11/08/2025 10:42:56 - AcessaBanco - GravaBanco - String or binary data would be truncated.
+The statement has been terminated.
+--------------------------------------------------------------------------------------------------------------------------------------------
+11/08/2025 10:42:57 - AcessaBanco - GravaBanco - String or binary data would be truncated.
+The statement has been terminated.
+--------------------------------------------------------------------------------------------------------------------------------------------
+11/08/2025 10:49:31 - AcessaBanco - GravaBanco - String or binary data would be truncated.
+The statement has been terminated.
+--------------------------------------------------------------------------------------------------------------------------------------------
+14/08/2025 15:32:42 - AcessaBanco - ConsultaDataSet - Incorrect syntax near 'CLI'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+14/08/2025 15:41:41 - AcessaBanco - ConsultaDataSet - Invalid column name 'PesoFiscal'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+14/08/2025 15:43:30 - AcessaBanco - ConsultaDataSet - Invalid column name 'PesoFiscal'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+14/08/2025 15:43:48 - AcessaBanco - ConsultaDataSet - Invalid column name 'PesoFiscal'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+30/08/2025 21:21:20 - AcessaBanco - ConsultaDataSet - Invalid object name 'dbo.UsuarioXGruposDeEstoqueXDashBoard'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+02/09/2025 16:05:40 - AcessaBanco - ConsultaDataSet - Invalid column name 'GrupoPrincipal'.
+Invalid column name 'GrupoPrincipal'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+02/09/2025 16:27:46 - AcessaBanco - ConsultaDataSet - Invalid column name 'ClienteId'.
+Invalid column name 'ClienteNome'.
+Invalid column name 'ClienteFantasia'.
+Invalid column name 'Pedido'.
+Invalid column name 'ClienteId'.
+Invalid column name 'ClienteNome'.
+Invalid column name 'ClienteFantasia'.
+Invalid column name 'Pedido'.
+Invalid column name 'DataPedido'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+02/09/2025 16:30:28 - AcessaBanco - ConsultaDataSet - Invalid column name 'ClienteId'.
+Invalid column name 'ClienteNome'.
+Invalid column name 'ClienteFantasia'.
+Invalid column name 'Pedido'.
+Invalid column name 'ClienteId'.
+Invalid column name 'ClienteNome'.
+Invalid column name 'ClienteFantasia'.
+Invalid column name 'Pedido'.
+Invalid column name 'DataPedido'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+14/11/2025 10:35:37 - AcessaBanco - ConsultaDataSet - Invalid column name 'Titulo_Id'.
+Invalid column name 'situacao'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+14/11/2025 10:35:37 - AcessaBanco - ConsultaDataSet - Invalid column name 'Titulo_Id'.
+Invalid column name 'situacao'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+14/11/2025 11:09:35 - AcessaBanco - ConsultaDataSet - Invalid column name 'Titulo_Id'.
+Invalid column name 'situacao'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+14/11/2025 11:09:35 - AcessaBanco - ConsultaDataSet - Invalid column name 'Titulo_Id'.
+Invalid column name 'situacao'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+14/11/2025 11:12:19 - AcessaBanco - ConsultaDataSet - Invalid column name 'Titulo_Id'.
+Invalid column name 'situacao'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+14/11/2025 11:12:19 - AcessaBanco - ConsultaDataSet - Invalid column name 'Titulo_Id'.
+Invalid column name 'situacao'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+14/11/2025 11:13:22 - AcessaBanco - ConsultaDataSet - Invalid column name 'Titulo_Id'.
+Invalid column name 'situacao'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+14/11/2025 11:13:22 - AcessaBanco - ConsultaDataSet - Invalid column name 'Titulo_Id'.
+Invalid column name 'situacao'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+14/11/2025 11:15:03 - AcessaBanco - ConsultaDataSet - Invalid column name 'Titulo_Id'.
+Invalid column name 'situacao'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+14/11/2025 11:15:04 - AcessaBanco - ConsultaDataSet - Invalid column name 'Titulo_Id'.
+Invalid column name 'situacao'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+14/11/2025 11:26:29 - AcessaBanco - ConsultaDataSet - Invalid column name 'Titulo_Id'.
+Invalid column name 'situacao'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+14/11/2025 11:26:29 - AcessaBanco - ConsultaDataSet - Invalid column name 'Titulo_Id'.
+Invalid column name 'situacao'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+10/12/2025 15:16:56 - AcessaBanco - ConsultaDataSet - Invalid column name 'TODOS'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+10/12/2025 15:18:23 - AcessaBanco - ConsultaDataSet - Invalid column name 'TODOS'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+30/01/2026 16:05:06 - AcessaBanco - ConsultaDataSet - Invalid column name 'Titulo_Id'.
+Invalid column name 'situacao'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+30/01/2026 16:05:06 - AcessaBanco - ConsultaDataSet - Invalid column name 'Titulo_Id'.
+Invalid column name 'situacao'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+30/01/2026 16:08:54 - AcessaBanco - ConsultaDataSet - Invalid column name 'Titulo_Id'.
+Invalid column name 'situacao'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+30/01/2026 16:08:54 - AcessaBanco - ConsultaDataSet - Invalid column name 'Titulo_Id'.
+Invalid column name 'situacao'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+30/01/2026 16:10:52 - AcessaBanco - ConsultaDataSet - Invalid column name 'Titulo_Id'.
+Invalid column name 'situacao'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+30/01/2026 16:10:52 - AcessaBanco - ConsultaDataSet - Invalid column name 'Titulo_Id'.
+Invalid column name 'situacao'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+30/01/2026 16:11:40 - AcessaBanco - ConsultaDataSet - Invalid column name 'Titulo_Id'.
+Invalid column name 'situacao'.
+--------------------------------------------------------------------------------------------------------------------------------------------
+30/01/2026 16:11:40 - AcessaBanco - ConsultaDataSet - Invalid column name 'Titulo_Id'.
+Invalid column name 'situacao'.
