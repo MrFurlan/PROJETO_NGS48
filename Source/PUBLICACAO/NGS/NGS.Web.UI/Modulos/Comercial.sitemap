@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="" title="Menu" description="">
+    <siteMapNode url="" title="Pedidos"  description="Pedidos">
+      <siteMapNode url="~/PedidosXItens.aspx" title="Pedidos X Itens"  description="Pedidos X Itens" />
+      <siteMapNode url="~/AjustarPedido.aspx" title="Ajustar Pedido"  description="Ajustar itens do Pedido" />
+      <siteMapNode url="~/PosicaoDePedidos.aspx" title="Posição de Pedidos"  description="Posição de Pedidos" />
+      <siteMapNode url="~/PosicaoDePedidosConsolidada.aspx" title="Posição Consolidada de Pedidos"  description="Posição Consolidada de Pedidos por Cliente" />
+      <siteMapNode url="~/ExtratoDePedido.aspx" title="Extrato de Pedidos"  description="Extrato de Pedidos" />
+      <siteMapNode url="~/RelacaoDePedidos.aspx" title="Relação de Pedidos"  description="Relação de Pedidos" />
+      <siteMapNode url="~/RelatorioDeFixacoesPendentes.aspx" title="Relatorio de Fixações Pendentes" description="Relatorio de Fixações Pendentes"  />
+      <siteMapNode url="~/LiberacaoDePedido.aspx" title="Liberação de Pedidos"  description="Liberação de Pedidos" />
+      <siteMapNode url="~/LiberacaoDeCarregamento.aspx" title="Liberação de Carregamento"  description="Liberação de Carregamento" />
+      <siteMapNode url="~/PosicaoDePedido.aspx" title="Posição de Pedidos - Excel"  description="Posição de Pedidos Excel" />
+      <siteMapNode url="~/ConferenciaFiscalFinanceiroPedido.aspx" title="Conferência F.F. Pedido"  description="Conferência F.F. Pedido" />
+      <siteMapNode url="~/AlteraEmpresaPedido.aspx" title="Alterar Empresa Pedido"  description="Alterar Empresa Pedido" />
+      <siteMapNode url="~/Contratos.aspx" title="Arquivo de Contratos" description="Arquivo de Contratos" />
+      <siteMapNode url="~/PedidoOnsoft.aspx" title="Pedidos ON Mobile"  description="Pedidos ON Mobile" />
+      <siteMapNode url="~/PosicaoFinanceiraDeVendas.aspx" title="Posição Financeira de Vendas"  description="Posição Financeira de Vendas" />
+      <siteMapNode url="~/OrdemDeCarregamento.aspx"  title="Ordem de carregamento" description="Ordem de carregamento"  />
+    </siteMapNode>
+    <siteMapNode url="" title="Expedição"  description="Expedição">
+      <siteMapNode url="~/RelatorioEntradaSaidaLaudo.aspx" title="Cargas e Descargas"  description="Cargas e Descargas" />
+      <siteMapNode url="~/RelatorioEntradaSaidaNotas.aspx" title="Movimentações Fiscais"  description="Movimentações Fiscais" />
+      <siteMapNode url="~/RelatorioCargasLaudo.aspx" title="Totalizador de Movimento"  description="Totalizador de Movimento" />
+      <siteMapNode url="~/ComprasVendasAFixar.aspx" title="Compras e Vendas a Fixar"  description="Compras e Vendas a Fixar" />
+      <siteMapNode url="~/PosicaoDeTransferencias.aspx" title="Posição de Transferência"  description="Posição de Transferência" />
+    </siteMapNode>
+    <siteMapNode url="" title="Estoques"  description="Estoques">
+      <siteMapNode url="~/Disponibilidade.aspx" title="Disponibilidades"  description="Disponibilidades" />
+      <siteMapNode url="~/RelatorioDeAnaliseDeProducao.aspx" title="Análises de Produção"  description="Análises de Produção" />
+      <siteMapNode url="~/RelatoriodeEstoqueFiscalPorCFOP.aspx" title="Estoque por CFOP"  description="Estoque por CFOP" />
+    </siteMapNode>
+    <siteMapNode url="" title="Preço Médio"  description="Preço Médio">
+      <siteMapNode url="~/RelPrecoMedio.aspx" title="Versão 1.0 Sistema Atual"  description="Versão 1.0 Sistema Atual" />
+      <siteMapNode url="~/PrecoMedioV20.aspx" title="Versão 2.0 Sistema Novo"  description="Versão 2.0 Sistema Novo" />
+      <siteMapNode url="~/PrecoMedio.aspx" title="Produtos à Granel"  description="Preço Médio de Produtos à Granel" />
+    </siteMapNode>
+    <siteMapNode url="" title="Compras e Vendas"  description="Compras e Vendas">
+      <siteMapNode url="" title="Compras"  description="Compras">
+        <siteMapNode url="~/PedidosPendentesDeCompras.aspx" title="Pedidos Pendentes"  description="Pedidos Pendentes" />
+        <siteMapNode url="~/PedidosEntreguesDeCompras.aspx" title="Pedidos Faturados"  description="Pedidos Faturados" />
+      </siteMapNode>
+      <siteMapNode url="" title="Vendas"  description="Vendas">
+        <siteMapNode url="~/PedidosPendentesDeVendas.aspx" title="Pedidos Pendentes"  description="Pedidos Pendentes" />
+        <siteMapNode url="~/PedidosEntreguesDeVendas.aspx" title="Pedidos Faturados"  description="Pedidos Faturados" />
+      </siteMapNode>
+      <siteMapNode url="~/CurvaAbc.aspx" title="Curva ABC"  description="Curva ABC" />
+      <siteMapNode url="~/RelacaoCompraVenda.aspx" title="Relação de Compra e Venda"  description="Relação de Compra e Venda" />
+      <siteMapNode url="~/RelatorioDeVendasPorRepresentante.aspx" title="Relatório de Vendas"  description="Relatório de Vendas" />
+      <siteMapNode url="~/AcompanhamentoDeEntregaDeProduto.aspx" title="Acompnto Entrega."  description="Acompnto Entrega." />
+      <siteMapNode url="~/PedidosPendentes.aspx" title="Pedidos Pendentes(Em Teste)."  description="Pedidos Pendentes(Em Teste)." />
+    </siteMapNode>
+    <siteMapNode url="" title="Módulos"  description="">
+      <siteMapNode url="~/Contabil.aspx" title="Contábil"  description="" />
+      <siteMapNode url="~/ApuracaoDeCustos.aspx" title="Custos"  description="" />
+      <siteMapNode url="~/Expedicao.aspx" title="Expedição"  description="" />
+      <siteMapNode url="~/Financeiro.aspx" title="Financeiro"  description="" />
+      <siteMapNode url="~/Index.aspx" title="Gestão"  description="Início" />
+      <siteMapNode url="~/Gerencial.aspx" title="Gerencial"  description="" />
+      <siteMapNode url="~/Patrimonio.aspx" title="Patrimônio"  description="" />
+      <siteMapNode url="~/Producao.aspx" title="Produção e Estoques"  description="" />
+      <siteMapNode url="~/Fiscal.aspx" title="Registros Fiscais"  description="" />
+      <siteMapNode url="~/Revenda.aspx" title="Revenda"  description="" />
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>

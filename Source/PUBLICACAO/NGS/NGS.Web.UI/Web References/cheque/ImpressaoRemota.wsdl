@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.ngs.com.br/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://www.ngs.com.br/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.ngs.com.br/">
+      <s:element name="ImprimirCheques">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Valor" type="tns:ArrayOfDouble" />
+            <s:element minOccurs="0" maxOccurs="1" name="ValorExtenso" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="Nome" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="Cidade" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="Data" type="tns:ArrayOfDateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="NumeroCheque" type="tns:ArrayOfInt" />
+            <s:element minOccurs="1" maxOccurs="1" name="CodigoBanco" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfDouble">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="double" type="s:double" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfDateTime">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="dateTime" type="s:dateTime" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfInt">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="int" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ImprimirChequesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ImprimirChequesResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ImprimirCheque">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Valor" type="s:double" />
+            <s:element minOccurs="0" maxOccurs="1" name="ValorExtenso" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Nome" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Cidade" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Data" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="NumeroCheque" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="CodigoBanco" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ImprimirChequeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ImprimirChequeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ImprimirChequesSoapIn">
+    <wsdl:part name="parameters" element="tns:ImprimirCheques" />
+  </wsdl:message>
+  <wsdl:message name="ImprimirChequesSoapOut">
+    <wsdl:part name="parameters" element="tns:ImprimirChequesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ImprimirChequeSoapIn">
+    <wsdl:part name="parameters" element="tns:ImprimirCheque" />
+  </wsdl:message>
+  <wsdl:message name="ImprimirChequeSoapOut">
+    <wsdl:part name="parameters" element="tns:ImprimirChequeResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ImpressaoChequesSoap">
+    <wsdl:operation name="ImprimirCheques">
+      <wsdl:input message="tns:ImprimirChequesSoapIn" />
+      <wsdl:output message="tns:ImprimirChequesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ImprimirCheque">
+      <wsdl:input message="tns:ImprimirChequeSoapIn" />
+      <wsdl:output message="tns:ImprimirChequeSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ImpressaoChequesSoap" type="tns:ImpressaoChequesSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ImprimirCheques">
+      <soap:operation soapAction="http://www.ngs.com.br/ImprimirCheques" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ImprimirCheque">
+      <soap:operation soapAction="http://www.ngs.com.br/ImprimirCheque" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ImpressaoChequesSoap12" type="tns:ImpressaoChequesSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ImprimirCheques">
+      <soap12:operation soapAction="http://www.ngs.com.br/ImprimirCheques" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ImprimirCheque">
+      <soap12:operation soapAction="http://www.ngs.com.br/ImprimirCheque" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ImpressaoCheques">
+    <wsdl:port name="ImpressaoChequesSoap" binding="tns:ImpressaoChequesSoap">
+      <soap:address location="http://cheque/ImpressaoRemota/ImpressaoRemota.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ImpressaoChequesSoap12" binding="tns:ImpressaoChequesSoap12">
+      <soap12:address location="http://cheque/ImpressaoRemota/ImpressaoRemota.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

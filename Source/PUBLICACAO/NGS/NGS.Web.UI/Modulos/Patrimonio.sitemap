@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="" title="Menu" description="">
+    <siteMapNode url="" title="Lançamentos"  description="Lançamentos" >
+      <siteMapNode url="~/Ativos.aspx" title="Ativos"  description="Ativos" />
+      <siteMapNode url="~/AtivosXBaixas.aspx" title="Ativos X Baixas"  description="AtivosXBaixas" />
+      <siteMapNode url="~/AtivosXTransferencia.aspx" title="Ativos X Transferência"  description="AtivosXTransferencia" />
+      <siteMapNode url="~/AtivosXContas.aspx" title="Ativos X Contas" description="Ativos X Contas" />
+      <siteMapNode url="~/GruposDeAtivos.aspx" title="Grupos de Ativos" description="Grupos de Ativos" />
+    </siteMapNode>
+    <siteMapNode url="~/AtivosXProcessos.aspx" title="Processos"  description="Processos" />
+    <siteMapNode url="" title="Relatórios"  description="Relatórios" >
+      <siteMapNode url="~/ExtratoDeBens.aspx" title="Extrato De Bens"  description="Extrato De Bens" />
+      <siteMapNode url="~/RelatorioDeAtivos.aspx" title="Relatório de Ativos"  description="Relatório de Ativos" />
+      <siteMapNode url="~/SinteseDaDepreciacao.aspx" title="Sintese da Depreciação"  description="Sintese da Depreciação" />
+    </siteMapNode>
+    <siteMapNode url="" title="Outros"  description="Outros" />
+    <siteMapNode url="" title="Módulos"  description="">
+      <siteMapNode url="~/Comercial.aspx" title="Comercial"  description="" />
+      <siteMapNode url="~/Contabil.aspx" title="Contábil"  description="" />
+      <siteMapNode url="~/ApuracaoDeCustos.aspx" title="Custos"  description="" />
+      <siteMapNode url="~/Expedicao.aspx" title="Expedição"  description="" />
+      <siteMapNode url="~/Financeiro.aspx" title="Financeiro"  description="" />
+      <siteMapNode url="~/Index.aspx" title="Gestão"  description="Início" />
+      <siteMapNode url="~/Gerencial.aspx" title="Gerencial"  description="" />
+      <siteMapNode url="~/Producao.aspx" title="Produção e Estoques"  description="" />
+      <siteMapNode url="~/Fiscal.aspx" title="Registros Fiscais"  description="" />
+      <siteMapNode url="~/Revenda.aspx" title="Revenda"  description="" />
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>

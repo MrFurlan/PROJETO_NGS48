@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="EmissaoDeCheque">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="pCodBanco" type="xs:int" />
+        <xs:element minOccurs="1" maxOccurs="1" name="pValor" type="xs:decimal" />
+        <xs:element minOccurs="0" maxOccurs="1" name="pValorPorExtenso" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="pDestinatario" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="pCidade" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="pData" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="pNumCheque" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="pImpressora" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EmissaoDeChequeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="EmissaoDeChequeResult" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EmissaoDeChequeList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="pCheque" type="tns:ArrayOfCheque" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfCheque">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Cheque" nillable="true" type="tns:Cheque" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Cheque">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="CodBanco" type="xs:int" />
+      <xs:element minOccurs="1" maxOccurs="1" name="Valor" type="xs:decimal" />
+      <xs:element minOccurs="0" maxOccurs="1" name="ValorExtenso" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Destinatario" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Cidade" type="xs:string" />
+      <xs:element minOccurs="1" maxOccurs="1" name="Data" type="xs:dateTime" />
+      <xs:element minOccurs="0" maxOccurs="1" name="NumCheque" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Impressora" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EmissaoDeChequeListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="EmissaoDeChequeListResult" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

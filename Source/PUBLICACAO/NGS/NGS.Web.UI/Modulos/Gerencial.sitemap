@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="" title="Menu" description="">
+    <siteMapNode url="" title="Comercial"  description="">
+      <siteMapNode url="~/RelacaoDePedidos.aspx" title="Relação de Pedidos"  description="Relação de Pedidos" />
+      <siteMapNode url="~/PosicaoDePedido.aspx?mnu=gerencial" title="Posição De Pedidos"  description="" />
+      <siteMapNode url="~/RelatorioFaturamentoMensal.aspx?mnu=gerencial" title="Faturamento"  description="" />
+      <siteMapNode url="~/CurvaAbc.aspx" title="Curva ABC"  description="Curva ABC" />
+      <siteMapNode url="~/RelatorioDeComissoesPedido.aspx" title="Comissões por pedido"  description="Comissões por pedido" />
+      <siteMapNode url="~/OrdemDeCarregamento.aspx"  title="Ordem de carregamento" description="Ordem de carregamento"  />
+    </siteMapNode>
+    <siteMapNode url="" title="Financeiro"  description="">
+      <siteMapNode url="~/RelatorioDeAnaliseDeCredito.aspx?mnu=gerencial" title="Análise de Crédito"  description="" />
+      <siteMapNode url="~/RelatorioDeTitulos.aspx?mnu=gerencial" title="Relação de Títulos"  description="" />
+      <siteMapNode url="" title="Aplicação de Recursos"  description="" />
+      <siteMapNode url="" title="Vendas/Remessas(NXT)"  description="" />
+      <siteMapNode url="" title="Títulos em Carteira"  description="" />
+      <siteMapNode url="" title="Fluxo de Caixa"  description="" />
+    </siteMapNode>
+    <siteMapNode url="" title="Expedição"  description="">
+      <siteMapNode url="~/RelatorioDeLaudo.aspx?mnu=gerencial" title="Relação de Pesagem"  description="" />
+      <siteMapNode url="~/RelatorioDeNotasFiscais.aspx?mnu=gerencial" title="Relação de Notas Fiscais"  description="" />
+      <siteMapNode url="~/RelatorioDeFretesExcel.aspx?mnu=gerencial" title="Relação de Fretes"  description="" />
+      <siteMapNode url="" title="Mercadorias em Trânsito"  description="" />
+    </siteMapNode>
+    <siteMapNode url="" title="Produção e Estoque"  description="">
+      <siteMapNode url="~/RelacaoDeProducao.aspx?mnu=gerencial" title="Relação de Produção"  description="" />
+      <siteMapNode url="" title="Mapa de Industrialização"  description="" />
+      <siteMapNode url="" title="Est. Gerencial - Disp"  description="" />
+      <siteMapNode url="~/AnalisadorDeDeposito.aspx?mnu=gerencial" title="Analisador de Depósito"  description="" />
+    </siteMapNode>
+    <siteMapNode url="" title="Contábil"  description="">
+      <siteMapNode url="~/ExtratoDeConta.aspx?mnu=gerencial" title="Extrato de Conta"  description="" />
+      <siteMapNode url="~/BalanceteAuxiliarVBA.aspx?mnu=gerencial" title="Balancete Auxiliar"  description="" />
+      <siteMapNode url="~/DreMesaMes.aspx?mnu=gerencial" title="DRE Mês a Mês"  description="" />
+      <siteMapNode url="" title="Planilha de Custos"  description="" />
+      <siteMapNode url="~/GerenciadorSaldos.aspx?mnu=gerencial" title="Gerenciador de Saldos"  description="" />
+    </siteMapNode>
+    <siteMapNode url="" title="Módulos"  description="">
+      <siteMapNode url="~/Comercial.aspx" title="Comercial"  description="" />
+      <siteMapNode url="~/Contabil.aspx" title="Contábil"  description="" />
+      <siteMapNode url="~/ApuracaoDeCustos.aspx" title="Custos"  description="" />
+      <siteMapNode url="~/Expedicao.aspx" title="Expedição"  description="" />
+      <siteMapNode url="~/Financeiro.aspx" title="Financeiro"  description="" />
+      <siteMapNode url="~/Index.aspx" title="Gestão"  description="Início" />
+      <siteMapNode url="~/Patrimonio.aspx" title="Patrimônio"  description="" />
+      <siteMapNode url="~/Producao.aspx" title="Produção e Estoques"  description="" />
+      <siteMapNode url="~/Fiscal.aspx" title="Registros Fiscais"  description="" />
+      <siteMapNode url="~/Revenda.aspx" title="Revenda"  description="" />
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>

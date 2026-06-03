@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="" title="Menu" description="">
+    <siteMapNode url="" title="Pesagem"  description="">
+      <siteMapNode url="~/Laudo.aspx" title="Pesagem"  description="" />
+      <siteMapNode url="~/AgrupamentodePesagem.aspx" title="Agrupamento de Pesagem"  description="" />
+      <siteMapNode url="~/AlterarLaudo.aspx" title="Alterar Pesagem"  description="" />
+      <siteMapNode url="~/AlterarObservacaoLaudo.aspx" title="Alterar Observação Pesagem"  description="" />
+      <siteMapNode url="~/RateioDePesagem.aspx" title="Rateio de Pesagem"  description="" />
+      <siteMapNode url="~/Reclassificacao.aspx" title="Reclassificação"  description="" />
+    </siteMapNode>
+    <siteMapNode url="" title="Nota Fiscal"  description="">
+      <siteMapNode url="~/NotaFiscalXItens.aspx" title="Nota Fiscal"  description="" />
+      <siteMapNode url="~/MonitorDeXML.aspx" title="Monitor de XML"  description="" />
+      <siteMapNode url="~/NotasFiscaisGerais.aspx" title="Notas Gerais"  description="" />
+      <siteMapNode url="~/CupomFiscal.aspx" title="Cupom Fiscal"  description="" />
+      <siteMapNode url="~/EnvioDeXML.aspx" title="Envio de XML"  description="" />
+      <siteMapNode url="~/AlterarMovimentoNotaFiscal.aspx" title="Alterar Movimento Nota Fiscal"  description="" />
+      <siteMapNode url="~/AlterarFinalidadeNotaFiscal.aspx" title="Alterar Finalidade Nota Fiscal"  description="" />
+      <siteMapNode url="~/AlterarNotaFiscal.aspx" title="Alterar Nota Fiscal"  description="" />
+      <siteMapNode url="~/AlterarProdutoNotaGerais.aspx" title="Alterar Produto Nota Gerais"  description="" />
+      <siteMapNode url="~/AlterarEncargo.aspx" title="Alterar Encargos"  description="" />
+      <siteMapNode url="~/AlterarDepositoNotaFiscal.aspx" title="Alterar Depósito"  description="" />
+      <siteMapNode url="~/AlterarChaveNFE.aspx" title="Alterar Chave NFE"  description="" />
+      <siteMapNode url="~/AjustarNumeroDoLote.aspx" title="Ajustar Número do Lote"  description="" />
+      <siteMapNode url="~/AlterarNumeroPecas.aspx" title="Alterar Número de Peças"  description="" />
+      <siteMapNode url="~/AlterarVencimentosNF.aspx" title="Alterar Vencimentos"  description="" />
+      <siteMapNode url="~/DesvincularRomaneioNotaFiscal.aspx" title="Desvincular Romaneio"  description="" />
+      <siteMapNode url="~/TrocaDeNota.aspx" title="Troca de Nota"  description="" />
+      <!--<siteMapNode url="~/NotaFiscalXPesagem.aspx" title="Nota Fiscal X Pesagem"  description="" />-->
+      <siteMapNode url="~/ConsultaNotaXNota.aspx" title="Consulta Nota X Nota"  description="" />
+      <siteMapNode url="~/VinculoDeNotaFiscal.aspx" title="Vínculo de Nota Fiscal"  description="" />
+      <siteMapNode url="~/RecusaNotaFiscal.aspx" title="Recusa de NFe/CTe"  description="" />
+      <siteMapNode url="" title="Carta de Correção"  description="">
+        <siteMapNode url="~/CCeObservacao.aspx" title="Observações"  description="" />
+        <siteMapNode url="~/CCeVolumes.aspx" title="Volumes Transportados"  description="" />
+        <siteMapNode url="~/CCeProduto.aspx" title="Produtos"  description="" />
+        <siteMapNode url="~/CCeTransporte.aspx" title="Transportador e Placas"  description="" />
+        <siteMapNode url="~/CCeModalidadeDeFrete.aspx" title="Modalidade De Frete"  description="" />
+        <siteMapNode url="~/CCeLocalEmbarque.aspx" title="Local de Embarque"  description="" />
+      </siteMapNode>
+    </siteMapNode>
+    <siteMapNode url="" title="Fretes"  description="">
+      <siteMapNode url="~/OperacoesDeFretes.aspx" title="Operações de Fretes"  description="" />
+      <siteMapNode url="~/ConhecimentoDeTransporte.aspx" title="Conhecimento de Transporte"  description="" />
+      <siteMapNode url="~/AlterarEncargoCTE.aspx" title="Alterar Encargos CTE"  description="" />
+      <siteMapNode url="~/MDFe.aspx" title="MDF-e"  description="" />
+      <siteMapNode url="~/NotasDeTerceiro.aspx" title="Notas Fiscais de Terceiro"  description="" />
+      <siteMapNode url="~/ControleDeFretes.aspx" title="Controle de Fretes"  description="" />
+      <siteMapNode url="~/RelatorioAnaliticoDeFretes.aspx" title="Relatório Analítico de Fretes"  description="" />
+      <siteMapNode url="~/RelatorioSinteticoDeFretes.aspx" title="Relatório Sintético de Fretes"  description="" />
+      <siteMapNode url="~/RelatorioCtrcDasNotas.aspx" title="Relatório de CTRC das Notas"  description="" />
+      <siteMapNode url="~/RelatorioDeNotasSemCte.aspx" title="Relatório de Notas Sem Cte"  description="" />
+    </siteMapNode>
+    <siteMapNode url="" title="Relatórios"  description="">
+      <siteMapNode url="~/ConsistenciaDeNotas.aspx" title="Consistência de Notas"  description="" />
+      <siteMapNode url="~/RelatorioDeLaudosPorPlacas.aspx" title="Laudos por Placas"  description="" />
+      <siteMapNode url="~/RelatorioEntradaSaidaLaudo.aspx" title="Cargas e Descargas"  description="" />
+      <siteMapNode url="~/RelatorioDeLaudosSemNotaFiscal.aspx" title="Laudos sem Nota Fiscal"  description="" />
+      <siteMapNode url="~/RelatorioEntradaSaidaNotas.aspx" title="Movimentações Fiscais"  description="" />
+      <siteMapNode url="~/RelatorioMovimentoFiscalPorOperacao.aspx" title="Rel Mov. Fiscais/Operação"  description="" />
+      <siteMapNode url="~/RelatorioCargasLaudo.aspx" title="Totalizador de Movimentos"  description="" />
+      <siteMapNode url="~/ComprasVendasAFixar.aspx" title="Compras e Vendas a Fixar"  description="" />
+      <siteMapNode url="~/PosicaoDeTransferencias.aspx" title="Posição de Transferências"  description="" />
+      <siteMapNode url="~/PosicaoDeEncargos.aspx" title="Posição de Encargos"  description="" />
+      <siteMapNode url="~/RelatorioDeFretes.aspx" title="Relatório de Fretes"  description="" />
+      <siteMapNode url="~/RelatorioControleDeCarregamento.aspx" title="Controle de Carregamento"  description="" />
+      <siteMapNode url="~/RelatorioOrigemDaNotaFiscal.aspx" title="Relatório Origem da NF"  description="" />
+      <siteMapNode url="~/RelatorioNotasNaoContabilizadas.aspx" title="Relatório Notas Não Contabiliz."  description="" />
+      <siteMapNode url="~/InformacaoDeLote.aspx" title="Informações de Lote"  description="" />
+      <siteMapNode url="~/RelatorioNotasXNotas.aspx" title="Relatório de NotasXNotas"  description="" />
+    </siteMapNode>
+    <siteMapNode url="" title="Outros"  description="">
+      <siteMapNode url="~/BaseNova.aspx" title="Ajustar Base Nota Fiscal"  description="" />   
+      <siteMapNode url="~/CessaoDeCredito.aspx" title="Cessão de Crédito"  description="" />
+      <siteMapNode url="~/PesosDeChegada.aspx" title="Pesos de Chegada"  description="" />
+      <siteMapNode url="~/AutorizacaoDeRetirada.aspx" title="Autorização de Retirada"  description="" />
+      <siteMapNode url="~/CertidaoNegativa.aspx" title="Certidão Negativa"  description="" />
+      <siteMapNode url="~/CadastroCertidoesELicencas.aspx" title="Certidão e Licença"  description="" />
+      <siteMapNode url="~/MemorandoDeExportacao.aspx" title="Memorando de Exportação"  description="" />
+      <siteMapNode url="~/CadastroDePlacas.aspx" title="Cadastro de Placas"  description="" />
+      <siteMapNode url="~/RelatorioRomaneiosMonsanto.aspx" title="Romaneios Monsanto"  description="" />
+    </siteMapNode>
+    <siteMapNode url="" title="Módulos"  description="">
+      <siteMapNode url="~/Comercial.aspx" title="Comercial"  description="" />
+      <siteMapNode url="~/Contabil.aspx" title="Contábil"  description="" />
+      <siteMapNode url="~/ApuracaoDeCustos.aspx" title="Custos"  description="" />
+      <siteMapNode url="~/Financeiro.aspx" title="Financeiro"  description="" />
+      <siteMapNode url="~/Index.aspx" title="Gestão"  description="Início" />
+      <siteMapNode url="~/Gerencial.aspx" title="Gerencial"  description="" />
+      <siteMapNode url="~/Patrimonio.aspx" title="Patrimônio"  description="" />
+      <siteMapNode url="~/Producao.aspx" title="Produção e Estoques"  description="" />
+      <siteMapNode url="~/Fiscal.aspx" title="Registros Fiscais"  description="" />
+      <siteMapNode url="~/Revenda.aspx" title="Revenda"  description="" />
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>

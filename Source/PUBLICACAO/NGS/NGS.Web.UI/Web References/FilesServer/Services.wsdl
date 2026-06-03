@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="SaveFile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="bytes" type="s:base64Binary" />
+            <s:element minOccurs="0" maxOccurs="1" name="systemFileName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="doc" type="tns:TIPO_DOCUMENTO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:simpleType name="TIPO_DOCUMENTO">
+        <s:restriction base="s:string">
+          <s:enumeration value="NOTA_FISCAL" />
+          <s:enumeration value="CONHECIMENTO_DE_TRANSPORTE" />
+          <s:enumeration value="MANIFESTO_ELETRONICO" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="SaveFileResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetFile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fileName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="doc" type="tns:TIPO_DOCUMENTO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetFileResult" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFileXml">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fileName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFileXmlResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetFileXmlResult" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RemoveFile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fileName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="doc" type="tns:TIPO_DOCUMENTO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RemoveFileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RemoveFileResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TryConnection">
+        <s:complexType />
+      </s:element>
+      <s:element name="TryConnectionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="TryConnectionResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRemoteFileName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fileName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="doc" type="tns:TIPO_DOCUMENTO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRemoteFileNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetRemoteFileNameResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IsConnect">
+        <s:complexType />
+      </s:element>
+      <s:element name="IsConnectResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="IsConnectResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFilesFolder">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="doc" type="tns:TIPO_DOCUMENTO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFilesFolderResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetFilesFolderResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRemoteFilesFolder">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="doc" type="tns:TIPO_DOCUMENTO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRemoteFilesFolderResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetRemoteFilesFolderResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="SaveFileSoapIn">
+    <wsdl:part name="parameters" element="tns:SaveFile" />
+  </wsdl:message>
+  <wsdl:message name="SaveFileSoapOut">
+    <wsdl:part name="parameters" element="tns:SaveFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetFileSoapIn">
+    <wsdl:part name="parameters" element="tns:GetFile" />
+  </wsdl:message>
+  <wsdl:message name="GetFileSoapOut">
+    <wsdl:part name="parameters" element="tns:GetFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetFileXmlSoapIn">
+    <wsdl:part name="parameters" element="tns:GetFileXml" />
+  </wsdl:message>
+  <wsdl:message name="GetFileXmlSoapOut">
+    <wsdl:part name="parameters" element="tns:GetFileXmlResponse" />
+  </wsdl:message>
+  <wsdl:message name="RemoveFileSoapIn">
+    <wsdl:part name="parameters" element="tns:RemoveFile" />
+  </wsdl:message>
+  <wsdl:message name="RemoveFileSoapOut">
+    <wsdl:part name="parameters" element="tns:RemoveFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="TryConnectionSoapIn">
+    <wsdl:part name="parameters" element="tns:TryConnection" />
+  </wsdl:message>
+  <wsdl:message name="TryConnectionSoapOut">
+    <wsdl:part name="parameters" element="tns:TryConnectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetRemoteFileNameSoapIn">
+    <wsdl:part name="parameters" element="tns:GetRemoteFileName" />
+  </wsdl:message>
+  <wsdl:message name="GetRemoteFileNameSoapOut">
+    <wsdl:part name="parameters" element="tns:GetRemoteFileNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IsConnectSoapIn">
+    <wsdl:part name="parameters" element="tns:IsConnect" />
+  </wsdl:message>
+  <wsdl:message name="IsConnectSoapOut">
+    <wsdl:part name="parameters" element="tns:IsConnectResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetFilesFolderSoapIn">
+    <wsdl:part name="parameters" element="tns:GetFilesFolder" />
+  </wsdl:message>
+  <wsdl:message name="GetFilesFolderSoapOut">
+    <wsdl:part name="parameters" element="tns:GetFilesFolderResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetRemoteFilesFolderSoapIn">
+    <wsdl:part name="parameters" element="tns:GetRemoteFilesFolder" />
+  </wsdl:message>
+  <wsdl:message name="GetRemoteFilesFolderSoapOut">
+    <wsdl:part name="parameters" element="tns:GetRemoteFilesFolderResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ServicesSoap">
+    <wsdl:operation name="SaveFile">
+      <wsdl:input message="tns:SaveFileSoapIn" />
+      <wsdl:output message="tns:SaveFileSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFile">
+      <wsdl:input message="tns:GetFileSoapIn" />
+      <wsdl:output message="tns:GetFileSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFileXml">
+      <wsdl:input message="tns:GetFileXmlSoapIn" />
+      <wsdl:output message="tns:GetFileXmlSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RemoveFile">
+      <wsdl:input message="tns:RemoveFileSoapIn" />
+      <wsdl:output message="tns:RemoveFileSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TryConnection">
+      <wsdl:input message="tns:TryConnectionSoapIn" />
+      <wsdl:output message="tns:TryConnectionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRemoteFileName">
+      <wsdl:input message="tns:GetRemoteFileNameSoapIn" />
+      <wsdl:output message="tns:GetRemoteFileNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IsConnect">
+      <wsdl:input message="tns:IsConnectSoapIn" />
+      <wsdl:output message="tns:IsConnectSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFilesFolder">
+      <wsdl:input message="tns:GetFilesFolderSoapIn" />
+      <wsdl:output message="tns:GetFilesFolderSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRemoteFilesFolder">
+      <wsdl:input message="tns:GetRemoteFilesFolderSoapIn" />
+      <wsdl:output message="tns:GetRemoteFilesFolderSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServicesSoap" type="tns:ServicesSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SaveFile">
+      <soap:operation soapAction="http://tempuri.org/SaveFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFile">
+      <soap:operation soapAction="http://tempuri.org/GetFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFileXml">
+      <soap:operation soapAction="http://tempuri.org/GetFileXml" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveFile">
+      <soap:operation soapAction="http://tempuri.org/RemoveFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TryConnection">
+      <soap:operation soapAction="http://tempuri.org/TryConnection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRemoteFileName">
+      <soap:operation soapAction="http://tempuri.org/GetRemoteFileName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsConnect">
+      <soap:operation soapAction="http://tempuri.org/IsConnect" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFilesFolder">
+      <soap:operation soapAction="http://tempuri.org/GetFilesFolder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRemoteFilesFolder">
+      <soap:operation soapAction="http://tempuri.org/GetRemoteFilesFolder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServicesSoap12" type="tns:ServicesSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SaveFile">
+      <soap12:operation soapAction="http://tempuri.org/SaveFile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFile">
+      <soap12:operation soapAction="http://tempuri.org/GetFile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFileXml">
+      <soap12:operation soapAction="http://tempuri.org/GetFileXml" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveFile">
+      <soap12:operation soapAction="http://tempuri.org/RemoveFile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TryConnection">
+      <soap12:operation soapAction="http://tempuri.org/TryConnection" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRemoteFileName">
+      <soap12:operation soapAction="http://tempuri.org/GetRemoteFileName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsConnect">
+      <soap12:operation soapAction="http://tempuri.org/IsConnect" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFilesFolder">
+      <soap12:operation soapAction="http://tempuri.org/GetFilesFolder" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRemoteFilesFolder">
+      <soap12:operation soapAction="http://tempuri.org/GetRemoteFilesFolder" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Services">
+    <wsdl:port name="ServicesSoap" binding="tns:ServicesSoap">
+      <soap:address location="http://filesserver/FilesServer/Services.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServicesSoap12" binding="tns:ServicesSoap12">
+      <soap12:address location="http://filesserver/FilesServer/Services.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

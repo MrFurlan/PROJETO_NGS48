@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="" title="Menu" description="">
+    <siteMapNode url="" title="Cadastros"  description="Cadastros">
+      <siteMapNode url="~/PlanoDeCustos.aspx" title="Plano de Custos"  description="Plano de Custos" />
+      <siteMapNode url="~/PlanoDeRateio.aspx" title="Plano de Rateio"  description="Plano de Rateio" />
+    </siteMapNode>
+    <siteMapNode url="" title="Lançamentos"  description="Lançamentos">
+      <siteMapNode url="~/SaldosIniciaisDeCustos.aspx" title="Saldos Iniciais"  description="Saldos Iniciais" />
+      <siteMapNode url="~/PrecoDeMercado.aspx" title="Preço de Mercado"  description="Preço de Mercado" />
+      <siteMapNode url="~/LancamentosContabeisXCustos.aspx" title="Lançamentos Contábeis Custos"  description="Lançamentos Contábeis Custos" />
+    </siteMapNode>
+    <siteMapNode url="" title="Processos"  description="Processos">
+      <siteMapNode url="~/CapturaDeDados.aspx" title="Agronegócio"  description="" />   
+      <!--<siteMapNode url="~/CapturaDeDadosInsol.aspx" title="Fabrica de Óleo de Sója"  description="" />-->
+      <siteMapNode url="~/CapturaDeDadosCurtumeANT.aspx" title="Indústria"  description="" />
+      <siteMapNode url="~/CapturaDeDadosIndustriasdeRacaoAnimal.aspx" title="Industrias de Ração Animal"  description="" />
+    </siteMapNode>
+    <siteMapNode url="" title="Relatórios"  description="Relatórios">
+      <siteMapNode url="~/CustoMedio.aspx" title="Custo Médio"  description="Custo Médio" />
+      <siteMapNode url="~/InventarioDeEstoques.aspx" title="Inventário de Estoque"  description="Inventário de Estoque" />
+      <!--<siteMapNode url="~/ProdutosDeTerceiros.aspx" title="Produtos de Terceiros"  description="Produtos de Terceiros" />-->
+      <siteMapNode url="~/RelatorioDeEstoqueDeTerceiros.aspx" title="Estoque de Terceiros"  description="Estoque de Terceiros" />
+    </siteMapNode>
+    <siteMapNode url="" title="Outros"  description="Outros">
+      <siteMapNode url="" title="Filtro Razão"  description="Filtro Razão" />
+      <siteMapNode url="" title="Filtro Notas"  description="Filtro Notas" />
+      <siteMapNode url="" title="Filtro Fretes"  description="Filtro Fretes" />
+      <siteMapNode url="" title="Filtro Produção"  description="Filtro Produção" />
+    </siteMapNode>
+    <siteMapNode url="" title="Módulos"  description="">
+      <siteMapNode url="~/Comercial.aspx" title="Comercial"  description="" />
+      <siteMapNode url="~/Contabil.aspx" title="Contábil"  description="" />
+      <siteMapNode url="~/Expedicao.aspx" title="Expedição"  description="" />
+      <siteMapNode url="~/Financeiro.aspx" title="Financeiro"  description="" />
+      <siteMapNode url="~/Index.aspx" title="Gestão"  description="Início" />
+      <siteMapNode url="~/Gerencial.aspx" title="Gerencial"  description="" />
+      <siteMapNode url="~/Patrimonio.aspx" title="Patrimônio"  description="" />
+      <siteMapNode url="~/Producao.aspx" title="Produção e Estoques"  description="" />
+      <siteMapNode url="~/Fiscal.aspx" title="Registros Fiscais"  description="" />
+      <siteMapNode url="~/Revenda.aspx" title="Revenda"  description="" />
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>

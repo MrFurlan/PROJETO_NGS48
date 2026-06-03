@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="NGS_Web_UI_cheque_ImpressaoCheques" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://cheque/ImpressaoRemota/ImpressaoRemota.asmx</Value>
+    </Setting>
+    <Setting Name="NGS_Web_UI_FilesServer_Services" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://filesserver/FilesServer/Services.asmx</Value>
+    </Setting>
+    <Setting Name="NGS_Web_UI_br_gov_rs_sefaz_sef_CadConsultaCadastro2" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://sef.sefaz.rs.gov.br/ws/cadconsultacadastro/cadconsultacadastro2.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

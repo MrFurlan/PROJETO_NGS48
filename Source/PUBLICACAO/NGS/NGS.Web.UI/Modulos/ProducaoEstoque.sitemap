@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="" title="Menu" description="">
+    <siteMapNode url="" title="Lançamentos"  description="">
+      <siteMapNode url="~/ControleDeProducao.aspx" title="Produção e Estoques"  description="" />
+      <siteMapNode url="~/OrdemDeProducao.aspx" title="Ordem de Produção"  description="" />
+      <siteMapNode url="~/OrdemDeProducaoInterna.aspx" title="Ordem de Produção Interna"  description="" />
+    </siteMapNode> 
+    <siteMapNode url="" title="Relatórios"  description="">
+      <siteMapNode url="~/ConsistenciaDeProducao.aspx" title="Consistência de Produção"  description="" />
+      <siteMapNode url="~/PosicaoDeEstoques.aspx" title="Posição de Estoques"  description="" />
+      <siteMapNode url="~/PosicaoDeRomaneios.aspx" title="Posição de Romaneios"  description="" />
+      <siteMapNode url="~/EstoquesPorOperacoes.aspx" title="Estoques Por Operações"  description="" />
+      <siteMapNode url="~/ComposicaoDoEstoque.aspx" title="Composição Diária do Estoque"  description="" />
+      <siteMapNode url="~/ComposicaoDoEstoqueRN.aspx" title="Comp. Diária Romaneios/Notas"  description="" />
+      <siteMapNode url="~/ConsistenciaDeMeiosEPecas.aspx" title="Meios e Peças por Nota Fiscal"  description="" />
+      <siteMapNode url="~/Cardex.aspx" title="Cardex"  description="" />
+      <siteMapNode url="~/RelatorioDoAlmoxarifado.aspx" title="Posição do Almoxarifado"  description="" />
+      <siteMapNode url="~/RelatorioDeLotes.aspx" title="Relatório de Lotes"  description="" />
+      <siteMapNode url="~/RelatorioDeOrdensDeProducoes.aspx" title="Relatório de Ordens de Produções"  description="" />
+    </siteMapNode>
+    <siteMapNode url="" title="Módulos"  description="">
+      <siteMapNode url="~/Comercial.aspx" title="Comercial"  description="" />
+      <siteMapNode url="~/Contabil.aspx" title="Contábil"  description="" />
+      <siteMapNode url="~/ApuracaoDeCustos.aspx" title="Custos"  description="" />
+      <siteMapNode url="~/Expedicao.aspx" title="Expedição"  description="" />
+      <siteMapNode url="~/Financeiro.aspx" title="Financeiro"  description="" />
+      <siteMapNode url="~/Index.aspx" title="Gestão"  description="Início" />
+      <siteMapNode url="~/Gerencial.aspx" title="Gerencial"  description="" />
+      <siteMapNode url="~/Patrimonio.aspx" title="Patrimônio"  description="" />
+      <siteMapNode url="~/Fiscal.aspx" title="Registros Fiscais"  description="" />
+      <siteMapNode url="~/Revenda.aspx" title="Revenda"  description="" />
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>

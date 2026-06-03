@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="" title="Menu" description="">
+    <siteMapNode url="" title="Lançamentos"  description="Lançamentos">
+      <siteMapNode url="~/WFTitulo.aspx?idTabela=ContasAPagar" title="Contas a Pagar"  description="Contas a Pagar" />
+      <siteMapNode url="~/WFTitulo.aspx?idTabela=ContasAReceber" title="Contas a Receber"  description="Contas a Receber" />
+      <siteMapNode url="~/MovimentacoesFinanceiras.aspx" title="Mov. Financeiras"  description="Movimentações Financeiras" />
+      <siteMapNode url="~/CompensacaoDeAdiantamentos.aspx" title="Compensação de Adiantamentos"  description="Compensação de Adiantamentos" />   
+      <siteMapNode url="~/Lancamentos.aspx" title="Lançamentos Contábeis"  description="Lançamentos Contábeis" />
+      <siteMapNode url="~/AutorizacoesDePagamentos.aspx" title="Autorização de Pgtos" description="Autorização de Pagamentos" />
+      <siteMapNode url="~/VincularNotaxTitulo.aspx" title="Título X Nota Fiscal" description="Título X Nota Fiscal" />
+      <siteMapNode url="~/RecompraDeTitulos.aspx" title="Recompra de Títulos" description="Recompra de Títulos" />
+      <siteMapNode url="~/ContratoBancario.aspx" title="Contrato Bancário"  description="" />
+    </siteMapNode>
+    <siteMapNode url="" title="Processos"  description="">
+      <siteMapNode url="~/EmissaoDeCheques.aspx" title="Emissão de Cheques"  description="Emissão de Cheques" />
+      <siteMapNode url="~/GeracaoBradesco.aspx" title="Gera Arquivo Bradesco"  description="Gera Arquivo Bradesco" />
+      <siteMapNode url="~/BaixasFinanceirasIndividuais.aspx" title="Baixa Financeira Individual"  description="Baixa Financeira Individual" />
+      <siteMapNode url="~/ConciliacaoDeContas.aspx" title="Conciliação de Contas"  description="" />
+      <siteMapNode url="~/DuplicataNotaFiscal.aspx" title="Duplicata Nota Fiscal"  description="Duplicata Nota Fiscal" />
+      <siteMapNode url="~/DuplicataAvulsa.aspx" title="Duplicata Avulsa"  description="Duplicata Avulsa" />
+      <siteMapNode url="~/ReciboAvulso.aspx" title="Recibo Avulso"  description="Recibo Avulso" />
+      <siteMapNode url="~/CarteiraDeCobranca.aspx" title="Carteira de Cobrança"  description="Carteira de Cobrança" />
+      <siteMapNode url="~/PagamentoDeTitulos.aspx" title="Pagamento de Títulos"  description="Pagamento de Títulos" />
+		  <siteMapNode url="~/BoletoBancario.aspx" title="Boleto Bancário"  description="Boleto Bancário" />
+		  <siteMapNode url="~/ReemissaoBoletoBancario.aspx" title="Reemissão Boleto Bancário"  description="Reemissão Boleto Bancário" />
+      <siteMapNode url="~/Endossos.aspx" title="Endosso do Título"  description="Endosso do Título" />
+      <siteMapNode url="~/FolhaPagamento.aspx" title="Folha de Pagamento"  description="Folha de Pagamento" />
+    </siteMapNode>
+    <siteMapNode url="" title="Consultas"  description="">
+      <siteMapNode url="~/ConsistenciaDeLotes.aspx" title="Consistência de Lotes" description="Consistência de Lotes" />
+      <siteMapNode url="~/TotalizaLotes.aspx" title="Totalizador de Lotes"  description="" />
+      <siteMapNode url="~/ExtratoDeConta.aspx" title="Extrato de Contas"  description="" />
+    </siteMapNode>
+    <siteMapNode url="" title="Relatórios"  description="Relatórios">
+      <siteMapNode url="~/RelatorioDeTitulos.aspx" title="Títulos" description="Títulos" />
+      <siteMapNode url="~/RelatorioDePagamentos.aspx" title="Pagamentos" description="Pagamentos" />
+      <siteMapNode url="~/RelatorioDeAdiantamentos.aspx" title="Adiantamentos" description="Adiantamentos" />
+      <siteMapNode url="~/RelatorioMovimentacoesFinanceiras.aspx" title="Movimentações Financeiras"  description="" />
+      <siteMapNode url="~/RealizadoContasApagar.aspx" title="Realizado Contas a Pagar"  description="" />
+      <siteMapNode url="~/RealizadoContasAReceber.aspx" title="Realizado Contas a Receber"  description="" />
+      <siteMapNode url="~/RealizadoMovimentacoesFinanceiras.aspx" title="Realizado Mov. Financeiras"  description="" />
+      <siteMapNode url="~/LivroCaixa.aspx" title="Livro Caixa"  description="" />
+      <siteMapNode url="~/FluxoDeCaixa.aspx" title="Fluxo de Caixa"  description="" />
+      <siteMapNode url="~/PerformanceDeRecebimentoDeClientes.aspx" title="Performance de Recebimento"  description="" />
+      <siteMapNode url="~/RelatorioNotasNaoContabilizadas.aspx" title="Notas Não Contabilizadas"  description="" />
+    </siteMapNode>
+    <siteMapNode url="" title="Módulos"  description="">
+      <siteMapNode url="~/Comercial.aspx" title="Comercial"  description="" />
+      <siteMapNode url="~/Contabil.aspx" title="Contábil"  description="" />
+      <siteMapNode url="~/ApuracaoDeCustos.aspx" title="Custos"  description="" />
+      <siteMapNode url="~/Expedicao.aspx" title="Expedição"  description="" />
+      <siteMapNode url="~/Index.aspx" title="Gestão"  description="Início" />
+      <siteMapNode url="~/Gerencial.aspx" title="Gerencial"  description="" />
+      <siteMapNode url="~/Patrimonio.aspx" title="Patrimônio"  description="" />
+      <siteMapNode url="~/Producao.aspx" title="Produção e Estoques"  description="" />
+      <siteMapNode url="~/Fiscal.aspx" title="Registros Fiscais"  description="" />
+      <siteMapNode url="~/Revenda.aspx" title="Revenda"  description="" />
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>

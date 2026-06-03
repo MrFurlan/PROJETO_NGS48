@@ -1,0 +1,742 @@
+HTML, BODY {
+}
+
+BODY, TABLE {
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+}
+
+    TABLE.borda, DIV.borda {
+        border-right: #336699 thin solid;
+        border-top: #336699 thin solid;
+        border-left: #336699 thin solid;
+        border-bottom: #336699 thin solid;
+    }
+
+    TABLE.borda2 {
+        border-right: #336699 thin solid;
+        border-left: #336699 thin solid;
+        border-bottom: #336699 thin solid;
+    }
+
+INPUT, TEXTAREA {
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    border-right: #cddbeb thin solid;
+    border-top: #cddbeb thin solid;
+    border-left: #cddbeb thin solid;
+    border-bottom: #cddbeb thin solid;
+}
+
+    INPUT.texto {
+        height: 16px;
+    }
+
+    INPUT.botao {
+        font-family: Tahoma, Arial, Helvetica, sans-serif;
+        font-size: 11px;
+        height: 24px;
+        width: 96px;
+        text-align: center;
+        cursor: pointer;
+        font-weight: bold !important;
+    }
+
+    INPUT.botaoGrid {
+        font-family: Tahoma, Arial, Helvetica, sans-serif;
+        font-size: 11px;
+        height: 20px;
+        width: 50px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+.DataGridFixedHeader {
+    position: relative;
+    top: expression(this.offsetParent.scrollTop);
+    background-color: white;
+}
+
+.sidebar {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.rotulo {
+    font-weight: bold;
+}
+
+.primario {
+    font-weight: bold;
+    color: Red;
+}
+
+.fundogray {
+    background-color: #e8e8e8;
+    height: 16px;
+}
+
+.fonteazul {
+    color: blue;
+    height: 16px;
+}
+
+.fonteazulbold {
+    background-color: #e8e8e8;
+    font-weight: bold;
+    color: blue;
+    height: 16px;
+}
+
+.fonteCourier {
+    font-weight: normal;
+    font-size: 9pt;
+    color: black;
+    font-family: 'Courier New';
+}
+
+.fontevermelha {
+    color: red;
+    height: 16px;
+}
+
+.fontevermelhabold {
+    font-weight: bold;
+    color: red;
+    height: 16px;
+}
+
+.fonteverdebold {
+    font-weight: bold;
+    color: green;
+    height: 16px;
+}
+
+.fonteamarelabold {
+    font-weight: bold;
+    color: orange;
+    height: 16px;
+}
+
+.fontepreta {
+    color: black;
+    height: 16px;
+}
+
+.fontepretabold {
+    background-color: #e8e8e8;
+    font-weight: bold;
+    color: black;
+    height: 16px;
+}
+
+.titulopagina {
+    font-weight: bold;
+    color: white;
+    background-color: #336699;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.tituloconsulta {
+    font-weight: bold;
+    color: white;
+    background-color: #336699;
+}
+
+.titulocabecalho {
+    color: white;
+}
+
+pai amarela .consultaTab {
+    border-right: #336699 thin solid;
+    border-top: #336699 thin solid;
+    border-left: #336699 thin solid;
+    border-bottom: #336699 thin solid;
+}
+
+.consultaDiv {
+    border-right: #cddbeb thin solid;
+    border-top: #cddbeb thin solid;
+    border-left: #cddbeb thin solid;
+    border-bottom: #cddbeb thin solid;
+    position: relative;
+    overflow: auto;
+}
+
+.consultaCli {
+    border-right: #336699 thin solid;
+    border-top: #336699 thin solid;
+    border-left: #336699 thin solid;
+    border-bottom: #336699 thin solid;
+}
+
+.consulta {
+    border-right: #cddbeb thin solid;
+    border-top: #cddbeb thin solid;
+    border-left: #cddbeb thin solid;
+    border-bottom: #cddbeb thin solid;
+    width: 786px;
+    height: 302px;
+    overflow: auto;
+}
+
+.consulta2 {
+    border-right: #cddbeb thin solid;
+    border-top: #cddbeb thin solid;
+    border-left: #cddbeb thin solid;
+    border-bottom: #cddbeb thin solid;
+}
+
+.consulta3 {
+    border-right: #336699 thin solid;
+    border-top: #336699 thin solid;
+    border-left: #336699 thin solid;
+    border-bottom: #336699 thin solid;
+}
+
+.tabelaconsulta {
+    width: 755px;
+    border: 0;
+}
+
+.titulotabela {
+    font-family: Tahoma,Arial,Helvetica,sans-serif;
+    font-weight: bold;
+    /*background-color: #5D7B9D;*/
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-size: 18px;
+    height: 32px;
+    padding-left: 10px;
+    margin-top: 4px;
+}
+
+.titulotabelasemfundo {
+    font-family: Tahoma,Arial,Helvetica,sans-serif;
+    font-weight: bold;
+    border: 1px solid #5D7B9D;
+    border-radius: 5px 5px 5px 5px;
+    color: #5D7B9D;
+    font-size: 18px;
+    height: 32px;
+    padding-left: 10px;
+}
+
+.titulotabelared {
+    color: Red;
+    font-size: 24px;
+}
+
+.tab {
+    border-right: #336699 thin solid;
+    padding-right: 1px;
+    border-top: #336699 thin solid;
+    padding-left: 5px;
+    font-weight: normal;
+    font-size: 11px;
+    padding-bottom: 5px;
+    cursor: pointer;
+    color: #000033;
+    padding-top: 5px;
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    height: 13px;
+}
+
+.tabsel {
+    border-right: #336699 thin solid;
+    padding-right: 1px;
+    border-top: #336699 thin solid;
+    padding-left: 5px;
+    font-weight: bold;
+    font-size: 11px;
+    padding-bottom: 5px;
+    cursor: pointer;
+    color: #336699;
+    padding-top: 5px;
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+    background-color: #cddbeb;
+    height: 13px;
+}
+
+.tab-conteudo {
+    border-right: #336699 thin solid;
+    border-bottom: #336699 thin solid;
+}
+
+.conteudo {
+    font-weight: normal;
+    font-size: 10px;
+    width: 99%;
+    color: #000033;
+    height: 545px;
+    background-color: #ffffff;
+    border-top: #336699 thin solid;
+    border-right: #336699 thin solid;
+    border-bottom: #336699 thin solid;
+    border-left: #336699 thin solid;
+    position: relative;
+}
+
+.conteudoCliente {
+    font-weight: normal;
+    font-size: 10px;
+    width: 99%;
+    color: #000033;
+    height: 450px;
+    background-color: #ffffff;
+    border-top: #336699 thin solid;
+    border-right: #336699 thin solid;
+    border-bottom: #336699 thin solid;
+    border-left: #336699 thin solid;
+    position: relative;
+}
+
+.conteudoexpedicao {
+    font-weight: normal;
+    font-size: 10px;
+    left: auto;
+    width: 100%;
+    color: #000033;
+    height: 500px;
+    background-color: #ffffff;
+    border-top: #336699 thin solid;
+    border-right: #336699 thin solid;
+    border-bottom: #336699 thin solid;
+    border-left: #336699 thin solid;
+    position: relative;
+}
+
+.conteudofinanceiro {
+    font-weight: normal;
+    font-size: 10px;
+    left: auto;
+    width: 100%;
+    color: #000033;
+    height: 450px;
+    background-color: #ffffff;
+    border-top: #336699 thin solid;
+    border-right: #336699 thin solid;
+    border-bottom: #336699 thin solid;
+    border-left: #336699 thin solid;
+    position: relative;
+}
+
+.conteudocompras {
+    font-weight: normal;
+    font-size: 10px;
+    left: auto;
+    width: 100%;
+    color: #000033;
+    height: 450px;
+    background-color: #ffffff;
+    border-top: #336699 thin solid;
+    border-right: #336699 thin solid;
+    border-bottom: #336699 thin solid;
+    border-left: #336699 thin solid;
+    position: relative;
+}
+
+.tabtopo {
+    width: 100%;
+}
+
+.menuBarra {
+    background-color: #FFD373;
+    padding: 4px;
+}
+
+.menuLetra {
+    font-weight: bold;
+    font-size: 8pt;
+    color: #016F18;
+}
+
+.clCMEvent {
+    position: absolute;
+    z-index: 300;
+    width: 100%;
+    height: 100%;
+    clip: rect(0,100%,100%,0);
+    left: 0;
+    top: 0;
+    visibility: hidden;
+}
+
+.clCMAbs {
+    position: absolute;
+    width: 10;
+    height: 10;
+    left: 0;
+    top: 0;
+    visibility: hidden;
+}
+
+.clT, .clTover, .clS, .clSover, .clS2, .clS2over {
+    position: absolute;
+    overflow: hidden;
+    width: 130;
+    height: 25;
+    cursor: pointer;
+}
+
+.clT, .clTover {
+    padding: 4px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.clT {
+    color: white;
+}
+
+.clTover {
+    color: #FCCE55;
+}
+
+.clS, .clSover {
+    padding: 2px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.clS2, .clS2over {
+    padding: 2px;
+    font-size: 10px;
+}
+
+.clS, .clS2 {
+    color: #006699;
+    background-color: #CDDBEB;
+}
+
+.clSover, .clS2over {
+    color: #FCCE55;
+}
+
+.clSover, .clS2over, .clTover, .clB, .clBar {
+    background-color: #336699;
+}
+
+.clB {
+    position: absolute;
+    visibility: hidden;
+    z-index: 300;
+}
+
+.clBar {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    visibility: hidden;
+}
+
+.clLinhaTabela1 {
+    color: black;
+    background-color: white;
+}
+
+.clLinhaTabela2 {
+    font-weight: bold;
+    color: white;
+    background-color: #006699;
+}
+
+.clLinhaTabela3 {
+    color: black;
+    background-color: #e8e8e8;
+}
+
+.clLinhaTabela4 {
+    font-weight: bold;
+    color: black;
+    background-color: #a2d0f4;
+}
+
+.A1 {
+    font-size: 7pt;
+    font-family: Ms serif;
+}
+
+.A2 {
+    font-weight: bold;
+    font-size: 7pt;
+    font-family: Serif;
+}
+
+.A3 {
+    font-size: 8pt;
+    font-family: Serif;
+}
+
+.A4 {
+    font-weight: bold;
+    font-size: 8pt;
+    font-family: Serif;
+}
+
+.A5 {
+    font-size: 9pt;
+    font-family: Serif;
+}
+
+.A6 {
+    font-weight: bold;
+    font-size: 9pt;
+    font-family: Serif;
+}
+
+.A7 {
+    font-size: 10pt;
+    font-family: Serif;
+}
+
+.A8 {
+    font-weight: bold;
+    font-size: 10pt;
+    font-family: Serif;
+}
+
+.A9 {
+    font-size: 11pt;
+    font-family: Serif;
+}
+
+.A9B {
+    font-weight: bold;
+    font-size: 11pt;
+    font-family: Serif;
+}
+
+.A10 {
+    font-weight: bold;
+    font-size: 12pt;
+    font-family: Serif;
+}
+
+.A11 {
+    font-weight: bold;
+    font-size: 13pt;
+    font-family: Serif;
+}
+
+.A12 {
+    font-weight: bold;
+    font-size: 14pt;
+    font-family: Serif;
+}
+
+.A13 {
+    font-size: 12pt;
+    font-family: 'Times New Roman';
+}
+
+.A13B {
+    font-weight: bold;
+    font-size: 12pt;
+    font-family: 'Times New Roman';
+}
+
+.A14 {
+    font-size: 13pt;
+    font-family: 'Times New Roman';
+}
+
+.A14B {
+    font-weight: bold;
+    font-size: 13pt;
+    font-family: 'Times New Roman';
+}
+
+.A15 {
+    font-size: 14pt;
+    font-family: 'Times New Roman';
+}
+
+.A15B {
+    font-weight: bold;
+    font-size: 14pt;
+    font-family: 'Times New Roman';
+}
+
+.A16 {
+    font-weight: bold;
+    font-size: 12pt;
+    font-family: MS Serif;
+}
+
+.A17 {
+    font-weight: bold;
+    font-size: 13pt;
+    font-family: MS Serif;
+}
+
+.A19 {
+    font-weight: bold;
+    font-size: 12pt;
+    font-family: 'Arial Unicode MS';
+}
+
+.A20 {
+    font-weight: bold;
+    font-size: 13pt;
+    font-family: 'Arial Unicode MS';
+}
+
+.A21 {
+    font-weight: bold;
+    font-size: 14pt;
+    font-family: 'Arial Unicode MS';
+}
+
+.AMS1 {
+    font-family: Ms serif;
+    font-size: 7pt;
+}
+
+.AMS2 {
+    font-family: Ms serif;
+    font-size: 6pt;
+}
+
+.AMS3 {
+    font-family: Ms serif bold;
+    font-size: 5pt;
+}
+
+.AMS4 {
+    font-family: Ms serif bold;
+    font-size: 8pt;
+}
+
+.AMS5 {
+    font-family: Ms serif;
+    font-size: 10pt;
+}
+
+.AMS9 {
+    font-family: Ms serif;
+    font-size: 9pt;
+}
+
+.AMS10 {
+    font-family: Ms serif;
+    font-size: 10pt;
+}
+
+.AMS14 {
+    font-family: Ms serif;
+    font-size: 14pt;
+}
+
+.MsSerif5 {
+    font-family: Ms serif;
+    font-size: 5pt;
+}
+
+.MsSerif5b {
+    font-family: Ms serif bold;
+    font-size: 5pt;
+}
+
+.MsSerif6 {
+    font-family: Ms serif;
+    font-size: 6pt;
+}
+
+.MsSerif6 {
+    font-family: Ms serif bold;
+    font-size: 6pt;
+}
+
+.MsSerif7 {
+    font-family: Ms serif;
+    font-size: 7pt;
+}
+
+.MsSerif7b {
+    font-family: Ms serif bold;
+    font-size: 7pt;
+}
+
+.MsSerif8 {
+    font-family: Ms serif bold;
+    font-size: 8pt;
+}
+
+.MsSerif8b {
+    font-family: Ms serif;
+    font-size: 8pt;
+}
+
+.MsSerif9 {
+    font-family: Ms serif;
+    font-size: 9pt;
+}
+
+.MsSerif9b {
+    font-family: Ms serif bold;
+    font-size: 9pt;
+}
+
+.MsSerif10 {
+    font-family: Ms serif;
+    font-size: 10pt;
+}
+
+.MsSerif10b {
+    font-family: Ms serif bold;
+    font-size: 10pt;
+}
+
+.MsSerif11 {
+    font-family: Ms serif;
+    font-size: 11pt;
+}
+
+.MsSerif11b {
+    font-family: Ms serif bold;
+    font-size: 11pt;
+}
+
+.MsSerif12 {
+    font-family: Ms serif;
+    font-size: 12pt;
+}
+
+.MsSerif12b {
+    font-family: Ms serif bold;
+    font-size: 12pt;
+}
+
+.MsSerif13 {
+    font-family: Ms serif;
+    font-size: 13pt;
+}
+
+.MsSerif13b {
+    font-family: Ms serif bold;
+    font-size: 13pt;
+}
+
+.MsSerif14 {
+    font-family: Ms serif;
+    font-size: 14pt;
+}
+
+.MsSerif14b {
+    font-family: Ms serif bold;
+    font-size: 14pt;
+}
+
+H6 {
+    page-break-after: always;
+}
+
+input[type='text'] {
+}
+
+select {
+    height: 20px;
+}

@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+	<siteMapNode url="" title="Menu" description="">
+		<siteMapNode url="" title="Arquivos"  description="">
+			<siteMapNode url="~/SenhaNova.aspx" title="Mudança de Senha"  description="" />
+			<siteMapNode url="~/BDUsuarios.aspx" title="Banco de Dados"  description="" />
+			<siteMapNode url="" title="Controle de Acesso"  description="">
+				<siteMapNode url="~/Grupos.aspx" title="Grupo de Usuários" description="" />
+				<siteMapNode url="~/Processos.aspx" title="Processos" description="" />
+				<siteMapNode url="~/Permissoes.aspx" title="Permissões" description="" />
+				<siteMapNode url="~/GruposXUsuarios.aspx" title="Grupos X Usuários" description="" />
+				<siteMapNode url="~/GruposXProcessos.aspx" title="Grupos X Processos" description="" />
+				<siteMapNode url="~/UsuariosXProcessos.aspx" title="Usuários X Processos" description="" />
+				<siteMapNode url="~/LiberarPermissoes.aspx" title="Liberação de Permissões" description="" />
+				<siteMapNode url="~/Autorizantes.aspx" title="Autorizantes" description="" />
+				<siteMapNode url="~/MenuDeAcesso.aspx" title="Menu De Acesso" description="" />
+				<siteMapNode url="~/GradeSeguranca.aspx" title="Grade de Segurança" description="" />
+				<siteMapNode url="~/BalancoAuditadoMes.aspx" title="Balanço Auditado Mês" description="" />
+				<siteMapNode url="~/BalancasEletronicas.aspx" title="Balanças Eletrônicas" description="" />
+			</siteMapNode>
+			<siteMapNode url="" title="Importação de Dados"  description="">
+				<siteMapNode url="~/ImportaFolha.aspx" title="Folha de Pagamento" description="" />
+        <siteMapNode url="~/ImportaPagamentoParaFuncionarios.aspx" title="Pagamento para Funcionários" description="" />
+        <siteMapNode url="~/ImportaSpedContabil.aspx" title="Sped Contabil" description="" />
+        <siteMapNode url="~/ImportaListaDePrecos.aspx" title="Lista de Preços" description="" />
+        <siteMapNode url="" title="Clientes" description="" />
+				<siteMapNode url="" title="Outros" description="" />
+			</siteMapNode>
+			<siteMapNode url="" title="Exportação de Dados"  description="">
+				<siteMapNode url="~/Conecta.aspx" title="Exporta Conecta Basf" description="" />
+				<siteMapNode url="~/ExportaIndea.aspx" title="Exporta Indea" description="" />
+				<siteMapNode url="~/ExportaDados.aspx" title="Exporta Dados" description="" />
+			</siteMapNode>
+			<siteMapNode url="~/Impressoras.aspx" title="Impressoras"  description="" />
+			<siteMapNode url="~/SelecaoDeEmpresas.aspx" title="Troca de Empresas" description="" />
+		</siteMapNode>
+		<siteMapNode url="" title="Tabelas"  description="">
+			<siteMapNode url="" title="Clientes" description="">
+				<siteMapNode url="~/TiposDeClientes.aspx" title="Tipos de Clientes" description="" />
+				<siteMapNode url="~/Categorias.aspx" title="Categorias" description="" />
+				<siteMapNode url="~/Regioes.aspx" title="Regiões" description="" />
+			</siteMapNode>
+			<siteMapNode url="" title="Contábil" description="">
+				<siteMapNode url="~/CentrosDeCustos.aspx" title="Centros de Custos" description="" />
+				<siteMapNode url="~/Historicos.aspx" title="Históricos Padrões" description="" />
+				<siteMapNode url="~/Responsabilidades.aspx" title="Responsabilidades" description="" />
+				<siteMapNode url="~/ContasOrcamentarias.aspx" title="Contas Orçamentárias" description="" />
+			</siteMapNode>
+			<siteMapNode url="" title="Estoques" description="">
+				<siteMapNode url="" title="Produção" description="">
+					<siteMapNode url="~/Analises.aspx" title="Análises" description="" />
+					<siteMapNode url="~/ProdutosXAnalises.aspx" title="Produtos X Análises" description="" />
+					<siteMapNode url="~/ControleDeQualidade.aspx" title="Controle de Qualidade" description="" />
+					<siteMapNode url="~/Etapas.aspx" title="Etapas de Processos" description="" />
+					<siteMapNode url="~/ProcedimentoDeProducao.aspx" title="Procedimento de Produção" description="" />
+					<siteMapNode url="~/ProdutoXConsumo.aspx" title="Produto X Consumo" description="" />
+					<siteMapNode url="~/SequenciaDeLote.aspx" title="Produto X Sequência de Lote" description="" />
+				</siteMapNode>
+				<siteMapNode url="" title="Estoques" description="">
+					<siteMapNode url="~/GruposDeEstoques.aspx" title="Grupos de Estoques" description="" />
+					<siteMapNode url="~/UnidadesDeMedida.aspx" title="Unidades de Medidas" description="" />
+					<siteMapNode url="~/UnidadeConversao.aspx" title="Conversão de Unidades" description="Conversão de Unidades de Medida" />
+					<siteMapNode url="~/Embalagens.aspx" title="Embalagens" description="" />
+					<siteMapNode url="~/EspecificacaoDoProduto.aspx" title="Especificações do Produto" description="Especificações do Produto" />
+				</siteMapNode>
+			</siteMapNode>
+			<siteMapNode url="" title="Faturamento" description="">
+				<siteMapNode url="~/Finalidades.aspx" title="Finalidades" description="" />
+				<siteMapNode url="~/Safras.aspx" title="Safras" description="" />
+				<siteMapNode url="~/ClassesDeOperacoes.aspx" title="Classes de Operações" description="" />
+				<siteMapNode url="~/Encargos.aspx" title="Encargos" description="" />
+				<siteMapNode url="~/EncargosXTaxas.aspx" title="Encargos X Taxas" description="" />
+				<siteMapNode url="~/Operacoes.aspx" title="Operações" description="" />
+				<siteMapNode url="~/OperacoesXEncargos.aspx" title="Operações X Encargos" description="" />
+				<siteMapNode url="~/TabelaDeClassificacoes.aspx" title="Tabela de Classificações" description="" />
+				<siteMapNode url="~/ClassificacaoDeProdutos.aspx" title="Classificação de Produtos" description="" />
+				<siteMapNode url="~/Marcas.aspx" title="Marcas de Produto" description="" />
+        <siteMapNode url="~/Seguimentos.aspx" title="Seguimentos de Produto" description="" />
+				<siteMapNode url="~/PrecoDePauta.aspx" title="Preço de Pauta" description="" />
+			</siteMapNode>
+			<siteMapNode url="" title="Financeiro" description="">
+				<siteMapNode url="~/Bancos.aspx" title="Bancos" description="" />
+				<siteMapNode url="~/Pagamentos.aspx" title="Condições de Pagamento" description="" />
+				<siteMapNode url="~/CarteiraDoTitulo.aspx" title="Carteira do Título" description="" />
+				<siteMapNode url="~/CarteiraDeCompras.aspx" title="Finalidade Financeira" description="" />
+				<siteMapNode url="~/CarteirasXTributos.aspx" title="Finalidade Financeira X Encargos" description="" />
+				<siteMapNode url="~/Moedas.aspx" title="Moedas" description="" />
+				<siteMapNode url="~/Indexadores.aspx" title="Indexadores" description="" />
+				<siteMapNode url="~/CotacoesDeMoedas.aspx" title="Cotação de Moedas" description="" />
+				<siteMapNode url="~/TiposDePagamentos.aspx" title="Tipos de Pagamentos" description="" />
+				<siteMapNode url="~/TransferenciasFinanceiras.aspx" title="Transferências Financeiras" description="" />
+				<siteMapNode url="~/TiposDeAplicacoes.aspx" title="Tipos de Aplicações" description="" />
+				<siteMapNode url="~/Provisoes.aspx" title="Provisões" description="" />
+				<siteMapNode url="~/DatasNaoProgramaveis.aspx" title="Datas Não Programáveis" description="" />
+				<siteMapNode url="~/BancosXContas.aspx" title="Bancos X Contas" description="" />
+				<siteMapNode url="~/ContasSaldosDisponiveis.aspx" title="Contas Saldos Disponíveis" description="" />
+			</siteMapNode>
+			<siteMapNode url="" title="Fiscal" description="">
+				<siteMapNode url="~/CodigoBeneficioFiscal.aspx" title="Código de Benefício Fiscal" description="" />
+				<siteMapNode url="~/Cfop.aspx" title="CFOP" description="" />
+				<siteMapNode url="~/SituacaoTributaria.aspx" title="Situações Tributárias" description="" />
+				<siteMapNode url="~/SituacaoTributariaIPI.aspx" title="Situação Trib. IPI" description="Situação Trib. do IPI" />
+				<siteMapNode url="~/SituacaoTributariaPISCOFINS.aspx" title="Situação Trib. PIS COFINS" description="Situação Trib. do PIS e COFINS" />
+				<siteMapNode url="~/ObservacoesFiscais.aspx" title="Observações Fiscais" description="" />
+				<siteMapNode url="~/ObservacoesTributarias.aspx" title="Observações Tributárias" description="" />
+				<siteMapNode url="~/SeriesFiscais.aspx" title="Séries Fiscais" description="" />
+				<siteMapNode url="~/NaturezaDeRendimentos.aspx" title="Natureza de Rendimentos" description="" />
+			</siteMapNode>
+			<siteMapNode url="" title="Padrões" description="">
+				<siteMapNode url="~/Estados.aspx" title="Estados" description="" />
+				<siteMapNode url="~/Pais.aspx" title="País" description="" />
+				<siteMapNode url="~/Numerador.aspx" title="Numeradores" description="" />
+				<siteMapNode url="~/Situacoes.aspx" title="Situações" description="" />
+				<siteMapNode url="~/UnidadeDeNegocioXEmpresas.aspx" title="Un. de Negócios X Empresas" description="" />
+			</siteMapNode>
+			<siteMapNode url="" title="Transportes" description="">
+				<siteMapNode url="~/ViaDeTransporte.aspx" title="Via de Transporte" description="" />
+				<siteMapNode url="~/TiposDeVeiculos.aspx" title="Tipos de Veículos" description="" />
+				<siteMapNode url="~/Placas.aspx" title="Placas de Veículos" description="" />
+				<siteMapNode url="~/Navios.aspx" title="Navios" description="" />
+        <siteMapNode url="~/NaviosXInvoice.aspx"  title="Invoice" description="" />
+			</siteMapNode>
+		</siteMapNode>
+		<siteMapNode url="" title="Cadastros"  description="">
+			<siteMapNode url="~/Clientes.aspx" title="Clientes" description="" />
+			<siteMapNode url="~/Empresas.aspx" title="Empresas" description="" />
+			<siteMapNode url="~/Mercadorias.aspx" title="Produtos" description="" />
+			<siteMapNode url="~/Usuarios.aspx" title="Usuários" description="" />
+			<siteMapNode url="~/Configuracoes.aspx" title="Configurações" description="" />
+			<siteMapNode url="~/MetasVendas.aspx" title="Metas" description="" />
+		</siteMapNode>
+		<siteMapNode url="" title="Módulos"  description="">
+			<siteMapNode url="~/Comercial.aspx" title="Comercial" description="" />
+			<siteMapNode url="~/Contabil.aspx" title="Contábil" description="" />
+			<siteMapNode url="~/ApuracaoDeCustos.aspx" title="Custos" description="" />
+			<siteMapNode url="~/Expedicao.aspx" title="Expedição" description="" />
+			<siteMapNode url="~/Financeiro.aspx" title="Financeiro" description="" />
+			<siteMapNode url="~/Gerencial.aspx" title="Gerencial"  description="" />
+			<siteMapNode url="~/Patrimonio.aspx" title="Patrimônio" description="" />
+			<siteMapNode url="~/Producao.aspx" title="Produção e Estoques" description="" />
+			<siteMapNode url="~/Fiscal.aspx" title="Registros Fiscais" description="" />
+			<siteMapNode url="~/Revenda.aspx" title="Revenda" description="" />
+		</siteMapNode>
+		<siteMapNode url="" title="Links"  description="" />
+	</siteMapNode>
+</siteMap>

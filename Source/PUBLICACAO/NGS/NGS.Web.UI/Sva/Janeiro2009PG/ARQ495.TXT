@@ -1,0 +1,8 @@
+01012005001001              SOJA EM GRAOS                                
+01012005002001              OLEO DE SOJA B. DEG.                         
+01012005002003              LECITINA                                     
+01012005003001              FARELO DE SOJA PELLE                         
+01012005013001              HEXANO                                       
+01012005014001              LENHA                                        
+01012005014021              BRIQUETE DE LENHA                            
+01012005500001              PRODUTOS DIVERSOS                            

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="" title="Menu" description="">
+    <siteMapNode url ="" title="Livros" description="Livros">
+      <siteMapNode url="~/RegistrosDeICMS.aspx" title="Icms"  description="Icms" />
+      <siteMapNode url="~/RegistrosDeIPI.aspx" title="Ipi"  description="Ipi" />
+      <siteMapNode url="~/RegistrosDeISS.aspx" title="Iss"  description="Iss" />
+    </siteMapNode>
+    <siteMapNode url="~/RegistrosFiscaisSintegra.aspx" title="Sintegra"  description="Sintegra" />
+    <siteMapNode url="" title="Sped"  description="Sped" >
+      <siteMapNode url="" title="EFD Fiscal"  description="EFD Fiscal" >
+        <siteMapNode url="~/SpedFiscal.aspx" title="Sped Fiscal"  description="Sped Fiscal" />
+      </siteMapNode>
+      <siteMapNode url="" title="EFD Contribuições"  description="Contribuições" >
+        <siteMapNode url="~/SpedPisCofins.aspx" title="Geração do arquivo"  description="Geração do arquivo" />
+        <siteMapNode url="~/RelacaoDeNotasPisCofins.aspx" title="Relação de Notas"  description="Relação de Notas" />
+        <!--<siteMapNode url="~/AnalisadorPisCofins.aspx" title="Analisador"  description="Analisador" />-->
+      </siteMapNode>
+      <siteMapNode url="" title="EFD Reinf"  description="Reinf" >
+        <siteMapNode url="~/SpedReinf.aspx" title="Geração do arquivo"  description="Geração do arquivo" />
+      </siteMapNode>
+    </siteMapNode>
+    <siteMapNode url="" title="Outros"  description="Outros" >
+      <siteMapNode url="~/RelacaoDeIcmsPorCliente.aspx" title="Relação de Icms por Cliente"  description="Relação de Icms por Cliente" />
+      <siteMapNode url="" title="Gerador de Garfs"  description="Gerador de Darfs" />
+      <siteMapNode url="~/RegistrosFiscaisIN86.aspx" title="SVA IN 86"  description="SVA IN 86" />
+      <siteMapNode url="http://www1.receita.fazenda.gov.br/sped-fiscal/download/guia_pratico_da_efd_versao_2_0_2.pdf" title="Links Sped Fiscal"  description="Links Sped Fiscal" />
+    </siteMapNode>
+    <siteMapNode url="" title="Módulos"  description="">
+      <siteMapNode url="~/Comercial.aspx" title="Comercial"  description="" />
+      <siteMapNode url="~/Contabil.aspx" title="Contábil"  description="" />
+      <siteMapNode url="~/ApuracaoDeCustos.aspx" title="Custos"  description="" />
+      <siteMapNode url="~/Expedicao.aspx" title="Expedição"  description="" />
+      <siteMapNode url="~/Financeiro.aspx" title="Financeiro"  description="" />
+      <siteMapNode url="~/Index.aspx" title="Gestão"  description="Início" />
+      <siteMapNode url="~/Gerencial.aspx" title="Gerencial"  description="" />
+      <siteMapNode url="~/Patrimonio.aspx" title="Patrimônio"  description="" />
+      <siteMapNode url="~/Producao.aspx" title="Produção e Estoques"  description="" />
+      <siteMapNode url="~/Revenda.aspx" title="Revenda"  description="" />
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>

@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+	<siteMapNode url="" title="Menu" description="">
+		<siteMapNode url="" title="Tabelas"  description="Tabelas">
+			<siteMapNode url="~/AvaliarProdutoPedido.aspx" title="Avaliar Produtos dos Pedidos"  description="Avaliar Produtos dos Pedidos" />
+			<siteMapNode url="~/TabelasDePrecos.aspx" title="Tabela de Preços"  description="Tabela de Preços" />
+			<siteMapNode url="~/ProdutosXPrecos.aspx" title="Produtos X Preços"  description="Produtos X Preços" />
+			<siteMapNode url="~/TabelaDeComissao.aspx" title="Tabela de Comissão"  description="Tabela de Comissão" />
+			<siteMapNode url="~/Fito.aspx" title="Fitossanitário"  description="Fitossanitário" />
+			<siteMapNode url="~/ProdutoXFito.aspx" title="Produto X Fito"  description="Produto X Fito" />
+			<siteMapNode url="~/CulturaPragaFito.aspx" title="Cultura X Praga X Fito"  description="Cultura X Praga X Fito" />
+			<siteMapNode url="~/ClasseAmbiental.aspx" title="Classe Ambiental"  description="Classe Ambiental" />
+			<siteMapNode url="~/ClasseDeRisco.aspx" title="Classe de Risco"  description="Classe de Risco" />
+			<siteMapNode url="~/CategoriaDaPraga.aspx" title="Categoria da Praga"  description="Categoria da Praga" />
+			<siteMapNode url="~/ClasseToxicologica.aspx" title="Classe Toxicolôgica"  description="Classe Toxicolôgica" />
+			<siteMapNode url="~/epi.aspx" title="Equip. de Proteção Individual"  description="Equip. de Proteção Individual" />
+			<siteMapNode url="~/EstadoFisicoIA.aspx" title="Estado Físico Ingrediente Ativo"  description="Estado Físico Ingrediente Ativo" />
+			<siteMapNode url="~/GrupoQuimico.aspx" title="Grupo Químico"  description="Grupo Químico" />
+			<siteMapNode url="~/Solo.aspx" title="Solo"  description="Solo" />
+			<siteMapNode url="~/FormulacaoDoFito.aspx" title="Formulação do Fito"  description="Formulação do Fito" />
+			<siteMapNode url="~/IngredienteAtivo.aspx" title="Ingrediente Ativo"  description="Ingrediente Ativo" />
+			<siteMapNode url="~/AnotacaoRTecnica.aspx" title="Anotação de Resp. Técnica"  description="Anotação de Resp. Técnica" />
+		</siteMapNode>
+		<siteMapNode url="" title="Pedido / Nota Fiscal"  description="Pedido / Nota Fiscal">
+			<siteMapNode url="~/PedidosXItens.aspx" title="Pedidos"  description="Pedidos" />
+			<siteMapNode url="~/NotaFiscalXItens.aspx" title="Nota Fiscal"  description="Nota Fiscal" />
+			<siteMapNode url="~/NotasFiscaisGerais.aspx" title="Notas Gerais"  description="Notas Gerais" />
+		</siteMapNode>
+		<siteMapNode url="" title="Análise de Crédito"  description="Análise de Crédito">
+			<siteMapNode url="~/AnaliseDeCreditoParametros.aspx" title="Parâmetros"  description="Parâmetros" />
+			<siteMapNode url="~/AnaliseDeCreditoProdutorRural.aspx" title="Produtor Rural"  description="Produtor Rural" />
+		</siteMapNode>
+		<siteMapNode url="" title="Relatórios"  description="Relatórios">
+			<siteMapNode url="~/ExtratoDePedido.aspx" title="Extrato de Pedido"  description="Extrato de Pedido" />
+			<siteMapNode url="~/RelacaoDePedidos.aspx" title="Relação de Pedidos"  description="Relação de Pedidos" />
+			<siteMapNode url="~/RelatorioEntradaSaidaNotas.aspx" title="Movimentações Fiscais"  description="Movimentações Fiscais" />
+			<siteMapNode url="~/RelatorioCargasLaudo.aspx" title="Totalizador de Movimentos"  description="Totalizador de Movimentos" />
+			<siteMapNode url="~/RelatorioEstoqueRevenda.aspx" title="Estoque"  description="Estoque" />
+			<siteMapNode url="~/RelatorioDeComissoes.aspx" title="Comissões"  description="Comissões" />
+			<siteMapNode url="~/RelatorioDeComissoesPedido.aspx" title="Comissões por pedido"  description="Comissões por pedido" />
+			<siteMapNode url="~/RelatorioMargemDeLucro.aspx" title="Margem de Lucro"  description="Margem de Lucro" />
+			<siteMapNode url="~/RelatorioParticipacaoNaVendaLucroBruto.aspx" title="Particip. nas Vendas/Lucro"  description="Particip. nas Vendas/Lucro" />
+			<siteMapNode url="~/RelatorioVendaPorTroca.aspx" title="Venda por Troca Analítico"  description="Venda por Troca Analítico" />
+			<siteMapNode url="~/RelatorioVendaPorTrocaSintetico.aspx" title="Venda por Troca Sintético"  description="Venda por Troca Sintético" />
+			<siteMapNode url="~/RelatorioTraitMixProdutos.aspx" title="Trait Mix de Produtos"  description="" />
+			<siteMapNode url="~/RelatorioDeRetencaoDeClientes.aspx" title="Customer Share / Retencao de Cliente"  description="" />
+		</siteMapNode>
+		<siteMapNode url="" title="Outros" description="Outros">
+			<siteMapNode url="~/CPR.aspx" title="CPR"  description="Cédula de Produto Rural" />
+			<siteMapNode url="~/CRM.aspx" title="CRM"  description="CRM" />
+			<siteMapNode url="~/frmCRMxVisita.aspx" title="Visitas"  description="Visitas a Clientes" />
+			<siteMapNode url="~/ControleDeLote.aspx" title="Controle de Lote"  description="Controle de Lote" />
+			<siteMapNode url="~/Receituario.aspx" title="Receituário"  description="Receituário" />
+			<siteMapNode url="~/EmissaoDeDuplicatas.aspx" title="Emissão de Duplicatas"  description="Emissão de Duplicatas" />
+			<siteMapNode url="" title="Previsao Mensal Vendas Safra"  description="Previsao Mensal Vendas Safra" />
+			<siteMapNode url="" title="Previsao Mensal Compras Safra"  description="Previsao Mensal Compras Safra" />
+			<siteMapNode url="" title="Metas Vendas Safra"  description="Metas Vendas Safra" />
+		</siteMapNode>
+		<siteMapNode url="" title="Módulos"  description="Módulos">
+			<siteMapNode url="~/Comercial.aspx" title="Comercial"  description="Comercial" />
+			<siteMapNode url="~/Contabil.aspx" title="Contábil"  description="Contábil" />
+			<siteMapNode url="~/ApuracaoDeCustos.aspx" title="Custos"  description="Custos" />
+			<siteMapNode url="~/Expedicao.aspx" title="Expedição"  description="Expedição" />
+			<siteMapNode url="~/Financeiro.aspx" title="Financeiro"  description="Financeiro" />
+			<siteMapNode url="~/Index.aspx" title="Gestão"  description="Gestão" />
+			<siteMapNode url="~/Gerencial.aspx" title="Gerencial"  description="" />
+			<siteMapNode url="~/Patrimonio.aspx" title="Patrimônio"  description="Patrimônio" />
+			<siteMapNode url="~/Producao.aspx" title="Produção e Estoques"  description="Produção e Estoques" />
+			<siteMapNode url="~/Fiscal.aspx" title="Registros Fiscais"  description="Registros Fiscais" />
+		</siteMapNode>
+	</siteMapNode>
+</siteMap>
