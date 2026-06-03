@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<rotas>
+  <rota id="lnkInicio" amigavel="Inicio" url="~/Index.aspx" />
+  <rota id="lnkLogin" amigavel="Login" url="~/Login.aspx" />
+  <rota id="lnkAdiantamento" amigavel="Adiantamento" url="~/Adiantamento.aspx" />
+</rotas>

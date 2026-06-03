@@ -1,0 +1,602 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Principal.master.vb"
+    Inherits="NGS.Web.UI.Principal" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <title>NGS Soluções Ltda</title>
+
+    <script src="https://unpkg.com/i18next@23.15.1/dist/umd/i18next.min.js"></script>
+
+    <link href="<%# ResolveUrl("~/Images/favicon.png") %>" rel="shortcut icon" type="image/x-icon" />
+    <link href="<%# ResolveUrl("~/Styles/redmond/jquery-ui.custom.min.css") %>" rel="stylesheet" type="text/css" />
+    <link href="<%# ResolveUrl("~/Styles/jquery.loadmask.css") %>" rel="stylesheet" type="text/css" />
+    <link href="<%# ResolveUrl("~/Styles/jquery.multiselect.css") %>" rel="stylesheet" type="text/css" />
+    <link href="<%# ResolveUrl("~/Styles/jquery.multiselect.filter.css") %>" rel="stylesheet" type="text/css" />
+    <link href="<%# ResolveUrl("~/Styles/jquery.bonsai.css") %>" rel="stylesheet" type="text/css" />
+    <link href="<%# ResolveUrl("~/Data-Info/css/tooltipster.css") %>" rel="stylesheet" type="text/css" />
+    <link href="<%# ResolveUrl("~/Data-Info/css/themes/tooltipster-noir.css") %>" rel="stylesheet" type="text/css" />
+    <script src="<%# ResolveUrl("~/Scripts/jquery.min.js") %>" type="text/javascript"></script>
+    <script src="<%# ResolveUrl("~/Scripts/jquery-ui.custom.min.js") %>" type="text/javascript"></script>
+    <script src="<%# ResolveUrl("~/Scripts/jquery.meio.mask.js")%>" type="text/javascript"></script>
+    <script src="<%# ResolveUrl("~/Scripts/jquery.loadmask.min.js") %>" type="text/javascript"></script>
+    <script src="<%# ResolveUrl("~/Scripts/jquerymaskMoney.js") %>" type="text/javascript"></script>
+    <script src="<%# ResolveUrl("~/Scripts/jquery.multiselect.filter.js") %>" type="text/javascript"></script>
+    <script src="<%# ResolveUrl("~/Scripts/jquery.multiselect.js") %>" type="text/javascript"></script>
+    <script src="<%# ResolveUrl("~/Scripts/master.js") %>" type="text/javascript"></script>
+    <script src="<%# ResolveUrl("~/Scripts/common.js") %>" type="text/javascript"></script>
+    <script src="<%# ResolveUrl("~/Scripts/calendario.js") %>" type="text/javascript"></script>
+    <script src="<%# ResolveUrl("~/Scripts/jquery.bonsai.js") %>" type="text/javascript"></script>
+    <script src="<%# ResolveUrl("~/Scripts/jquery.qubit.js") %>" type="text/javascript"></script>
+    <script src="<%# ResolveUrl("~/Scripts/tinymce/tinymce.min.js") %>" type="text/javascript"></script>
+    <script src="<%# ResolveUrl("Scripts/common.js")%>" type="text/javascript"></script>
+    <script src="<%# ResolveUrl("~/Data-Info/js/jquery.tooltipster.min.js") %>" type="text/javascript"></script>
+    <script src="https://use.fontawesome.com/bfeec9c4a8.js" type="text/javascript"></script>
+    <link href="<%# ResolveUrl("~/Scripts/tinymce/skins/lightgray/skin.min.css") %>"
+        rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+        function iniciar() {
+            window.history.forward(1);
+        }
+
+        var rootPath = '<%# Request.ApplicationPath %>';
+        if (rootPath == "/")
+            rootPath = "";
+
+        function pageLoadMaster() {
+            EndRequestHandler();
+            montarCalendario();
+
+            $("#dialog-duplicate-tab").hide();
+
+            $('table tr td .tooltip input[type=button]').attr("title", "Selecionar Registro.").attr("data-tooltip", "default");
+            $('[data-tooltip=default]').not('.aspNetDisabled').tooltipster({
+                theme: 'tooltipster-noir',
+                multiple: true,
+                contentAsHTML: true,
+                animation: 'fade'
+            });
+
+            function mostrarCalendario(clientID, enabled) {
+                $(clientID).datepicker(enabled ? "enable" : "disable");
+            }
+
+            $('#mceu_44').draggable({ cancel: "#mceu_44-body" });
+
+            $(".txtUpper").keyup(function () {
+                $(this).val($(this).val().replace(/([^A-Z])+/g, function (s) { return s.toUpperCase() }));
+            });
+
+            $(".txtNumber").keyup(function () {
+                $(this).val($(this).val().replace(/[^0-9]+/g, '', $(this).val()));
+            });
+
+            $("#c_search_psb_box").focus(function () {
+                getAutocomplete();
+            });
+
+            $(".txtCartao").setMask('cc');
+
+            $(".txtFone").focus(function () {
+                $(this).setMask('phone11');
+            });
+
+            $(".txtFone").change(function () {
+                if ($(this).val().length != 15) {
+                    $(this).setMask('phone');
+                }
+            });
+
+            $(".txtRg").focus(function () {
+                $(this).setMask('rg');
+            });
+
+            $(".txtCpf").focus(function () {
+                $(this).setMask('cpf');
+            });
+
+            $(".txtCnpj").focus(function () {
+                $(this).setMask('cnpj');
+            });
+
+            $(".txtCep").setMask('cep');
+
+            $(".txtDecimal").focus(function () {
+                $(this).setMask('decimal');
+            });
+
+            $(".txtDecimal2").focus(function () {
+                $(this).setMask('decimal2');
+            });
+
+            $(".txtDecimal3").focus(function () {
+                $(this).setMask('decimal3');
+            });
+
+            $(".txtDecimal4").focus(function () {
+                $(this).setMask('decimal4');
+            });
+
+            $(".txtDecimal6").focus(function () {
+                $(this).setMask('decimal6');
+            });
+
+            $(".txtDecimal8").focus(function () {
+                $(this).setMask('decimal8');
+            });
+
+            $(".txtDecimal9").focus(function () {
+                $(this).setMask('decimal9');
+            });
+
+            $(".txtDecimal10").focus(function () {
+                $(this).setMask('decimal10');
+            });
+
+            $(".txtNumerico").focus(function () {
+                $(this).setMask('numerico');
+            });
+
+            $(".txtNumerico2").focus(function () {
+                $(this).setMask('numerico2');
+            });
+
+            $(".txtNumerico3").focus(function () {
+                $(this).setMask('numerico3');
+            });
+
+            $(".txtNumerico4").focus(function () {
+                $(this).setMask('numerico4');
+            });
+
+            $(".txtNumerico7").focus(function () {
+                $(this).setMask('numerico7');
+            });
+
+            $(".txtNumerico8").focus(function () {
+                $(this).setMask('numerico8');
+            });
+
+            $(".txtNumerico9").focus(function () {
+                $(this).setMask('numerico9');
+            });
+
+            $(".txtNumerico10").focus(function () {
+                $(this).setMask('numerico10');
+            });
+
+            $(".txtNumerico11").focus(function () {
+                $(this).setMask('numerico11');
+            });
+
+            $(".txtInteiro").focus(function () {
+                if ($(this).val() == 0) {
+                    $(this).val("");
+                }
+                $(this).setMask('integer');
+            });
+
+            $(".txtDecimalComNegativo").focus(function () {
+                $(this).setMask('signed-decimal');
+            });
+
+            $(".calendario").focus(function () {
+                $(this).setMask("date");
+            });
+
+            //dateMesAno
+            $(".txtmesano").one({
+                focus: function () {
+                    $(this).setMask("mesano");
+                },
+                change: function (event) {
+                    msgbox($(this).val().split('/')[0], "ATENÇÃO!", "Info");
+                    return false;
+                }
+            });
+
+            $(".chaveNFe").focus(function () {
+                $(this).setMask('9999.9999.9999.9999.9999.9999.9999.9999.9999.9999.9999');
+            });
+
+            $("#c_search_psb_go").click(function () {
+                $("#c_search_psb_box").select().focus();
+                return false;
+            });
+
+            $("input[type='button'].botao").button();
+            $("input[type='submit'].botao").button();
+
+            $('.ui-datepicker-current').live('click', function () {
+                $.datepicker._curInst.input.datepicker('setDate', new Date()).datepicker('hide').blur();
+            });
+
+
+            $("textarea").keydown(function (e) {
+                if (e.keyCode == 13) {
+                    e.preventDefault();
+                    return false;
+                }
+            });
+        }
+
+        function tabId() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const param = urlParams.get('param');
+            console.log(param);
+            const idFromStorage = param == null ? sessionStorage.getItem("Tab_Id") : param;
+            if (idFromStorage != null) {
+                return idFromStorage;
+            } else {
+                const id = uuid();
+                sessionStorage.setItem("Tab_Id", id);
+                return id;
+            }
+        }
+        function liberaEmpresa() {
+            return document.getElementById("HIDLiberaJanela").value == "True" ? true : false;
+        }
+
+        function uuid() { // Public Domain/MIT
+            var d = new Date().getTime();//Timestamp
+            var d2 = ((typeof performance !== 'undefined') && performance.now && (performance.now() * 1000)) || 0;//Time in microseconds since page-load or 0 if unsupported
+            return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
+                var r = Math.random() * 16;//random number between 0 and 16
+                if (d > 0) {//Use timestamp until depleted
+                    r = (d + r) % 16 | 0;
+                    d = Math.floor(d / 16);
+                } else {//Use microseconds since page-load if supported
+                    r = (d2 + r) % 16 | 0;
+                    d2 = Math.floor(d2 / 16);
+                }
+                return (c === 'x' ? r : (r & 0x3 | 0x8)).toString(16);
+            });
+        }
+
+        function checkTabOpened() {
+            let object = { page: window.location.pathname, id: tabId() };
+
+            if (!liberaEmpresa()) {
+                pages = localStorage.getItem("ngs-pages") != null ? JSON.parse(localStorage.getItem("ngs-pages")) : new Array();
+
+                if (pages.filter(item => item.page == window.location.pathname && item.id != tabId()).length >= 1) {
+                    $("#dialog-duplicate-tab").dialog({
+                        autoOpen: true,
+                        close: function (event, ui) {
+                            window.close();
+                        },
+                    });
+
+                    $("#wrapper").hide();
+                }
+
+                pages.push(object)
+                localStorage.setItem("ngs-pages", JSON.stringify(pages));
+            }
+
+        }
+
+        function getIcon(tipo) {
+            if (tipo == 'Info') {
+                return "ui-icon-info";
+            }
+            else if (tipo == 'Sucess') {
+                return "ui-icon-circle-check";
+            }
+            else {
+                return "ui-icon-circle-close";
+            }
+        };
+
+        function msgbox(msg, title, tipo) {
+            $("#dialog-message").html('<p><span class="ui-icon ' + getIcon(tipo) + ' " style="float:left; margin:0 7px 50px 0;"></span>' + msg + '</p>');
+            $("#dialog-message").dialog({
+                show: {
+                    duration: 200
+                },
+                hide: { effect: "explode", duration: 300 },
+                modal: true,
+                resizable: false,
+                buttons: {
+                    Ok: function () {
+                        $(this).dialog("close");
+                    }
+                }
+            });
+
+            $("#dialog-message").prev().find("span").text(title);
+            if (tipo == 'Erro') {
+                $("#dialog-message").prev().addClass("dialog-message-prev");
+                $("#dialog-message").parent().addClass("dialog-message-parent");
+                $("#dialog-message").next().addClass("dialog-message-parent");
+            }
+            else {
+                $("#dialog-message").prev().removeClass("dialog-message-prev");
+                $("#dialog-message").parent().removeClass("dialog-message-parent");
+                $("#dialog-message").next().removeClass("dialog-message-parent");
+            }
+            $('#dialog-message').dialog('widget').position({ my: "center top+55", at: "center-160", of: ".titulodiv" });
+        };
+
+        function mostrarCalendario(clientID, enabled) {
+            $(clientID).datepicker(enabled ? "enable" : "disable");
+        }
+
+        function getAutocomplete() {
+            $.ajax({
+                type: "POST",
+                async: true,
+                url: rootPath + "/WebMethods.asmx/getAutocomplete",
+                data: {},
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (msg) {
+                    var obj = eval('(' + msg.d + ')');
+                    if (obj != null) {
+                        var availableTags = obj;
+                        $("#c_search_psb_box").autocomplete({
+                            source: availableTags,
+                            select: function (event, ui) {
+                                if (ui != null) {
+                                    var obj = ui.item;
+                                    if (obj != null) {
+                                        document.location.href = obj.url + ".aspx";
+                                    }
+                                }
+                            }
+                        });
+                    }
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                    alert("'(textStatus: '" + textStatus + "', errorThrown: '" + errorThrown + "')");
+                    //msgbox("'(textStatus: '" + textStatus + "', errorThrown: '" + errorThrown + "')", "POSSÍVEL ERRO OCORRIDO!", "Erro");
+                }
+            });
+        }
+
+        $(document).ready(function () {
+            pageLoadMaster();
+            $("body").prepend('<div id="dialog-message" title="" style="display: none;"></div>');
+            var prmMaster = Sys.WebForms.PageRequestManager.getInstance();
+            prmMaster.add_beginRequest(BeginRequestHandler);
+            prmMaster.add_endRequest(pageLoadMaster);
+            $('.mce-close').click(function () { $('#mceu_44').css('visibility', 'hidden'); });
+            trocarEmpresa();
+        });
+
+        window.addEventListener("DOMContentLoaded", function () {
+            checkTabOpened();
+        });
+
+        function trocarEmpresa() {
+            window.onfocus = function () {
+                var empresaAtual = $("#lblEmpresa").find("b").text().split("(")[1].replace(/\D/g, "");
+                $.ajax({
+                    type: "GET",
+                    url: "Gestao.aspx/GetEmpresa",
+                    contentType: "application/json; charset=utf-8",
+                    data: {},
+                    dataType: "json",
+                    success: function (response) {
+                        if (empresaAtual != response.d)
+                            location.reload()
+
+                    }
+                });
+            };
+        }
+
+        function TrocaBloqueada() {
+            alert("Usuário sem permissão para trocar de Empresa.");
+        }
+
+        $(document).keydown(function (e) {
+            if (e.keyCode == 27) {
+                $('.ui-dialog-content').dialog('destroy')
+            }
+        });
+
+        function MenuDeAcesso(NomeMenu) {
+            parent.location.href = NomeMenu + ".aspx";
+        }
+
+        window.onbeforeunload = function (event) {
+            alert("Fechou");
+            pages = JSON.parse(localStorage.getItem("ngs-pages"))
+            pages = pages.filter(x => x.id != tabId());
+            localStorage.setItem("ngs-pages", JSON.stringify(pages));
+        };
+
+        $(window).unload(function () { closeTab(); })
+
+        //window.addEventListener('beforeunload', function (e) {
+        //    e.preventDefault();
+        //    closeTab();
+        //});
+
+        function newTab(url) {
+            window.open(url, '_blank').focus();
+        }
+
+        function closeTab() {
+            alert("Fechou");
+            pages = JSON.parse(localStorage.getItem("ngs-pages"))
+            pages = pages.filter(x => x.id != tabId());
+            localStorage.setItem("ngs-pages", JSON.stringify(pages));
+        }
+    </script>
+    <style type="text/css">
+        /*.ajax-modalbackground {
+            background-color: white !important;
+            filter: alpha(opacity=0) !important;
+            opacity: 0.0 !important;
+        }*/
+        
+        .lang-bar {
+            display: flex; gap: .5rem; align-items: center; padding: .5rem .75rem;
+            justify-content: flex-end; position: sticky; top: 0; z-index: 999;
+        }
+        .lang-btn {
+            display: flex; align-items: center; gap: .4rem; padding: .35rem .6rem;
+            background: #fff; border: 1px solid #ddd; border-radius: 999px; cursor: pointer;
+            font: 500 12px/1.2 system-ui, Segoe UI, Roboto, Arial; transition: .15s ease;
+        }
+        .lang-btn:hover { box-shadow: 0 1px 4px rgba(0,0,0,.06); }
+        .lang-btn.active { border-color: #0ea5e9; box-shadow: 0 0 0 2px rgba(14,165,233,.15); }
+        .lang-btn svg { width: 18px; height: 12px; border-radius: 2px; display: block; }
+    </style>
+    <link id="cssTheme" rel="stylesheet" type="text/css" runat="server" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server" />
+</head>
+<body onload="iniciar();">
+    <form id="form" runat="server" autocomplete="off" enctype="multipart/form-data">
+        <table id="wrapper" cellpadding="0" cellspacing="0">
+            <tr>
+                <td align="center" class="headcontent">
+                    <table width="960px" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td style="width: 235px; padding-right: 8px">
+                                <div class="logo">
+                                    <asp:HyperLink ID="lnkInicio" runat="server" NavigateUrl="~/Index.aspx">
+                                        <asp:Image ID="imgLogo" Style="height: 100%; width: 100%; object-fit: contain" runat="server" AlternateText="Logo" />
+                                    </asp:HyperLink>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="empresaform" runat="server">
+                                    <asp:LinkButton ID="lnkTrocaEmpresa" CssClass="lnkTrocaEmpresa" runat="server" Text=""
+                                        Style="text-decoration: none">
+                                    <img alt="troca" src="App_Themes/ngssolucoes/imagens/icon_computer_settings.png" data-ToolTip="default" data-ToolTip="default" title="Trocar Empresa"/>
+                                    </asp:LinkButton>
+                                    &nbsp;<asp:Label ID="lblEmpresa" runat="server" />&nbsp;                                  
+                                </div>
+                            </td>
+                            <td align="right">
+                                <div id="loginform" runat="server">
+                                    <asp:Label ID="lblMensagem" runat="server" />
+                                    [
+                                <asp:LinkButton ID="lbtSair" runat="server" Text="Sair" OnClick="lbtSair_Click" />
+                                    ]
+                                <br />
+                                    <asp:Label ID="lblHost" runat="server" />
+                                    <label>
+                                        |
+                                    </label>
+                                    <asp:Label ID="lblBanco" runat="server" />
+                                    <br />
+                                    <asp:Label ID="lblVersao" runat="server" />
+                                    <asp:LinkButton ID="lnkAlert" Visible="false" runat="server" Text="teste"
+                                        Style="text-decoration: none">
+                                    <img alt="Licença" src="App_Themes/ngssolucoes/imagens/alert.png" data-ToolTip="default" title="Chave De Licença Expirou."/>
+                                    </asp:LinkButton>
+                                </div>
+                                <div class="lang-bar">
+                                    <button class="lang-btn active" data-lang="pt" title="Português" onclick="changeLanguage('pt')">
+                                        <svg viewBox="0 0 24 16"><rect width="24" height="16" fill="#009b3a"/><polygon points="12,2 22,8 12,14 2,8" fill="#ffdf00"/><circle cx="12" cy="8" r="4" fill="#002776"/></svg>
+                                        <span>PT</span>
+                                    </button>
+                                    <button class="lang-btn" data-lang="en" title="English" onclick="changeLanguage('en')" disabled="disabled">
+                                        <svg viewBox="0 0 24 16"><rect width="24" height="16" fill="#b22234"/><g fill="#fff"><rect y="2" width="24" height="2"/><rect y="6" width="24" height="2"/><rect y="10" width="24" height="2"/><rect y="14" width="24" height="2"/></g><rect width="10" height="8" fill="#3c3b6e"/></svg>
+                                        <span>EN</span>
+                                    </button>
+                                    <button class="lang-btn" data-lang="es" title="Español" onclick="changeLanguage('es')" disabled="disabled">
+                                        <svg viewBox="0 0 24 16"><rect width="24" height="16" fill="#c60b1e"/><rect y="4" width="24" height="8" fill="#ffc400"/></svg>
+                                        <span>ES</span>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" valign="bottom">
+                                <div class="breadcrumbs">
+                                    <asp:Repeater ID="rpt" runat="server">
+                                        <HeaderTemplate>
+                                            <ul>
+                                        </HeaderTemplate>
+                                        <ItemTemplate>
+                                            <li><a class='<%# Eval("CssClass") %>' href='<%# ResolveUrl(Eval("Url")) %>' title='<%# Eval("Description") %>'>
+                                                <%# Eval("Title")%></a> <span>>></span> </li>
+                                        </ItemTemplate>
+                                        <FooterTemplate>
+                                            </ul>
+                                        </FooterTemplate>
+                                    </asp:Repeater>
+                                </div>
+                            </td>
+                            <td align="right" style="padding-bottom: 5px">
+                                <div id="c_search_psb_f" class="c_search_mc c_mf" style="width: 175px; border: 1px solid black;">
+                                    <input type="text" maxlength="100" value="" name="query" class="c_search_box c_ml"
+                                        id="c_search_psb_box" />
+                                    <input type="button" value="" style="background-image: url(Images/search.png); border: 0 none; width: 15px; height: 15px; margin-top: 2px;"
+                                        id="c_search_psb_go" class="c_search_go"
+                                        data-tooltip="default" data-tooltip="default" title="Pesquisar" />
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="height: 30px; vertical-align: middle;">
+                    <div id="ControlMenu">
+                        <div id="MeioMenu">
+                            <asp:Panel ID="pnlMenu" runat="server" />
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr id="main" style="height: 100%;">
+                <td align="center" style="vertical-align: top; background: none repeat scroll 0 0 #F0F0F0; padding-bottom: 10px; padding-top: 10px;">
+                    <table id="meioconteudo" width="960px" style="height: 100%;" cellpadding="0" cellspacing="0">
+                        <tr align="left">
+                            <td class="maincontent">
+                                <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="tabs" style="text-align: center; height: 40px; vertical-align: middle; background-color: #666666; color: #FFFFFF; background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,.3));">
+                    <span class="copyright">&copy;
+                    <%= DateTime.Now.Year.ToString() %>
+                    NGS Sistemas Ltda.</span>
+                </td>
+            </tr>
+        </table>
+        <div id="mceu_44" class="mce-popup mce-in" style="">
+            <div class="mce-popup-body">
+                <div id="mceu_44-head" class="mce-window-head">
+                    <div id="mceu_44-title" class="mce-title">
+                        Ajuda
+                    </div>
+                    <div class="mce-container">
+                        <button id="btnclose" style="position: absolute; right: 15px; top: 9px; font-size: 20px; font-weight: 700; line-height: 20px; color: #FFF; cursor: pointer; height: 20px; overflow: hidden;">
+                            ×
+                        </button>
+                    </div>
+                    <div id="mceu_44-dragh" class="mce-dragh">
+                    </div>
+                </div>
+                <div id="mceu_44-body">
+                </div>
+                <div id="mceu_45" class="mce-container mce-panel mce-foot" style="border-width: 1px 0px 0px; left: 0px; top: 0px; height: 20px;">
+                    <div id="mceu_45-body" class="mce-container-body mce-abs-layout" style="width: 648px; height: 20px;">
+                        <div id="mceu_45-absend" class="mce-abs-end">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <asp:HiddenField ID="HIDmaster" runat="server" />
+        <asp:HiddenField ID="HIDLiberaJanela" runat="server" />
+        <uc:TrocaEmpresa ID="ucTrocaEmpresa" runat="server" />
+    </form>
+    <div id="dialog-duplicate-tab" title="Atenção!">
+        <p>Programa já está aberto em outra aba do navegador.</p>
+    </div>
+</body>
+</html>

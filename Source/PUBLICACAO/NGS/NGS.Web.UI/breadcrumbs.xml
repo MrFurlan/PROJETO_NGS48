@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Breadcrumbs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<BreadcrumbsNode  title="Início" description="Início" url="~/Index.aspx" class="linkHome">
+		<BreadcrumbsNode  title="Comercial" description="Comercial" url="~/Comercial.aspx" class="link">
+			<BreadcrumbsNode url=""  title="Pedidos" description="Pedidos" class="link">
+				<BreadcrumbsNode url="~/PedidosXItens.aspx"  title="Pedidos X Itens" description="Pedidos X Itens" class="link" />
+				<BreadcrumbsNode url="~/AjustarPedido.aspx"  title="Ajustar Pedido" description="Ajustar itens do Pedido" class="link" />
+				<BreadcrumbsNode url="~/PosicaoDePedido.aspx"  title="Posição de Pedido - Financeiro" description="Posição de Pedido - Financeiro" class="link" />
+				<BreadcrumbsNode url="~/ConferenciaFiscalFinanceiroPedido.aspx"  title="Conferência F.F. Pedido" description="Conferência F.F. Pedido" class="link" />
+				<BreadcrumbsNode url="~/PosicaoDePedidos.aspx"  title="Posição de Pedidos" description="Posição de Pedidos" class="link" />
+				<BreadcrumbsNode url="~/ExtratoDePedido.aspx"  title="Extrato de Pedidos" description="Extrato de Pedidos" class="link" />
+				<BreadcrumbsNode url="~/RelacaoDePedidos.aspx"  title="Relação de Pedidos" description="Relação de Pedidos" class="link" />
+				<BreadcrumbsNode url="~/RelatorioDeFixacoesPendentes.aspx"  title="Relatorio de Fixações Pendentes" description="Relatorio de Fixações Pendentes" class="link" />
+				<BreadcrumbsNode url="~/LiberacaoDePedido.aspx"  title="Liberação de Pedidos" description="Liberação de Pedidos" class="link" />
+        <BreadcrumbsNode url="~/LiberacaoDeCarregamento.aspx"  title="Liberação de Carregamento" description="Liberação de Carregamento" class="link" />
+        <BreadcrumbsNode url="~/AlteraEmpresaPedido.aspx"  title="Alterar Empresa Pedido" description="Alterar Empresa Pedido" class="link" />
+				<BreadcrumbsNode url="~/Contratos.aspx"  title="Arquivo de Contratos" description="Arquivo de Contratos" class="link" />
+        <BreadcrumbsNode url="~/PedidoOnsoft.aspx"  title="Pedidos ON Mobile" description="Pedidos ON Mobile" class="link" />
+        <BreadcrumbsNode url="~/OrdemDeCarregamento.aspx"  title="Ordem de carregamento" description="Ordem de carregamento" class="link" />
+      </BreadcrumbsNode>
+			<BreadcrumbsNode url=""  title="Expedição" description="Expedição" class="link">
+				<BreadcrumbsNode url="~/RelatorioEntradaSaidaLaudo.aspx"  title="Cargas e Descargas" description="Cargas e Descargas" class="link" />
+				<BreadcrumbsNode url="~/RelatorioEntradaSaidaNotas.aspx"  title="Movimentações Fiscais" description="Movimentações Fiscais" class="link" />
+				<BreadcrumbsNode url="~/RelatorioCargasLaudo.aspx"  title="Totalizador de Movimento" description="Totalizador de Movimento" class="link" />
+				<BreadcrumbsNode url="~/ComprasVendasAFixar.aspx"  title="Compras e Vendas a Fixar" description="Compras e Vendas a Fixar" class="link" />
+				<BreadcrumbsNode url="~/PosicaoDeTransferencias.aspx"  title="Posição de Transferência" description="Posição de Transferência" class="link" />
+			</BreadcrumbsNode>
+			<BreadcrumbsNode url=""  title="Estoques" description="Estoques" class="link">
+				<BreadcrumbsNode url="~/Disponibilidade.aspx"  title="Disponibilidades" description="Disponibilidades" class="link" />
+				<BreadcrumbsNode url="~/RelatorioDeAnaliseDeProducao.aspx"  title="Análises de Produção" description="Análises de Produção" class="link" />
+				<BreadcrumbsNode url="~/RelatoriodeEstoqueFiscalPorCFOP.aspx"  title="Estoque por CFOP" description="Estoque por CFOP" class="link" />
+			</BreadcrumbsNode>
+			<BreadcrumbsNode url=""  title="Preço Médio" description="Preço Médio" class="link">
+				<BreadcrumbsNode url="~/RelPrecoMedio.aspx"  title="Versão 1.0 Sistema Atual" description="Versão 1.0 Sistema Atual" class="link" />
+				<BreadcrumbsNode url="~/PrecoMedioV20.aspx"  title="Versão 2.0 Sistema Novo" description="Versão 2.0 Sistema Novo" class="link" />
+				<BreadcrumbsNode url="~/PrecoMedio.aspx"  title="Preço Médio de Produtos à Granel" description="Preço Médio de Produtos à Granel" class="link" />
+			</BreadcrumbsNode>
+			<BreadcrumbsNode url=""  title="Compras e Vendas" description="Compras e Vendas" class="link">
+				<BreadcrumbsNode url=""  title="Compras" description="Compras" class="link">
+					<BreadcrumbsNode url="~/PedidosPendentesDeCompras.aspx"  title="Pedidos Pendentes" description="Pedidos Pendentes" class="link" />
+					<BreadcrumbsNode url="~/PedidosEntreguesDeCompras.aspx"  title="Pedidos Faturados" description="Pedidos Faturados" class="link" />
+				</BreadcrumbsNode>
+				<BreadcrumbsNode url=""  title="Vendas" description="Vendas" class="link">
+					<BreadcrumbsNode url="~/CurvaAbcDeVendas.aspx"  title="Curva ABC" description="Curva ABC" class="link" />
+					<BreadcrumbsNode url="~/PedidosPendentesDeVendas.aspx"  title="Pedidos Pendentes" description="Pedidos Pendentes" class="link" />
+					<BreadcrumbsNode url="~/PedidosEntreguesDeVendas.aspx"  title="Pedidos Faturados" description="Pedidos Faturados" class="link" />
+				</BreadcrumbsNode>
+				<BreadcrumbsNode url="~/CurvaAbc.aspx"  title="Curva ABC" description="Curva ABC" class="link" />
+				<BreadcrumbsNode url="~/RelacaoCompraVenda.aspx"  title="Relação de Compra e Venda" description="Relação de Compra e Venda" class="link" />
+				<BreadcrumbsNode url="~/RelatorioDeVendasPorRepresentante.aspx"  title="Relatório de Vendas" description="Relatório de Vendas" class="link" />
+				<BreadcrumbsNode url="~/AcompanhamentoDeEntregaDeProduto.aspx"  title="Acompnto Entrega." description="Acompnto Entrega." class="link" />
+				<BreadcrumbsNode url="~/PedidosPendentes.aspx"  title="Pedidos Pendentes(Em Teste)." description="Pedidos Pendentes(Em Teste)" class="link" />
+        <BreadcrumbsNode url="~/RelatorioDeComissoesPedido.aspx"  title="Comissões por pedido" description="Comissões por pedido" class="link" />
+      </BreadcrumbsNode>
+		</BreadcrumbsNode>
+		<BreadcrumbsNode  title="Contábil" description="Contábil" url="~/Contabil.aspx" class="link">
+			<BreadcrumbsNode url=""  title="Cadastros" description="Cadastros" class="link">
+				<BreadcrumbsNode url="~/PlanoDeContas.aspx"  title="Plano de Contas" description="Plano de Contas" class="link" />
+			</BreadcrumbsNode>
+			<BreadcrumbsNode url=""  title="Lançamentos" description="Lançamentos" class="link">
+				<BreadcrumbsNode url="~/Lancamentos.aspx"  title="Lançamentos" description="Lançamentos" class="link" />
+			</BreadcrumbsNode>
+			<BreadcrumbsNode url=""  title="Processos" description="Processos" class="link">
+				<BreadcrumbsNode url="~/CorrecaoMonetaria.aspx"  title="Correção Monetária" description="Correção Monetária" class="link" />
+				<BreadcrumbsNode url="~/ContabilizacaoDeNotas.aspx"  title="Contabilização de Notas" description="Contabilização de Notas" class="link" />
+				<BreadcrumbsNode url="~/GerenciadorSaldos.aspx"  title="Gerenciador de Saldos" description="Gerenciador de Saldos" class="link" />
+				<BreadcrumbsNode url="~/ZeraContasdeResultado.aspx"  title="Zera Contas de Resultados" description="Zera Contas de Resultados" class="link" />
+				<BreadcrumbsNode url=""  title="Sped" description="Sped" class="link">
+					<BreadcrumbsNode url="~/SpedContabil.aspx"  title="Contábil" description="Contábil" class="link" />
+					<BreadcrumbsNode url="~/FCont.aspx"  title="FCont - Plano Novo" description="FCont - Plano Novo" class="link" />
+					<BreadcrumbsNode url="~/ECF.aspx"  title="ECF - Escrituração Contábil Fiscal" description="ECF - Escrituração Contábil Fiscal" class="link" />
+				</BreadcrumbsNode>
+			</BreadcrumbsNode>
+			<BreadcrumbsNode url=""  title="Relatórios" description="Relatórios" class="link">
+				<BreadcrumbsNode url="~/ConsistenciaDeLotes.aspx"  title="Consistência de Lotes" description="Consistência de Lotes" class="link" />
+				<BreadcrumbsNode url="~/TotalizaLotes.aspx"  title="Totalizador de Lotes" description="Totalizador de Lotes" class="link" />
+				<BreadcrumbsNode url="~/ExtratoDeConta.aspx"  title="Extrato de Contas" description="Extrato de Contas" class="link" />
+				<BreadcrumbsNode url="~/RazaoAuxiliar.aspx"  title="Razão Auxiliar" description="Razão Auxiliar" class="link" />
+				<BreadcrumbsNode url="~/Balancetes.aspx"  title="Balancete" description="Balancete" class="link" />
+				<BreadcrumbsNode url="~/LivroDiario.aspx"  title="Livro Diário" description="Livro Diário" class="link" />
+				<BreadcrumbsNode url="~/RelatorioBasePisCofinsTransportadoras.aspx"  title="Base Pis Cofins Transporte" description="Base Pis Cofins Transporte" class="link" />
+			</BreadcrumbsNode>
+			<BreadcrumbsNode url=""  title="Demostrativos" description="Demostrativos" class="link">
+				<BreadcrumbsNode url=""  title="Balanço Patrimonial (BP)" description="Balanço Patrimonial (BP)" class="link" />
+				<BreadcrumbsNode url=""  title="Demonstrativo de Resultado (DRE)" description="Demonstrativo de Resultado (DRE)" class="link" />
+				<BreadcrumbsNode url=""  title="Demonstração do Valor Agregado (DVA)" description="Demonstração do Valor Agregado (DVA)" class="link" />
+				<BreadcrumbsNode url=""  title="Fluxo de Caixa Método Indireto (FCMI)" description="Fluxo de Caixa Método Indireto (FCMI)" class="link" />
+				<BreadcrumbsNode url=""  title="Demonstração de Lucros e Prejuízos Acumulados (DLPA)" description="Demonstração de Lucros e Prejuízos Acumulados (DLPA)" class="link" />
+				<BreadcrumbsNode url=""  title="Demons. Déb/Cré Trib. Federrais (DCTF)" description="Demons. Déb/Cré Trib. Federrais (DCTF)" class="link" />
+				<BreadcrumbsNode url=""  title="Demons. de Apur. de Contrib. Social Mensal (DACOM)" description="Demons. de Apur. de Contrib. Social Mensal (DACOM)" class="link" />
+				<BreadcrumbsNode url=""  title="Demons. de Vendas por Produto" description="Demons. de Vendas por Produto" class="link" />
+			</BreadcrumbsNode>
+		</BreadcrumbsNode>
+		<BreadcrumbsNode  title="Custos" description="Custos" url="~/ApuracaoDeCustos.aspx" class="link">
+			<BreadcrumbsNode url=""  title="Cadastros" description="Cadastros" class="link">
+				<BreadcrumbsNode url="~/PlanoDeCustos.aspx"  title="Plano de Custos" description="Plano de Custos" class="link" />
+				<BreadcrumbsNode url="~/PlanoDeRateio.aspx"  title="Plano de Rateio" description="Plano de Rateio" class="link" />
+			</BreadcrumbsNode>
+			<BreadcrumbsNode url=""  title="Lançamentos" description="Lançamentos" class="link">
+				<BreadcrumbsNode url="~/SaldosIniciaisDeCustos.aspx"  title="Saldos Iniciais" description="Saldos Iniciais" class="link" />
+				<BreadcrumbsNode url="~/PrecoDeMercado.aspx"  title="Preço de Mercado" description="Preço de Mercado"  class="link" />
+				<BreadcrumbsNode url="~/LancamentosContabeisXCustos.aspx"  title="Lançamentos Contábeis Custos" description="Lançamentos Contábeis Custos" class="link" />
+			</BreadcrumbsNode>
+			<BreadcrumbsNode url=""  title="Processos" description="Processos" class="link">
+				<BreadcrumbsNode url="~/CapturaDeDados.aspx"  title="Agronegócio" description="" class="link" />
+				<!--<BreadcrumbsNode url="~/CapturaDeDadosInsol.aspx"  title="Fábrica de Óleo de Sója" description="" class="link" />-->
+				<BreadcrumbsNode url="~/CapturaDeDadosCurtume.aspx"  title="Indústria" description="" class="link" />
+        <BreadcrumbsNode url="~/CapturaDeDadosIndustriasdeRacaoAnimal.aspx"  title="Industrias de Ração Animal" description="" class="link" />
+      </BreadcrumbsNode>
+			<BreadcrumbsNode url=""  title="Relatórios" description="Relatórios" class="link">
+				<BreadcrumbsNode url="~/CustoMedio.aspx"  title="Custo Médio" description="Custo Médio" class="link" />
+				<BreadcrumbsNode url="~/InventarioDeEstoques.aspx"  title="Inventário de Estoque" description="Inventário de Estoque" class="link" />
+				<!--<BreadcrumbsNode url="~/ProdutosDeTerceiros.aspx"  title="Produtos de Terceiros" description="Produtos de Terceiros" class="link" />-->
+				<BreadcrumbsNode url="~/RelatorioDeEstoqueDeTerceiros.aspx"  title="Estoque de Terceiros" description="Estoque de Terceiros" class="link" />
+			</BreadcrumbsNode>
+			<BreadcrumbsNode url=""  title="Outros" description="Outros" class="link">
+				<BreadcrumbsNode url=""  title="Filtro Razão" description="Filtro Razão" class="link" />
+				<BreadcrumbsNode url=""  title="Filtro Notas" description="Filtro Notas" class="link" />
+				<BreadcrumbsNode url=""  title="Filtro Fretes" description="Filtro Fretes" class="link" />
+				<BreadcrumbsNode url=""  title="Filtro Produção" description="Filtro Produção" class="link" />
+			</BreadcrumbsNode>
+		</BreadcrumbsNode>
+		<BreadcrumbsNode  title="Expedição" description="Expedição" url="~/Expedicao.aspx" class="link">
+			<BreadcrumbsNode url=""  title="Pesagem" description="" class="link">
+				<BreadcrumbsNode url="~/Laudo.aspx"  title="Pesagem" description="" class="link" />
+				<BreadcrumbsNode url="~/AgrupamentodePesagem.aspx"  title="Agrupamento de Pesagem" description="" class="link" />
+				<BreadcrumbsNode url="~/AlterarLaudo.aspx"  title="Alterar Pesagem" description="" class="link" />
+				<BreadcrumbsNode url="~/AlterarObservacaoLaudo.aspx"  title="Alterar Observação Pesagem" description="" class="link" />
+				<BreadcrumbsNode url="~/RateioDePesagem.aspx"  title="Rateio de Pesagem" description="" class="link" />
+				<BreadcrumbsNode url="~/Reclassificacao.aspx"  title="Reclassificação" description="" class="link" />
+			</BreadcrumbsNode>
+			<BreadcrumbsNode url=""  title="Nota Fiscal" description="" class="link">
+				<BreadcrumbsNode url="~/NotaFiscalXItens.aspx"  title="Nota Fiscal" description="" class="link" />
+				<BreadcrumbsNode url="~/MonitorDeXML.aspx"  title="Monitor de XML" description="" class="link" /> 
+				<BreadcrumbsNode url="~/NotasFiscaisGerais.aspx"  title="Notas Fiscais Gerais" description="" class="link" />
+				<BreadcrumbsNode url="~/CupomFiscal.aspx"  title="Cupom Fiscal" description="" class="link" />
+        <BreadcrumbsNode url="~/EnvioDeXML.aspx"  title="Envio de XML" description="" class="link" />
+        <BreadcrumbsNode url="~/AlterarMovimentoNotaFiscal.aspx"  title="Alterar Movimento Nota Fiscal" description="" class="link" />
+				<BreadcrumbsNode url="~/AlterarFinalidadeNotaFiscal.aspx"  title="Alterar Finalidade Nota Fiscal" description="" class="link" />
+				<BreadcrumbsNode url="~/AlterarNotaFiscal.aspx"  title="Alterar Nota Fiscal" description="" class="link" />
+        <BreadcrumbsNode url="~/AlterarProdutoNotaGerais.aspx" title="Alterar Produto Nota Gerais"  description="" class="link" />
+				<BreadcrumbsNode url="~/AlterarEncargo.aspx"  title="Alterar Encargos" description="" class="link" />
+				<BreadcrumbsNode url="~/AlterarDepositoNotaFiscal.aspx"  title="Alterar Depósito" description="" class="link" />
+				<BreadcrumbsNode url="~/AlterarChaveNFE.aspx"  title="Alterar Chave NFE" description="" class="link" />
+				<BreadcrumbsNode url="~/AjustarNumeroDoLote.aspx"  title="Ajustar Número do Lote" description="" class="link" />
+				<BreadcrumbsNode url="~/AlterarNumeroPecas.aspx"  title="Alterar Número de Peças" description="" class="link" />
+				<BreadcrumbsNode url="~/AlterarVencimentosNF.aspx"  title="Alterar Vencimento" description="" class="link" />
+				<BreadcrumbsNode url="~/DesvincularRomaneioNotaFiscal.aspx"  title="Desvincular Romaneio" description="" class="link" />
+				<BreadcrumbsNode url="~/TrocaDeNota.aspx"  title="Troca de Nota" description="" class="link" />
+				<!--<BreadcrumbsNode url="~/NotaFiscalXPesagem.aspx"  title="Nota Fiscal X Pesagem" description="" class="link" />-->
+				<BreadcrumbsNode url="~/ConsultaNotaXNota.aspx"  title="Consulta Nota X Nota" description="" class="link" />
+				<BreadcrumbsNode url="~/VinculoDeNotaFiscal.aspx"  title="Vínculo de Nota Fiscal" description="" class="link" />
+				<BreadcrumbsNode url="~/RecusaNotaFiscal.aspx"  title="Recusa de NFe/CTe" description="" class="link" />
+				<BreadcrumbsNode url=""  title="Carta de Correção" description="" class="link">
+					<BreadcrumbsNode url="~/CCeObservacao.aspx"  title="Observações" description="" class="link" />
+					<BreadcrumbsNode url="~/CCeVolumes.aspx"  title="Volumes Transportados" description="" class="link" />
+					<BreadcrumbsNode url="~/CCeProduto.aspx"  title="Produtos" description="" class="link" />
+					<BreadcrumbsNode url="~/CCeTransporte.aspx"  title="Transportador e Placas" description="" class="link" />
+					<BreadcrumbsNode url="~/CCeModalidadeDeFrete.aspx"  title="Modalidade de Frete" description="" class="link" />
+					<BreadcrumbsNode url="~/CCeLocalEmbarque.aspx"  title="Local de Embarque" description="" class="link" />
+				</BreadcrumbsNode>
+			</BreadcrumbsNode>
+			<BreadcrumbsNode url=""  title="Fretes" description="" class="link">
+				<BreadcrumbsNode url="~/MDFe.aspx"  title="Manifesto Eletrônico de Documentos Fiscais (MDF-e)" description="" class="link" />
+        <BreadcrumbsNode url="~/NotasDeTerceiro.aspx"  title="Notas Fiscais de Terceiros"  description="" class="link"/>
+				<BreadcrumbsNode url="~/OperacoesDeFretes.aspx"  title="Operações de Fretes" description="" class="link" />
+				<BreadcrumbsNode url="~/ConhecimentoDeTransporte.aspx"  title="Conhecimento de Transporte (CT-e)" description="" class="link" />
+        <BreadcrumbsNode url="~/AlterarEncargoCTE.aspx"  title="Alterar Encargos CTE" description="" class="link" />
+				<BreadcrumbsNode url="~/ControleDeFretes.aspx"  title="Controle de Fretes" description="" class="link" />
+				<BreadcrumbsNode url="~/RelatorioAnaliticoDeFretes.aspx"  title="Relatório Analítico de Fretes"  description="" class="link" />
+				<BreadcrumbsNode url="~/RelatorioSinteticoDeFretes.aspx"  title="Relatório Sintético de Fretes"  description="" class="link" />
+				<BreadcrumbsNode url="~/RelatorioCtrcDasNotas.aspx"  title="Relatório de CTRC das Notas"  description="" class="link" />
+				<BreadcrumbsNode url="~/RelatorioDeNotasSemCte.aspx"  title="Relatório de Notas Sem Cte"  description="" class="link"/>
+			</BreadcrumbsNode>
+			<BreadcrumbsNode url=""  title="Relatórios" description="" class="link">
+				<BreadcrumbsNode url="~/ConsistenciaDeNotas.aspx"  title="Consistência de Notas" description="" class="link" />
+				<BreadcrumbsNode url="~/RelatorioDeLaudosPorPlacas.aspx"  title="Laudos por Placas" description="" class="link" />
+				<BreadcrumbsNode url="~/RelatorioEntradaSaidaLaudo.aspx"  title="Cargas e Descargas" description="" class="link" />
+				<BreadcrumbsNode url="~/RelatorioDeLaudosSemNotaFiscal.aspx"  title="Laudos sem Nota Fiscal" description="" class="link" />
+				<BreadcrumbsNode url="~/RelatorioEntradaSaidaNotas.aspx"  title="Movimentações Fiscais" description="" class="link" />
+				<BreadcrumbsNode url="~/RelatorioMovimentoFiscalPorOperacao.aspx"  title="Rel Mov. Fiscais/Operação" description="" class="link" />
+				<BreadcrumbsNode url="~/RelatorioCargasLaudo.aspx"  title="Totalizador de Movimentos" description="" class="link" />
+				<BreadcrumbsNode url="~/ComprasVendasAFixar.aspx"  title="Compras e Vendas a Fixar" description="" class="link" />
+				<BreadcrumbsNode url="~/PosicaoDeTransferencias.aspx"  title="Posição de Transferências" description="" class="link" />
+				<BreadcrumbsNode url="~/PosicaoDeEncargos.aspx"  title="Posição de Encargos" description="" class="link" />
+				<BreadcrumbsNode url="~/RelatorioDeFretes.aspx"  title="Relatório de Fretes" description="" class="link" />
+				<BreadcrumbsNode url="~/RelatorioControleDeCarregamento.aspx"  title="Controle de Carregamento" description="" class="link" />
+				<BreadcrumbsNode url="~/RelatorioOrigemDaNotaFiscal.aspx"  title="Relatório Origem da Nota Fiscal" description="Relatório Origem da Nota Fiscal" class="link" />
+				<BreadcrumbsNode url="~/RelatorioNotasNaoContabilizadas.aspx"  title="Relatorio Notas Nao Contabilizadas" description="" class="link" />
+				<BreadcrumbsNode url="~/InformacaoDeLote.aspx"  title="Informações de Lote" description="" class="link" />
+        <BreadcrumbsNode url="~/RelatorioNotasXNotas.aspx"  title="Relatório de NotasXNotas" description="" class="link" />
+      </BreadcrumbsNode>
+			<BreadcrumbsNode url=""  title="Outros" description="" class="link">
+				<BreadcrumbsNode url="~/BaseNova.aspx"  title="Ajustar Base Nota Fiscal" description="" class="link" />
+				<BreadcrumbsNode url="~/CessaoDeCredito.aspx"  title="Cessão de Crédito" description="" class="link" />
+				<BreadcrumbsNode url="~/PesosDeChegada.aspx"  title="Pesos de Chegada" description="" class="link" />
+				<BreadcrumbsNode url="~/AutorizacaoDeRetirada.aspx"  title="Autorização de Retirada" description="" class="link" />
+				<BreadcrumbsNode url="~/CertidaoNegativa.aspx"  title="Certidão Negativa" description="" class="link" />
+				<BreadcrumbsNode url="~/CadastroCertidoesELicencas.aspx"  title="Certidão e Licença" description="" class="link" />
+				<BreadcrumbsNode url="~/MemorandoDeExportacao.aspx"  title="Memorando de Exportação" description="" class="link" />
+				<BreadcrumbsNode url="~/CadastroDePlacas.aspx"  title="Cadastro de Placas" description="" class="link" />
+        <BreadcrumbsNode url="~/RelatorioRomaneiosMonsanto.aspx"  title="Romaneios Monsanto" description="" class="link" />
+        <!--<BreadcrumbsNode url="~/AutorizacaoDeEmbarque.aspx"  title="Autorização de Embarque" description="" class="link" />
+        <BreadcrumbsNode url="~/AutorizacaoDeCarregamento.aspx"  title="Autorização de Carregamento" description="" class="link" />-->
+			</BreadcrumbsNode>
+		</BreadcrumbsNode>
+		<BreadcrumbsNode  title="Financeiro" description="Financeiro" url="~/Financeiro.aspx" class="link">
+			<BreadcrumbsNode url=""  title="Lançamentos" description="Lançamentos" class="link">
+				<BreadcrumbsNode url="~/ContasAPagar.aspx"  title="Contas à Pagar" description="Contas à Pagar" class="link" />
+				<BreadcrumbsNode url="~/ContasAReceber.aspx"  title="Contas à Receber" description="Contas à Receber" class="link" />
+        <BreadcrumbsNode url="~/MovimentacoesFinanceiras.aspx"  title="Mov. Financeiras" description="Movimentações Financeiras" class="link" />
+        <BreadcrumbsNode url="~/CompensacaoDeAdiantamentos.aspx"  title="Compensação de diantamentos" description="Compensação de diantamentos" class="link" />
+				<BreadcrumbsNode url="~/AutorizacoesDePagamentos.aspx"  title="Autorização de Pgtos" description="Autorização de Pagamentos" class="link" />
+				<BreadcrumbsNode url="~/VincularNotaxTitulo.aspx"  title="Título X Nota Fiscal" description="Título X Nota Fiscal" class="link" />
+				<BreadcrumbsNode url="~/RecompraDeTitulos.aspx"  title="Recompra de Títulos" description="Recompra de Títulos" class="link" />
+				<BreadcrumbsNode url="~/ContratoBancario.aspx"  title="Contrato Bancário" description="" class="link" />
+			</BreadcrumbsNode>
+			<BreadcrumbsNode url=""  title="Processos" description="" class="link">
+				<BreadcrumbsNode url="~/EmissaoDeCheques.aspx"  title="Emissão de Cheques" description="Emissão de Cheques" class="link" />
+				<BreadcrumbsNode url="~/GeracaoBradesco.aspx"  title="Gera Arquivo Bradesco" description="Gera Arquivo Bradesco" class="link" />
+				<BreadcrumbsNode url="~/BaixasFinanceirasIndividuais.aspx"  title="Baixa Financeira Individual" description="Baixa Financeira Individual" class="link" />
+				<BreadcrumbsNode url="~/ConciliacaoDeContas.aspx"  title="Conciliação de Contas" description="" class="link" />
+				<BreadcrumbsNode url="~/ComparativoFinanceiroXContabil.aspx"  title="Comp. Financeiro X Contábil" description="" class="link" />
+				<BreadcrumbsNode url="~/DuplicataNotaFiscal.aspx"  title="Duplicata Nota Fiscal" description="Duplicata Nota Fiscal" class="link" />
+				<BreadcrumbsNode url="~/DuplicataAvulsa.aspx"  title="Duplicata Avulsa" description="Duplicata Avulsa" class="link" />
+				<BreadcrumbsNode url="~/ReciboAvulso.aspx"  title="Recibo Avulso" description="Recibo Avulso" class="link" />
+				<BreadcrumbsNode url="~/CarteiraDeCobranca.aspx"  title="Carteira de Cobrança" description="Carteira de Cobrança" class="link" />
+				<BreadcrumbsNode url="~/PagamentoDeTitulos.aspx"  title="Pagamento de Títulos" description="Pagamento de Títulos" class="link" />
+				<BreadcrumbsNode url="~/BoletoBancario.aspx"  title="Boleto Bancário" description="Boleto Bancário" class="link" />
+				<BreadcrumbsNode url="~/ReemissaoBoletoBancario.aspx"  title="Reemissão Boleto Bancário" description="Reemissão Boleto Bancário" class="link" />
+				<BreadcrumbsNode url="~/Endossos.aspx"  title="Endosso do Título" description="Endosso do Título" class="link" />
+        <BreadcrumbsNode url="~/FolhaPagamento.aspx"  title="Folha de Pagamento" description="Folha de Pagamento" class="link" />
+      </BreadcrumbsNode>
+			<BreadcrumbsNode url=""  title="Consultas" description="" class="link">
+				<BreadcrumbsNode url="~/ConsistenciaDeLotes.aspx"  title="Consistência de Lotes" description="Consistência de Lotes" class="link" />
+				<BreadcrumbsNode url="~/TotalizadorDeLotes.aspx"  title="Totalizador de Lotes" description="" class="link" />
+				<BreadcrumbsNode url="~/ExtratoDeConta.aspx"  title="Extrato de Contas" description="" class="link" />
+			</BreadcrumbsNode>
+			<BreadcrumbsNode url=""  title="Relatórios" description="Relatórios" class="link">
+				<BreadcrumbsNode url="~/RelatorioDeTitulos.aspx"  title="Títulos" description="Títulos" class="link" />
+				<BreadcrumbsNode url="~/RelatorioDePagamentos.aspx"  title="Pagamentos" description="Pagamentos" class="link" />
+				<BreadcrumbsNode url="~/RelatorioDeAdiantamentos.aspx"  title="Adiantamentos" description="Adiantamentos" class="link" />
+				<BreadcrumbsNode url="~/RelatorioMovimentacoesFinanceiras.aspx"  title="Movimentações Financeiras" description="" class="link" />
+				<BreadcrumbsNode url="~/RealizadoContasApagar.aspx"  title="Realizado Contas a Pagar" description="" class="link" />
+				<BreadcrumbsNode url="~/RealizadoContasAReceber.aspx"  title="Realizado Contas a Receber" description="" class="link" />
+				<BreadcrumbsNode url="~/RealizadoMovimentacoesFinanceiras.aspx"  title="Realizado Mov. Financeiras" description="" class="link" />
+				<BreadcrumbsNode url="~/LivroCaixa.aspx"  title="Livro Caixa" description="" class="link" />
+				<BreadcrumbsNode url="~/FluxoDeCaixa.aspx"  title="Fluxo de Caixa" description="" class="link" />
+				<BreadcrumbsNode url="~/PerformanceDeRecebimentoDeClientes.aspx"  title="Performance de Recebimento" description="" class="link" />
+				<BreadcrumbsNode url="~/RelatorioNotasNaoContabilizadas.aspx"  title="Relatorio Notas Nao Contabilizadas" description="" class="link" />
+			</BreadcrumbsNode>
+		</BreadcrumbsNode>
+		<BreadcrumbsNode  title="Fiscal" description="Fiscal" url="~/Fiscal.aspx" class="link">
+			<BreadcrumbsNode url =""  title="Livros" description="Livros" class="link">
+				<BreadcrumbsNode url="~/RegistrosDeICMS.aspx"  title="Icms" description="Icms" class="link" />
+				<BreadcrumbsNode url="~/RegistrosDeIPI.aspx"  title="Ipi" description="Ipi" class="link" />
+				<BreadcrumbsNode url="~/RegistrosDeISS.aspx"  title="Iss" description="Iss" class="link" />
+			</BreadcrumbsNode>
+			<BreadcrumbsNode url="~/RegistrosFiscaisSintegra.aspx"  title="Sintegra" description="Sintegra" class="link" />
+			<BreadcrumbsNode url=""  title="Sped" description="Sped" class="link">
+				<BreadcrumbsNode url=""  title="EFD Fiscal" description="EFD Fiscal" class="link">
+					<BreadcrumbsNode url="~/SpedFiscal.aspx"  title="Sped Fiscal" description="Sped Fiscal" class="link" />
+				</BreadcrumbsNode>
+				<BreadcrumbsNode url=""  title="EFD Contribuições" description="Contribuições" class="link">
+					<BreadcrumbsNode url="~/SpedPisCofins.aspx"  title="Geração do arquivo" description="Geração do arquivo" class="link" />
+					<BreadcrumbsNode url="~/RelacaoDeNotasPisCofins.aspx"  title="Relação de Notas" description="Relação de Notas" class="link" />
+					<!--<BreadcrumbsNode url="~/AnalisadorPisCofins.aspx"  title="Analisador" description="Analisador" class="link" />-->
+				</BreadcrumbsNode>
+				<BreadcrumbsNode url=""  title="EFD Reinf" description="EFD Reinf" class="link">
+					<BreadcrumbsNode url="~/SpedReinf.aspx"  title="Sped Reinf" description="Sped Reinf" class="link" />
+				</BreadcrumbsNode>
+			</BreadcrumbsNode>
+			<BreadcrumbsNode url=""  title="Outros" description="Outros" class="link">
+				<BreadcrumbsNode url="~/RelacaoDeIcmsPorCliente.aspx"  title="Relação de Icms por Cliente" description="Relação de Icms por Cliente" class="link" />
+				<BreadcrumbsNode url=""  title="Gerador de Garfs" description="Gerador de Darfs" class="link" />
+				<BreadcrumbsNode url="~/RegistrosFiscaisIN86.aspx"  title="SVA IN 86" description="SVA IN 86" class="link" />
+			</BreadcrumbsNode>
+		</BreadcrumbsNode>
+		<BreadcrumbsNode  title="Gestão" description="Gestão" url="~/Gestao.aspx" class="link">
+			<BreadcrumbsNode url="#"  title="Arquivos" description="Arquivos" class="link">
+				<BreadcrumbsNode url="~/SenhaNova.aspx"  title="Mudança de Senha" description="Mudança de Senha" class="link" />
+				<BreadcrumbsNode url="~/BDUsuarios.aspx"  title="Banco de Dados" description="Banco de Dados" class="link" />
+				<BreadcrumbsNode url=""  title="Controle de Acesso" description="" class="link">
+					<BreadcrumbsNode url="~/Grupos.aspx"  title="Grupo de Usuários" description="" class="link" />
+					<BreadcrumbsNode url="~/Processos.aspx"  title="Processos" description="" class="link" />
+					<BreadcrumbsNode url="~/Permissoes.aspx"  title="Permissões" description="" class="link" />
+					<BreadcrumbsNode url="~/GruposXUsuarios.aspx"  title="Grupos X Usuários" description="" class="link" />
+					<BreadcrumbsNode url="~/GruposXProcessos.aspx"  title="Grupos X Processos" description="" class="link" />
+					<BreadcrumbsNode url="~/UsuariosXProcessos.aspx"  title="Usuários X Processos" description="" class="link" />
+					<BreadcrumbsNode url="~/LiberarPermissoes.aspx"  title="Liberação de Permissões" description="" class="link" />
+					<BreadcrumbsNode url="~/Autorizantes.aspx"  title="Autorizantes" description="" class="link" />
+					<BreadcrumbsNode url="~/MenuDeAcesso.aspx"  title="Menu De Acesso" description="" class="link" />
+					<BreadcrumbsNode url="~/GradeSeguranca.aspx"  title="Grade de Segurança" description="" class="link" />
+					<BreadcrumbsNode url="~/BalancoAuditadoMes.aspx"  title="Balanço Auditado Mês" description="" class="link" />
+					<BreadcrumbsNode url="~/BalancasEletronicas.aspx"  title="Balanças Eletrônicas" description="" class="link" />
+				</BreadcrumbsNode>
+				<BreadcrumbsNode url=""  title="Importação de Dados" description="" class="link">
+					<BreadcrumbsNode url="~/ImportaFolha.aspx"  title="Folha de Pagamento" description="" class="link" />
+          <BreadcrumbsNode url="~/ImportaPagamentoParaFuncionarios.aspx"  title="Pagamento para Funcionários" description="" class="link" />
+          <BreadcrumbsNode url="~/ImportaSpedContabil.aspx"  title="Sped Contabil" description="" class="link" />
+          <BreadcrumbsNode url="~/ImportaListaDePrecos.aspx"  title="Lista de Preços" description="" class="link" />
+          <BreadcrumbsNode url="~/Importa.aspx"  title="Clientes" description="" class="link" />
+				</BreadcrumbsNode>
+				<BreadcrumbsNode url=""  title="Exportação de Dados" description="" class="link">
+					<BreadcrumbsNode url="~/Conecta.aspx"  title="Exporta Conecta Basf" description="" class="link" />
+					<BreadcrumbsNode url="~/ExportaIndea.aspx"  title="Exporta Indea" description="" class="link" />
+					<BreadcrumbsNode url="~/ExportaDados.aspx"  title="Exporta Dados" description="" class="link" />
+				</BreadcrumbsNode>
+				<BreadcrumbsNode url="~/Impressoras.aspx"  title="Impressoras" description="Impressoras" class="link" />
+				<BreadcrumbsNode url="~/SelecaoDeEmpresas.aspx"  title="Troca de Empresas" description="Troca de Empresas" class="link" />
+			</BreadcrumbsNode>
+			<BreadcrumbsNode url=""  title="Tabelas" description="" class="link">
+				<BreadcrumbsNode url=""  title="Clientes" description="" class="link">
+					<BreadcrumbsNode url="~/TiposDeClientes.aspx"  title="Tipos de Clientes" description="" class="link"  />
+					<BreadcrumbsNode url="~/Categorias.aspx"  title="Categorias" description="" class="link" />
+					<BreadcrumbsNode url="~/Regioes.aspx"  title="Regiões" description="" class="link"  />
+				</BreadcrumbsNode>
+				<BreadcrumbsNode url=""  title="Contábil" description="" class="link">
+					<BreadcrumbsNode url="~/CentrosDeCustos.aspx"  title="Centros de Custos" description="" class="link"  />
+					<BreadcrumbsNode url="~/Historicos.aspx"  title="Históricos Padrões" description="" class="link"  />
+					<BreadcrumbsNode url="~/Responsabilidades.aspx"  title="Responsabilidades" description="" class="link"  />
+					<BreadcrumbsNode url="~/ContasOrcamentarias.aspx"  title="Contas Orçamentárias" description="" class="link"  />
+				</BreadcrumbsNode>
+				<BreadcrumbsNode url=""  title="Estoques" description="" class="link">
+					<BreadcrumbsNode url=""  title="Produção" description="" class="link">
+						<BreadcrumbsNode url="~/Analises.aspx"  title="Análises" description="" class="link" />
+						<BreadcrumbsNode url="~/ProdutosXAnalises.aspx"  title="Produtos X Análises" description="" class="link" />
+						<BreadcrumbsNode url="~/ControleDeQualidade.aspx"  title="Controle de Qualidade" description="" class="link" />
+						<BreadcrumbsNode url="~/Etapas.aspx"  title="Etapas de Processos" description="" class="link" />
+						<BreadcrumbsNode url="~/ProcedimentoDeProducao.aspx"  title="Procedimento de Produção" description="" class="link" />
+						<BreadcrumbsNode url="~/ProdutoXConsumo.aspx"  title="Produto X Consumo" description="" class="link" />
+						<BreadcrumbsNode url="~/SequenciaDeLote.aspx"  title="Produto X Sequência de Lote" description="" class="link" />
+					</BreadcrumbsNode>
+					<BreadcrumbsNode url=""  title="Estoques" description="" class="link">
+						<BreadcrumbsNode url="~/GruposDeEstoques.aspx"  title="Grupos de Estoques" description="" class="link" />
+						<BreadcrumbsNode url="~/UnidadesDeMedida.aspx"  title="Unidades de Medidas" description="" class="link" />
+						<BreadcrumbsNode url="~/UnidadeConversao.aspx"  title="Conversão de Unidade" description="" class="link" />
+						<BreadcrumbsNode url="~/Embalagens.aspx"  title="Embalagens" description="" class="link" />
+						<BreadcrumbsNode url="~/EspecificacaoDoProduto.aspx"  title="Especificações do Produto" description="" class="link" />
+					</BreadcrumbsNode>
+				</BreadcrumbsNode>
+				<BreadcrumbsNode url=""  title="Faturamento" description="" class="link">
+					<BreadcrumbsNode url="~/Finalidades.aspx"  title="Finalidades" description="" class="link" />
+					<BreadcrumbsNode url="~/Safras.aspx"  title="Safras" description="" class="link" />
+					<BreadcrumbsNode url="~/ClassesDeOperacoes.aspx"  title="Classes de Operações" description="" class="link" />
+					<BreadcrumbsNode url="~/Encargos.aspx"  title="Encargos" description="" class="link" />
+					<BreadcrumbsNode url="~/EncargosXTaxas.aspx"  title="Encargos X Taxas" description="" class="link" />
+					<BreadcrumbsNode url="~/Operacoes.aspx"  title="Operações" description="" class="link" />
+					<BreadcrumbsNode url="~/OperacoesXEncargos.aspx"  title="Operações X Encargos" description="" class="link" />
+					<BreadcrumbsNode url="~/TabelaDeClassificacoes.aspx"  title="Tabela de Classificações" description="" class="link" />
+					<BreadcrumbsNode url="~/ClassificacaoDeProdutos.aspx"  title="Classificação de Produtos" description="" class="link" />
+					<BreadcrumbsNode url="~/Marcas.aspx"  title="Marcas de Produto" description="" class="link" />
+          <BreadcrumbsNode url="~/Seguimentos.aspx"  title="Seguimentos de Produto" description="" class="link" />
+					<BreadcrumbsNode url="~/PrecoDePauta.aspx"  title="Preço de Pauta" description="" class="link" />
+				</BreadcrumbsNode>
+				<BreadcrumbsNode url=""  title="Financeiro" description="" class="link">
+					<BreadcrumbsNode url="~/Bancos.aspx"  title="Bancos" description="" class="link" />
+					<BreadcrumbsNode url="~/Pagamentos.aspx"  title="Condições de Pagamento" description="" class="link" />
+					<BreadcrumbsNode url="~/CarteiraDoTitulo.aspx"  title="Carteira do Título" description="" class="link" />
+					<BreadcrumbsNode url="~/CarteiraDeCompras.aspx"  title="Finalidade Financeira" description="" class="link" />
+					<BreadcrumbsNode url="~/CarteirasXTributos.aspx"  title="Finalidade Financeira X Encargos" description="" class="link" />
+					<BreadcrumbsNode url="~/Moedas.aspx"  title="Moedas" description="" class="link" />
+					<BreadcrumbsNode url="~/Indexadores.aspx"  title="Indexadores" description="" class="link" />
+					<BreadcrumbsNode url="~/CotacoesDeMoedas.aspx"  title="Cotação de Moedas" description="" class="link" />
+					<BreadcrumbsNode url="~/TiposDePagamentos.aspx"  title="Tipos de Pagamentos" description="" class="link" />
+					<BreadcrumbsNode url="~/TransferenciasFinanceiras.aspx"  title="Transferências Financeiras" description="" class="link" />
+					<BreadcrumbsNode url="~/TiposDeAplicacoes.aspx"  title="Tipos de Aplicações" description="" class="link" />
+					<BreadcrumbsNode url="~/Provisoes.aspx"  title="Provisões" description="" class="link" />
+					<BreadcrumbsNode url="~/DatasNaoProgramaveis.aspx"  title="Datas Não Programáveis" description="" class="link" />
+					<BreadcrumbsNode url="~/BancosXContas.aspx"  title="Bancos X Contas" description="" class="link" />
+					<BreadcrumbsNode url="~/ContasSaldosDisponiveis.aspx"  title="Contas Saldos Disponíveis" description="" class="link" />
+				</BreadcrumbsNode>
+				<BreadcrumbsNode url=""  title="Fiscal" description="" class="link">
+					<BreadcrumbsNode url="~/CodigoBeneficioFiscal.aspx"  title="Código de Benefício Fiscal" description="" class="link" />
+					<BreadcrumbsNode url="~/Cfop.aspx"  title="CFOP" description="" class="link" />
+					<BreadcrumbsNode url="~/SituacaoTributaria.aspx"  title="Situações Tributárias" description="" class="link" />
+					<BreadcrumbsNode url="~/SituacaoTributariaIPI.aspx"  title="Situação Tributária do IPI" description="Situação Tributária do IPI" class="link" />
+					<BreadcrumbsNode url="~/SituacaoTributariaPISCOFINS.aspx"  title="Situação Tributária do PISCOFINS" description="Situação Tributária do PIS e COFINS" class="link" />
+					<BreadcrumbsNode url="~/ObservacoesFiscais.aspx"  title="Observações Fiscais" description="" class="link" />
+					<BreadcrumbsNode url="~/ObservacoesTributarias.aspx"  title="Observações Tributárias" description="" class="link" />
+					<BreadcrumbsNode url="~/SeriesFiscais.aspx"  title="Séries Fiscais" description="" class="link" />
+					<BreadcrumbsNode url="~/NaturezaDeRendimentos.aspx"  title="Natureza de Rendimentos" description="" class="link" />
+				</BreadcrumbsNode>
+				<BreadcrumbsNode url=""  title="Padrões" description="" class="link">
+					<BreadcrumbsNode url="~/Estados.aspx"  title="Estados" description="" class="link" />
+					<BreadcrumbsNode url="~/Pais.aspx"  title="País" description="" class="link" />
+					<BreadcrumbsNode url="~/Numerador.aspx"  title="Numeradores" description="" class="link" />
+					<BreadcrumbsNode url="~/Situacoes.aspx"  title="Situações" description="" class="link" />
+					<BreadcrumbsNode url="~/UnidadeDeNegocioXEmpresas.aspx"  title="Unidades de Negócios X Empresas" description="" class="link" />
+				</BreadcrumbsNode>
+				<BreadcrumbsNode url=""  title="Transportes" description="" class="link">
+					<BreadcrumbsNode url="~/ViaDeTransporte.aspx"  title="Via de Transporte" description="" class="link" />
+					<BreadcrumbsNode url="~/TiposDeVeiculos.aspx"  title="Tipos de Veículos" description="" class="link" />
+					<BreadcrumbsNode url="~/Placas.aspx"  title="Placas de Veículos" description="" class="link" />
+					<BreadcrumbsNode url="~/Navios.aspx"  title="Navios" description="" class="link" />
+          <BreadcrumbsNode url="~/NaviosXInvoice.aspx"  title="Invoice" description="" class="link" />
+				</BreadcrumbsNode>
+			</BreadcrumbsNode>
+			<BreadcrumbsNode url=""  title="Cadastros" description="" class="link">
+				<BreadcrumbsNode url="~/Clientes.aspx"  title="Clientes" description="" class="link" />
+				<BreadcrumbsNode url="~/Empresas.aspx"  title="Empresas" description="" class="link" />
+				<BreadcrumbsNode url="~/Mercadorias.aspx"  title="Produtos" description="" class="link" />
+				<BreadcrumbsNode url="~/Usuarios.aspx"  title="Usuários" description="" class="link" />
+				<BreadcrumbsNode url="~/Configuracoes.aspx"  title="Configurações" description="" class="link" />
+				<BreadcrumbsNode url="~/MetasVendas.aspx"  title="Metas" description="" class="link" />
+			</BreadcrumbsNode>
+			<BreadcrumbsNode url=""  title="Links" description="" class="link" />
+		</BreadcrumbsNode>
+		<BreadcrumbsNode  title="Gerencial" description="Gerencial" url="~/Gerencial.aspx" class="link">
+			<BreadcrumbsNode url="#"  title="Comercial"  description="Comercial" class="link">
+				<BreadcrumbsNode url="#"  title="Relação de Pedidos"  description="" class="link"/>
+				<BreadcrumbsNode url="~/PosicaoDePedido.aspx"  title="Posição De Pedidos"  description="" class="link"/>
+				<BreadcrumbsNode url="~/RelatorioFaturamentoMensal.aspx"  title="Faturamento"  description="" class="link"/>
+				<BreadcrumbsNode url=""  title="Curva ABC"  description="" class="link"/>
+			</BreadcrumbsNode>
+			<BreadcrumbsNode url="#"  title="Financeiro"  description="Financeiro" class="link">
+				<BreadcrumbsNode url="~/RelatorioDeAnaliseDeCredito.aspx"  title="Análise de Crédito"  description="" class="link" />
+				<BreadcrumbsNode url="~/RelatorioDeTitulos.aspx"  title="Relação de Títulos"  description="" class="link"/>
+				<BreadcrumbsNode url=""  title="Aplicação de Recursos"  description="" class="link"/>
+				<BreadcrumbsNode url=""  title="Vendas/Remessas (NXT)"  description="" class="link"/>
+				<BreadcrumbsNode url=""  title="Títulos em Carteira"  description="" class="link"/>
+				<BreadcrumbsNode url=""  title="Fluxo de Caixa"  description="" class="link"/>
+			</BreadcrumbsNode>
+			<BreadcrumbsNode url="#"  title="Expedição"  description="Expedição" class="link">
+				<BreadcrumbsNode url="~/RelatorioDeLaudo.aspx"  title="Relação de Pesagem"  description="" class="link"/>
+				<BreadcrumbsNode url="~/RelatorioDeNotasFiscais.aspx"  title="Relação de Notas Fiscais"  description="" class="link"/>
+				<BreadcrumbsNode url="~/RelatorioDeFretesExcel.aspx"  title="Relação de Fretes"  description="" class="link"/>
+				<BreadcrumbsNode url=""  title="Mercadorias em Trânsito"  description="" class="link"/>
+			</BreadcrumbsNode>
+			<BreadcrumbsNode url="#"  title="Produção e Estoque"  description="Produção e estoque" class="link">
+				<BreadcrumbsNode url="~/RelacaoDeProducao.aspx"  title="Relação de Produção"  description="" class="link"/>
+				<BreadcrumbsNode url=""  title="Mapa de Industrialização"  description="" class="link"/>
+				<BreadcrumbsNode url=""  title="Est. Gerencial - Disp"  description="" class="link"/>
+				<BreadcrumbsNode url="~/AnalisadorDeDeposito.aspx"  title="Analisador de Depósito"  description="" class="link"/>
+			</BreadcrumbsNode>
+			<BreadcrumbsNode url="#"  title="Contábil"  description="Contábil" class="link">
+				<BreadcrumbsNode url="~/ExtratoDeConta.aspx"  title="Extrato de Conta"  description="" class="link"/>
+				<BreadcrumbsNode url="~/BalanceteAuxiliarVBA.aspx"  title="Balancete Auxiliar"  description="" class="link"/>
+				<BreadcrumbsNode url="~/DreMesaMes.aspx"  title="DRE Mês a Mês"  description="" class="link"/>
+				<BreadcrumbsNode url=""  title="Planilha de Custos"  description="" class="link"/>
+				<BreadcrumbsNode url="~/GerenciadorSaldos.aspx"  title="Gerenciador de Saldos" description="Gerenciador de Saldos" class="link" />
+			</BreadcrumbsNode>
+			<BreadcrumbsNode url="#"  title="Módulos"  description="Módulos" class="link">
+				<BreadcrumbsNode url="~/Adiantamento.aspx"  title="Adiantamentos"  description="" class="link"/>
+				<BreadcrumbsNode url="~/Comercial.aspx"  title="Comercial"  description="" class="link"/>
+				<BreadcrumbsNode url="~/Contabil.aspx"  title="Contábil"  description="" class="link"/>
+				<BreadcrumbsNode url="~/ApuracaoDeCustos.aspx"  title="Custos"  description="" class="link"/>
+				<BreadcrumbsNode url="~/Expedicao.aspx"  title="Expedição"  description="" class="link"/>
+				<BreadcrumbsNode url="~/Financeiro.aspx"  title="Financeiro"  description="" class="link"/>
+				<BreadcrumbsNode url="~/Index.aspx"  title="Gestão"  description="Início" class="link"/>
+				<BreadcrumbsNode url="~/Patrimonio.aspx"  title="Patrimônio"  description="" class="link"/>
+				<BreadcrumbsNode url="~/Producao.aspx"  title="Produção e Estoques"  description="" class="link"/>
+				<BreadcrumbsNode url="~/Fiscal.aspx"  title="Registros Fiscais"  description="" class="link"/>
+				<BreadcrumbsNode url="~/Revenda.aspx"  title="Revenda"  description="" class="link"/>
+			</BreadcrumbsNode>
+			<BreadcrumbsNode url=""  title="Links" description="" class="link" />
+		</BreadcrumbsNode>
+		<BreadcrumbsNode  title="Patrimônio" description="Patrimônio" url="~/Patrimonio.aspx" class="link">
+			<BreadcrumbsNode url=""  title="Lançamentos" description="Lançamentos" class="link" >
+				<BreadcrumbsNode url=" ~/Ativos.aspx"  title="Ativos" description="Lançamentos" class="link" />
+				<BreadcrumbsNode url=" ~/AtivosXBaixas.aspx"  title="AtivosXBaixas" description="AtivosXBaixas" class="link" />
+				<BreadcrumbsNode url="~/AtivosXContas.aspx"  title="Ativos X Contas" description="" class="link" />
+				<BreadcrumbsNode url=" ~/AtivosXTransferencia.aspx"  title="AtivosXTransferencia" description="AtivosXTransferencia" class="link" />
+				<BreadcrumbsNode url="~/GruposDeAtivos.aspx"  title="Grupos de Ativos" description="" class="link" />
+			</BreadcrumbsNode>
+			<BreadcrumbsNode url="~/AtivosXProcessos.aspx"  title="Processos" description="Processos" class="link" />
+			<BreadcrumbsNode url=""  title="Relatórios" description="Relatórios" class="link">
+				<BreadcrumbsNode url="~/ExtratoDeBens.aspx"  title="Extrato De Bens" description="Extrato De Bens" class="link" />
+				<BreadcrumbsNode url="~/RelatorioDeAtivos.aspx"  title="Relatório de Ativos" description="Relatório de Ativos" class="link" />
+				<BreadcrumbsNode url="~/SinteseDaDepreciacao.aspx"  title="Sintese da Depreciação" description="Sintese da Depreciação" class="link" />
+			</BreadcrumbsNode>
+			<BreadcrumbsNode url=""  title="Outros" description="Outros" class="link" />
+		</BreadcrumbsNode>
+		<BreadcrumbsNode  title="Produção" description="Produção" url="~/Producao.aspx" class="link">
+			<BreadcrumbsNode url=""  title="Lançamentos" description="" class="link">
+				<BreadcrumbsNode url="~/ControleDeProducao.aspx"  title="Produção e Estoques" description="" class="link" />
+				<BreadcrumbsNode url="~/OrdemDeProducao.aspx"  title="Ordem de Produção" description="" class="link" />
+				<BreadcrumbsNode url="~/OrdemDeProducaoInterna.aspx"  title="Ordem de Produção Interna" description="" class="link" />
+			</BreadcrumbsNode>
+			<BreadcrumbsNode url=""  title="Relatórios" description="" class="link">
+				<BreadcrumbsNode url="~/ConsistenciaDeProducao.aspx"  title="Consistência de Produção" description="" class="link" />
+				<BreadcrumbsNode url="~/PosicaoDeEstoques.aspx"  title="Posição de Estoques" description="" class="link" />
+				<BreadcrumbsNode url="~/PosicaoDeRomaneios.aspx"  title="Posição de Romaneios"  description="" class="link" />
+				<BreadcrumbsNode url="~/EstoquesPorOperacoes.aspx"  title="Estoques Por Operações" description="" class="link" />
+				<BreadcrumbsNode url="~/ComposicaoDoEstoque.aspx"  title="Composição Diária do Estoque" description="" class="link" />
+				<BreadcrumbsNode url="~/ComposicaoDoEstoqueRN.aspx"  title="Comp. Diária Romaneios/Notas" description="" class="link" />
+				<BreadcrumbsNode url="~/ConsistenciaDeMeiosEPecas.aspx"  title="Meios e Peças por Nota Fiscal" description="" class="link" />
+				<BreadcrumbsNode url="~/Cardex.aspx"  title="Cardex" description="" class="link" />
+				<BreadcrumbsNode url="~/RelatorioDoAlmoxarifado.aspx"  title="Posição do Almoxarifado" description="" class="link" />
+				<BreadcrumbsNode url="~/RelatorioDeLotes.aspx"  title="Relatório de Lotes" description="" class="link" />
+        <BreadcrumbsNode url="~/RelatorioDeOrdensDeProducoes.aspx"  title="Relatório de Ordens de Produções" description="" class="link" />
+			</BreadcrumbsNode>
+		</BreadcrumbsNode>
+		<BreadcrumbsNode  title="Revenda" description="Revenda" url="~/Revenda.aspx" class="link">
+			<BreadcrumbsNode url=""  title="Tabelas" description="Tabelas" class="link">
+				<BreadcrumbsNode url="~/AvaliarProdutoPedido.aspx"  title="Avaliar Produtos dos Pedidos" description="Avaliar Produtos dos Pedidos" class="link" />
+				<BreadcrumbsNode url="~/TabelasDePrecos.aspx"  title="Tabela de Preços" description="Tabela de Preços" class="link" />
+				<BreadcrumbsNode url="~/ProdutosXPrecos.aspx"  title="Produtos X Preços" description="Produtos X Preços" class="link" />
+				<BreadcrumbsNode url="~/TabelaDeComissao.aspx"  title="Tabela de Comissão" description="Tabela de Comissão" class="link" />
+				<BreadcrumbsNode url="~/Fito.aspx"  title="Fitossanitário" description="Fitossanitário" class="link" />
+				<BreadcrumbsNode url="~/ProdutoXFito.aspx"  title="Produto X Fito" description="Produto X Fito" class="link" />
+				<BreadcrumbsNode url="~/CulturaPragaFito.aspx"  title="Cultura X Praga X Fito" description="Cultura X Praga X Fito" class="link" />
+				<BreadcrumbsNode url="~/ClasseAmbiental.aspx"  title="Classe Ambiental" description="Classe Ambiental" class="link" />
+				<BreadcrumbsNode url="~/ClasseDeRisco.aspx"  title="Classe de Risco" description="Classe de Risco" class="link" />
+				<BreadcrumbsNode url="~/CategoriaDaPraga.aspx"  title="Categoria da Praga" description="Categoria da Praga" class="link" />
+				<BreadcrumbsNode url="~/ClasseToxicologica.aspx"  title="Classe Toxicolôgica" description="Classe Toxicolôgica" class="link" />
+				<BreadcrumbsNode url="~/epi.aspx"  title="Equip. de Proteção Individual" description="Equip. de Proteção Individual" class="link" />
+				<BreadcrumbsNode url="~/EstadoFisicoIA.aspx"  title="Estado Físico Ingrediente Ativo" description="Estado Físico Ingrediente Ativo" class="link" />
+				<BreadcrumbsNode url="~/GrupoQuimico.aspx"  title="Grupo Químico" description="Grupo Químico" class="link" />
+				<BreadcrumbsNode url="~/Solo.aspx"  title="Solo" description="Solo" class="link" />
+				<BreadcrumbsNode url="~/FormulacaoDoFito.aspx"  title="Formulação do Fito" description="Formulação do Fito" class="link" />
+				<BreadcrumbsNode url="~/IngredienteAtivo.aspx"  title="Ingrediente Ativo" description="Ingrediente Ativo" class="link" />
+				<BreadcrumbsNode url="~/AnotacaoRTecnica.aspx"  title="Anotação de Resp. Técnica" description="Anotação de Resp. Técnica" class="link" />
+			</BreadcrumbsNode>
+			<BreadcrumbsNode url=""  title="Pedido / Nota Fiscal" description="Pedido / Nota Fiscal" class="link">
+				<BreadcrumbsNode url="~/PedidosXItens.aspx"  title="Pedidos" description="Pedidos" class="link" />
+				<BreadcrumbsNode url="~/NotaFiscalXItens.aspx"  title="Nota Fiscal" description="Nota Fiscal" class="link" />
+				<BreadcrumbsNode url="~/NotasFiscaisGerais.aspx"  title="Notas Gerais" description="Notas Gerais" class="link" />
+			</BreadcrumbsNode>
+			<BreadcrumbsNode url=""  title="Análise de Crédito" description="Análise de Crédito" class="link">
+				<BreadcrumbsNode url="~/AnaliseDeCreditoParametros.aspx"  title="Parâmetros" description="Parâmetros" class="link" />
+				<BreadcrumbsNode url="~/AnaliseDeCreditoProdutorRural.aspx"  title="Produtor Rural" description="Produtor Rural" class="link" />
+			</BreadcrumbsNode>
+			<BreadcrumbsNode url=""  title="Relatórios" description="Relatórios" class="link">
+				<BreadcrumbsNode url="~/ExtratoDePedido.aspx"  title="Extrato de Pedido" description="Extrato de Pedido" class="link" />
+				<BreadcrumbsNode url="~/RelacaoDePedidos.aspx"  title="Relação de Pedidos" description="Relação de Pedidos" class="link" />
+				<BreadcrumbsNode url="~/RelatorioEntradaSaidaNotas.aspx"  title="Movimentações Fiscais" description="Movimentações Fiscais" class="link" />
+				<BreadcrumbsNode url="~/RelatorioCargasLaudo.aspx"  title="Totalizador de Movimentos" description="Totalizador de Movimentos" class="link" />
+				<BreadcrumbsNode url="~/RelatorioEstoqueRevenda.aspx"  title="Estoque" description="Estoque" class="link" />
+				<BreadcrumbsNode url="~/RelatorioDeComissoes.aspx"  title="Comissões" description="Comissões" class="link" />
+				<BreadcrumbsNode url="~/RelatorioDeComissoesPedido.aspx"  title="Comissões por pedido" description="Comissões por pedido" class="link" />
+				<BreadcrumbsNode url="~/RelatorioMargemDeLucro.aspx"  title="Margem de Lucro" description="Margem de Lucro" class="link" />
+				<BreadcrumbsNode url="~/RelatorioParticipacaoNaVendaLucroBruto.aspx"  title="Particip. nas Vendas/Lucro" description="Particip. nas Vendas/Lucro" class="link" />
+				<BreadcrumbsNode url="~/RelatorioVendaPorTroca.aspx"  title="Venda por Troca Analítico" description="Venda por Troca Analítico" class="link" />
+				<BreadcrumbsNode url="~/RelatorioVendaPorTrocaSintetico.aspx"  title="Venda por Troca Sintético" description="Venda por Troca Sintético" class="link" />
+				<BreadcrumbsNode url="~/RelatorioTraitMixProdutos.aspx"  title="Trait Mix de Produtos" description="" class="link" />
+				<BreadcrumbsNode url="~/RelatorioDeRetencaoDeClientes.aspx"  title="Customer Share / Retencao de Cliente" description="" class="link" />
+			</BreadcrumbsNode>
+			<BreadcrumbsNode url=""  title="Outros" description="Outros" class="link">
+				<BreadcrumbsNode url="~/CPR.aspx"  title="CPR" description="CPR" class="link" />
+				<BreadcrumbsNode url="~/CRM.aspx"  title="CRM" description="CRM" class="link" />
+				<BreadcrumbsNode url="~/frmCRMxVisita.aspx"  title="Visitas" description="Visitas a Clientes" class="link" />
+				<BreadcrumbsNode url="~/ControleDeLote.aspx"  title="Controle de Lote" description="Controle de Lote" class="link" />
+				<BreadcrumbsNode url="~/Receituario.aspx"  title="Receituário" description="Receituário" class="link" />
+				<BreadcrumbsNode url="~/EmissaoDeDuplicatas.aspx"  title="Emissão de Duplicatas" description="Emissão de Duplicatas" class="link" />
+				<BreadcrumbsNode url=""  title="Previsao Mensal Vendas Safra" description="Previsao Mensal Vendas Safra" class="link" />
+				<BreadcrumbsNode url=""  title="Previsao Mensal Compras Safra" description="Previsao Mensal Compras Safra" class="link" />
+				<BreadcrumbsNode url=""  title="Metas Vendas Safra" description="Metas Vendas Safra" class="link" />
+			</BreadcrumbsNode>
+		</BreadcrumbsNode>
+	</BreadcrumbsNode>
+</Breadcrumbs>
