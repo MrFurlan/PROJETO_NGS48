@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="Ds_Solicitacoes" targetNamespace="http://tempuri.org/Ds_Solicitacoes.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/Ds_Solicitacoes.xsd" xmlns:mstns="http://tempuri.org/Ds_Solicitacoes.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="Ds_Solicitacoes" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Solicitacoes">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Registro" type="xs:int" minOccurs="0" />
+							<xs:element name="Autorizante" type="xs:string" minOccurs="0" />
+							<xs:element name="Solicitante" type="xs:string" minOccurs="0" />
+							<xs:element name="UnidadeDeNegocio" type="xs:string" minOccurs="0" />
+							<xs:element name="Empresa" type="xs:string" minOccurs="0" />
+							<xs:element name="EndEmpresa" type="xs:int" minOccurs="0" />
+							<xs:element name="Movimento" type="xs:date" minOccurs="0" />
+							<xs:element name="Descricao" type="xs:string" minOccurs="0" />
+							<xs:element name="Produto" type="xs:string" minOccurs="0" />
+							<xs:element name="Quantidade" type="xs:int" minOccurs="0" />
+							<xs:element name="Valor" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Previsao" type="xs:date" minOccurs="0" />
+							<xs:element name="Nivel" type="xs:int" minOccurs="0" />
+							<xs:element name="Nome" type="xs:string" minOccurs="0" />
+							<xs:element name="Reduzido" type="xs:string" minOccurs="0" />
+							<xs:element name="NomeEmpresa" type="xs:string" minOccurs="0" />
+							<xs:element name="NomeProduto" type="xs:string" minOccurs="0" />
+							<xs:element name="Vencimento" type="xs:date" minOccurs="0" />
+							<xs:element name="Autorizante01" type="xs:string" minOccurs="0" />
+							<xs:element name="Autorizante02" type="xs:string" minOccurs="0" />
+							<xs:element name="Autorizante03" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

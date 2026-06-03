@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Ds_Cotacao" targetNamespace="http://tempuri.org/Ds_Cotacao.xsd" xmlns:mstns="http://tempuri.org/Ds_Cotacao.xsd" xmlns="http://tempuri.org/Ds_Cotacao.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" xmlns:NameSpace1="urn:schemas-microsoft-com:xml-msdatasource" attributeFormDefault="qualified" elementFormDefault="qualified">
+	<xs:annotation>
+		<xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+			<DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+				<Connections>
+				</Connections>
+				<Tables>
+				</Tables>
+				<Sources>
+				</Sources>
+			</DataSource>
+		</xs:appinfo>
+	</xs:annotation>
+	<xs:element name="Ds_Cotacao" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="Ds_Cotacao" msprop:Generator_DataSetName="Ds_Cotacao">
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element name="Cotacoes" msprop:Generator_UserTableName="Cotacoes" msprop:Generator_RowDeletedName="CotacoesRowDeleted" msprop:Generator_RowChangedName="CotacoesRowChanged" msprop:Generator_RowClassName="CotacoesRow" msprop:Generator_RowChangingName="CotacoesRowChanging" msprop:Generator_RowEvArgName="CotacoesRowChangeEvent" msprop:Generator_RowEvHandlerName="CotacoesRowChangeEventHandler" msprop:Generator_TableClassName="CotacoesDataTable" msprop:Generator_TableVarName="tableCotacoes" msprop:Generator_RowDeletingName="CotacoesRowDeleting" msprop:Generator_TablePropName="Cotacoes">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Registro" msprop:Generator_UserColumnName="Registro" msprop:Generator_ColumnVarNameInTable="columnRegistro" msprop:Generator_ColumnPropNameInRow="Registro" msprop:Generator_ColumnPropNameInTable="RegistroColumn" type="xs:int" minOccurs="0" />
+							<xs:element name="Data" msprop:Generator_UserColumnName="Data" msprop:Generator_ColumnVarNameInTable="columnData" msprop:Generator_ColumnPropNameInRow="Data" msprop:Generator_ColumnPropNameInTable="DataColumn" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="Solicitante" msprop:Generator_UserColumnName="Cotante" msprop:Generator_ColumnVarNameInTable="columnCotante" msprop:Generator_ColumnPropNameInRow="Cotante" msprop:Generator_ColumnPropNameInTable="CotanteColumn" type="xs:string" minOccurs="0" />
+							<xs:element name="Cotante" msprop:Generator_UserColumnName="Descricao" msprop:Generator_ColumnVarNameInTable="columnDescricao" msprop:Generator_ColumnPropNameInRow="Descricao" msprop:Generator_ColumnPropNameInTable="DescricaoColumn" type="xs:string" minOccurs="0" />
+							<xs:element name="Fornecedor" type="xs:string" />
+							<xs:element name="EndFornecedor" type="xs:int" />
+							<xs:element name="Nome" type="xs:string" />
+							<xs:element name="Ordem" type="xs:int" />
+							<xs:element name="Quantidade" type="xs:int" />
+							<xs:element name="Unidade" type="xs:string" />
+							<xs:element name="Descricao" type="xs:string" />
+							<xs:element name="Unitario" type="xs:decimal" />
+							<xs:element name="Total" type="xs:decimal" />
+							<xs:element name="IPI" type="xs:int" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

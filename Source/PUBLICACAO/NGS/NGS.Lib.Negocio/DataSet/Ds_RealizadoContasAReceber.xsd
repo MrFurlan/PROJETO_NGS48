@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Ds_RealizadoContasAReceber" targetNamespace="http://tempuri.org/Ds_RealizadoContasAReceber.xsd" xmlns:mstns="http://tempuri.org/Ds_RealizadoContasAReceber.xsd" xmlns="http://tempuri.org/Ds_RealizadoContasAReceber.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Ds_RealizadoContasAReceber" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="Ds_RealizadoContasAReceber" msprop:Generator_DataSetName="Ds_RealizadoContasAReceber">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="RealizadoContasAReceber" msprop:Generator_UserTableName="RealizadoContasAReceber" msprop:Generator_RowDeletedName="RealizadoContasAReceberRowDeleted" msprop:Generator_TableClassName="RealizadoContasAReceberDataTable" msprop:Generator_RowChangedName="RealizadoContasAReceberRowChanged" msprop:Generator_RowClassName="RealizadoContasAReceberRow" msprop:Generator_RowChangingName="RealizadoContasAReceberRowChanging" msprop:Generator_RowEvArgName="RealizadoContasAReceberRowChangeEvent" msprop:Generator_RowEvHandlerName="RealizadoContasAReceberRowChangeEventHandler" msprop:Generator_TablePropName="RealizadoContasAReceber" msprop:Generator_TableVarName="tableRealizadoContasAReceber" msprop:Generator_RowDeletingName="RealizadoContasAReceberRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ReceberVencimento" msprop:Generator_UserColumnName="ReceberVencimento" msprop:Generator_ColumnVarNameInTable="columnReceberVencimento" msprop:Generator_ColumnPropNameInRow="ReceberVencimento" msprop:Generator_ColumnPropNameInTable="ReceberVencimentoColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ClienteCodigo" msprop:Generator_UserColumnName="ClienteCodigo" msprop:Generator_ColumnVarNameInTable="columnClienteCodigo" msprop:Generator_ColumnPropNameInRow="ClienteCodigo" msprop:Generator_ColumnPropNameInTable="ClienteCodigoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ClienteCodigoEnd" msprop:Generator_UserColumnName="ClienteCodigoEnd" msprop:Generator_ColumnVarNameInTable="columnClienteCodigoEnd" msprop:Generator_ColumnPropNameInRow="ClienteCodigoEnd" msprop:Generator_ColumnPropNameInTable="ClienteCodigoEndColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ClienteNome" msprop:Generator_UserColumnName="ClienteNome" msprop:Generator_ColumnVarNameInTable="columnClienteNome" msprop:Generator_ColumnPropNameInRow="ClienteNome" msprop:Generator_ColumnPropNameInTable="ClienteNomeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ReceberHistorico" msprop:Generator_UserColumnName="ReceberHistorico" msprop:Generator_ColumnVarNameInTable="columnReceberHistorico" msprop:Generator_ColumnPropNameInRow="ReceberHistorico" msprop:Generator_ColumnPropNameInTable="ReceberHistoricoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ReceberValorBaixado" msprop:Generator_UserColumnName="ReceberValorBaixado" msprop:Generator_ColumnVarNameInTable="columnReceberValorBaixado" msprop:Generator_ColumnPropNameInRow="ReceberValorBaixado" msprop:Generator_ColumnPropNameInTable="ReceberValorBaixadoColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="EmpresaCodigo" msprop:Generator_UserColumnName="EmpresaCodigo" msprop:Generator_ColumnVarNameInTable="columnEmpresaCodigo" msprop:Generator_ColumnPropNameInRow="EmpresaCodigo" msprop:Generator_ColumnPropNameInTable="EmpresaCodigoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="EmpresaCodigoEnd" msprop:Generator_UserColumnName="EmpresaCodigoEnd" msprop:Generator_ColumnVarNameInTable="columnEmpresaCodigoEnd" msprop:Generator_ColumnPropNameInRow="EmpresaCodigoEnd" msprop:Generator_ColumnPropNameInTable="EmpresaCodigoEndColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="EmpresaNome" msprop:Generator_UserColumnName="EmpresaNome" msprop:Generator_ColumnVarNameInTable="columnEmpresaNome" msprop:Generator_ColumnPropNameInRow="EmpresaNome" msprop:Generator_ColumnPropNameInTable="EmpresaNomeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="EmpresaCidade" msprop:Generator_UserColumnName="EmpresaCidade" msprop:Generator_ColumnVarNameInTable="columnEmpresaCidade" msprop:Generator_ColumnPropNameInRow="EmpresaCidade" msprop:Generator_ColumnPropNameInTable="EmpresaCidadeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="EmpresaEstado" msprop:Generator_UserColumnName="EmpresaEstado" msprop:Generator_ColumnVarNameInTable="columnEmpresaEstado" msprop:Generator_ColumnPropNameInRow="EmpresaEstado" msprop:Generator_ColumnPropNameInTable="EmpresaEstadoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ReceberRegistro" msprop:Generator_UserColumnName="ReceberRegistro" msprop:Generator_ColumnVarNameInTable="columnReceberRegistro" msprop:Generator_ColumnPropNameInRow="ReceberRegistro" msprop:Generator_ColumnPropNameInTable="ReceberRegistroColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ReceberBaixa" msprop:Generator_UserColumnName="ReceberBaixa" msprop:Generator_ColumnVarNameInTable="columnReceberBaixa" msprop:Generator_ColumnPropNameInRow="ReceberBaixa" msprop:Generator_ColumnPropNameInTable="ReceberBaixaColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="EmpresaReduzido" msprop:Generator_UserColumnName="EmpresaReduzido" msprop:Generator_ColumnVarNameInTable="columnEmpresaReduzido" msprop:Generator_ColumnPropNameInRow="EmpresaReduzido" msprop:Generator_ColumnPropNameInTable="EmpresaReduzidoColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="Ds_Impressoras" targetNamespace="http://tempuri.org/Ds_Impressoras.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/Ds_Impressoras.xsd" xmlns:mstns="http://tempuri.org/Ds_Impressoras.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="Ds_Impressoras" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Impressoras">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Empresa" type="xs:string" minOccurs="0" />
+							<xs:element name="EndEmpresa" type="xs:int" minOccurs="0" />
+							<xs:element name="IP" type="xs:string" minOccurs="0" />
+							<xs:element name="Rotina" type="xs:string" minOccurs="0" />
+							<xs:element name="Caminho" type="xs:string" minOccurs="0" />
+							<xs:element name="Descricao" type="xs:string" minOccurs="0" />
+							<xs:element name="Estado" type="xs:string" minOccurs="0" />
+							<xs:element name="Nome" type="xs:string" minOccurs="0" />
+							<xs:element name="Cidade" type="xs:string" minOccurs="0" />
+							<xs:element name="Reduzido" type="xs:string" minOccurs="0" />
+							<xs:element name="NomeRotina" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

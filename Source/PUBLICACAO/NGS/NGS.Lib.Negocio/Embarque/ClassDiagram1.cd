@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="NGS.Lib.Negocio.ListEmbarquePedido" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Embarque\EmbarquePedidos.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NGS.Lib.Negocio.EmbarquePedido">
+    <Position X="0.5" Y="1.5" Width="2" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>yRljYAgASQEFFoMEICOlqARBBAoBlDgADEISCBDAAIM=</HashCode>
+      <FileName>Embarque\EmbarquePedidos.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="NGS.Lib.Negocio.ListEmbarquePrecoFrete" Collapsed="true">
+    <Position X="15.25" Y="1.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAACAAAAAAAAAAAEAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>Embarque\EmbarquePrecoFrete.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NGS.Lib.Negocio.EmbarquePrecoFrete">
+    <Position X="17.25" Y="2.5" Width="1.75" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AABABAAAAAAAAAACQAIAgAAAABAEiAAQAAgiCIBAAAA=</HashCode>
+      <FileName>Embarque\EmbarquePrecoFrete.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="NGS.Lib.Negocio.ListEmbarqueRoteiro" Collapsed="true">
+    <Position X="3.75" Y="1.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Embarque\EmbarqueRoteiro.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NGS.Lib.Negocio.EmbarqueRoteiro">
+    <Position X="13.5" Y="2.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAJSQAKQOUBAAQCQAJAABIAgBAAQABBBAAgAxEAEAA=</HashCode>
+      <FileName>Embarque\EmbarqueRoteiro.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="NGS.Lib.Negocio.ListEmbarqueTransportador" Collapsed="true">
+    <Position X="13.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAEAAAAAAAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>Embarque\EmbarqueTransportador.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NGS.Lib.Negocio.EmbarqueTransportador">
+    <Position X="15.25" Y="2.5" Width="1.75" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAEAAAJAAEAAAAGQCMAEAIACDAASAAAAAAkABQAAAA=</HashCode>
+      <FileName>Embarque\EmbarqueTransportador.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="NGS.Lib.Negocio.EmbarqueXEntrega">
+    <Position X="0.5" Y="4" Width="2" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAEIAACAAEAAAAACQCYAEBAAIFIGQEAAAAIAAAAACAA=</HashCode>
+      <FileName>Embarque\EmbarqueXEntrega.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="NGS.Lib.Negocio.ListLancamentoProdutoEmbarque" Collapsed="true">
+    <Position X="8" Y="0.75" Width="3" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Embarque\AutorizacaoEmbarque.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NGS.Lib.Negocio.LancamentoProdutoEmbarque">
+    <Position X="8" Y="6" Width="2.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAEAyAAAAAAAAQACSAIEgAAAABCAgIAAAAIQgABEBAA=</HashCode>
+      <FileName>Embarque\AutorizacaoEmbarque.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="NGS.Lib.Negocio.ListEmbarqueXEntregaProduto">
+    <Position X="3" Y="2.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AQAIgAAJggAAAAQAAAXgiAAAAAAAAAIAAQAAAAAAEAI=</HashCode>
+      <FileName>Embarque\EmbarqueXEntregaProduto.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NGS.Lib.Negocio.EmbarqueXEntregaProduto">
+    <Position X="8" Y="1.5" Width="2.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>QQAIQAAIwAAEAgAAaCAEgAAAABABBAAAAAISYAABAAE=</HashCode>
+      <FileName>Embarque\EmbarqueXEntregaProduto.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

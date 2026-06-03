@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="Ds_TermosLivroDiario" targetNamespace="http://tempuri.org/Ds_TermosLivroDiario.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/Ds_TermosLivroDiario.xsd"
+	xmlns:mstns="http://tempuri.org/Ds_TermosLivroDiario.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="Ds_TermosLivroDiario" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Termos">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="CNPJ" type="xs:string" minOccurs="0" />
+							<xs:element name="RazaoSocial" type="xs:string" minOccurs="0" />
+							<xs:element name="Endereco" type="xs:string" minOccurs="0" />
+							<xs:element name="Cidade" type="xs:string" minOccurs="0" />
+							<xs:element name="Estado" type="xs:string" minOccurs="0" />
+							<xs:element name="Inscricao" type="xs:string" minOccurs="0" />
+							<xs:element name="RegistroNaJunta" type="xs:string" minOccurs="0" />
+							<xs:element name="EstadoDaJunta" type="xs:string" minOccurs="0" />
+							<xs:element name="DataDeFundacao" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="NomeDoContador" type="xs:string" minOccurs="0" />
+							<xs:element name="CPFContador" type="xs:string" minOccurs="0" />
+							<xs:element name="CRCContador" type="xs:string" minOccurs="0" />
+							<xs:element name="NomeDoTitular" type="xs:string" minOccurs="0" />
+							<xs:element name="CPFTitular" type="xs:string" minOccurs="0" />
+							<xs:element name="CondicaoTitular" type="xs:string" minOccurs="0" />
+							<xs:element name="NomeDoEstado" type="xs:string" minOccurs="0" />
+							<xs:element name="Ordem" type="xs:int" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

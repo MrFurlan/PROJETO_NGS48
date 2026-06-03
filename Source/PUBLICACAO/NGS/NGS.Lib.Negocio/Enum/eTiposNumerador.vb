@@ -1,0 +1,24 @@
+Public Enum eTiposNumerador
+    Titulo = 1
+    CertidaoNegativa = 2
+    AnaliseDeCredito = 3
+    Procuracao = 9
+    Pedido = 10
+    PedidoXContrato = 11
+    Receita = 13
+    Adiantamento = 15
+    NFEntrada = 20
+    NFSaida = 30
+    NFCe = 33
+    ConhecimentoDeTransporte = 35
+    ManifestoEletronico = 38
+    Cotacao = 40
+    FaturaDeFrete = 45
+    AutorizacaoDeRetirada = 50
+    Solicitacao = 51
+    Razao = 60
+    Laudo = 101
+    Romaneio = 110
+    Documentos = 150
+    RemessaBancaria = 666
+End Enum

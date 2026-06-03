@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Ds_ClassificacaoDeProdutos" targetNamespace="http://tempuri.org/Ds_ClassificacaoDeProdutos.xsd" xmlns:mstns="http://tempuri.org/Ds_ClassificacaoDeProdutos.xsd" xmlns="http://tempuri.org/Ds_ClassificacaoDeProdutos.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Ds_ClassificacaoDeProdutos" msdata:IsDataSet="true" msdata:Locale="en-US" msprop:Generator_DataSetName="Ds_ClassificacaoDeProdutos" msprop:Generator_UserDSName="Ds_ClassificacaoDeProdutos">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ClassificacaoDeProdutos" msprop:Generator_TableClassName="ClassificacaoDeProdutosDataTable" msprop:Generator_TableVarName="tableClassificacaoDeProdutos" msprop:Generator_TablePropName="ClassificacaoDeProdutos" msprop:Generator_RowDeletingName="ClassificacaoDeProdutosRowDeleting" msprop:Generator_UserTableName="ClassificacaoDeProdutos" msprop:Generator_RowChangingName="ClassificacaoDeProdutosRowChanging" msprop:Generator_RowEvHandlerName="ClassificacaoDeProdutosRowChangeEventHandler" msprop:Generator_RowDeletedName="ClassificacaoDeProdutosRowDeleted" msprop:Generator_RowEvArgName="ClassificacaoDeProdutosRowChangeEvent" msprop:Generator_RowChangedName="ClassificacaoDeProdutosRowChanged" msprop:Generator_RowClassName="ClassificacaoDeProdutosRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Tabela_Id" msprop:Generator_ColumnVarNameInTable="columnTabela_Id" msprop:Generator_ColumnPropNameInRow="Tabela_Id" msprop:Generator_ColumnPropNameInTable="Tabela_IdColumn" msprop:Generator_UserColumnName="Tabela_Id" type="xs:int" minOccurs="0" />
+              <xs:element name="Produto_Id" msprop:Generator_ColumnVarNameInTable="columnProduto_Id" msprop:Generator_ColumnPropNameInRow="Produto_Id" msprop:Generator_ColumnPropNameInTable="Produto_IdColumn" msprop:Generator_UserColumnName="Produto_Id" type="xs:string" minOccurs="0" />
+              <xs:element name="Analise_Id" msprop:Generator_ColumnVarNameInTable="columnAnalise_Id" msprop:Generator_ColumnPropNameInRow="Analise_Id" msprop:Generator_ColumnPropNameInTable="Analise_IdColumn" msprop:Generator_UserColumnName="Analise_Id" type="xs:int" minOccurs="0" />
+              <xs:element name="Sequencia_Id" msprop:Generator_ColumnVarNameInTable="columnSequencia_Id" msprop:Generator_ColumnPropNameInRow="Sequencia_Id" msprop:Generator_ColumnPropNameInTable="Sequencia_IdColumn" msprop:Generator_UserColumnName="Sequencia_Id" type="xs:int" minOccurs="0" />
+              <xs:element name="FaixaInicial" msprop:Generator_ColumnVarNameInTable="columnFaixaInicial" msprop:Generator_ColumnPropNameInRow="FaixaInicial" msprop:Generator_ColumnPropNameInTable="FaixaInicialColumn" msprop:Generator_UserColumnName="FaixaInicial" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FaixaFinal" msprop:Generator_ColumnVarNameInTable="columnFaixaFinal" msprop:Generator_ColumnPropNameInRow="FaixaFinal" msprop:Generator_ColumnPropNameInTable="FaixaFinalColumn" msprop:Generator_UserColumnName="FaixaFinal" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Indice" msprop:Generator_ColumnVarNameInTable="columnIndice" msprop:Generator_ColumnPropNameInRow="Indice" msprop:Generator_ColumnPropNameInTable="IndiceColumn" msprop:Generator_UserColumnName="Indice" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Tolerancia" msprop:Generator_ColumnVarNameInTable="columnTolerancia" msprop:Generator_ColumnPropNameInRow="Tolerancia" msprop:Generator_ColumnPropNameInTable="ToleranciaColumn" msprop:Generator_UserColumnName="Tolerancia" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FaixaValida" msprop:Generator_ColumnVarNameInTable="columnFaixaValida" msprop:Generator_ColumnPropNameInRow="FaixaValida" msprop:Generator_ColumnPropNameInTable="FaixaValidaColumn" msprop:Generator_UserColumnName="FaixaValida" type="xs:string" minOccurs="0" />
+              <xs:element name="Observacoes" msprop:Generator_ColumnVarNameInTable="columnObservacoes" msprop:Generator_ColumnPropNameInRow="Observacoes" msprop:Generator_ColumnPropNameInTable="ObservacoesColumn" msprop:Generator_UserColumnName="Observacoes" type="xs:string" minOccurs="0" />
+              <xs:element name="DescricaoClassificacao" msprop:Generator_ColumnVarNameInTable="columnDescricaoClassificacao" msprop:Generator_ColumnPropNameInRow="DescricaoClassificacao" msprop:Generator_ColumnPropNameInTable="DescricaoClassificacaoColumn" msprop:Generator_UserColumnName="DescricaoClassificacao" type="xs:string" minOccurs="0" />
+              <xs:element name="DescricaoProduto" msprop:Generator_ColumnVarNameInTable="columnDescricaoProduto" msprop:Generator_ColumnPropNameInRow="DescricaoProduto" msprop:Generator_ColumnPropNameInTable="DescricaoProdutoColumn" msprop:Generator_UserColumnName="DescricaoProduto" type="xs:string" minOccurs="0" />
+              <xs:element name="DescricaoAnalise" msprop:Generator_ColumnVarNameInTable="columnDescricaoAnalise" msprop:Generator_ColumnPropNameInRow="DescricaoAnalise" msprop:Generator_ColumnPropNameInTable="DescricaoAnaliseColumn" msprop:Generator_UserColumnName="DescricaoAnalise" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Logo" msprop:Generator_TableClassName="LogoDataTable" msprop:Generator_TableVarName="tableLogo" msprop:Generator_TablePropName="Logo" msprop:Generator_RowDeletingName="LogoRowDeleting" msprop:Generator_UserTableName="Logo" msprop:Generator_RowChangingName="LogoRowChanging" msprop:Generator_RowEvHandlerName="LogoRowChangeEventHandler" msprop:Generator_RowDeletedName="LogoRowDeleted" msprop:Generator_RowEvArgName="LogoRowChangeEvent" msprop:Generator_RowChangedName="LogoRowChanged" msprop:Generator_RowClassName="LogoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Imagem" msprop:Generator_ColumnVarNameInTable="columnImagem" msprop:Generator_ColumnPropNameInRow="Imagem" msprop:Generator_ColumnPropNameInTable="ImagemColumn" msprop:Generator_UserColumnName="Imagem" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="Empresa" msprop:Generator_ColumnVarNameInTable="columnEmpresa" msprop:Generator_ColumnPropNameInRow="Empresa" msprop:Generator_ColumnPropNameInTable="EmpresaColumn" msprop:Generator_UserColumnName="Empresa" type="xs:string" minOccurs="0" />
+              <xs:element name="Cidade" msprop:Generator_ColumnVarNameInTable="columnCidade" msprop:Generator_ColumnPropNameInRow="Cidade" msprop:Generator_ColumnPropNameInTable="CidadeColumn" msprop:Generator_UserColumnName="Cidade" type="xs:string" minOccurs="0" />
+              <xs:element name="Cnpj" msprop:Generator_ColumnVarNameInTable="columnCnpj" msprop:Generator_ColumnPropNameInRow="Cnpj" msprop:Generator_ColumnPropNameInTable="CnpjColumn" msprop:Generator_UserColumnName="Cnpj" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

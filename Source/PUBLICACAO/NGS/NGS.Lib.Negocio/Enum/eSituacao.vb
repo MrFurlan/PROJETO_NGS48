@@ -1,0 +1,19 @@
+Public Enum eSituacao
+    Normal = 1
+    Cancelado = 2
+    Excluido = 3
+    Bloqueado = 4
+    Inativo = 5
+    Suspenso = 6
+    PedidoCanceladoSefaz = 7
+    PedidoCanceladoSefazViaProcesso = 8
+    Inutilizada = 9
+    Denegado = 10
+    Judicial = 11
+    AguardandoDocumentacao = 50
+    RemessaBancaria = 101
+    EndossoTitulo = 102
+    ErroImportacaoXml = 103
+    XmlImportado = 104
+    RemessaBancariaFuncionarios = 105
+End Enum

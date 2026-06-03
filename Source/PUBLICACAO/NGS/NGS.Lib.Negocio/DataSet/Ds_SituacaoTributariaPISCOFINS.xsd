@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Ds_SituacaoTributariaPISCOFINS" targetNamespace="http://tempuri.org/Ds_SituacaoTributariaPISCOFINS.xsd" xmlns:mstns="http://tempuri.org/Ds_SituacaoTributariaPISCOFINS.xsd" xmlns="http://tempuri.org/Ds_SituacaoTributariaPISCOFINS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Ds_SituacaoTributariaPISCOFINS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="Ds_SituacaoTributariaPISCOFINS" msprop:Generator_UserDSName="Ds_SituacaoTributariaPISCOFINS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SituacaoTributariaPISCOFINS" msprop:Generator_TableClassName="SituacaoTributariaPISCOFINSDataTable" msprop:Generator_TableVarName="tableSituacaoTributariaPISCOFINS" msprop:Generator_TablePropName="SituacaoTributariaPISCOFINS" msprop:Generator_RowDeletingName="SituacaoTributariaPISCOFINSRowDeleting" msprop:Generator_UserTableName="SituacaoTributariaPISCOFINS" msprop:Generator_RowChangingName="SituacaoTributariaPISCOFINSRowChanging" msprop:Generator_RowEvHandlerName="SituacaoTributariaPISCOFINSRowChangeEventHandler" msprop:Generator_RowDeletedName="SituacaoTributariaPISCOFINSRowDeleted" msprop:Generator_RowEvArgName="SituacaoTributariaPISCOFINSRowChangeEvent" msprop:Generator_RowChangedName="SituacaoTributariaPISCOFINSRowChanged" msprop:Generator_RowClassName="SituacaoTributariaPISCOFINSRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SituacaoTributariaPISCOFINS_Id" msprop:Generator_ColumnVarNameInTable="columnSituacaoTributariaPISCOFINS_Id" msprop:Generator_ColumnPropNameInRow="SituacaoTributariaPISCOFINS_Id" msprop:Generator_ColumnPropNameInTable="SituacaoTributariaPISCOFINS_IdColumn" msprop:Generator_UserColumnName="SituacaoTributariaPISCOFINS_Id" type="xs:short" minOccurs="0" />
+              <xs:element name="Descricao" msprop:Generator_ColumnVarNameInTable="columnDescricao" msprop:Generator_ColumnPropNameInRow="Descricao" msprop:Generator_ColumnPropNameInTable="DescricaoColumn" msprop:Generator_UserColumnName="Descricao" type="xs:string" minOccurs="0" />
+              <xs:element name="Imagem" msprop:Generator_ColumnVarNameInTable="columnImagem" msprop:Generator_ColumnPropNameInRow="Imagem" msprop:Generator_ColumnPropNameInTable="ImagemColumn" msprop:Generator_UserColumnName="Imagem" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="NomeEmp" msprop:Generator_ColumnVarNameInTable="columnNomeEmp" msprop:Generator_ColumnPropNameInRow="NomeEmp" msprop:Generator_ColumnPropNameInTable="NomeEmpColumn" msprop:Generator_UserColumnName="NomeEmp" type="xs:string" minOccurs="0" />
+              <xs:element name="CidadeEstado" msprop:Generator_ColumnVarNameInTable="columnCidadeEstado" msprop:Generator_ColumnPropNameInRow="CidadeEstado" msprop:Generator_ColumnPropNameInTable="CidadeEstadoColumn" msprop:Generator_UserColumnName="CidadeEstado" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SituacaoTributariaPISCOFINSObs" msprop:Generator_TableClassName="SituacaoTributariaPISCOFINSObsDataTable" msprop:Generator_TableVarName="tableSituacaoTributariaPISCOFINSObs" msprop:Generator_TablePropName="SituacaoTributariaPISCOFINSObs" msprop:Generator_RowDeletingName="SituacaoTributariaPISCOFINSObsRowDeleting" msprop:Generator_UserTableName="SituacaoTributariaPISCOFINSObs" msprop:Generator_RowChangingName="SituacaoTributariaPISCOFINSObsRowChanging" msprop:Generator_RowEvHandlerName="SituacaoTributariaPISCOFINSObsRowChangeEventHandler" msprop:Generator_RowDeletedName="SituacaoTributariaPISCOFINSObsRowDeleted" msprop:Generator_RowEvArgName="SituacaoTributariaPISCOFINSObsRowChangeEvent" msprop:Generator_RowChangedName="SituacaoTributariaPISCOFINSObsRowChanged" msprop:Generator_RowClassName="SituacaoTributariaPISCOFINSObsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SituacaoTributariaPISCOFINS_Id" msprop:Generator_ColumnVarNameInTable="columnSituacaoTributariaPISCOFINS_Id" msprop:Generator_ColumnPropNameInRow="SituacaoTributariaPISCOFINS_Id" msprop:Generator_ColumnPropNameInTable="SituacaoTributariaPISCOFINS_IdColumn" msprop:Generator_UserColumnName="SituacaoTributariaPISCOFINS_Id" type="xs:short" minOccurs="0" />
+              <xs:element name="Observacao_Id" msprop:Generator_ColumnVarNameInTable="columnObservacao_Id" msprop:Generator_ColumnPropNameInRow="Observacao_Id" msprop:Generator_ColumnPropNameInTable="Observacao_IdColumn" msprop:Generator_UserColumnName="Observacao_Id" type="xs:short" minOccurs="0" />
+              <xs:element name="Descricao" msprop:Generator_ColumnVarNameInTable="columnDescricao" msprop:Generator_ColumnPropNameInRow="Descricao" msprop:Generator_ColumnPropNameInTable="DescricaoColumn" msprop:Generator_UserColumnName="Descricao" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

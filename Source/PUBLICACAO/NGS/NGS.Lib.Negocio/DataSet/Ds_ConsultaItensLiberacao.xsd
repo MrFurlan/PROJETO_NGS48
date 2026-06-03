@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ConsultaItensLiberacao" targetNamespace="http://tempuri.org/ConsultaItensLiberacao.xsd" xmlns:mstns="http://tempuri.org/ConsultaItensLiberacao.xsd" xmlns="http://tempuri.org/ConsultaItensLiberacao.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ConsultaItensLiberacao" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="ConsultaItensLiberacao" msprop:Generator_DataSetName="ConsultaItensLiberacao">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ConsultaItensLiberacao" msprop:Generator_UserTableName="ConsultaItensLiberacao" msprop:Generator_RowDeletedName="ConsultaItensLiberacaoRowDeleted" msprop:Generator_RowChangedName="ConsultaItensLiberacaoRowChanged" msprop:Generator_RowClassName="ConsultaItensLiberacaoRow" msprop:Generator_RowChangingName="ConsultaItensLiberacaoRowChanging" msprop:Generator_RowEvArgName="ConsultaItensLiberacaoRowChangeEvent" msprop:Generator_RowEvHandlerName="ConsultaItensLiberacaoRowChangeEventHandler" msprop:Generator_TableClassName="ConsultaItensLiberacaoDataTable" msprop:Generator_TableVarName="tableConsultaItensLiberacao" msprop:Generator_RowDeletingName="ConsultaItensLiberacaoRowDeleting" msprop:Generator_TablePropName="_ConsultaItensLiberacao">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Ordem" msprop:Generator_UserColumnName="Ordem" msprop:Generator_ColumnVarNameInTable="columnOrdem" msprop:Generator_ColumnPropNameInRow="Ordem" msprop:Generator_ColumnPropNameInTable="OrdemColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Cliente" msprop:Generator_UserColumnName="Cliente" msprop:Generator_ColumnVarNameInTable="columnCliente" msprop:Generator_ColumnPropNameInRow="Cliente" msprop:Generator_ColumnPropNameInTable="ClienteColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Endereco" msprop:Generator_UserColumnName="Endereco" msprop:Generator_ColumnVarNameInTable="columnEndereco" msprop:Generator_ColumnPropNameInRow="Endereco" msprop:Generator_ColumnPropNameInTable="EnderecoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Nome" msprop:Generator_UserColumnName="Nome" msprop:Generator_ColumnVarNameInTable="columnNome" msprop:Generator_ColumnPropNameInRow="Nome" msprop:Generator_ColumnPropNameInTable="NomeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Checado" msprop:Generator_UserColumnName="Checado" msprop:Generator_ColumnVarNameInTable="columnChecado" msprop:Generator_ColumnPropNameInRow="Checado" msprop:Generator_ColumnPropNameInTable="ChecadoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Quantidade" msprop:Generator_UserColumnName="Quantidade" msprop:Generator_ColumnVarNameInTable="columnQuantidade" msprop:Generator_ColumnPropNameInRow="Quantidade" msprop:Generator_ColumnPropNameInTable="QuantidadeColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Unidade" msprop:Generator_UserColumnName="Unidade" msprop:Generator_ColumnVarNameInTable="columnUnidade" msprop:Generator_ColumnPropNameInRow="Unidade" msprop:Generator_ColumnPropNameInTable="UnidadeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Descricao" msprop:Generator_UserColumnName="Descricao" msprop:Generator_ColumnVarNameInTable="columnDescricao" msprop:Generator_ColumnPropNameInRow="Descricao" msprop:Generator_ColumnPropNameInTable="DescricaoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Unitario" msprop:Generator_UserColumnName="Unitario" msprop:Generator_ColumnVarNameInTable="columnUnitario" msprop:Generator_ColumnPropNameInRow="Unitario" msprop:Generator_ColumnPropNameInTable="UnitarioColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Total" msprop:Generator_UserColumnName="Total" msprop:Generator_ColumnVarNameInTable="columnTotal" msprop:Generator_ColumnPropNameInRow="Total" msprop:Generator_ColumnPropNameInTable="TotalColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="IPI" msprop:Generator_UserColumnName="IPI" msprop:Generator_ColumnVarNameInTable="columnIPI" msprop:Generator_ColumnPropNameInRow="IPI" msprop:Generator_ColumnPropNameInTable="IPIColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Entrega" msprop:Generator_UserColumnName="Entrega" msprop:Generator_ColumnVarNameInTable="columnEntrega" msprop:Generator_ColumnPropNameInRow="Entrega" msprop:Generator_ColumnPropNameInTable="EntregaColumn" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

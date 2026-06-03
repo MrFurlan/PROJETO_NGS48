@@ -1,0 +1,25 @@
+Public Enum eTipoCliente
+    Nenhum = 0
+    Empresa = 1
+    Coligadas = 2
+    Depositos = 3
+    Clientes = 4
+    Fornecedores = 5
+    Representantes = 6
+    Transportadores = 7
+    Funcionarios = 8
+    Mutuos = 9
+    PrestadorServico = 10
+    ParticipanteMonsanto = 11
+    Agenciador = 12
+    Motorista = 13
+    Fisco = 14
+    Agronomo = 15
+    ResponsavelTecnico = 16
+    Revenda = 17
+    Posto = 18
+    'Matriz = 19
+    CentroDeDistribuicao = 19
+    UnidadesNegocio = 50
+    Servidores = 100
+End Enum

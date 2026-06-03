@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="Ds_RelacaoDeTitulos" targetNamespace="http://tempuri.org/Ds_RelacaoDeTitulos.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/Ds_RelacaoDeTitulos.xsd"
+	xmlns:mstns="http://tempuri.org/Ds_RelacaoDeTitulos.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="Ds_RelacaoDeTitulos" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Clientes">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Titulo_Id" type="xs:string" minOccurs="0" />
+							<xs:element name="VencimentoGrupo" type="xs:date" minOccurs="0" />
+							<xs:element name="Vencimento" type="xs:date" minOccurs="0" />
+							<xs:element name="CnpjEmpOrigem" type="xs:string" minOccurs="0" />
+							<xs:element name="EndEmpOrigem" type="xs:string" minOccurs="0" />
+							<xs:element name="NomeEmpOrigem" type="xs:string" minOccurs="0" />
+							<xs:element name="RedEmpOrigem" type="xs:string" minOccurs="0" />
+							<xs:element name="CnpjEmpDestino" type="xs:string" minOccurs="0" />
+							<xs:element name="EndEmpDestino" type="xs:string" minOccurs="0" />
+							<xs:element name="ClienteDebito" type="xs:string" minOccurs="0" />
+							<xs:element name="EndClienteDebito" type="xs:string" minOccurs="0" />
+							<xs:element name="NomeCliDebito" type="xs:string" minOccurs="0" />
+							<xs:element name="CliCredito" type="xs:string" minOccurs="0" />
+							<xs:element name="EndCliCredito" type="xs:string" minOccurs="0" />
+							<xs:element name="NomeCliCred" type="xs:string" minOccurs="0" />
+							<xs:element name="OficialProgramado" type="xs:double" minOccurs="0" />
+							<xs:element name="OficialBaixado" type="xs:double" minOccurs="0" />
+							<xs:element name="MoedaProgramado" type="xs:double" minOccurs="0" />
+							<xs:element name="MoedaBaixado" type="xs:double" minOccurs="0" />
+							<xs:element name="ContaCredito" type="xs:string" minOccurs="0" />
+							<xs:element name="ContaDebito" type="xs:string" minOccurs="0" />
+							<xs:element name="TituloCredito" type="xs:string" minOccurs="0" />
+							<xs:element name="TituloDebito" type="xs:string" minOccurs="0" />
+							<xs:element name="NomeEmpDestino" type="xs:string" />
+							<xs:element name="RedEmpDestino" type="xs:string" minOccurs="0" />
+							<xs:element name="Historico" type="xs:string" minOccurs="0" />
+							<xs:element name="ReceberPagar" type="xs:string" minOccurs="0" />
+							<xs:element name="Provisao_Id" type="xs:int" minOccurs="0" />
+							<xs:element name="Movimento" type="xs:date" minOccurs="0" />
+							<xs:element name="Orcamento" type="xs:int" minOccurs="0" />
+							<xs:element name="NomeDoDestinatario" type="xs:string" minOccurs="0" />
+							<xs:element name="Quantidade" type="xs:double" minOccurs="0" />
+							<xs:element name="Produto" type="xs:string" minOccurs="0" />
+							<xs:element name="DescricaoProduto" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

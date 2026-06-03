@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Ds_Liberacao" targetNamespace="http://tempuri.org/Ds_Liberacao.xsd" elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/Ds_Liberacao.xsd" xmlns:mstns="http://tempuri.org/Ds_Liberacao.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="Ds_Liberacao" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Liberacao">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Registro" type="xs:int" />
+							<xs:element name="Solicitante" type="xs:string" />
+							<xs:element name="Cotante" type="xs:string" />
+							<xs:element name="Fornecedor" type="xs:string" />
+							<xs:element name="Valor" type="xs:decimal" />
+							<xs:element name="Motivo" type="xs:string" />
+							<xs:element name="Fornecedor_Id" type="xs:string" />
+							<xs:element name="EndFornecedor_Id" type="xs:int" />
+							<xs:element name="Ordem_Id" type="xs:int" />
+							<xs:element name="Quantidade" type="xs:int" />
+							<xs:element name="Unidade" type="xs:string" />
+							<xs:element name="Descricao" type="xs:string" />
+							<xs:element name="Unitario" type="xs:decimal" />
+							<xs:element name="Total" type="xs:decimal" />
+							<xs:element name="IPI" type="xs:int" />
+							<xs:element name="Entrega" type="xs:dateTime" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

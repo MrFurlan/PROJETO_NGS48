@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Ds_NfsAutorizacaoDeRetirada" targetNamespace="http://tempuri.org/Ds_NfsAutorizacaoDeRetirada.xsd" xmlns:mstns="http://tempuri.org/Ds_NfsAutorizacaoDeRetirada.xsd" xmlns="http://tempuri.org/Ds_NfsAutorizacaoDeRetirada.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Ds_NfsAutorizacaoDeRetirada" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="Ds_NfsAutorizacaoDeRetirada" msprop:Generator_DataSetName="Ds_NfsAutorizacaoDeRetirada">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="NfsAutorizacaoDeRetirada" msprop:Generator_UserTableName="NfsAutorizacaoDeRetirada" msprop:Generator_RowDeletedName="NfsAutorizacaoDeRetiradaRowDeleted" msprop:Generator_TableClassName="NfsAutorizacaoDeRetiradaDataTable" msprop:Generator_RowChangedName="NfsAutorizacaoDeRetiradaRowChanged" msprop:Generator_RowClassName="NfsAutorizacaoDeRetiradaRow" msprop:Generator_RowChangingName="NfsAutorizacaoDeRetiradaRowChanging" msprop:Generator_RowEvArgName="NfsAutorizacaoDeRetiradaRowChangeEvent" msprop:Generator_RowEvHandlerName="NfsAutorizacaoDeRetiradaRowChangeEventHandler" msprop:Generator_TablePropName="NfsAutorizacaoDeRetirada" msprop:Generator_TableVarName="tableNfsAutorizacaoDeRetirada" msprop:Generator_RowDeletingName="NfsAutorizacaoDeRetiradaRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Empresa_Id" msprop:Generator_UserColumnName="Empresa_Id" msprop:Generator_ColumnPropNameInRow="Empresa_Id" msprop:Generator_ColumnVarNameInTable="columnEmpresa_Id" msprop:Generator_ColumnPropNameInTable="Empresa_IdColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="EndEmpresa_Id" msprop:Generator_UserColumnName="EndEmpresa_Id" msprop:Generator_ColumnPropNameInRow="EndEmpresa_Id" msprop:Generator_ColumnVarNameInTable="columnEndEmpresa_Id" msprop:Generator_ColumnPropNameInTable="EndEmpresa_IdColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="NomeEmpresa" msprop:Generator_UserColumnName="NomeEmpresa" msprop:Generator_ColumnPropNameInRow="NomeEmpresa" msprop:Generator_ColumnVarNameInTable="columnNomeEmpresa" msprop:Generator_ColumnPropNameInTable="NomeEmpresaColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Cliente_Id" msprop:Generator_UserColumnName="Cliente_Id" msprop:Generator_ColumnPropNameInRow="Cliente_Id" msprop:Generator_ColumnVarNameInTable="columnCliente_Id" msprop:Generator_ColumnPropNameInTable="Cliente_IdColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="EndCliente_Id" msprop:Generator_UserColumnName="EndCliente_Id" msprop:Generator_ColumnPropNameInRow="EndCliente_Id" msprop:Generator_ColumnVarNameInTable="columnEndCliente_Id" msprop:Generator_ColumnPropNameInTable="EndCliente_IdColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Cidade" msprop:Generator_UserColumnName="Cidade" msprop:Generator_ColumnPropNameInRow="Cidade" msprop:Generator_ColumnVarNameInTable="columnCidade" msprop:Generator_ColumnPropNameInTable="CidadeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Complemento" msprop:Generator_UserColumnName="Complemento" msprop:Generator_ColumnPropNameInRow="Complemento" msprop:Generator_ColumnVarNameInTable="columnComplemento" msprop:Generator_ColumnPropNameInTable="ComplementoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NomeCliente" msprop:Generator_UserColumnName="NomeCliente" msprop:Generator_ColumnPropNameInRow="NomeCliente" msprop:Generator_ColumnVarNameInTable="columnNomeCliente" msprop:Generator_ColumnPropNameInTable="NomeClienteColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Pedido" msprop:Generator_UserColumnName="Pedido" msprop:Generator_ColumnPropNameInRow="Pedido" msprop:Generator_ColumnVarNameInTable="columnPedido" msprop:Generator_ColumnPropNameInTable="PedidoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DataDaNota" msprop:Generator_UserColumnName="DataDaNota" msprop:Generator_ColumnPropNameInRow="DataDaNota" msprop:Generator_ColumnVarNameInTable="columnDataDaNota" msprop:Generator_ColumnPropNameInTable="DataDaNotaColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Nota_Id" msprop:Generator_UserColumnName="Nota_Id" msprop:Generator_ColumnPropNameInRow="Nota_Id" msprop:Generator_ColumnVarNameInTable="columnNota_Id" msprop:Generator_ColumnPropNameInTable="Nota_IdColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Serie_Id" msprop:Generator_UserColumnName="Serie_Id" msprop:Generator_ColumnPropNameInRow="Serie_Id" msprop:Generator_ColumnVarNameInTable="columnSerie_Id" msprop:Generator_ColumnPropNameInTable="Serie_IdColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="EntradaSaida_Id" msprop:Generator_UserColumnName="EntradaSaida_Id" msprop:Generator_ColumnPropNameInRow="EntradaSaida_Id" msprop:Generator_ColumnVarNameInTable="columnEntradaSaida_Id" msprop:Generator_ColumnPropNameInTable="EntradaSaida_IdColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="QuantidadeFisica" msprop:Generator_UserColumnName="QuantidadeFisica" msprop:Generator_ColumnPropNameInRow="QuantidadeFisica" msprop:Generator_ColumnVarNameInTable="columnQuantidadeFisica" msprop:Generator_ColumnPropNameInTable="QuantidadeFisicaColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="QuantidadeFiscal" msprop:Generator_UserColumnName="QuantidadeFiscal" msprop:Generator_ColumnPropNameInRow="QuantidadeFiscal" msprop:Generator_ColumnVarNameInTable="columnQuantidadeFiscal" msprop:Generator_ColumnPropNameInTable="QuantidadeFiscalColumn" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

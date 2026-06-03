@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="Ds_Alcadas" targetNamespace="http://tempuri.org/Ds_Alcadas.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/Ds_Alcadas.xsd" xmlns:mstns="http://tempuri.org/Ds_Alcadas.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="Ds_Alcadas" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Alcadas">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Unidade" type="xs:string" minOccurs="0" />
+							<xs:element name="NomeDaUnidade" type="xs:string" minOccurs="0" />
+							<xs:element name="Autorizante" type="xs:string" minOccurs="0" />
+							<xs:element name="Carteira" type="xs:string" minOccurs="0" />
+							<xs:element name="NomeDaCarteira" type="xs:string" minOccurs="0" />
+							<xs:element name="Alcada" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Percentual" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Corporativo" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

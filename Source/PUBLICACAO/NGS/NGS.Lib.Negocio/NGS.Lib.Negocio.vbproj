@@ -1,0 +1,3913 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{7DE01FBE-F20E-498C-9633-20B3D8735906}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>NGS.Lib.Negocio</RootNamespace>
+    <AssemblyName>NGS.Lib.Negocio</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>NGS.Lib.Negocio.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>NGS.Lib.Negocio.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Boleto.Net, Version=2.0.1.5, Culture=neutral, PublicKeyToken=53630c3583b7ed5c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Boleto.Net.2.1.0.909\lib\Boleto.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="BouncyCastle.Crypto">
+      <HintPath>..\packages\BouncyCastle.1.8.9\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="BouncyCastle.Cryptography, Version=2.0.0.0, Culture=neutral, PublicKeyToken=072edcf4a5328938, processorArchitecture=MSIL">
+      <HintPath>..\packages\BouncyCastle.Cryptography.2.6.2\lib\net461\BouncyCastle.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="DocumentFormat.OpenXml, Version=2.5.5631.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\DocumentFormat.OpenXml.2.5\lib\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus, Version=3.1.3.0, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <HintPath>..\packages\EPPlus.3.1.3.3\lib\net35\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="FirebirdSql.Data.FirebirdClient, Version=5.1.1.0, Culture=neutral, PublicKeyToken=3750abcc3150b00c, processorArchitecture=MSIL">
+      <HintPath>..\packages\FirebirdSql.Data.FirebirdClient.5.1.1\lib\net40-client\FirebirdSql.Data.FirebirdClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf, Version=3.32.0.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Protobuf.3.32.0\lib\net45\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip, Version=1.9.1.8, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ionic.Zip.1.9.1.8\lib\Ionic.Zip.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>..\NGS.Web.UI\Bin\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4, Version=1.3.8.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.1.3.8\lib\net462\K4os.Compression.LZ4.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4.Streams, Version=1.3.8.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.Streams.1.3.8\lib\net462\K4os.Compression.LZ4.Streams.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Hash.xxHash, Version=1.0.8.0, Culture=neutral, PublicKeyToken=32cd54395057cec3, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Hash.xxHash.1.0.8\lib\net462\K4os.Hash.xxHash.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=9.7.0.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.9.7.0\lib\net48\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfiumViewer, Version=2.10.0.0, Culture=neutral, PublicKeyToken=91e4789cfb0609e0, processorArchitecture=MSIL">
+      <HintPath>..\packages\PdfiumViewer.2.10.0.0\lib\net20\PdfiumViewer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Configuration.ConfigurationManager, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Configuration.ConfigurationManager.8.0.0\lib\net462\System.Configuration.ConfigurationManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.IO.Pipelines, Version=5.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Pipelines.5.0.2\lib\net461\System.IO.Pipelines.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="ZstdSharp, Version=0.8.6.0, Culture=neutral, PublicKeyToken=8d151af33a4ad5cf, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZstdSharp.Port.0.8.6\lib\net462\ZstdSharp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Alfasig\Fil.vb" />
+    <Compile Include="Alfasig\NotaEnt.vb" />
+    <Compile Include="Alfasig\Resp.vb" />
+    <Compile Include="AnaliseDeCredito\AnaliseDeCredito.vb" />
+    <Compile Include="AnaliseDeCredito\AnaliseDeCreditoCliente.vb" />
+    <Compile Include="AnaliseDeCredito\AnaliseDeCreditoCultura.vb" />
+    <Compile Include="AnaliseDeCredito\AnaliseDeCreditoPergunta.vb" />
+    <Compile Include="AnaliseDeCredito\CulturaPortifolio.vb" />
+    <Compile Include="AnaliseDeCredito\ParametrosAnaliseDeCredito.vb" />
+    <Compile Include="AnaliseDeCredito\ParametrosAnaliseDeCreditoCultura.vb" />
+    <Compile Include="AnaliseDeCredito\ParametrosAnaliseDeCreditoPergunta.vb" />
+    <Compile Include="BACEN\BACEN.vb" />
+    <Compile Include="BaseEntity.vb" />
+    <Compile Include="Cadastros\AjustesDaApuracaoIcms.vb" />
+    <Compile Include="Cadastros\Analise.vb" />
+    <Compile Include="Cadastros\Arquivo.vb" />
+    <Compile Include="Cadastros\BalancaEletronica.vb" />
+    <Compile Include="Cadastros\BalancasXUsuarios.vb" />
+    <Compile Include="Cadastros\CadastroCertidaoELicenca.vb" />
+    <Compile Include="Cadastros\Categorias.vb" />
+    <Compile Include="Cadastros\CentroDeCusto.vb" />
+    <Compile Include="Cadastros\CertidaoNegativa.vb" />
+    <Compile Include="Cadastros\CFOP.vb" />
+    <Compile Include="Cadastros\ClasseDeOperacao.vb" />
+    <Compile Include="Cadastros\Classificacao.vb" />
+    <Compile Include="Cadastros\ClassificacaoDeProduto.vb" />
+    <Compile Include="Cadastros\Cliente.vb" />
+    <Compile Include="Cadastros\ClientesXContatos.vb" />
+    <Compile Include="Cadastros\ClienteXArrendante.vb" />
+    <Compile Include="Cadastros\ClienteXCentroDeCusto.vb" />
+    <Compile Include="Cadastros\ClienteXContaBancaria.vb" />
+    <Compile Include="Cadastros\ClienteXCultura.vb" />
+    <Compile Include="Cadastros\ClientexDependente.vb" />
+    <Compile Include="Cadastros\ClienteXDocumento.vb" />
+    <Compile Include="Cadastros\ClienteXEmpresa.vb" />
+    <Compile Include="Cadastros\ClienteXEmpresaXECF.vb" />
+    <Compile Include="Cadastros\ClienteXEquipamento.vb" />
+    <Compile Include="Cadastros\ClienteXFinanciamento.vb" />
+    <Compile Include="Cadastros\ClienteXImovel.vb" />
+    <Compile Include="Cadastros\ClienteXMatricula.vb" />
+    <Compile Include="Cadastros\ClienteXProduto.vb" />
+    <Compile Include="Cadastros\ClienteXReceitasDespesas.vb" />
+    <Compile Include="Cadastros\ClienteXRepresentante.vb" />
+    <Compile Include="Cadastros\ClienteXSafra.vb" />
+    <Compile Include="Cadastros\ClienteXSocio.vb" />
+    <Compile Include="Cadastros\ClienteXSubstitutoTributario.vb" />
+    <Compile Include="Cadastros\ClienteXTabelaDePreco.vb" />
+    <Compile Include="Cadastros\ClientexTipo.vb" />
+    <Compile Include="Cadastros\ClienteXVeiculos.vb" />
+    <Compile Include="Cadastros\CNAE.vb" />
+    <Compile Include="Cadastros\CnpjSefaz.vb" />
+    <Compile Include="Cadastros\Configuracao.vb" />
+    <Compile Include="Cadastros\Contrato.vb" />
+    <Compile Include="Cadastros\DarDiferencialDeAliquota.vb" />
+    <Compile Include="Cadastros\CPRxLiquidacao.vb" />
+    <Compile Include="Cadastros\EspecificacaoDoProduto.vb" />
+    <Compile Include="Cadastros\GruposXEmpresas.vb" />
+    <Compile Include="Cadastros\Seguimento.vb" />
+    <Compile Include="Cadastros\NaturezaDeRendimento.vb" />
+    <Compile Include="Cadastros\NaturezaJuridica.vb" />
+    <Compile Include="Cadastros\NaviosXInvoice.vb" />
+    <Compile Include="Cadastros\Navio.vb" />
+    <Compile Include="Cadastros\NavioXInvoiceXProduto.vb" />
+    <Compile Include="Cadastros\ObservacaoFiscal.vb" />
+    <Compile Include="Cadastros\PlanoDeContaXReferencialBacen.vb" />
+    <Compile Include="Cadastros\Processo.vb" />
+    <Compile Include="Cadastros\TabelaDePreco.vb" />
+    <Compile Include="Critico\ExceptionLog.vb" />
+    <Compile Include="Critico\GenericCritico.vb" />
+    <Compile Include="Dashboard\UsuarioXProdutosXDashBoard.vb" />
+    <Compile Include="Dashboard\UsuarioXGruposDeEstoqueXDashBoard.vb" />
+    <Compile Include="Dashboard\UsuarioXEmpresasXDashboard.vb" />
+    <Compile Include="DataSet\DsBancosXContas1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsBancosXContas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\dsCarteira1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsCarteira.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\DsComparativo.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsComparativo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\dsConciliacao.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsConciliacao.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\DsCustoMedio.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsCustoMedio.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\DsEntradasSaidasLaudoFiscal.vb">
+      <DependentUpon>DsEntradasSaidasLaudoFiscal.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\DsEntradasSaidasLaudoFiscal1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsEntradasSaidasLaudoFiscal.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\DsEstoquePorOperacao.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsEstoquePorOperacao.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\DsFluxoDeCaixa.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsFluxoDeCaixa.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\DsInventarioEstoque.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsInventarioEstoque.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\DsLivroCaixa.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsLivroCaixa.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\dsMemorandosPendentes.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsMemorandosPendentes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\dsPedidos.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPedidos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\dsPedidosCN.Designer.vb">
+      <DependentUpon>dsPedidosCN.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="DataSet\dsPedidosCN.vb">
+      <DependentUpon>dsPedidosCN.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\dsPosicaoDePedidos.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPosicaoDePedidos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\DsProdutosDeTerceiros.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsProdutosDeTerceiros.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\dsRazaoAuxiliar.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsRazaoAuxiliar.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\dsRelatorioDeFretes.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsRelatorioDeFretes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_AcompanhamentoDeEntregaDeProduto.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_AcompanhamentoDeEntregaDeProduto.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_Adiantamento.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_Adiantamento.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_Alcadas.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_Alcadas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_AnaliseDeCreditoProdutorRural.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_AnaliseDeCreditoProdutorRural.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_AnaliseDeCreditos.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_AnaliseDeCreditos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_Analises.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_Analises.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_AnexoPorCliente.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_AnexoPorCliente.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_AnexoPorProduto.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_AnexoPorProduto.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_Ativos.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_Ativos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_AtivosXBaixas.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_AtivosXBaixas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_AutorizacaoDeEmbarque.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_AutorizacaoDeEmbarque.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_AutorizacoesDePgtos.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_AutorizacoesDePgtos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_Autorizantes.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_Autorizantes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_BalanceCentroDeCusto.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_BalanceCentroDeCusto.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_BalanceteAuxiliar.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_BalanceteAuxiliar.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_Bancos.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_Bancos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_Bordero.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_Bordero.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_Cardex.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_Cardex.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_Cardex.vb">
+      <DependentUpon>Ds_Cardex.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_CargasLaudo.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_CargasLaudo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_CarteiraDeCompras.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_CarteiraDeCompras.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_CarteiraDoTitulo.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_CarteiraDoTitulo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_CarteirasXTributos.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_CarteirasXTributos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_Categorias.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_Categorias.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\ds_CertidaoNegativaConsultas.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_CertidaoNegativaConsultas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_cheques.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_cheques.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_ClasseToxicologica.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_ClasseToxicologica.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_ClassificacaoDeProdutos.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_ClassificacaoDeProdutos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_Clientes.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_Clientes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_CodigoFiscal.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_CodigoFiscal.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_Comissoes.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_Comissoes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_ComposicaoDoEstoque.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_ComposicaoDoEstoque.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_ComposicaoDoEstoqueRN.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_ComposicaoDoEstoqueRN.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_ComprasVendasAFixar.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_ComprasVendasAFixar.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_Conciliacao.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_Conciliacao.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_ConsistenciaDeNotas.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_ConsistenciaDeNotas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_ConsistenciaDeProducao.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_ConsistenciaDeProducao.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_ConsistenciasDeLotes.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_ConsistenciasDeLotes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_ConsultaItensLiberacao.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_ConsultaItensLiberacao.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_ContasAPagar.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_ContasAPagar.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_ContratoBancario.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_ContratoBancario.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_ContratoDeFrete.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_ContratoDeFrete.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_CorrecaoMonetaria.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_CorrecaoMonetaria.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_Cotacao.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_Cotacao.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_CotacoesDeMoedas.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_CotacoesDeMoedas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_CRM.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_CRM.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_CtrcFerroviario.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_CtrcFerroviario.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_CtrcNotas.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_CtrcNotas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_CtrcRodoviarioXFerroviario.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_CtrcRodoviarioXFerroviario.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_CurvaABC.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_CurvaABC.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_CurvaABC.vb">
+      <DependentUpon>Ds_CurvaABC.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_CurvaABC_Produto.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_CurvaABC_Produto.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_DadosDuplicata.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_DadosDuplicata.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_DarDiferencialDeAliquota.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_DarDiferencialDeAliquota.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\ds_datanpro.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_datanpro.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_DatasNaoProgramaveis.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_DatasNaoProgramaveis.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_Disponibilidade.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_Disponibilidade.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_EmissaoDeChequeGrafico.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_EmissaoDeChequeGrafico.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_EmissaoDeNotasFiscais.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_EmissaoDeNotasFiscais.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_Empresas.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_Empresas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_encargo.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_encargo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_EncargosXTaxas.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_EncargosXTaxas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_EntradaSaidaNotas.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_EntradaSaidaNotas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_EntradasSaidasLaudo.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_EntradasSaidasLaudo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_EPI.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_EPI.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_EspelhoNota.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_EspelhoNota.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_EstadoFisicoIA.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_EstadoFisicoIA.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_Estados.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_Estados.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_EstoqueDeTerceiros.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_EstoqueDeTerceiros.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_EstoqueFiscalPorCFOP.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_EstoqueFiscalPorCFOP.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\ds_ExtratoDeBens.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_ExtratoDeBens.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_ExtratoDeContas.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_ExtratoDeContas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_ExtratoPedido.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_ExtratoPedido.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_ExtratoPedidoNovo.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_ExtratoPedidoNovo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_ExtratoPedidoNovo.vb">
+      <DependentUpon>Ds_ExtratoPedidoNovo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_Faturamento.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_Faturamento.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_FaturasDeFrete.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_FaturasDeFrete.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_FichaCadastral.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_FichaCadastral.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_FimDoMundo.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_FimDoMundo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_FixacoesPendentes.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_FixacoesPendentes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_FluxoDeCaixa.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_FluxoDeCaixa.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_Fretes.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_Fretes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_GruposDeAtivos.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_GruposDeAtivos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_GruposXProcessosXUsuarios.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_GruposXProcessosXUsuarios.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_Impressoras.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_Impressoras.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_IngredienteAtivo.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_IngredienteAtivo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_LaudoDePesagem.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_LaudoDePesagem.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_Liberacao.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_Liberacao.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_LivroDiario.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_LivroDiario.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_MemorandoDeExportacao.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_MemorandoDeExportacao.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_MemorandoDeExpPendencias.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_MemorandoDeExpPendencias.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_Mercadorias.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_Mercadorias.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_MovimentoFiscalPorOperacao.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_MovimentoFiscalPorOperacao.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_NfsAutorizacaoDeRetirada.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_NfsAutorizacaoDeRetirada.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_NossasPendenciasCompDeExportacao.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_NossasPendenciasCompDeExportacao.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\ds_NotaFiscal.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_NotaFiscal.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_NotasNaoContabilizadas.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_NotasNaoContabilizadas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_Numerador.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_Numerador.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_Operacoes.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_Operacoes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_OperacoesDeFretes.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_OperacoesDeFretes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_OperacoesXEncargos.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_OperacoesXEncargos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_Orcamentos.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_Orcamentos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_OrdemDeProducao.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_OrdemDeProducao.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_OrdemDeProducao.vb">
+      <DependentUpon>Ds_OrdemDeProducao.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_OrigemDaNotaFiscal.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_OrigemDaNotaFiscal.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_Pagamentos.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_Pagamentos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_PedidosEntreguesDeVendas.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_PedidosEntreguesDeVendas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_PedidosEntreguesDeVendasClientes.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_PedidosEntreguesDeVendasClientes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_PedidosPentente.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_PedidosPentente.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_PEntreguesDeComprasCli1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_PEntreguesDeComprasCli.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_PEntreguesDeComprasProd.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_PEntreguesDeComprasProd.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_PesosDeChegada.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_PesosDeChegada.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_Placas.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_Placas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_PlanoDeContas.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_PlanoDeContas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_PlanoDeCustos.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_PlanoDeCustos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_PosicaoDeEncargos.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_PosicaoDeEncargos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_PosicaoDeEncargosPorClientes.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_PosicaoDeEncargosPorClientes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_PosicaoDeEncargosPorNotas.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_PosicaoDeEncargosPorNotas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_PosicaoDeEncargosResumoNota.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_PosicaoDeEncargosResumoNota.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_PosicaoDeEstoques.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_PosicaoDeEstoques.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_PosicaoDePedidosConsolidada.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_PosicaoDePedidosConsolidada.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_PosicaoFinanceiraAnalitico.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_PosicaoFinanceiraAnalitico.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_PosicaoFinanceiraSintetico.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_PosicaoFinanceiraSintetico.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_PrecoDeMercado.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_PrecoDeMercado.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_PrecoMedio.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_PrecoMedio.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_PrecosParaCustos.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_PrecosParaCustos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_Processos.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_Processos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_Procuracoes.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_Procuracoes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_ProdutosXAnalises.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_ProdutosXAnalises.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_PVendaLucroBrutoCli.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_PVendaLucroBrutoCli.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_PvendaLucroBrutoProd.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_PvendaLucroBrutoProd.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_PVendaLucroBrutoRepres.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_PVendaLucroBrutoRepres.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_Realizado.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_Realizado.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_ReaLizadoContasApagr.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_ReaLizadoContasApagr.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_RealizadoContasAReceber.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_RealizadoContasAReceber.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_ReciboAPagar.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_ReciboAPagar.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_RegistrosFiscais1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_RegistrosFiscais.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\DS_RelacaoCompraVenda.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_RelacaoCompraVenda.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_RelacaoDePedidos1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_RelacaoDePedidos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_RelacaoDeTitulos.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_RelacaoDeTitulos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_RelatorioAnaliticoDeFretes.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_RelatorioAnaliticoDeFretes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_RelatorioBasePisCofinsTransportadoras.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_RelatorioBasePisCofinsTransportadoras.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_RelatorioDeLaudosPorPlacas.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_RelatorioDeLaudosPorPlacas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_RelatorioDeLaudosSemNotaFiscal.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_RelatorioDeLaudosSemNotaFiscal.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_RelatorioDeNotaPorMunicipios.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_RelatorioDeNotaPorMunicipios.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_RelatorioDeNotasSemCte.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_RelatorioDeNotasSemCte.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_RelatorioEstoqueRevenda.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_RelatorioEstoqueRevenda.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_RelatorioRomaneiosMonsanto.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_RelatorioRomaneiosMonsanto.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_RelatorioRomaneiosMonsanto.vb">
+      <DependentUpon>Ds_RelatorioRomaneiosMonsanto.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_RelatorioSinteticoDeFretes.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_RelatorioSinteticoDeFretes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_RelatorioTrocaDeNota1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_RelatorioTrocaDeNota.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_RelMargemDeLucro.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_RelMargemDeLucro.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_RelMargemDeLucroPorCliente.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_RelMargemDeLucroPorCliente.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_RelVendasPorTroca1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_RelVendasPorTroca.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_ResultadoComercialPorOperacao.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_ResultadoComercialPorOperacao.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_ResultadoComercioDeInsumos.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_ResultadoComercioDeInsumos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_RetencaoDeClientes.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_RetencaoDeClientes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_Romaneio.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_Romaneio.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_SinteseDaDepreciacao.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_SinteseDaDepreciacao.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_SinteseDoFluxo.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_SinteseDoFluxo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_SituacaoTributariaPISCOFINS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_SituacaoTributariaPISCOFINS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_slip.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_slip.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_Solicitacao.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_Solicitacao.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_Solicitacoes.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_Solicitacoes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_Suboperacoes.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_Suboperacoes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_TabelaDeApuracaoDeCustos.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_TabelaDeApuracaoDeCustos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_TabelaDeComissao.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_TabelaDeComissao.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_Tabelas.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_Tabelas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_TermosLivroDiario.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_TermosLivroDiario.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_TiposDeVeiculos.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_TiposDeVeiculos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_Titulos.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_Titulos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_TitulosEnviadosRemessaBancaria.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_TitulosEnviadosRemessaBancaria.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_TotalizadorDeLotes.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_TotalizadorDeLotes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_TraitMixProdutos.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_TraitMixProdutos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_TransferenciasFinanceiras1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_TransferenciasFinanceiras.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_UnidadeConversao.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_UnidadeConversao.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_UnidadeDeNegocioXEmpresas.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_UnidadeDeNegocioXEmpresas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_Usuarios.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_Usuarios.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_UsuariosXProcessos.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_UsuariosXProcessos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_VendasPorPedido.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_VendasPorPedido.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_VendasPorRepresentante.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_VendasPorRepresentante.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_VendasPorTrocaSinteticoCli.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_VendasPorTrocaSinteticoCli.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_VendasPorTrocaSinteticoGru.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_VendasPorTrocaSinteticoGru.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Ds_VisitaFormulario.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_VisitaFormulario.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Enum\eAgrupamentoFinanceiro.vb" />
+    <Compile Include="Enum\eCritico.vb" />
+    <Compile Include="Enum\eRetornoRemessaItau.vb" />
+    <Compile Include="Enum\eSituacaoBancaria.vb" />
+    <Compile Include="Enum\eSituacaoFolhaPagamento.vb" />
+    <Compile Include="Financeiro\BoletoBancario.vb" />
+    <Compile Include="Financeiro\Endosso.vb" />
+    <Compile Include="Financeiro\EndossoXTitulo.vb" />
+    <Compile Include="Financeiro\FinanceiroXDocumento.vb" />
+    <Compile Include="Financeiro\FolhaDePagamento.vb" />
+    <Compile Include="Financeiro\HistoricoFinanceiro.vb" />
+    <Compile Include="Financeiro\MeiosPagamento.vb" />
+    <Compile Include="Financeiro\ParametrosDaCarteiraDeCobranca.vb" />
+    <Compile Include="Financeiro\TituloV.vb" />
+    <Compile Include="Imobilizado\Ativo.vb" />
+    <Compile Include="Imobilizado\GrupoDeAtivo.vb" />
+    <Compile Include="Imobilizado\PisCofinsRegistroF130.vb" />
+    <Compile Include="NotaFiscal\NotaFiscalXLote.vb" />
+    <Compile Include="Novo\NotaFiscalXTitulo.vb" />
+    <Compile Include="OnMobile\PedidoOnMobile.vb" />
+    <Compile Include="Pedido\PedidoXContrato.vb" />
+    <Compile Include="Pedido\PedidoxFinanceiro.vb" />
+    <Compile Include="Pedido\PedidoXParcela.vb" />
+    <Compile Include="Pedido\PedidoXTituloVirtual.vb" />
+    <Compile Include="Pesagem\LaudoDeCarregamento.vb" />
+    <Compile Include="Producao\OrdemParaProducao.vb" />
+    <Compile Include="Producao\OrdemParaProducaoXConsumo.vb" />
+    <Compile Include="Producao\OrdemParaProducaoXConsumoXLote.vb" />
+    <Compile Include="Producao\OrdemParaProducaoXEmbalagens.vb" />
+    <Compile Include="Producao\OrdemParaProducaoXEPI.vb" />
+    <Compile Include="Producao\OrdemParaProducaoXEspecificacao.vb" />
+    <Compile Include="Producao\OrdemParaProducaoXInsumo.vb" />
+    <Compile Include="Producao\OrdemParaProducaoXProcedimento.vb" />
+    <Compile Include="Producao\OrdemParaProducaoXProduto.vb" />
+    <Compile Include="Producao\ProcedimentoParaProducao.vb" />
+    <Compile Include="Producao\Producao.vb" />
+    <Compile Include="Producao\ProducaoXItem.vb" />
+    <Compile Include="Cadastros\TipoDeAplicacao.vb" />
+    <Compile Include="Cadastros\CPR.vb" />
+    <Compile Include="Cadastros\CPRxAvalista.vb" />
+    <Compile Include="Cadastros\CPRxCliente.vb" />
+    <Compile Include="Cadastros\CPRxFazenda.vb" />
+    <Compile Include="Cadastros\CPRxGrau.vb" />
+    <Compile Include="Cadastros\CPRXMatricula.vb" />
+    <Compile Include="Cadastros\Encargo.vb" />
+    <Compile Include="Cadastros\EncargosPlanoDeContas.vb" />
+    <Compile Include="Cadastros\Estado.vb" />
+    <Compile Include="Cadastros\FaixaDeComissao.vb" />
+    <Compile Include="Cadastros\Finalidade.vb" />
+    <Compile Include="Cadastros\GeneroDoProduto.vb" />
+    <Compile Include="Cadastros\GeneroDoProdutoXSub.vb" />
+    <Compile Include="Cadastros\GrupoCFOP.vb" />
+    <Compile Include="Cadastros\Historico.vb" />
+    <Compile Include="Cadastros\Marca.vb" />
+    <Compile Include="Cadastros\Metas.vb" />
+    <Compile Include="Cadastros\MetasXClientes.vb" />
+    <Compile Include="Cadastros\MetasXSafras.vb" />
+    <Compile Include="Cadastros\MetasXSafraXProdutos.vb" />
+    <Compile Include="Cadastros\MicroRegiao.vb" />
+    <Compile Include="Cadastros\ModeloCertidao.vb" />
+    <Compile Include="Cadastros\Motivo.vb" />
+    <Compile Include="Cadastros\Municipio.vb" />
+    <Compile Include="Cadastros\ObservacaoTributariaGeral.vb" />
+    <Compile Include="Cadastros\Pais.vb" />
+    <Compile Include="Cadastros\Placa.vb" />
+    <Compile Include="Cadastros\PlanoDeContas.vb" />
+    <Compile Include="Cadastros\PlanoDeCusto.vb" />
+    <Compile Include="Cadastros\PrecoDePauta.vb" />
+    <Compile Include="Cadastros\Regioes.vb" />
+    <Compile Include="Cadastros\Safra.vb" />
+    <Compile Include="Cadastros\Situacao.vb" />
+    <Compile Include="Cadastros\SituacaoTributaria.vb" />
+    <Compile Include="Cadastros\SituacaoTributariaIPI.vb" />
+    <Compile Include="Cadastros\SituacaoTributariaPISCOFINS.vb" />
+    <Compile Include="Cadastros\SituacaoTributariaPISCOFINSObs.vb" />
+    <Compile Include="Cadastros\TabelaDeComissao.vb" />
+    <Compile Include="Cadastros\TabelaPrecoDeMercado.vb" />
+    <Compile Include="Cadastros\TipoCliente.vb" />
+    <Compile Include="Cadastros\TipoDeCertidao.vb" />
+    <Compile Include="Cadastros\TipoDeDocumento.vb" />
+    <Compile Include="Cadastros\TipoDeEmbalagem.vb" />
+    <Compile Include="Cadastros\TipoDeVeiculo.vb" />
+    <Compile Include="Cadastros\UnidadeConversao.vb" />
+    <Compile Include="Cadastros\UnidadeDeMedida.vb" />
+    <Compile Include="Cadastros\ValidationKey.vb" />
+    <Compile Include="Cadastros\ViaDeTransporte.vb" />
+    <Compile Include="Comissoes\Comissoes.vb" />
+    <Compile Include="Comissoes\ComissoesXBaixas.vb" />
+    <Compile Include="ConsultaTabelas.vb" />
+    <Compile Include="Controle\GerenciadorFinanceiro.vb" />
+    <Compile Include="CRM\crm.vb" />
+    <Compile Include="CRM\CRMxCliente.vb" />
+    <Compile Include="CRM\CRMxParametroVisita.vb" />
+    <Compile Include="CRM\Visita.vb" />
+    <Compile Include="CRM\VisitaAmeaca.vb" />
+    <Compile Include="CRM\VisitaMotivo.vb" />
+    <Compile Include="CRM\VisitaProdutividade.vb" />
+    <Compile Include="Disponibilidade\Disponibilidade.vb" />
+    <Compile Include="Disponibilidade\DisponibilidadeDeposito.vb" />
+    <Compile Include="Disponibilidade\DisponibilidadeProduto.vb" />
+    <Compile Include="Embarque\AutCarregamento.vb" />
+    <Compile Include="Embarque\AutCarregamentoXItens.vb" />
+    <Compile Include="Embarque\AutCarregamentoXNotaFiscal.vb" />
+    <Compile Include="Embarque\AutCarregamentoXPrecoFrete.vb" />
+    <Compile Include="Embarque\AutorizacaoEmbarque.vb" />
+    <Compile Include="Embarque\EmbarquePedidos.vb" />
+    <Compile Include="Embarque\EmbarquePrecoFrete.vb" />
+    <Compile Include="Embarque\EmbarqueRoteiro.vb" />
+    <Compile Include="Embarque\EmbarqueTransportador.vb" />
+    <Compile Include="Embarque\EmbarqueXEntrega.vb" />
+    <Compile Include="Embarque\EmbarqueXEntregaProduto.vb" />
+    <Compile Include="Enum\eEtapa.vb" />
+    <Compile Include="Enum\eEtapaEncago.vb" />
+    <Compile Include="Enum\eExportType.vb" />
+    <Compile Include="Enum\eModo.vb" />
+    <Compile Include="Enum\ePeriodicidade.vb" />
+    <Compile Include="Enum\eServidor.vb" />
+    <Compile Include="Enum\eTipoCampo.vb" />
+    <Compile Include="Enum\eTipoDeRelacaoCPR.vb" />
+    <Compile Include="Enum\eAlfabeto.vb" />
+    <Compile Include="Enum\eClassesOperacoes.vb" />
+    <Compile Include="Enum\eComercializacao.vb" />
+    <Compile Include="Enum\eEntradaSaida.vb" />
+    <Compile Include="Enum\eFormatStringEmpresa.vb" />
+    <Compile Include="Enum\eModoAlteracao.vb" />
+    <Compile Include="Enum\eModulo.vb" />
+    <Compile Include="Enum\eOperadoresSelecao.vb" />
+    <Compile Include="Enum\ePrestacaoServico.vb" />
+    <Compile Include="Enum\eProvisao.vb" />
+    <Compile Include="Enum\eQuantidadeValor.vb" />
+    <Compile Include="Enum\eSinal.vb" />
+    <Compile Include="Enum\eSituacao.vb" />
+    <Compile Include="Enum\eStatusUsuario.vb" />
+    <Compile Include="Enum\eTabelas.vb" />
+    <Compile Include="Enum\eTipoDeDocumento.vb" />
+    <Compile Include="Enum\eTipoDeDocumentoFrete.vb" />
+    <Compile Include="Enum\eTipoFaturamento.vb" />
+    <Compile Include="Enum\eTipoManifesto.vb" />
+    <Compile Include="Enum\eTipoOperacao.vb" />
+    <Compile Include="Enum\eTipoPessoa.vb" />
+    <Compile Include="Enum\eTipoReferencial.vb" />
+    <Compile Include="Enum\eTipoSaidaRelatorio.vb" />
+    <Compile Include="Enum\eTiposClientesFixos.vb" />
+    <Compile Include="Enum\eTiposFrete.vb" />
+    <Compile Include="Enum\eTiposLancamentosPedidos.vb" />
+    <Compile Include="Enum\eTiposMoeda.vb" />
+    <Compile Include="Enum\eTiposNumerador.vb" />
+    <Compile Include="Enum\eTitulo.vb" />
+    <Compile Include="Enum\eTriBool.vb" />
+    <Compile Include="Enum\eValidacaoExclusaoPedido.vb" />
+    <Compile Include="Enum\eValorPeso.vb" />
+    <Compile Include="Financeiro\Adiantamento.vb" />
+    <Compile Include="Financeiro\AdiantamentoBaixa.vb" />
+    <Compile Include="Financeiro\Agencia.vb" />
+    <Compile Include="Financeiro\Banco.vb" />
+    <Compile Include="Financeiro\BancosXContasXCancelamentoCheque.vb" />
+    <Compile Include="Financeiro\BancoXConta.vb" />
+    <Compile Include="Financeiro\CarteiraDoTitulo.vb" />
+    <Compile Include="Financeiro\CarteiraFinanceira.vb" />
+    <Compile Include="Financeiro\CarteiraFinanceiraXTributosEncargos.vb" />
+    <Compile Include="Financeiro\CondicaoPagamento.vb" />
+    <Compile Include="Financeiro\ContaTituloPgto.vb" />
+    <Compile Include="Financeiro\CotacaoMoeda.vb" />
+    <Compile Include="Financeiro\DadosBoleto.vb" />
+    <Compile Include="Financeiro\Indexador.vb" />
+    <Compile Include="Financeiro\Moeda.vb" />
+    <Compile Include="Financeiro\MovimentacaoFinanceira.vb" />
+    <Compile Include="Financeiro\OcorrenciaRetornoPgto.vb" />
+    <Compile Include="Financeiro\PedidoXParcelas.vb" />
+    <Compile Include="Financeiro\RetornoBancario.vb" />
+    <Compile Include="Financeiro\TipoDePagamento.vb" />
+    <Compile Include="Financeiro\TipoProvisao.vb" />
+    <Compile Include="Financeiro\Titulo.vb" />
+    <Compile Include="Financeiro\TituloXDesdobrarFornecedor.vb" />
+    <Compile Include="Financeiro\TransferenciaFinanceira.vb" />
+    <Compile Include="Frete\FaturaDeFrete.vb" />
+    <Compile Include="Frete\FaturaDeFreteXItens.vb" />
+    <Compile Include="Frete\FaturaDeFretexTitulo.vb" />
+    <Compile Include="Frete\NotasXNotas.vb" />
+    <Compile Include="Frete\OperacoesDeFretes.vb" />
+    <Compile Include="Globais.vb" />
+    <Compile Include="IBaseEntity.vb" />
+    <Compile Include="Memorando\MemorandoDeExportacao.vb" />
+    <Compile Include="Memorando\MemorandoDeExportacaoEspelho.vb" />
+    <Compile Include="Memorando\MemorandoDeExportacaoXConhecimento.vb" />
+    <Compile Include="Memorando\MemorandoDeExportacaoXNotaFiscal.vb" />
+    <Compile Include="Memorando\MemorandoDeExportacaoXRegistroDeExportacao.vb" />
+    <Compile Include="Memorando\NotaDeExportacao.vb" />
+    <Compile Include="Movimentacao\AutorizacaoDeRetirada.vb" />
+    <Compile Include="Movimentacao\EncargoXTaxa.vb" />
+    <Compile Include="Movimentacao\Lote.vb" />
+    <Compile Include="Movimentacao\LoteXClassificacao.vb" />
+    <Compile Include="Movimentacao\Operacao.vb" />
+    <Compile Include="Movimentacao\OperacaoXEstado.vb" />
+    <Compile Include="Movimentacao\PosicaoDePedido.vb" />
+    <Compile Include="Movimentacao\Procuracao.vb" />
+    <Compile Include="Movimentacao\Razao.vb" />
+    <Compile Include="Movimentacao\SaldoProdutoEstoqueLoteEmbalagem.vb" />
+    <Compile Include="Movimentacao\SubOperacao.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="NotaFiscal\DocumentoEletronico.vb" />
+    <Compile Include="NotaFiscal\NotaFiscal.vb" />
+    <Compile Include="NotaFiscal\NotaFiscalDevolucaoXNotaFiscal.vb" />
+    <Compile Include="NotaFiscal\NotaFiscalEspelho.vb" />
+    <Compile Include="NotaFiscal\NotaFiscalReferencial.vb" />
+    <Compile Include="NotaFiscal\NotaFiscalXCE.vb" />
+    <Compile Include="NotaFiscal\NotaFiscalXDestino.vb" />
+    <Compile Include="NotaFiscal\NotaFiscalXDestinoXDescontos.vb" />
+    <Compile Include="NotaFiscal\NotaFiscalXExportacao.vb" />
+    <Compile Include="NotaFiscal\NotaFiscalXImportacao.vb" />
+    <Compile Include="NotaFiscal\NotaFiscalXItem.vb" />
+    <Compile Include="NotaFiscal\NotaFiscalXItemXEncargo.vb" />
+    <Compile Include="NotaFiscal\NotaFiscalXPercurso.vb" />
+    <Compile Include="NotaFiscal\NotaFiscalxRateio.vb" />
+    <Compile Include="NotaFiscal\NotaFiscalXRE.vb" />
+    <Compile Include="NotaFiscal\NotaFiscalXTitulo.vb" />
+    <Compile Include="NotaFiscal\NotasFiscaisXEmbalagens.vb" />
+    <Compile Include="Novo\Adiantamento.vb" />
+    <Compile Include="Novo\AdiantamentoBaixa.vb" />
+    <Compile Include="Novo\Bordero.vb" />
+    <Compile Include="Novo\BorderoXTitulo.vb" />
+    <Compile Include="Novo\ImpressaoBordero.vb" />
+    <Compile Include="Novo\ImpressaoDuplicata.vb" />
+    <Compile Include="Novo\ReajusteFinanceiro.vb" />
+    <Compile Include="Novo\ReconstroiFinanceiro.vb" />
+    <Compile Include="Novo\ResumoFinanceiro.vb" />
+    <Compile Include="Novo\Titulo.vb" />
+    <Compile Include="Novo\TituloXContaContabil.vb" />
+    <Compile Include="Novo\TituloXDesdobrarFornecedor.vb" />
+    <Compile Include="Novo\TituloXDestinacao.vb" />
+    <Compile Include="Novo\TituloXHistorico.vb" />
+    <Compile Include="Pamcard\Pamcard.vb" />
+    <Compile Include="Pedido\ExtratoPedido.vb" />
+    <Compile Include="Pedido\LancamentoItemPedido.vb" />
+    <Compile Include="Pedido\Pedido.vb" />
+    <Compile Include="Pedido\PedidoAvaliacaoProduto.vb" />
+    <Compile Include="Pedido\PedidoFixacaoXNotaFiscal.vb" />
+    <Compile Include="Pedido\PedidosXItensXEmbalagem.vb" />
+    <Compile Include="Pedido\PedidoXDeposito.vb" />
+    <Compile Include="Pedido\PedidoXEncargo.vb" />
+    <Compile Include="Pedido\PedidoXItem.vb" />
+    <Compile Include="Pedido\PedidoXItemXFixacao.vb" />
+    <Compile Include="Pedido\PedidoXItemXFixacaoXEncargo.vb" />
+    <Compile Include="Pedido\PedidoXRepresentante.vb" />
+    <Compile Include="Pedido\PedidoXRoteiro.vb" />
+    <Compile Include="Pedido\PedidoXTabelaDeComissao.vb" />
+    <Compile Include="Pedido\PedidoXTransportador.vb" />
+    <Compile Include="Pesagem\LaudoPesagem.vb" />
+    <Compile Include="Pesagem\Pesagem.vb" />
+    <Compile Include="Pesagem\PesagemXAnalises.vb" />
+    <Compile Include="Pesagem\Romaneio.vb" />
+    <Compile Include="Pesagem\RomaneioXDesconto.vb" />
+    <Compile Include="Pesagem\RomaneioXPesagem.vb" />
+    <Compile Include="Pesagem\TabelaDeClassificacao.vb" />
+    <Compile Include="Producao\ProducaoXItemXAnalise.vb" />
+    <Compile Include="Produtos\ConsumoXProducao.vb" />
+    <Compile Include="Produtos\Embalagem.vb" />
+    <Compile Include="Produtos\GrupoProduto.vb" />
+    <Compile Include="Produtos\Produto.vb" />
+    <Compile Include="Produtos\ProdutoAgrupado.vb" />
+    <Compile Include="Produtos\ProdutoXCentroDeCusto.vb" />
+    <Compile Include="Produtos\ProdutoXPreco.vb" />
+    <Compile Include="Produtos\ProdutosXUnidadeDeComercializacao.vb" />
+    <Compile Include="Produtos\ProdutoXConsumos.vb" />
+    <Compile Include="Produtos\ProdutoxEmbalagem.vb" />
+    <Compile Include="Produtos\ProdutoXEPI.vb" />
+    <Compile Include="Produtos\ProdutoXEspecificacao.vb" />
+    <Compile Include="Produtos\ProdutoXInsumos.vb" />
+    <Compile Include="Produtos\ProdutoXProcedimento.vb" />
+    <Compile Include="Produtos\ProdutoXSequenciaDeLote.vb" />
+    <Compile Include="ReceitaFederal\AtividadePrincipal.vb" />
+    <Compile Include="ReceitaFederal\AtividadesSecundaria.vb" />
+    <Compile Include="ReceitaFederal\Billing.vb" />
+    <Compile Include="ReceitaFederal\ReceitaFederal.vb" />
+    <Compile Include="ReceitaFederal\Qsa.vb" />
+    <Compile Include="Receituario\ART.vb" />
+    <Compile Include="Receituario\CategoriaPraga.vb" />
+    <Compile Include="Receituario\ClasseAmbiental.vb" />
+    <Compile Include="Receituario\ClasseDeRisco.vb" />
+    <Compile Include="Receituario\ClasseToxicologica.vb" />
+    <Compile Include="Receituario\Cultura.vb" />
+    <Compile Include="Receituario\Dosagem.vb" />
+    <Compile Include="Receituario\EmissaoReceituarioNota.vb" />
+    <Compile Include="Receituario\EPI.vb" />
+    <Compile Include="Receituario\EstadoFisicoIA.vb" />
+    <Compile Include="Receituario\Fito.vb" />
+    <Compile Include="Receituario\FitoXEpi.vb" />
+    <Compile Include="Receituario\FormaDeAplicacao.vb" />
+    <Compile Include="Receituario\FormulacaoFito.vb" />
+    <Compile Include="Receituario\GrupoQuimico.vb" />
+    <Compile Include="Receituario\IA.vb" />
+    <Compile Include="Receituario\IngredienteAtivo.vb" />
+    <Compile Include="Receituario\ModoDeAplicacao.vb" />
+    <Compile Include="Receituario\Praga.vb" />
+    <Compile Include="Receituario\Receita.vb" />
+    <Compile Include="Receituario\ReceitaXProduto.vb" />
+    <Compile Include="Receituario\Solo.vb" />
+    <Compile Include="SaldoPedido\SaldoPedido2015.vb" />
+    <Compile Include="Seguranca\BalancoAuditadoMes.vb" />
+    <Compile Include="Seguranca\BancoDados.vb" />
+    <Compile Include="Seguranca\Permissao.vb" />
+    <Compile Include="Seguranca\Usuario.vb" />
+    <Compile Include="Seguranca\UsuarioLocal.vb" />
+    <Compile Include="Seguranca\UsuarioServidor.vb" />
+    <Compile Include="Sped\BlocoK.vb" />
+    <Compile Include="Sped\PisCofins_Reg_1100_1500.vb" />
+    <Compile Include="Uteis\AcessaBanco.vb" />
+    <Compile Include="Uteis\AcessaBancoFirebird.vb" />
+    <Compile Include="Uteis\AcessaBancoMySql.vb" />
+    <Compile Include="Uteis\CarregarDDL.vb" />
+    <Compile Include="Uteis\CarregarPopup.vb" />
+    <Compile Include="Uteis\Conversoes.vb" />
+    <Compile Include="Uteis\Extensoes.vb" />
+    <Compile Include="Uteis\Extrato.vb" />
+    <Compile Include="Uteis\Funcoes.vb" />
+    <Compile Include="Uteis\FuncoesLogs.vb" />
+    <Compile Include="Uteis\Logs.vb" />
+    <Compile Include="Uteis\MDTwoKeys.vb" />
+    <Compile Include="Uteis\MDTwoValues.vb" />
+    <Compile Include="Uteis\Numerador.vb" />
+    <Compile Include="Uteis\PesoQuantidadeVolume.vb" />
+    <Compile Include="Uteis\RecuperarSenha.vb" />
+    <Compile Include="Uteis\RemessaBancaria.vb" />
+    <Compile Include="Web References\br.gov.bcb\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WSPamcard\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Xml\ClientesXHistoricoOperacoes.vb" />
+    <Compile Include="Xml\XmlCFOPSaidaXCFOPEntrada.vb" />
+    <Compile Include="Xml\XmlProdutoXDePara.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\DsBancosXContas.xsc">
+      <DependentUpon>DsBancosXContas.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\DsBancosXContas.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsBancosXContas1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\DsBancosXContas.xss">
+      <DependentUpon>DsBancosXContas.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsCarteira.xsc">
+      <DependentUpon>dsCarteira.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsCarteira.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCarteira1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\dsCarteira.xss">
+      <DependentUpon>dsCarteira.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\DsComparativo.xsc">
+      <DependentUpon>DsComparativo.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\DsComparativo.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsComparativo.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\DsComparativo.xss">
+      <DependentUpon>DsComparativo.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsConciliacao.xsc">
+      <DependentUpon>dsConciliacao.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsConciliacao.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsConciliacao.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\dsConciliacao.xss">
+      <DependentUpon>dsConciliacao.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\DsCustoMedio.xsc">
+      <DependentUpon>DsCustoMedio.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\DsCustoMedio.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsCustoMedio.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\DsCustoMedio.xss">
+      <DependentUpon>DsCustoMedio.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\DsEntradasSaidasLaudoFiscal.xsc">
+      <DependentUpon>DsEntradasSaidasLaudoFiscal.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\DsEntradasSaidasLaudoFiscal.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsEntradasSaidasLaudoFiscal1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\DsEntradasSaidasLaudoFiscal.xss">
+      <DependentUpon>DsEntradasSaidasLaudoFiscal.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\DsEstoquePorOperacao.xsc">
+      <DependentUpon>DsEstoquePorOperacao.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\DsEstoquePorOperacao.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsEstoquePorOperacao.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\DsEstoquePorOperacao.xss">
+      <DependentUpon>DsEstoquePorOperacao.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\DsFluxoDeCaixa.xsc">
+      <DependentUpon>DsFluxoDeCaixa.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\DsFluxoDeCaixa.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsFluxoDeCaixa.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\DsFluxoDeCaixa.xss">
+      <DependentUpon>DsFluxoDeCaixa.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\DsInventarioEstoque.xsc">
+      <DependentUpon>DsInventarioEstoque.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\DsInventarioEstoque.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsInventarioEstoque.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\DsInventarioEstoque.xss">
+      <DependentUpon>DsInventarioEstoque.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\DsLivroCaixa.xsc">
+      <DependentUpon>DsLivroCaixa.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\DsLivroCaixa.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsLivroCaixa.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\DsLivroCaixa.xss">
+      <DependentUpon>DsLivroCaixa.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsMemorandosPendentes.xsc">
+      <DependentUpon>dsMemorandosPendentes.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsMemorandosPendentes.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsMemorandosPendentes.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\dsMemorandosPendentes.xss">
+      <DependentUpon>dsMemorandosPendentes.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsPedidos.xsc">
+      <DependentUpon>dsPedidos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsPedidos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPedidos.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\dsPedidos.xss">
+      <DependentUpon>dsPedidos.xsd</DependentUpon>
+    </None>
+    <Content Include="DataSet\dsPedidosCN.xsc">
+      <DependentUpon>dsPedidosCN.xsd</DependentUpon>
+    </Content>
+    <None Include="DataSet\dsPedidosCN.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPedidosCN.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="DataSet\dsPedidosCN.xss">
+      <DependentUpon>dsPedidosCN.xsd</DependentUpon>
+    </Content>
+    <None Include="DataSet\dsPosicaoDePedidos.xsc">
+      <DependentUpon>dsPosicaoDePedidos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsPosicaoDePedidos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPosicaoDePedidos.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\dsPosicaoDePedidos.xss">
+      <DependentUpon>dsPosicaoDePedidos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsPosicaoDePedidos.xsx">
+      <DependentUpon>dsPosicaoDePedidos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\DsProdutosDeTerceiros.xsc">
+      <DependentUpon>DsProdutosDeTerceiros.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\DsProdutosDeTerceiros.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsProdutosDeTerceiros.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\DsProdutosDeTerceiros.xss">
+      <DependentUpon>DsProdutosDeTerceiros.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsRazaoAuxiliar.xsc">
+      <DependentUpon>dsRazaoAuxiliar.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsRazaoAuxiliar.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsRazaoAuxiliar.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\dsRazaoAuxiliar.xss">
+      <DependentUpon>dsRazaoAuxiliar.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsRelatorioDeFretes.xsc">
+      <DependentUpon>dsRelatorioDeFretes.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsRelatorioDeFretes.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsRelatorioDeFretes.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\dsRelatorioDeFretes.xss">
+      <DependentUpon>dsRelatorioDeFretes.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_AcompanhamentoDeEntregaDeProduto.xsc">
+      <DependentUpon>Ds_AcompanhamentoDeEntregaDeProduto.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_AcompanhamentoDeEntregaDeProduto.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_AcompanhamentoDeEntregaDeProduto.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_AcompanhamentoDeEntregaDeProduto.xss">
+      <DependentUpon>Ds_AcompanhamentoDeEntregaDeProduto.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Adiantamento.xsc">
+      <DependentUpon>Ds_Adiantamento.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Adiantamento.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_Adiantamento.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_Adiantamento.xss">
+      <DependentUpon>Ds_Adiantamento.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Alcadas.xsc">
+      <DependentUpon>Ds_Alcadas.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Alcadas.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_Alcadas.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSet\Ds_Alcadas.xss">
+      <DependentUpon>Ds_Alcadas.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Alcadas.xsx">
+      <DependentUpon>Ds_Alcadas.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_AnaliseDeCreditoProdutorRural.xsc">
+      <DependentUpon>Ds_AnaliseDeCreditoProdutorRural.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_AnaliseDeCreditoProdutorRural.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_AnaliseDeCreditoProdutorRural.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_AnaliseDeCreditoProdutorRural.xss">
+      <DependentUpon>Ds_AnaliseDeCreditoProdutorRural.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_AnaliseDeCreditos.xsc">
+      <DependentUpon>Ds_AnaliseDeCreditos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_AnaliseDeCreditos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_AnaliseDeCreditos.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_AnaliseDeCreditos.xss">
+      <DependentUpon>Ds_AnaliseDeCreditos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Analises.xsc">
+      <DependentUpon>Ds_Analises.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Analises.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_Analises.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_Analises.xss">
+      <DependentUpon>Ds_Analises.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Analises.xsx">
+      <DependentUpon>Ds_Analises.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_AnexoPorCliente.xsc">
+      <DependentUpon>Ds_AnexoPorCliente.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_AnexoPorCliente.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_AnexoPorCliente.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_AnexoPorCliente.xss">
+      <DependentUpon>Ds_AnexoPorCliente.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_AnexoPorProduto.xsc">
+      <DependentUpon>Ds_AnexoPorProduto.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_AnexoPorProduto.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_AnexoPorProduto.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_AnexoPorProduto.xss">
+      <DependentUpon>Ds_AnexoPorProduto.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Ativos.xsc">
+      <DependentUpon>Ds_Ativos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Ativos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_Ativos.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_Ativos.xss">
+      <DependentUpon>Ds_Ativos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Ativos.xsx">
+      <DependentUpon>Ds_Ativos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_AtivosXBaixas.xsc">
+      <DependentUpon>Ds_AtivosXBaixas.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_AtivosXBaixas.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_AtivosXBaixas.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_AtivosXBaixas.xss">
+      <DependentUpon>Ds_AtivosXBaixas.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_AutorizacaoDeEmbarque.xsc">
+      <DependentUpon>Ds_AutorizacaoDeEmbarque.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_AutorizacaoDeEmbarque.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_AutorizacaoDeEmbarque.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_AutorizacaoDeEmbarque.xss">
+      <DependentUpon>Ds_AutorizacaoDeEmbarque.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_AutorizacoesDePgtos.xsc">
+      <DependentUpon>Ds_AutorizacoesDePgtos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_AutorizacoesDePgtos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_AutorizacoesDePgtos.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_AutorizacoesDePgtos.xss">
+      <DependentUpon>Ds_AutorizacoesDePgtos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Autorizantes.xsc">
+      <DependentUpon>Ds_Autorizantes.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Autorizantes.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_Autorizantes.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_Autorizantes.xss">
+      <DependentUpon>Ds_Autorizantes.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_BalanceCentroDeCusto.xsc">
+      <DependentUpon>Ds_BalanceCentroDeCusto.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_BalanceCentroDeCusto.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_BalanceCentroDeCusto.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_BalanceCentroDeCusto.xss">
+      <DependentUpon>Ds_BalanceCentroDeCusto.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_BalanceteAuxiliar.xsc">
+      <DependentUpon>Ds_BalanceteAuxiliar.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_BalanceteAuxiliar.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_BalanceteAuxiliar.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_BalanceteAuxiliar.xss">
+      <DependentUpon>Ds_BalanceteAuxiliar.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_BalanceteAuxiliar.xsx">
+      <DependentUpon>Ds_BalanceteAuxiliar.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Bancos.xsc">
+      <DependentUpon>Ds_Bancos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Bancos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_Bancos.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_Bancos.xss">
+      <DependentUpon>Ds_Bancos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Bordero.xsc">
+      <DependentUpon>Ds_Bordero.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Bordero.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_Bordero.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_Bordero.xss">
+      <DependentUpon>Ds_Bordero.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Cardex.xsc">
+      <DependentUpon>Ds_Cardex.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Cardex.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_Cardex.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_Cardex.xss">
+      <DependentUpon>Ds_Cardex.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_CargasLaudo.xsc">
+      <DependentUpon>Ds_CargasLaudo.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_CargasLaudo.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_CargasLaudo.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_CargasLaudo.xss">
+      <DependentUpon>Ds_CargasLaudo.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_CargasLaudo.xsx">
+      <DependentUpon>Ds_CargasLaudo.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_CarteiraDeCompras.xsc">
+      <DependentUpon>Ds_CarteiraDeCompras.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_CarteiraDeCompras.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_CarteiraDeCompras.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_CarteiraDeCompras.xss">
+      <DependentUpon>Ds_CarteiraDeCompras.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_CarteiraDoTitulo.xsc">
+      <DependentUpon>Ds_CarteiraDoTitulo.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_CarteiraDoTitulo.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_CarteiraDoTitulo.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_CarteiraDoTitulo.xss">
+      <DependentUpon>Ds_CarteiraDoTitulo.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_CarteirasXTributos.xsc">
+      <DependentUpon>Ds_CarteirasXTributos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_CarteirasXTributos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_CarteirasXTributos.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_CarteirasXTributos.xss">
+      <DependentUpon>Ds_CarteirasXTributos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Categorias.xsc">
+      <DependentUpon>Ds_Categorias.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Categorias.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_Categorias.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_Categorias.xss">
+      <DependentUpon>Ds_Categorias.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\ds_CertidaoNegativaConsultas.xsc">
+      <DependentUpon>ds_CertidaoNegativaConsultas.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\ds_CertidaoNegativaConsultas.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_CertidaoNegativaConsultas.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\ds_CertidaoNegativaConsultas.xss">
+      <DependentUpon>ds_CertidaoNegativaConsultas.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_cheques.xsc">
+      <DependentUpon>Ds_cheques.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_cheques.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_cheques.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_cheques.xss">
+      <DependentUpon>Ds_cheques.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_ClasseToxicologica.xsc">
+      <DependentUpon>Ds_ClasseToxicologica.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_ClasseToxicologica.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_ClasseToxicologica.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_ClasseToxicologica.xss">
+      <DependentUpon>Ds_ClasseToxicologica.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_ClassificacaoDeProdutos.xsc">
+      <DependentUpon>Ds_ClassificacaoDeProdutos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_ClassificacaoDeProdutos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_ClassificacaoDeProdutos.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_ClassificacaoDeProdutos.xss">
+      <DependentUpon>Ds_ClassificacaoDeProdutos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_ClassificacaoDeProdutos.xsx">
+      <DependentUpon>Ds_ClassificacaoDeProdutos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Clientes.xsc">
+      <DependentUpon>Ds_Clientes.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Clientes.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_Clientes.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_Clientes.xss">
+      <DependentUpon>Ds_Clientes.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Clientes.xsx">
+      <DependentUpon>Ds_Clientes.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_CodigoFiscal.xsc">
+      <DependentUpon>Ds_CodigoFiscal.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_CodigoFiscal.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_CodigoFiscal.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_CodigoFiscal.xss">
+      <DependentUpon>Ds_CodigoFiscal.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Comissoes.xsc">
+      <DependentUpon>Ds_Comissoes.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Comissoes.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_Comissoes.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_Comissoes.xss">
+      <DependentUpon>Ds_Comissoes.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_ComposicaoDoEstoque.xsc">
+      <DependentUpon>Ds_ComposicaoDoEstoque.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_ComposicaoDoEstoque.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_ComposicaoDoEstoque.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_ComposicaoDoEstoque.xss">
+      <DependentUpon>Ds_ComposicaoDoEstoque.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_ComposicaoDoEstoqueRN.xsc">
+      <DependentUpon>Ds_ComposicaoDoEstoqueRN.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_ComposicaoDoEstoqueRN.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_ComposicaoDoEstoqueRN.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_ComposicaoDoEstoqueRN.xss">
+      <DependentUpon>Ds_ComposicaoDoEstoqueRN.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_ComprasVendasAFixar.xsc">
+      <DependentUpon>Ds_ComprasVendasAFixar.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_ComprasVendasAFixar.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_ComprasVendasAFixar.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_ComprasVendasAFixar.xss">
+      <DependentUpon>Ds_ComprasVendasAFixar.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_ComprasVendasAFixar.xsx">
+      <DependentUpon>Ds_ComprasVendasAFixar.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Conciliacao.xsc">
+      <DependentUpon>Ds_Conciliacao.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Conciliacao.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_Conciliacao.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_Conciliacao.xss">
+      <DependentUpon>Ds_Conciliacao.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_ConsistenciaDeNotas.xsc">
+      <DependentUpon>Ds_ConsistenciaDeNotas.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_ConsistenciaDeNotas.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_ConsistenciaDeNotas.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_ConsistenciaDeNotas.xss">
+      <DependentUpon>Ds_ConsistenciaDeNotas.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_ConsistenciaDeProducao.xsc">
+      <DependentUpon>Ds_ConsistenciaDeProducao.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_ConsistenciaDeProducao.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_ConsistenciaDeProducao.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_ConsistenciaDeProducao.xss">
+      <DependentUpon>Ds_ConsistenciaDeProducao.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_ConsistenciasDeLotes.xsc">
+      <DependentUpon>Ds_ConsistenciasDeLotes.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_ConsistenciasDeLotes.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_ConsistenciasDeLotes.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_ConsistenciasDeLotes.xss">
+      <DependentUpon>Ds_ConsistenciasDeLotes.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_ConsistenciasDeLotes.xsx">
+      <DependentUpon>Ds_ConsistenciasDeLotes.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_ConsultaItensLiberacao.xsc">
+      <DependentUpon>Ds_ConsultaItensLiberacao.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_ConsultaItensLiberacao.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_ConsultaItensLiberacao.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_ConsultaItensLiberacao.xss">
+      <DependentUpon>Ds_ConsultaItensLiberacao.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_ContasAPagar.xsc">
+      <DependentUpon>Ds_ContasAPagar.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_ContasAPagar.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_ContasAPagar.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_ContasAPagar.xss">
+      <DependentUpon>Ds_ContasAPagar.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_ContratoBancario.xsc">
+      <DependentUpon>Ds_ContratoBancario.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_ContratoBancario.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_ContratoBancario.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_ContratoBancario.xss">
+      <DependentUpon>Ds_ContratoBancario.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_ContratoDeFrete.xsc">
+      <DependentUpon>Ds_ContratoDeFrete.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_ContratoDeFrete.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_ContratoDeFrete.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_ContratoDeFrete.xss">
+      <DependentUpon>Ds_ContratoDeFrete.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_CorrecaoMonetaria.xsc">
+      <DependentUpon>Ds_CorrecaoMonetaria.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_CorrecaoMonetaria.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_CorrecaoMonetaria.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_CorrecaoMonetaria.xss">
+      <DependentUpon>Ds_CorrecaoMonetaria.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Cotacao.xsc">
+      <DependentUpon>Ds_Cotacao.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Cotacao.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_Cotacao.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_Cotacao.xss">
+      <DependentUpon>Ds_Cotacao.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_CotacoesDeMoedas.xsc">
+      <DependentUpon>Ds_CotacoesDeMoedas.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_CotacoesDeMoedas.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_CotacoesDeMoedas.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_CotacoesDeMoedas.xss">
+      <DependentUpon>Ds_CotacoesDeMoedas.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_CRM.xsc">
+      <DependentUpon>Ds_CRM.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_CRM.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_CRM.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_CRM.xss">
+      <DependentUpon>Ds_CRM.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_CtrcFerroviario.xsc">
+      <DependentUpon>Ds_CtrcFerroviario.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_CtrcFerroviario.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_CtrcFerroviario.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_CtrcFerroviario.xss">
+      <DependentUpon>Ds_CtrcFerroviario.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_CtrcNotas.xsc">
+      <DependentUpon>Ds_CtrcNotas.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_CtrcNotas.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_CtrcNotas.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_CtrcNotas.xss">
+      <DependentUpon>Ds_CtrcNotas.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_CtrcRodoviarioXFerroviario.xsc">
+      <DependentUpon>Ds_CtrcRodoviarioXFerroviario.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_CtrcRodoviarioXFerroviario.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_CtrcRodoviarioXFerroviario.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_CtrcRodoviarioXFerroviario.xss">
+      <DependentUpon>Ds_CtrcRodoviarioXFerroviario.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_CurvaABC.xsc">
+      <DependentUpon>Ds_CurvaABC.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_CurvaABC.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_CurvaABC.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_CurvaABC.xss">
+      <DependentUpon>Ds_CurvaABC.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_CurvaABC_Produto.xsc">
+      <DependentUpon>Ds_CurvaABC_Produto.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_CurvaABC_Produto.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_CurvaABC_Produto.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_CurvaABC_Produto.xss">
+      <DependentUpon>Ds_CurvaABC_Produto.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_DadosDuplicata.xsc">
+      <DependentUpon>Ds_DadosDuplicata.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_DadosDuplicata.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_DadosDuplicata.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_DadosDuplicata.xss">
+      <DependentUpon>Ds_DadosDuplicata.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_DarDiferencialDeAliquota.xsc">
+      <DependentUpon>Ds_DarDiferencialDeAliquota.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_DarDiferencialDeAliquota.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_DarDiferencialDeAliquota.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_DarDiferencialDeAliquota.xss">
+      <DependentUpon>Ds_DarDiferencialDeAliquota.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\ds_datanpro.xsc">
+      <DependentUpon>ds_datanpro.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\ds_datanpro.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_datanpro.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\ds_datanpro.xss">
+      <DependentUpon>ds_datanpro.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_DatasNaoProgramaveis.xsc">
+      <DependentUpon>Ds_DatasNaoProgramaveis.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_DatasNaoProgramaveis.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_DatasNaoProgramaveis.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_DatasNaoProgramaveis.xss">
+      <DependentUpon>Ds_DatasNaoProgramaveis.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Disponibilidade.xsc">
+      <DependentUpon>Ds_Disponibilidade.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Disponibilidade.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_Disponibilidade.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_Disponibilidade.xss">
+      <DependentUpon>Ds_Disponibilidade.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_EmissaoDeChequeGrafico.xsc">
+      <DependentUpon>Ds_EmissaoDeChequeGrafico.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_EmissaoDeChequeGrafico.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_EmissaoDeChequeGrafico.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_EmissaoDeChequeGrafico.xss">
+      <DependentUpon>Ds_EmissaoDeChequeGrafico.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_EmissaoDeNotasFiscais.xsc">
+      <DependentUpon>Ds_EmissaoDeNotasFiscais.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_EmissaoDeNotasFiscais.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_EmissaoDeNotasFiscais.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_EmissaoDeNotasFiscais.xss">
+      <DependentUpon>Ds_EmissaoDeNotasFiscais.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Empresas.xsc">
+      <DependentUpon>Ds_Empresas.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Empresas.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_Empresas.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_Empresas.xss">
+      <DependentUpon>Ds_Empresas.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Empresas.xsx">
+      <DependentUpon>Ds_Empresas.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_encargo.xsc">
+      <DependentUpon>Ds_encargo.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_encargo.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_encargo.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_encargo.xss">
+      <DependentUpon>Ds_encargo.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_EncargosXTaxas.xsc">
+      <DependentUpon>Ds_EncargosXTaxas.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_EncargosXTaxas.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_EncargosXTaxas.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_EncargosXTaxas.xss">
+      <DependentUpon>Ds_EncargosXTaxas.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_EntradaSaidaNotas.xsc">
+      <DependentUpon>Ds_EntradaSaidaNotas.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_EntradaSaidaNotas.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_EntradaSaidaNotas.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_EntradaSaidaNotas.xss">
+      <DependentUpon>Ds_EntradaSaidaNotas.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_EntradasSaidasLaudo.xsc">
+      <DependentUpon>Ds_EntradasSaidasLaudo.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_EntradasSaidasLaudo.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_EntradasSaidasLaudo.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_EntradasSaidasLaudo.xss">
+      <DependentUpon>Ds_EntradasSaidasLaudo.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_EntradasSaidasLaudo.xsx">
+      <DependentUpon>Ds_EntradasSaidasLaudo.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_EPI.xsc">
+      <DependentUpon>Ds_EPI.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_EPI.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_EPI.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_EPI.xss">
+      <DependentUpon>Ds_EPI.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_EspelhoNota.xsc">
+      <DependentUpon>Ds_EspelhoNota.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_EspelhoNota.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_EspelhoNota.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_EspelhoNota.xss">
+      <DependentUpon>Ds_EspelhoNota.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_EstadoFisicoIA.xsc">
+      <DependentUpon>Ds_EstadoFisicoIA.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_EstadoFisicoIA.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_EstadoFisicoIA.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_EstadoFisicoIA.xss">
+      <DependentUpon>Ds_EstadoFisicoIA.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Estados.xsc">
+      <DependentUpon>Ds_Estados.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Estados.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_Estados.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_Estados.xss">
+      <DependentUpon>Ds_Estados.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_EstoqueDeTerceiros.xsc">
+      <DependentUpon>Ds_EstoqueDeTerceiros.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_EstoqueDeTerceiros.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_EstoqueDeTerceiros.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_EstoqueDeTerceiros.xss">
+      <DependentUpon>Ds_EstoqueDeTerceiros.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_EstoqueFiscalPorCFOP.xsc">
+      <DependentUpon>Ds_EstoqueFiscalPorCFOP.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_EstoqueFiscalPorCFOP.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_EstoqueFiscalPorCFOP.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_EstoqueFiscalPorCFOP.xss">
+      <DependentUpon>Ds_EstoqueFiscalPorCFOP.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\ds_ExtratoDeBens.xsc">
+      <DependentUpon>ds_ExtratoDeBens.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\ds_ExtratoDeBens.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_ExtratoDeBens.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSet\ds_ExtratoDeBens.xss">
+      <DependentUpon>ds_ExtratoDeBens.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_ExtratoDeContas.xsc">
+      <DependentUpon>Ds_ExtratoDeContas.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_ExtratoDeContas.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_ExtratoDeContas.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_ExtratoDeContas.xss">
+      <DependentUpon>Ds_ExtratoDeContas.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_ExtratoDeContas.xsx">
+      <DependentUpon>Ds_ExtratoDeContas.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_ExtratoPedido.xsc">
+      <DependentUpon>Ds_ExtratoPedido.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_ExtratoPedido.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_ExtratoPedido.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_ExtratoPedido.xss">
+      <DependentUpon>Ds_ExtratoPedido.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_ExtratoPedidoNovo.xsc">
+      <DependentUpon>Ds_ExtratoPedidoNovo.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_ExtratoPedidoNovo.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_ExtratoPedidoNovo.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_ExtratoPedidoNovo.xss">
+      <DependentUpon>Ds_ExtratoPedidoNovo.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Faturamento.xsc">
+      <DependentUpon>Ds_Faturamento.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Faturamento.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_Faturamento.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_Faturamento.xss">
+      <DependentUpon>Ds_Faturamento.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_FaturasDeFrete.xsc">
+      <DependentUpon>Ds_FaturasDeFrete.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_FaturasDeFrete.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_FaturasDeFrete.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_FaturasDeFrete.xss">
+      <DependentUpon>Ds_FaturasDeFrete.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_FichaCadastral.xsc">
+      <DependentUpon>Ds_FichaCadastral.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_FichaCadastral.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_FichaCadastral.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_FichaCadastral.xss">
+      <DependentUpon>Ds_FichaCadastral.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_FimDoMundo.xsc">
+      <DependentUpon>Ds_FimDoMundo.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_FimDoMundo.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_FimDoMundo.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_FimDoMundo.xss">
+      <DependentUpon>Ds_FimDoMundo.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_FixacoesPendentes.xsc">
+      <DependentUpon>Ds_FixacoesPendentes.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_FixacoesPendentes.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_FixacoesPendentes.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_FixacoesPendentes.xss">
+      <DependentUpon>Ds_FixacoesPendentes.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_FluxoDeCaixa.xsc">
+      <DependentUpon>Ds_FluxoDeCaixa.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_FluxoDeCaixa.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_FluxoDeCaixa.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_FluxoDeCaixa.xss">
+      <DependentUpon>Ds_FluxoDeCaixa.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Fretes.xsc">
+      <DependentUpon>Ds_Fretes.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Fretes.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_Fretes.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_Fretes.xss">
+      <DependentUpon>Ds_Fretes.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_GruposDeAtivos.xsc">
+      <DependentUpon>Ds_GruposDeAtivos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_GruposDeAtivos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_GruposDeAtivos.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_GruposDeAtivos.xss">
+      <DependentUpon>Ds_GruposDeAtivos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_GruposXProcessosXUsuarios.xsc">
+      <DependentUpon>Ds_GruposXProcessosXUsuarios.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_GruposXProcessosXUsuarios.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_GruposXProcessosXUsuarios.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_GruposXProcessosXUsuarios.xss">
+      <DependentUpon>Ds_GruposXProcessosXUsuarios.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Impressoras.xsc">
+      <DependentUpon>Ds_Impressoras.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Impressoras.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_Impressoras.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_Impressoras.xss">
+      <DependentUpon>Ds_Impressoras.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_IngredienteAtivo.xsc">
+      <DependentUpon>Ds_IngredienteAtivo.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_IngredienteAtivo.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_IngredienteAtivo.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_IngredienteAtivo.xss">
+      <DependentUpon>Ds_IngredienteAtivo.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_LaudoDePesagem.xsc">
+      <DependentUpon>Ds_LaudoDePesagem.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_LaudoDePesagem.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_LaudoDePesagem.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_LaudoDePesagem.xss">
+      <DependentUpon>Ds_LaudoDePesagem.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Liberacao.xsc">
+      <DependentUpon>Ds_Liberacao.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Liberacao.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_Liberacao.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_Liberacao.xss">
+      <DependentUpon>Ds_Liberacao.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Liberacao.xsx">
+      <DependentUpon>Ds_Liberacao.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_LivroDiario.xsc">
+      <DependentUpon>Ds_LivroDiario.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_LivroDiario.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_LivroDiario.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_LivroDiario.xss">
+      <DependentUpon>Ds_LivroDiario.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_LivroDiario.xsx">
+      <DependentUpon>Ds_LivroDiario.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_MemorandoDeExportacao.xsc">
+      <DependentUpon>Ds_MemorandoDeExportacao.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_MemorandoDeExportacao.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_MemorandoDeExportacao.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_MemorandoDeExportacao.xss">
+      <DependentUpon>Ds_MemorandoDeExportacao.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_MemorandoDeExpPendencias.xsc">
+      <DependentUpon>Ds_MemorandoDeExpPendencias.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_MemorandoDeExpPendencias.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_MemorandoDeExpPendencias.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_MemorandoDeExpPendencias.xss">
+      <DependentUpon>Ds_MemorandoDeExpPendencias.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Mercadorias.xsc">
+      <DependentUpon>Ds_Mercadorias.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Mercadorias.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_Mercadorias.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_Mercadorias.xss">
+      <DependentUpon>Ds_Mercadorias.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Mercadorias.xsx">
+      <DependentUpon>Ds_Mercadorias.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_MovimentoFiscalPorOperacao.xsc">
+      <DependentUpon>Ds_MovimentoFiscalPorOperacao.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_MovimentoFiscalPorOperacao.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_MovimentoFiscalPorOperacao.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_MovimentoFiscalPorOperacao.xss">
+      <DependentUpon>Ds_MovimentoFiscalPorOperacao.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_NfsAutorizacaoDeRetirada.xsc">
+      <DependentUpon>Ds_NfsAutorizacaoDeRetirada.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_NfsAutorizacaoDeRetirada.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_NfsAutorizacaoDeRetirada.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_NfsAutorizacaoDeRetirada.xss">
+      <DependentUpon>Ds_NfsAutorizacaoDeRetirada.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_NossasPendenciasCompDeExportacao.xsc">
+      <DependentUpon>Ds_NossasPendenciasCompDeExportacao.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_NossasPendenciasCompDeExportacao.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_NossasPendenciasCompDeExportacao.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_NossasPendenciasCompDeExportacao.xss">
+      <DependentUpon>Ds_NossasPendenciasCompDeExportacao.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\ds_NotaFiscal.xsc">
+      <DependentUpon>ds_NotaFiscal.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\ds_NotaFiscal.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_NotaFiscal.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSet\ds_NotaFiscal.xss">
+      <DependentUpon>ds_NotaFiscal.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_NotasNaoContabilizadas.xsc">
+      <DependentUpon>Ds_NotasNaoContabilizadas.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_NotasNaoContabilizadas.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_NotasNaoContabilizadas.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_NotasNaoContabilizadas.xss">
+      <DependentUpon>Ds_NotasNaoContabilizadas.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Numerador.xsc">
+      <DependentUpon>Ds_Numerador.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Numerador.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_Numerador.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_Numerador.xss">
+      <DependentUpon>Ds_Numerador.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Numerador.xsx">
+      <DependentUpon>Ds_Numerador.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Operacoes.xsc">
+      <DependentUpon>Ds_Operacoes.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Operacoes.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_Operacoes.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_Operacoes.xss">
+      <DependentUpon>Ds_Operacoes.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_OperacoesDeFretes.xsc">
+      <DependentUpon>Ds_OperacoesDeFretes.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_OperacoesDeFretes.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_OperacoesDeFretes.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_OperacoesDeFretes.xss">
+      <DependentUpon>Ds_OperacoesDeFretes.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_OperacoesXEncargos.xsc">
+      <DependentUpon>Ds_OperacoesXEncargos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_OperacoesXEncargos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_OperacoesXEncargos.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_OperacoesXEncargos.xss">
+      <DependentUpon>Ds_OperacoesXEncargos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_OperacoesXEncargos.xsx">
+      <DependentUpon>Ds_OperacoesXEncargos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Orcamentos.xsc">
+      <DependentUpon>Ds_Orcamentos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Orcamentos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_Orcamentos.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_Orcamentos.xss">
+      <DependentUpon>Ds_Orcamentos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Orcamentos.xsx">
+      <DependentUpon>Ds_Orcamentos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_OrdemDeProducao.xsc">
+      <DependentUpon>Ds_OrdemDeProducao.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_OrdemDeProducao.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_OrdemDeProducao.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSet\Ds_OrdemDeProducao.xss">
+      <DependentUpon>Ds_OrdemDeProducao.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_OrigemDaNotaFiscal.xsc">
+      <DependentUpon>Ds_OrigemDaNotaFiscal.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_OrigemDaNotaFiscal.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_OrigemDaNotaFiscal.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_OrigemDaNotaFiscal.xss">
+      <DependentUpon>Ds_OrigemDaNotaFiscal.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Pagamentos.xsc">
+      <DependentUpon>Ds_Pagamentos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Pagamentos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_Pagamentos.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_Pagamentos.xss">
+      <DependentUpon>Ds_Pagamentos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_PedidosEntreguesDeVendas.xsc">
+      <DependentUpon>Ds_PedidosEntreguesDeVendas.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_PedidosEntreguesDeVendas.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_PedidosEntreguesDeVendas.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_PedidosEntreguesDeVendas.xss">
+      <DependentUpon>Ds_PedidosEntreguesDeVendas.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_PedidosEntreguesDeVendasClientes.xsc">
+      <DependentUpon>Ds_PedidosEntreguesDeVendasClientes.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_PedidosEntreguesDeVendasClientes.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_PedidosEntreguesDeVendasClientes.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_PedidosEntreguesDeVendasClientes.xss">
+      <DependentUpon>Ds_PedidosEntreguesDeVendasClientes.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_PedidosPentente.xsc">
+      <DependentUpon>Ds_PedidosPentente.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_PedidosPentente.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_PedidosPentente.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_PedidosPentente.xss">
+      <DependentUpon>Ds_PedidosPentente.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_PEntreguesDeComprasCli.xsc">
+      <DependentUpon>Ds_PEntreguesDeComprasCli.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_PEntreguesDeComprasCli.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_PEntreguesDeComprasCli1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_PEntreguesDeComprasCli.xss">
+      <DependentUpon>Ds_PEntreguesDeComprasCli.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_PEntreguesDeComprasProd.xsc">
+      <DependentUpon>Ds_PEntreguesDeComprasProd.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_PEntreguesDeComprasProd.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_PEntreguesDeComprasProd.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_PEntreguesDeComprasProd.xss">
+      <DependentUpon>Ds_PEntreguesDeComprasProd.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_PesosDeChegada.xsc">
+      <DependentUpon>Ds_PesosDeChegada.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_PesosDeChegada.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_PesosDeChegada.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_PesosDeChegada.xss">
+      <DependentUpon>Ds_PesosDeChegada.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Placas.xsc">
+      <DependentUpon>Ds_Placas.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Placas.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_Placas.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_Placas.xss">
+      <DependentUpon>Ds_Placas.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_PlanoDeContas.xsc">
+      <DependentUpon>Ds_PlanoDeContas.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_PlanoDeContas.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_PlanoDeContas.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_PlanoDeContas.xss">
+      <DependentUpon>Ds_PlanoDeContas.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_PlanoDeContas.xsx">
+      <DependentUpon>Ds_PlanoDeContas.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_PlanoDeCustos.xsc">
+      <DependentUpon>Ds_PlanoDeCustos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_PlanoDeCustos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_PlanoDeCustos.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_PlanoDeCustos.xss">
+      <DependentUpon>Ds_PlanoDeCustos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_PosicaoDeEncargos.xsc">
+      <DependentUpon>Ds_PosicaoDeEncargos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_PosicaoDeEncargos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_PosicaoDeEncargos.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_PosicaoDeEncargos.xss">
+      <DependentUpon>Ds_PosicaoDeEncargos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_PosicaoDeEncargosPorClientes.xsc">
+      <DependentUpon>Ds_PosicaoDeEncargosPorClientes.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_PosicaoDeEncargosPorClientes.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_PosicaoDeEncargosPorClientes.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_PosicaoDeEncargosPorClientes.xss">
+      <DependentUpon>Ds_PosicaoDeEncargosPorClientes.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_PosicaoDeEncargosPorNotas.xsc">
+      <DependentUpon>Ds_PosicaoDeEncargosPorNotas.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_PosicaoDeEncargosPorNotas.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_PosicaoDeEncargosPorNotas.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_PosicaoDeEncargosPorNotas.xss">
+      <DependentUpon>Ds_PosicaoDeEncargosPorNotas.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_PosicaoDeEncargosResumoNota.xsc">
+      <DependentUpon>Ds_PosicaoDeEncargosResumoNota.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_PosicaoDeEncargosResumoNota.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_PosicaoDeEncargosResumoNota.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_PosicaoDeEncargosResumoNota.xss">
+      <DependentUpon>Ds_PosicaoDeEncargosResumoNota.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_PosicaoDeEstoques.xsc">
+      <DependentUpon>Ds_PosicaoDeEstoques.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_PosicaoDeEstoques.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_PosicaoDeEstoques.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_PosicaoDeEstoques.xss">
+      <DependentUpon>Ds_PosicaoDeEstoques.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_PosicaoDePedidosConsolidada.xsc">
+      <DependentUpon>Ds_PosicaoDePedidosConsolidada.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_PosicaoDePedidosConsolidada.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_PosicaoDePedidosConsolidada.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_PosicaoDePedidosConsolidada.xss">
+      <DependentUpon>Ds_PosicaoDePedidosConsolidada.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_PosicaoDePedidosConsolidada.xsx">
+      <DependentUpon>Ds_PosicaoDePedidosConsolidada.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_PosicaoFinanceiraAnalitico.xsc">
+      <DependentUpon>Ds_PosicaoFinanceiraAnalitico.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_PosicaoFinanceiraAnalitico.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_PosicaoFinanceiraAnalitico.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_PosicaoFinanceiraAnalitico.xss">
+      <DependentUpon>Ds_PosicaoFinanceiraAnalitico.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_PosicaoFinanceiraSintetico.xsc">
+      <DependentUpon>Ds_PosicaoFinanceiraSintetico.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_PosicaoFinanceiraSintetico.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_PosicaoFinanceiraSintetico.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_PosicaoFinanceiraSintetico.xss">
+      <DependentUpon>Ds_PosicaoFinanceiraSintetico.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_PrecoDeMercado.xsc">
+      <DependentUpon>Ds_PrecoDeMercado.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_PrecoDeMercado.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_PrecoDeMercado.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_PrecoDeMercado.xss">
+      <DependentUpon>Ds_PrecoDeMercado.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_PrecoMedio.xsc">
+      <DependentUpon>Ds_PrecoMedio.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_PrecoMedio.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_PrecoMedio.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_PrecoMedio.xss">
+      <DependentUpon>Ds_PrecoMedio.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_PrecosParaCustos.xsc">
+      <DependentUpon>Ds_PrecosParaCustos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_PrecosParaCustos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_PrecosParaCustos.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_PrecosParaCustos.xss">
+      <DependentUpon>Ds_PrecosParaCustos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_PrecosParaCustos.xsx">
+      <DependentUpon>Ds_PrecosParaCustos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Processos.xsc">
+      <DependentUpon>Ds_Processos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Processos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_Processos.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_Processos.xss">
+      <DependentUpon>Ds_Processos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Procuracoes.xsc">
+      <DependentUpon>Ds_Procuracoes.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Procuracoes.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_Procuracoes.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_Procuracoes.xss">
+      <DependentUpon>Ds_Procuracoes.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_ProdutosXAnalises.xsc">
+      <DependentUpon>Ds_ProdutosXAnalises.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_ProdutosXAnalises.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_ProdutosXAnalises.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_ProdutosXAnalises.xss">
+      <DependentUpon>Ds_ProdutosXAnalises.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_PVendaLucroBrutoCli.xsc">
+      <DependentUpon>Ds_PVendaLucroBrutoCli.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_PVendaLucroBrutoCli.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_PVendaLucroBrutoCli.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_PVendaLucroBrutoCli.xss">
+      <DependentUpon>Ds_PVendaLucroBrutoCli.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_PvendaLucroBrutoProd.xsc">
+      <DependentUpon>Ds_PvendaLucroBrutoProd.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_PvendaLucroBrutoProd.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_PvendaLucroBrutoProd.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_PvendaLucroBrutoProd.xss">
+      <DependentUpon>Ds_PvendaLucroBrutoProd.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_PVendaLucroBrutoRepres.xsc">
+      <DependentUpon>Ds_PVendaLucroBrutoRepres.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_PVendaLucroBrutoRepres.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_PVendaLucroBrutoRepres.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_PVendaLucroBrutoRepres.xss">
+      <DependentUpon>Ds_PVendaLucroBrutoRepres.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Realizado.xsc">
+      <DependentUpon>Ds_Realizado.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Realizado.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_Realizado.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_Realizado.xss">
+      <DependentUpon>Ds_Realizado.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_ReaLizadoContasApagr.xsc">
+      <DependentUpon>Ds_ReaLizadoContasApagr.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_ReaLizadoContasApagr.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_ReaLizadoContasApagr.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_ReaLizadoContasApagr.xss">
+      <DependentUpon>Ds_ReaLizadoContasApagr.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_RealizadoContasAReceber.xsc">
+      <DependentUpon>Ds_RealizadoContasAReceber.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_RealizadoContasAReceber.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_RealizadoContasAReceber.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_RealizadoContasAReceber.xss">
+      <DependentUpon>Ds_RealizadoContasAReceber.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_ReciboAPagar.xsc">
+      <DependentUpon>Ds_ReciboAPagar.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_ReciboAPagar.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_ReciboAPagar.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_ReciboAPagar.xss">
+      <DependentUpon>Ds_ReciboAPagar.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_RegistrosFiscais.xsc">
+      <DependentUpon>Ds_RegistrosFiscais.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_RegistrosFiscais.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_RegistrosFiscais1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_RegistrosFiscais.xss">
+      <DependentUpon>Ds_RegistrosFiscais.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\DS_RelacaoCompraVenda.xsc">
+      <DependentUpon>DS_RelacaoCompraVenda.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\DS_RelacaoCompraVenda.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_RelacaoCompraVenda.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\DS_RelacaoCompraVenda.xss">
+      <DependentUpon>DS_RelacaoCompraVenda.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_RelacaoDePedidos.xsc">
+      <DependentUpon>Ds_RelacaoDePedidos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_RelacaoDePedidos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_RelacaoDePedidos1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_RelacaoDePedidos.xss">
+      <DependentUpon>Ds_RelacaoDePedidos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_RelacaoDeTitulos.xsc">
+      <DependentUpon>Ds_RelacaoDeTitulos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_RelacaoDeTitulos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_RelacaoDeTitulos.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_RelacaoDeTitulos.xss">
+      <DependentUpon>Ds_RelacaoDeTitulos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_RelatorioAnaliticoDeFretes.xsc">
+      <DependentUpon>Ds_RelatorioAnaliticoDeFretes.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_RelatorioAnaliticoDeFretes.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_RelatorioAnaliticoDeFretes.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_RelatorioAnaliticoDeFretes.xss">
+      <DependentUpon>Ds_RelatorioAnaliticoDeFretes.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_RelatorioBasePisCofinsTransportadoras.xsc">
+      <DependentUpon>Ds_RelatorioBasePisCofinsTransportadoras.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_RelatorioBasePisCofinsTransportadoras.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_RelatorioBasePisCofinsTransportadoras.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_RelatorioBasePisCofinsTransportadoras.xss">
+      <DependentUpon>Ds_RelatorioBasePisCofinsTransportadoras.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_RelatorioDeLaudosPorPlacas.xsc">
+      <DependentUpon>Ds_RelatorioDeLaudosPorPlacas.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_RelatorioDeLaudosPorPlacas.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_RelatorioDeLaudosPorPlacas.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_RelatorioDeLaudosPorPlacas.xss">
+      <DependentUpon>Ds_RelatorioDeLaudosPorPlacas.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_RelatorioDeLaudosSemNotaFiscal.xsc">
+      <DependentUpon>Ds_RelatorioDeLaudosSemNotaFiscal.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_RelatorioDeLaudosSemNotaFiscal.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_RelatorioDeLaudosSemNotaFiscal.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_RelatorioDeLaudosSemNotaFiscal.xss">
+      <DependentUpon>Ds_RelatorioDeLaudosSemNotaFiscal.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_RelatorioDeNotaPorMunicipios.xsc">
+      <DependentUpon>Ds_RelatorioDeNotaPorMunicipios.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_RelatorioDeNotaPorMunicipios.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_RelatorioDeNotaPorMunicipios.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_RelatorioDeNotaPorMunicipios.xss">
+      <DependentUpon>Ds_RelatorioDeNotaPorMunicipios.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_RelatorioDeNotasSemCte.xsc">
+      <DependentUpon>Ds_RelatorioDeNotasSemCte.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_RelatorioDeNotasSemCte.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_RelatorioDeNotasSemCte.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_RelatorioDeNotasSemCte.xss">
+      <DependentUpon>Ds_RelatorioDeNotasSemCte.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_RelatorioEstoqueRevenda.xsc">
+      <DependentUpon>Ds_RelatorioEstoqueRevenda.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_RelatorioEstoqueRevenda.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_RelatorioEstoqueRevenda.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_RelatorioEstoqueRevenda.xss">
+      <DependentUpon>Ds_RelatorioEstoqueRevenda.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_RelatorioRomaneiosMonsanto.xsc">
+      <DependentUpon>Ds_RelatorioRomaneiosMonsanto.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_RelatorioRomaneiosMonsanto.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_RelatorioRomaneiosMonsanto.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSet\Ds_RelatorioRomaneiosMonsanto.xss">
+      <DependentUpon>Ds_RelatorioRomaneiosMonsanto.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_RelatorioSinteticoDeFretes.xsc">
+      <DependentUpon>Ds_RelatorioSinteticoDeFretes.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_RelatorioSinteticoDeFretes.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_RelatorioSinteticoDeFretes.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_RelatorioSinteticoDeFretes.xss">
+      <DependentUpon>Ds_RelatorioSinteticoDeFretes.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_RelatorioTrocaDeNota.xsc">
+      <DependentUpon>Ds_RelatorioTrocaDeNota.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_RelatorioTrocaDeNota.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_RelatorioTrocaDeNota1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_RelatorioTrocaDeNota.xss">
+      <DependentUpon>Ds_RelatorioTrocaDeNota.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_RelMargemDeLucro.xsc">
+      <DependentUpon>Ds_RelMargemDeLucro.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_RelMargemDeLucro.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_RelMargemDeLucro.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_RelMargemDeLucro.xss">
+      <DependentUpon>Ds_RelMargemDeLucro.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_RelMargemDeLucroPorCliente.xsc">
+      <DependentUpon>Ds_RelMargemDeLucroPorCliente.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_RelMargemDeLucroPorCliente.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_RelMargemDeLucroPorCliente.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_RelMargemDeLucroPorCliente.xss">
+      <DependentUpon>Ds_RelMargemDeLucroPorCliente.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_RelVendasPorTroca.xsc">
+      <DependentUpon>Ds_RelVendasPorTroca.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_RelVendasPorTroca.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_RelVendasPorTroca1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_RelVendasPorTroca.xss">
+      <DependentUpon>Ds_RelVendasPorTroca.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_ResultadoComercialPorOperacao.xsc">
+      <DependentUpon>Ds_ResultadoComercialPorOperacao.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_ResultadoComercialPorOperacao.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_ResultadoComercialPorOperacao.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_ResultadoComercialPorOperacao.xss">
+      <DependentUpon>Ds_ResultadoComercialPorOperacao.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_ResultadoComercioDeInsumos.xsc">
+      <DependentUpon>Ds_ResultadoComercioDeInsumos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_ResultadoComercioDeInsumos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_ResultadoComercioDeInsumos.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_ResultadoComercioDeInsumos.xss">
+      <DependentUpon>Ds_ResultadoComercioDeInsumos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_RetencaoDeClientes.xsc">
+      <DependentUpon>Ds_RetencaoDeClientes.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_RetencaoDeClientes.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_RetencaoDeClientes.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_RetencaoDeClientes.xss">
+      <DependentUpon>Ds_RetencaoDeClientes.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Romaneio.xsc">
+      <DependentUpon>Ds_Romaneio.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Romaneio.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_Romaneio.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_Romaneio.xss">
+      <DependentUpon>Ds_Romaneio.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_SinteseDaDepreciacao.xsc">
+      <DependentUpon>Ds_SinteseDaDepreciacao.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_SinteseDaDepreciacao.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_SinteseDaDepreciacao.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_SinteseDaDepreciacao.xss">
+      <DependentUpon>Ds_SinteseDaDepreciacao.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_SinteseDaDepreciacao.xsx">
+      <DependentUpon>Ds_SinteseDaDepreciacao.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_SinteseDoFluxo.xsc">
+      <DependentUpon>Ds_SinteseDoFluxo.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_SinteseDoFluxo.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_SinteseDoFluxo.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_SinteseDoFluxo.xss">
+      <DependentUpon>Ds_SinteseDoFluxo.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_SituacaoTributariaPISCOFINS.xsc">
+      <DependentUpon>Ds_SituacaoTributariaPISCOFINS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_SituacaoTributariaPISCOFINS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_SituacaoTributariaPISCOFINS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_SituacaoTributariaPISCOFINS.xss">
+      <DependentUpon>Ds_SituacaoTributariaPISCOFINS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_slip.xsc">
+      <DependentUpon>Ds_slip.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_slip.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_slip.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_slip.xss">
+      <DependentUpon>Ds_slip.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Solicitacao.xsc">
+      <DependentUpon>Ds_Solicitacao.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Solicitacao.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_Solicitacao.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_Solicitacao.xss">
+      <DependentUpon>Ds_Solicitacao.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Solicitacao.xsx">
+      <DependentUpon>Ds_Solicitacao.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Solicitacoes.xsc">
+      <DependentUpon>Ds_Solicitacoes.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Solicitacoes.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_Solicitacoes.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_Solicitacoes.xss">
+      <DependentUpon>Ds_Solicitacoes.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Suboperacoes.xsc">
+      <DependentUpon>Ds_Suboperacoes.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Suboperacoes.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_Suboperacoes.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_Suboperacoes.xss">
+      <DependentUpon>Ds_Suboperacoes.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Suboperacoes.xsx">
+      <DependentUpon>Ds_Suboperacoes.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_TabelaDeApuracaoDeCustos.xsc">
+      <DependentUpon>Ds_TabelaDeApuracaoDeCustos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_TabelaDeApuracaoDeCustos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_TabelaDeApuracaoDeCustos.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_TabelaDeApuracaoDeCustos.xss">
+      <DependentUpon>Ds_TabelaDeApuracaoDeCustos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_TabelaDeApuracaoDeCustos.xsx">
+      <DependentUpon>Ds_TabelaDeApuracaoDeCustos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_TabelaDeComissao.xsc">
+      <DependentUpon>Ds_TabelaDeComissao.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_TabelaDeComissao.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_TabelaDeComissao.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_TabelaDeComissao.xss">
+      <DependentUpon>Ds_TabelaDeComissao.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Tabelas.xsc">
+      <DependentUpon>Ds_Tabelas.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Tabelas.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_Tabelas.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_Tabelas.xss">
+      <DependentUpon>Ds_Tabelas.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_TermosLivroDiario.xsc">
+      <DependentUpon>Ds_TermosLivroDiario.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_TermosLivroDiario.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_TermosLivroDiario.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_TermosLivroDiario.xss">
+      <DependentUpon>Ds_TermosLivroDiario.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_TiposDeVeiculos.xsc">
+      <DependentUpon>Ds_TiposDeVeiculos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_TiposDeVeiculos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_TiposDeVeiculos.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_TiposDeVeiculos.xss">
+      <DependentUpon>Ds_TiposDeVeiculos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Titulos.xsc">
+      <DependentUpon>Ds_Titulos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Titulos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_Titulos.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_Titulos.xss">
+      <DependentUpon>Ds_Titulos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_TitulosEnviadosRemessaBancaria.xsc">
+      <DependentUpon>Ds_TitulosEnviadosRemessaBancaria.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_TitulosEnviadosRemessaBancaria.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_TitulosEnviadosRemessaBancaria.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_TitulosEnviadosRemessaBancaria.xss">
+      <DependentUpon>Ds_TitulosEnviadosRemessaBancaria.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_TotalizadorDeLotes.xsc">
+      <DependentUpon>Ds_TotalizadorDeLotes.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_TotalizadorDeLotes.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_TotalizadorDeLotes.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_TotalizadorDeLotes.xss">
+      <DependentUpon>Ds_TotalizadorDeLotes.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_TraitMixProdutos.xsc">
+      <DependentUpon>Ds_TraitMixProdutos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_TraitMixProdutos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_TraitMixProdutos.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_TraitMixProdutos.xss">
+      <DependentUpon>Ds_TraitMixProdutos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_TransferenciasFinanceiras.xsc">
+      <DependentUpon>Ds_TransferenciasFinanceiras.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_TransferenciasFinanceiras.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_TransferenciasFinanceiras1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_TransferenciasFinanceiras.xss">
+      <DependentUpon>Ds_TransferenciasFinanceiras.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_UnidadeConversao.xsc">
+      <DependentUpon>Ds_UnidadeConversao.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_UnidadeConversao.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_UnidadeConversao.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_UnidadeConversao.xss">
+      <DependentUpon>Ds_UnidadeConversao.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_UnidadeDeNegocioXEmpresas.xsc">
+      <DependentUpon>Ds_UnidadeDeNegocioXEmpresas.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_UnidadeDeNegocioXEmpresas.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_UnidadeDeNegocioXEmpresas.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_UnidadeDeNegocioXEmpresas.xss">
+      <DependentUpon>Ds_UnidadeDeNegocioXEmpresas.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Usuarios.xsc">
+      <DependentUpon>Ds_Usuarios.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_Usuarios.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_Usuarios.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_Usuarios.xss">
+      <DependentUpon>Ds_Usuarios.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_UsuariosXProcessos.xsc">
+      <DependentUpon>Ds_UsuariosXProcessos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_UsuariosXProcessos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_UsuariosXProcessos.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_UsuariosXProcessos.xss">
+      <DependentUpon>Ds_UsuariosXProcessos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_VendasPorPedido.xsc">
+      <DependentUpon>Ds_VendasPorPedido.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_VendasPorPedido.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_VendasPorPedido.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_VendasPorPedido.xss">
+      <DependentUpon>Ds_VendasPorPedido.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_VendasPorRepresentante.xsc">
+      <DependentUpon>Ds_VendasPorRepresentante.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_VendasPorRepresentante.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_VendasPorRepresentante.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_VendasPorRepresentante.xss">
+      <DependentUpon>Ds_VendasPorRepresentante.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_VendasPorTrocaSinteticoCli.xsc">
+      <DependentUpon>Ds_VendasPorTrocaSinteticoCli.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_VendasPorTrocaSinteticoCli.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_VendasPorTrocaSinteticoCli.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_VendasPorTrocaSinteticoCli.xss">
+      <DependentUpon>Ds_VendasPorTrocaSinteticoCli.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_VendasPorTrocaSinteticoGru.xsc">
+      <DependentUpon>Ds_VendasPorTrocaSinteticoGru.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_VendasPorTrocaSinteticoGru.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_VendasPorTrocaSinteticoGru.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_VendasPorTrocaSinteticoGru.xss">
+      <DependentUpon>Ds_VendasPorTrocaSinteticoGru.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_VisitaFormulario.xsc">
+      <DependentUpon>Ds_VisitaFormulario.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Ds_VisitaFormulario.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_VisitaFormulario.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\Ds_VisitaFormulario.xss">
+      <DependentUpon>Ds_VisitaFormulario.xsd</DependentUpon>
+    </None>
+    <None Include="Embarque\ClassDiagram1.cd" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Web References\br.gov.bcb\FachadaWSSGS.wsdl" />
+    <None Include="Web References\br.gov.bcb\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\br.gov.bcb\WSSerieVO.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WSPamcard\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WSPamcard\ResponseTO.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WSPamcard\WSPamcard.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DocsBr\DocsBr.csproj">
+      <Project>{c5e55497-8b55-493f-bf9f-ae7afca5c368}</Project>
+      <Name>DocsBr</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NGS.Lib.Uteis\NGS.Lib.Uteis.vbproj">
+      <Project>{9C61A3C9-F5C1-42CB-A0A4-B8779E4BEFB3}</Project>
+      <Name>NGS.Lib.Uteis</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="https://www.gps-pamcary.com.br/pamcardbrvisa/services/WSPamcard%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WSPamcard\</RelPath>
+      <UpdateFromURL>https://www.gps-pamcary.com.br/pamcardbrvisa/services/WSPamcard%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NGS_Lib_Negocio_WSPamcard_WSPamcardService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://www3.bcb.gov.br/sgspub/JSP/sgsgeral/FachadaWSSGS.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.gov.bcb\</RelPath>
+      <UpdateFromURL>https://www3.bcb.gov.br/sgspub/JSP/sgsgeral/FachadaWSSGS.wsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NGS_Lib_Negocio_br_gov_bcb_FachadaWSSGSService</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="FolhaDePagamento\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

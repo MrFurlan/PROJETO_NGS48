@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Ds_ContratoDeFrete" targetNamespace="http://tempuri.org/Ds_ContratoDeFrete.xsd" xmlns:mstns="http://tempuri.org/Ds_ContratoDeFrete.xsd" xmlns="http://tempuri.org/Ds_ContratoDeFrete.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Ds_ContratoDeFrete" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="Ds_ContratoDeFrete" msprop:Generator_DataSetName="Ds_ContratoDeFrete">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Images" msprop:Generator_UserTableName="Images" msprop:Generator_RowDeletedName="ImagesRowDeleted" msprop:Generator_RowChangedName="ImagesRowChanged" msprop:Generator_RowClassName="ImagesRow" msprop:Generator_RowChangingName="ImagesRowChanging" msprop:Generator_RowEvArgName="ImagesRowChangeEvent" msprop:Generator_RowEvHandlerName="ImagesRowChangeEventHandler" msprop:Generator_TableClassName="ImagesDataTable" msprop:Generator_TableVarName="tableImages" msprop:Generator_RowDeletingName="ImagesRowDeleting" msprop:Generator_TablePropName="Images">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="path" msprop:Generator_UserColumnName="path" msprop:Generator_ColumnVarNameInTable="columnpath" msprop:Generator_ColumnPropNameInRow="path" msprop:Generator_ColumnPropNameInTable="pathColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="image" msprop:Generator_UserColumnName="image" msprop:Generator_ColumnVarNameInTable="columnimage" msprop:Generator_ColumnPropNameInRow="image" msprop:Generator_ColumnPropNameInTable="imageColumn" type="xs:base64Binary" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ImagePamcard" msprop:Generator_UserTableName="ImagePamcard" msprop:Generator_RowDeletedName="ImagePamcardRowDeleted" msprop:Generator_RowChangedName="ImagePamcardRowChanged" msprop:Generator_RowClassName="ImagePamcardRow" msprop:Generator_RowChangingName="ImagePamcardRowChanging" msprop:Generator_RowEvArgName="ImagePamcardRowChangeEvent" msprop:Generator_RowEvHandlerName="ImagePamcardRowChangeEventHandler" msprop:Generator_TableClassName="ImagePamcardDataTable" msprop:Generator_TableVarName="tableImagePamcard" msprop:Generator_RowDeletingName="ImagePamcardRowDeleting" msprop:Generator_TablePropName="ImagePamcard">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="pathPamcard" msprop:Generator_UserColumnName="pathPamcard" msprop:Generator_ColumnPropNameInRow="pathPamcard" msprop:Generator_ColumnVarNameInTable="columnpathPamcard" msprop:Generator_ColumnPropNameInTable="pathPamcardColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="imagePamcard" msprop:Generator_UserColumnName="imagePamcard" msprop:Generator_ColumnPropNameInRow="imagePamcard" msprop:Generator_ColumnVarNameInTable="columnimagePamcard" msprop:Generator_ColumnPropNameInTable="imagePamcardColumn" type="xs:base64Binary" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Pagamento" msprop:Generator_UserTableName="Pagamento" msprop:Generator_RowDeletedName="PagamentoRowDeleted" msprop:Generator_RowChangedName="PagamentoRowChanged" msprop:Generator_RowClassName="PagamentoRow" msprop:Generator_RowChangingName="PagamentoRowChanging" msprop:Generator_RowEvArgName="PagamentoRowChangeEvent" msprop:Generator_RowEvHandlerName="PagamentoRowChangeEventHandler" msprop:Generator_TableClassName="PagamentoDataTable" msprop:Generator_TableVarName="tablePagamento" msprop:Generator_RowDeletingName="PagamentoRowDeleting" msprop:Generator_TablePropName="Pagamento">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="numero" msprop:Generator_UserColumnName="numero" msprop:Generator_ColumnVarNameInTable="columnnumero" msprop:Generator_ColumnPropNameInRow="numero" msprop:Generator_ColumnPropNameInTable="numeroColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="tipo" msprop:Generator_UserColumnName="tipo" msprop:Generator_ColumnVarNameInTable="columntipo" msprop:Generator_ColumnPropNameInRow="tipo" msprop:Generator_ColumnPropNameInTable="tipoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="efetivacao" msprop:Generator_UserColumnName="efetivacao" msprop:Generator_ColumnVarNameInTable="columnefetivacao" msprop:Generator_ColumnPropNameInRow="efetivacao" msprop:Generator_ColumnPropNameInTable="efetivacaoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="vencimento" msprop:Generator_UserColumnName="vencimento" msprop:Generator_ColumnVarNameInTable="columnvencimento" msprop:Generator_ColumnPropNameInRow="vencimento" msprop:Generator_ColumnPropNameInTable="vencimentoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="pagamento" msprop:Generator_UserColumnName="pagamento" msprop:Generator_ColumnVarNameInTable="columnpagamento" msprop:Generator_ColumnPropNameInRow="pagamento" msprop:Generator_ColumnPropNameInTable="pagamentoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="situacao" msprop:Generator_UserColumnName="situacao" msprop:Generator_ColumnVarNameInTable="columnsituacao" msprop:Generator_ColumnPropNameInRow="situacao" msprop:Generator_ColumnPropNameInTable="situacaoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="valor" msprop:Generator_UserColumnName="valor" msprop:Generator_ColumnVarNameInTable="columnvalor" msprop:Generator_ColumnPropNameInRow="valor" msprop:Generator_ColumnPropNameInTable="valorColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

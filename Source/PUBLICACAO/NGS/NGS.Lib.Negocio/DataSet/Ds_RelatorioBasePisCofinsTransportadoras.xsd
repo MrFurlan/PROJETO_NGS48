@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Ds_RelatorioBasePisCofinsTransportadoras" targetNamespace="http://tempuri.org/Ds_RelatorioBasePisCofinsTransportadoras.xsd" xmlns:mstns="http://tempuri.org/Ds_RelatorioBasePisCofinsTransportadoras.xsd" xmlns="http://tempuri.org/Ds_RelatorioBasePisCofinsTransportadoras.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Ds_RelatorioBasePisCofinsTransportadoras" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="Ds_RelatorioBasePisCofinsTransportadoras" msprop:Generator_DataSetName="Ds_RelatorioBasePisCofinsTransportadoras">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="RelatorioBasePisCofinsTransportadoras" msprop:Generator_UserTableName="RelatorioBasePisCofinsTransportadoras" msprop:Generator_RowDeletedName="RelatorioBasePisCofinsTransportadorasRowDeleted" msprop:Generator_RowChangedName="RelatorioBasePisCofinsTransportadorasRowChanged" msprop:Generator_RowClassName="RelatorioBasePisCofinsTransportadorasRow" msprop:Generator_RowChangingName="RelatorioBasePisCofinsTransportadorasRowChanging" msprop:Generator_RowEvArgName="RelatorioBasePisCofinsTransportadorasRowChangeEvent" msprop:Generator_RowEvHandlerName="RelatorioBasePisCofinsTransportadorasRowChangeEventHandler" msprop:Generator_TableClassName="RelatorioBasePisCofinsTransportadorasDataTable" msprop:Generator_TableVarName="tableRelatorioBasePisCofinsTransportadoras" msprop:Generator_RowDeletingName="RelatorioBasePisCofinsTransportadorasRowDeleting" msprop:Generator_TablePropName="RelatorioBasePisCofinsTransportadoras">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Movimento" msprop:Generator_UserColumnName="Movimento" msprop:Generator_ColumnPropNameInRow="Movimento" msprop:Generator_ColumnVarNameInTable="columnMovimento" msprop:Generator_ColumnPropNameInTable="MovimentoColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Nota_Id" msprop:Generator_UserColumnName="Nota_Id" msprop:Generator_ColumnPropNameInRow="Nota_Id" msprop:Generator_ColumnVarNameInTable="columnNota_Id" msprop:Generator_ColumnPropNameInTable="Nota_IdColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Serie_Id" msprop:Generator_UserColumnName="Serie_Id" msprop:Generator_ColumnPropNameInRow="Serie_Id" msprop:Generator_ColumnVarNameInTable="columnSerie_Id" msprop:Generator_ColumnPropNameInTable="Serie_IdColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Proprietario" msprop:Generator_UserColumnName="Proprietario" msprop:Generator_ColumnPropNameInRow="Proprietario" msprop:Generator_ColumnVarNameInTable="columnProprietario" msprop:Generator_ColumnPropNameInTable="ProprietarioColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="EndProprietario" msprop:Generator_UserColumnName="EndProprietario" msprop:Generator_ColumnPropNameInRow="EndProprietario" msprop:Generator_ColumnVarNameInTable="columnEndProprietario" msprop:Generator_ColumnPropNameInTable="EndProprietarioColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Nome" msprop:Generator_UserColumnName="Nome" msprop:Generator_ColumnPropNameInRow="Nome" msprop:Generator_ColumnVarNameInTable="columnNome" msprop:Generator_ColumnPropNameInTable="NomeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Valor" msprop:Generator_UserColumnName="Valor" msprop:Generator_ColumnPropNameInRow="Valor" msprop:Generator_ColumnVarNameInTable="columnValor" msprop:Generator_ColumnPropNameInTable="ValorColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Tipo" msprop:Generator_UserColumnName="Tipo" msprop:Generator_ColumnPropNameInRow="Tipo" msprop:Generator_ColumnVarNameInTable="columnTipo" msprop:Generator_ColumnPropNameInTable="TipoColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

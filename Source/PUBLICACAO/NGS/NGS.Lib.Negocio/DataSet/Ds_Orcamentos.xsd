@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="Ds_Orcamentos" targetNamespace="http://tempuri.org/Ds_Orcamentos.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/Ds_Orcamentos.xsd" xmlns:mstns="http://tempuri.org/Ds_Orcamentos.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="Ds_Orcamentos" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Orcamentos">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="UnidadeDeNegocio" type="xs:string" minOccurs="0" />
+							<xs:element name="NomeUnidade" type="xs:string" minOccurs="0" />
+							<xs:element name="RedEmpresa" type="xs:string" minOccurs="0" />
+							<xs:element name="Empresa" type="xs:string" minOccurs="0" />
+							<xs:element name="EndEmpresa" type="xs:int" minOccurs="0" />
+							<xs:element name="NomeEmpresa" type="xs:string" minOccurs="0" />
+							<xs:element name="CidadeEmp" type="xs:string" minOccurs="0" />
+							<xs:element name="EstadoEmp" type="xs:string" minOccurs="0" />
+							<xs:element name="Carteira" type="xs:string" minOccurs="0" />
+							<xs:element name="Descricao" type="xs:string" minOccurs="0" />
+							<xs:element name="Janeiro" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Fevereiro" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Marco" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Abril" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Maio" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Junho" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Julho" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Agosto" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Setembro" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Outubro" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Novembro" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Dezembro" type="xs:decimal" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Ds_ResultadoComercioDeInsumos" targetNamespace="http://tempuri.org/Ds_ResultadoComercioDeInsumos.xsd" xmlns:mstns="http://tempuri.org/Ds_ResultadoComercioDeInsumos.xsd" xmlns="http://tempuri.org/Ds_ResultadoComercioDeInsumos.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Ds_ResultadoComercioDeInsumos" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="Ds_ResultadoComercioDeInsumos" msprop:Generator_DataSetName="Ds_ResultadoComercioDeInsumos">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ComercialDeInsumos" msprop:Generator_UserTableName="ComercialDeInsumos" msprop:Generator_RowDeletedName="ComercialDeInsumosRowDeleted" msprop:Generator_TableClassName="ComercialDeInsumosDataTable" msprop:Generator_RowChangedName="ComercialDeInsumosRowChanged" msprop:Generator_RowClassName="ComercialDeInsumosRow" msprop:Generator_RowChangingName="ComercialDeInsumosRowChanging" msprop:Generator_RowEvArgName="ComercialDeInsumosRowChangeEvent" msprop:Generator_RowEvHandlerName="ComercialDeInsumosRowChangeEventHandler" msprop:Generator_TablePropName="ComercialDeInsumos" msprop:Generator_TableVarName="tableComercialDeInsumos" msprop:Generator_RowDeletingName="ComercialDeInsumosRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Produto_Id" msprop:Generator_UserColumnName="Produto_Id" msprop:Generator_ColumnPropNameInRow="Produto_Id" msprop:Generator_ColumnVarNameInTable="columnProduto_Id" msprop:Generator_ColumnPropNameInTable="Produto_IdColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Nome" msprop:Generator_UserColumnName="Nome" msprop:Generator_ColumnPropNameInRow="Nome" msprop:Generator_ColumnVarNameInTable="columnNome" msprop:Generator_ColumnPropNameInTable="NomeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="PesoCompras" msprop:Generator_UserColumnName="PesoCompras" msprop:Generator_ColumnPropNameInRow="PesoCompras" msprop:Generator_ColumnVarNameInTable="columnPesoCompras" msprop:Generator_ColumnPropNameInTable="PesoComprasColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="ValorU_x0024_Compras" msprop:Generator_UserColumnName="ValorU$Compras" msprop:Generator_ColumnPropNameInRow="_ValorU_Compras" msprop:Generator_ColumnVarNameInTable="_columnValorU_Compras" msprop:Generator_ColumnPropNameInTable="_ValorU_ComprasColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="PesoVendas" msprop:Generator_UserColumnName="PesoVendas" msprop:Generator_ColumnPropNameInRow="PesoVendas" msprop:Generator_ColumnVarNameInTable="columnPesoVendas" msprop:Generator_ColumnPropNameInTable="PesoVendasColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="ValorU_x0024_Vendas" msprop:Generator_UserColumnName="ValorU$Vendas" msprop:Generator_ColumnPropNameInRow="_ValorU_Vendas" msprop:Generator_ColumnVarNameInTable="_columnValorU_Vendas" msprop:Generator_ColumnPropNameInTable="_ValorU_VendasColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="PesoTransf" msprop:Generator_UserColumnName="PesoTransf" msprop:Generator_ColumnPropNameInRow="PesoTransf" msprop:Generator_ColumnVarNameInTable="columnPesoTransf" msprop:Generator_ColumnPropNameInTable="PesoTransfColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="ValorU_x0024_Transf" msprop:Generator_UserColumnName="ValorU$Transf" msprop:Generator_ColumnPropNameInRow="_ValorU_Transf" msprop:Generator_ColumnVarNameInTable="_columnValorU_Transf" msprop:Generator_ColumnPropNameInTable="_ValorU_TransfColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Empresa_Id" msprop:Generator_UserColumnName="Empresa_Id" msprop:Generator_ColumnPropNameInRow="Empresa_Id" msprop:Generator_ColumnVarNameInTable="columnEmpresa_Id" msprop:Generator_ColumnPropNameInTable="Empresa_IdColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="EndEmpresa_Id" msprop:Generator_UserColumnName="EndEmpresa_Id" msprop:Generator_ColumnPropNameInRow="EndEmpresa_Id" msprop:Generator_ColumnVarNameInTable="columnEndEmpresa_Id" msprop:Generator_ColumnPropNameInTable="EndEmpresa_IdColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ValSaidaTrans" msprop:Generator_UserColumnName="ValSaidaTrans" msprop:Generator_ColumnPropNameInRow="ValSaidaTrans" msprop:Generator_ColumnVarNameInTable="columnValSaidaTrans" msprop:Generator_ColumnPropNameInTable="ValSaidaTransColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="PesoSaidaTrans" msprop:Generator_UserColumnName="PesoSaidaTrans" msprop:Generator_ColumnPropNameInRow="PesoSaidaTrans" msprop:Generator_ColumnVarNameInTable="columnPesoSaidaTrans" msprop:Generator_ColumnPropNameInTable="PesoSaidaTransColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="ValEntTrans" msprop:Generator_UserColumnName="ValEntTrans" msprop:Generator_ColumnPropNameInRow="ValEntTrans" msprop:Generator_ColumnVarNameInTable="columnValEntTrans" msprop:Generator_ColumnPropNameInTable="ValEntTransColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="PesoEntTrans" msprop:Generator_UserColumnName="PesoEntTrans" msprop:Generator_ColumnPropNameInRow="PesoEntTrans" msprop:Generator_ColumnVarNameInTable="columnPesoEntTrans" msprop:Generator_ColumnPropNameInTable="PesoEntTransColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="NomeCliente" msprop:Generator_UserColumnName="NomeCliente" msprop:Generator_ColumnPropNameInRow="NomeCliente" msprop:Generator_ColumnVarNameInTable="columnNomeCliente" msprop:Generator_ColumnPropNameInTable="NomeClienteColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Cidade" msprop:Generator_UserColumnName="Cidade" msprop:Generator_ColumnPropNameInRow="Cidade" msprop:Generator_ColumnVarNameInTable="columnCidade" msprop:Generator_ColumnPropNameInTable="CidadeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Estado_Id" msprop:Generator_UserColumnName="Estado_Id" msprop:Generator_ColumnPropNameInRow="Estado_Id" msprop:Generator_ColumnVarNameInTable="columnEstado_Id" msprop:Generator_ColumnPropNameInTable="Estado_IdColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Descricao" msprop:Generator_UserColumnName="Descricao" msprop:Generator_ColumnPropNameInRow="Descricao" msprop:Generator_ColumnVarNameInTable="columnDescricao" msprop:Generator_ColumnPropNameInTable="DescricaoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Grupo_Id" msprop:Generator_UserColumnName="Grupo_Id" msprop:Generator_ColumnPropNameInRow="Grupo_Id" msprop:Generator_ColumnVarNameInTable="columnGrupo_Id" msprop:Generator_ColumnPropNameInTable="Grupo_IdColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="VlrFreteCompras" msprop:Generator_UserColumnName="VlrFreteCompras" msprop:Generator_ColumnPropNameInRow="VlrFreteCompras" msprop:Generator_ColumnVarNameInTable="columnVlrFreteCompras" msprop:Generator_ColumnPropNameInTable="VlrFreteComprasColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="VlrFreteVendas" msprop:Generator_UserColumnName="VlrFreteVendas" msprop:Generator_ColumnPropNameInRow="VlrFreteVendas" msprop:Generator_ColumnVarNameInTable="columnVlrFreteVendas" msprop:Generator_ColumnPropNameInTable="VlrFreteVendasColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="VlrFreteEntTrans" msprop:Generator_UserColumnName="VlrFreteEntTrans" msprop:Generator_ColumnPropNameInRow="VlrFreteEntTrans" msprop:Generator_ColumnVarNameInTable="columnVlrFreteEntTrans" msprop:Generator_ColumnPropNameInTable="VlrFreteEntTransColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="VlrFreteSaiTrans" msprop:Generator_UserColumnName="VlrFreteSaiTrans" msprop:Generator_ColumnPropNameInRow="VlrFreteSaiTrans" msprop:Generator_ColumnVarNameInTable="columnVlrFreteSaiTrans" msprop:Generator_ColumnPropNameInTable="VlrFreteSaiTransColumn" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

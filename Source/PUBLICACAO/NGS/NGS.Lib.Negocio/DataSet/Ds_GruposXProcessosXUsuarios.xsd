@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Ds_GruposXProcessosXUsuarios" targetNamespace="http://tempuri.org/Ds_GruposXProcessosXUsuarios.xsd" xmlns:mstns="http://tempuri.org/Ds_GruposXProcessosXUsuarios.xsd" xmlns="http://tempuri.org/Ds_GruposXProcessosXUsuarios.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Ds_GruposXProcessosXUsuarios" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="Ds_GruposXProcessosXUsuarios" msprop:Generator_UserDSName="Ds_GruposXProcessosXUsuarios">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="GruposXProcessosXUsuarios" msprop:Generator_TableClassName="GruposXProcessosXUsuariosDataTable" msprop:Generator_TableVarName="tableGruposXProcessosXUsuarios" msprop:Generator_RowChangedName="GruposXProcessosXUsuariosRowChanged" msprop:Generator_TablePropName="GruposXProcessosXUsuarios" msprop:Generator_RowDeletingName="GruposXProcessosXUsuariosRowDeleting" msprop:Generator_RowChangingName="GruposXProcessosXUsuariosRowChanging" msprop:Generator_RowEvHandlerName="GruposXProcessosXUsuariosRowChangeEventHandler" msprop:Generator_RowDeletedName="GruposXProcessosXUsuariosRowDeleted" msprop:Generator_RowClassName="GruposXProcessosXUsuariosRow" msprop:Generator_UserTableName="GruposXProcessosXUsuarios" msprop:Generator_RowEvArgName="GruposXProcessosXUsuariosRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Grupo" msprop:Generator_ColumnVarNameInTable="columnGrupo" msprop:Generator_ColumnPropNameInRow="Grupo" msprop:Generator_ColumnPropNameInTable="GrupoColumn" msprop:Generator_UserColumnName="Grupo" type="xs:string" minOccurs="0" />
+              <xs:element name="Usuario" msprop:Generator_ColumnVarNameInTable="columnUsuario" msprop:Generator_ColumnPropNameInRow="Usuario" msprop:Generator_ColumnPropNameInTable="UsuarioColumn" msprop:Generator_UserColumnName="Usuario" type="xs:string" minOccurs="0" />
+              <xs:element name="Processo" msprop:Generator_ColumnVarNameInTable="columnProcesso" msprop:Generator_ColumnPropNameInRow="Processo" msprop:Generator_ColumnPropNameInTable="ProcessoColumn" msprop:Generator_UserColumnName="Processo" type="xs:string" minOccurs="0" />
+              <xs:element name="contProcesso" msprop:Generator_ColumnVarNameInTable="columncontProcesso" msprop:Generator_ColumnPropNameInRow="contProcesso" msprop:Generator_ColumnPropNameInTable="contProcessoColumn" msprop:Generator_UserColumnName="contProcesso" type="xs:int" minOccurs="0" />
+              <xs:element name="contUsuario" msprop:Generator_ColumnVarNameInTable="columncontUsuario" msprop:Generator_ColumnPropNameInRow="contUsuario" msprop:Generator_ColumnPropNameInTable="contUsuarioColumn" msprop:Generator_UserColumnName="contUsuario" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Logo" msprop:Generator_TableClassName="LogoDataTable" msprop:Generator_TableVarName="tableLogo" msprop:Generator_TablePropName="Logo" msprop:Generator_RowDeletingName="LogoRowDeleting" msprop:Generator_RowChangingName="LogoRowChanging" msprop:Generator_RowEvHandlerName="LogoRowChangeEventHandler" msprop:Generator_RowDeletedName="LogoRowDeleted" msprop:Generator_UserTableName="Logo" msprop:Generator_RowChangedName="LogoRowChanged" msprop:Generator_RowEvArgName="LogoRowChangeEvent" msprop:Generator_RowClassName="LogoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Imagem" msprop:Generator_ColumnVarNameInTable="columnImagem" msprop:Generator_ColumnPropNameInRow="Imagem" msprop:Generator_ColumnPropNameInTable="ImagemColumn" msprop:Generator_UserColumnName="Imagem" type="xs:base64Binary" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

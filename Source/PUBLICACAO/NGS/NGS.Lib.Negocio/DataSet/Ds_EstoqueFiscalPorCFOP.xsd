@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Ds_EstoqueFiscalPorCFOP" targetNamespace="http://tempuri.org/Ds_EstoqueFiscalPorCFOP.xsd" xmlns:mstns="http://tempuri.org/Ds_EstoqueFiscalPorCFOP.xsd" xmlns="http://tempuri.org/Ds_EstoqueFiscalPorCFOP.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Ds_EstoqueFiscalPorCFOP" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="Ds_EstoqueFiscalPorCFOP" msprop:Generator_UserDSName="Ds_EstoqueFiscalPorCFOP">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="EstoqueFiscalCFOP" msprop:Generator_TableClassName="EstoqueFiscalCFOPDataTable" msprop:Generator_TableVarName="tableEstoqueFiscalCFOP" msprop:Generator_TablePropName="EstoqueFiscalCFOP" msprop:Generator_RowDeletingName="EstoqueFiscalCFOPRowDeleting" msprop:Generator_UserTableName="EstoqueFiscalCFOP" msprop:Generator_RowChangingName="EstoqueFiscalCFOPRowChanging" msprop:Generator_RowEvHandlerName="EstoqueFiscalCFOPRowChangeEventHandler" msprop:Generator_RowDeletedName="EstoqueFiscalCFOPRowDeleted" msprop:Generator_RowEvArgName="EstoqueFiscalCFOPRowChangeEvent" msprop:Generator_RowChangedName="EstoqueFiscalCFOPRowChanged" msprop:Generator_RowClassName="EstoqueFiscalCFOPRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TAG" msprop:Generator_ColumnVarNameInTable="columnTAG" msprop:Generator_ColumnPropNameInRow="TAG" msprop:Generator_ColumnPropNameInTable="TAGColumn" msprop:Generator_UserColumnName="TAG" type="xs:string" minOccurs="0" />
+              <xs:element name="Ano" msprop:Generator_ColumnVarNameInTable="columnAno" msprop:Generator_ColumnPropNameInRow="Ano" msprop:Generator_ColumnPropNameInTable="AnoColumn" msprop:Generator_UserColumnName="Ano" type="xs:short" minOccurs="0" />
+              <xs:element name="Mes" msprop:Generator_ColumnVarNameInTable="columnMes" msprop:Generator_ColumnPropNameInRow="Mes" msprop:Generator_ColumnPropNameInTable="MesColumn" msprop:Generator_UserColumnName="Mes" type="xs:short" minOccurs="0" />
+              <xs:element name="EntradaSaida" msprop:Generator_ColumnVarNameInTable="columnEntradaSaida" msprop:Generator_ColumnPropNameInRow="EntradaSaida" msprop:Generator_ColumnPropNameInTable="EntradaSaidaColumn" msprop:Generator_UserColumnName="EntradaSaida" type="xs:string" minOccurs="0" />
+              <xs:element name="CFOP" msprop:Generator_ColumnVarNameInTable="columnCFOP" msprop:Generator_ColumnPropNameInRow="CFOP" msprop:Generator_ColumnPropNameInTable="CFOPColumn" msprop:Generator_UserColumnName="CFOP" type="xs:short" minOccurs="0" />
+              <xs:element name="EmNossoPoder" msprop:Generator_ColumnVarNameInTable="columnEmNossoPoder" msprop:Generator_ColumnPropNameInRow="EmNossoPoder" msprop:Generator_ColumnPropNameInTable="EmNossoPoderColumn" msprop:Generator_UserColumnName="EmNossoPoder" type="xs:decimal" minOccurs="0" />
+              <xs:element name="EmPoderDeTerceiros" msprop:Generator_ColumnVarNameInTable="columnEmPoderDeTerceiros" msprop:Generator_ColumnPropNameInRow="EmPoderDeTerceiros" msprop:Generator_ColumnPropNameInTable="EmPoderDeTerceirosColumn" msprop:Generator_UserColumnName="EmPoderDeTerceiros" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ParaFinsDeExportacao" msprop:Generator_ColumnVarNameInTable="columnParaFinsDeExportacao" msprop:Generator_ColumnPropNameInRow="ParaFinsDeExportacao" msprop:Generator_ColumnPropNameInTable="ParaFinsDeExportacaoColumn" msprop:Generator_UserColumnName="ParaFinsDeExportacao" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TotalEstoqueProprio" msprop:Generator_ColumnVarNameInTable="columnTotalEstoqueProprio" msprop:Generator_ColumnPropNameInRow="TotalEstoqueProprio" msprop:Generator_ColumnPropNameInTable="TotalEstoqueProprioColumn" msprop:Generator_UserColumnName="TotalEstoqueProprio" type="xs:decimal" minOccurs="0" />
+              <xs:element name="EstoqueDeTerceiro" msprop:Generator_ColumnVarNameInTable="columnEstoqueDeTerceiro" msprop:Generator_ColumnPropNameInRow="EstoqueDeTerceiro" msprop:Generator_ColumnPropNameInTable="EstoqueDeTerceiroColumn" msprop:Generator_UserColumnName="EstoqueDeTerceiro" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TotalEstoqueGeral" msprop:Generator_ColumnVarNameInTable="columnTotalEstoqueGeral" msprop:Generator_ColumnPropNameInRow="TotalEstoqueGeral" msprop:Generator_ColumnPropNameInTable="TotalEstoqueGeralColumn" msprop:Generator_UserColumnName="TotalEstoqueGeral" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Logo" msprop:Generator_TableClassName="LogoDataTable" msprop:Generator_TableVarName="tableLogo" msprop:Generator_TablePropName="Logo" msprop:Generator_RowDeletingName="LogoRowDeleting" msprop:Generator_UserTableName="Logo" msprop:Generator_RowChangingName="LogoRowChanging" msprop:Generator_RowEvHandlerName="LogoRowChangeEventHandler" msprop:Generator_RowDeletedName="LogoRowDeleted" msprop:Generator_RowEvArgName="LogoRowChangeEvent" msprop:Generator_RowChangedName="LogoRowChanged" msprop:Generator_RowClassName="LogoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Imagem" msprop:Generator_ColumnVarNameInTable="columnImagem" msprop:Generator_ColumnPropNameInRow="Imagem" msprop:Generator_ColumnPropNameInTable="ImagemColumn" msprop:Generator_UserColumnName="Imagem" type="xs:base64Binary" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

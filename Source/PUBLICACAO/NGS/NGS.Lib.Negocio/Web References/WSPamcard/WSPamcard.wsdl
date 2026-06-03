@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:intf="http://webservice.pamcard.jee.pamcary.com.br" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns1="http://webservice.to.core.jee.hst.com.br" xmlns:impl="http://webservice.pamcard.jee.pamcary.com.br" targetNamespace="http://webservice.pamcard.jee.pamcary.com.br" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://webservice.to.core.jee.hst.com.br">
+      <xsd:import namespace="http://webservice.pamcard.jee.pamcary.com.br" />
+      <xsd:import namespace="http://schemas.xmlsoap.org/soap/encoding/" />
+      <xsd:complexType name="FieldTO">
+        <xsd:sequence>
+          <xsd:element name="key" nillable="true" type="xsd:string" />
+          <xsd:element name="value" nillable="true" type="xsd:anyType" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="BaseTO">
+        <xsd:sequence>
+          <xsd:element name="certificate" nillable="true" type="xsd:anyType" />
+          <xsd:element name="context" nillable="true" type="xsd:string" />
+          <xsd:element name="fields" nillable="true" type="impl:ArrayOf_tns1_FieldTO" />
+          <xsd:element name="token" nillable="true" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="RequestTO">
+        <xsd:complexContent mixed="false">
+          <xsd:extension base="tns1:BaseTO">
+            <xsd:sequence />
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="ResponseTO">
+        <xsd:complexContent mixed="false">
+          <xsd:extension base="tns1:BaseTO">
+            <xsd:sequence />
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+    </xsd:schema>
+    <xsd:schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://webservice.pamcard.jee.pamcary.com.br">
+      <xsd:import namespace="http://webservice.to.core.jee.hst.com.br" />
+      <xsd:import namespace="http://schemas.xmlsoap.org/soap/encoding/" />
+      <xsd:complexType name="ArrayOf_tns1_FieldTO">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="soapenc:Array">
+            <xsd:attribute wsdl:arrayType="tns1:FieldTO[]" ref="soapenc:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="executeRequest">
+    <wsdl:part name="requestTO" type="tns1:RequestTO" />
+  </wsdl:message>
+  <wsdl:message name="executeResponse">
+    <wsdl:part name="executeReturn" type="tns1:ResponseTO" />
+  </wsdl:message>
+  <wsdl:portType name="WSPamcard">
+    <wsdl:operation name="execute" parameterOrder="requestTO">
+      <wsdl:input name="executeRequest" message="impl:executeRequest" />
+      <wsdl:output name="executeResponse" message="impl:executeResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSPamcardSoapBinding" type="impl:WSPamcard">
+    <wsdlsoap:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc" />
+    <wsdl:operation name="execute">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="executeRequest">
+        <wsdlsoap:body use="encoded" namespace="http://webservice.pamcard.jee.pamcary.com.br" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="executeResponse">
+        <wsdlsoap:body use="encoded" namespace="http://webservice.pamcard.jee.pamcary.com.br" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WSPamcardService">
+    <wsdl:port name="WSPamcard" binding="impl:WSPamcardSoapBinding">
+      <wsdlsoap:address location="https://www.gps-pamcary.com.br/pamcardbrvisa/services/WSPamcard" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

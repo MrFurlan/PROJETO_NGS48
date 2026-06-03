@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Ds_PVendaLucroBrutoRepres" targetNamespace="http://tempuri.org/Ds_PVendaLucroBrutoRepres.xsd" xmlns:mstns="http://tempuri.org/Ds_PVendaLucroBrutoRepres.xsd" xmlns="http://tempuri.org/Ds_PVendaLucroBrutoRepres.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Ds_PVendaLucroBrutoRepres" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="Ds_PVendaLucroBrutoRepres" msprop:Generator_DataSetName="Ds_PVendaLucroBrutoRepres">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="RelatorioParticipacaoNaVendaLucroBruto" msprop:Generator_UserTableName="RelatorioParticipacaoNaVendaLucroBruto" msprop:Generator_RowDeletedName="RelatorioParticipacaoNaVendaLucroBrutoRowDeleted" msprop:Generator_RowChangedName="RelatorioParticipacaoNaVendaLucroBrutoRowChanged" msprop:Generator_RowClassName="RelatorioParticipacaoNaVendaLucroBrutoRow" msprop:Generator_RowChangingName="RelatorioParticipacaoNaVendaLucroBrutoRowChanging" msprop:Generator_RowEvArgName="RelatorioParticipacaoNaVendaLucroBrutoRowChangeEvent" msprop:Generator_RowEvHandlerName="RelatorioParticipacaoNaVendaLucroBrutoRowChangeEventHandler" msprop:Generator_TableClassName="RelatorioParticipacaoNaVendaLucroBrutoDataTable" msprop:Generator_TableVarName="tableRelatorioParticipacaoNaVendaLucroBruto" msprop:Generator_RowDeletingName="RelatorioParticipacaoNaVendaLucroBrutoRowDeleting" msprop:Generator_TablePropName="RelatorioParticipacaoNaVendaLucroBruto">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Representante_Id" msprop:Generator_UserColumnName="Representante_Id" msprop:Generator_ColumnVarNameInTable="columnRepresentante_Id" msprop:Generator_ColumnPropNameInRow="Representante_Id" msprop:Generator_ColumnPropNameInTable="Representante_IdColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="EndRepresentante_Id" msprop:Generator_UserColumnName="EndRepresentante_Id" msprop:Generator_ColumnVarNameInTable="columnEndRepresentante_Id" msprop:Generator_ColumnPropNameInRow="EndRepresentante_Id" msprop:Generator_ColumnPropNameInTable="EndRepresentante_IdColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Nome" msprop:Generator_UserColumnName="Nome" msprop:Generator_ColumnVarNameInTable="columnNome" msprop:Generator_ColumnPropNameInRow="Nome" msprop:Generator_ColumnPropNameInTable="NomeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalRepresentanteVenda" msprop:Generator_UserColumnName="TotalRepresentanteVenda" msprop:Generator_ColumnVarNameInTable="columnTotalRepresentanteVenda" msprop:Generator_ColumnPropNameInRow="TotalRepresentanteVenda" msprop:Generator_ColumnPropNameInTable="TotalRepresentanteVendaColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TotalRepresentanteLucro" msprop:Generator_UserColumnName="TotalRepresentanteLucro" msprop:Generator_ColumnVarNameInTable="columnTotalRepresentanteLucro" msprop:Generator_ColumnPropNameInRow="TotalRepresentanteLucro" msprop:Generator_ColumnPropNameInTable="TotalRepresentanteLucroColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ParticipacaoLucro" msprop:Generator_UserColumnName="ParticipacaoLucro" msprop:Generator_ColumnVarNameInTable="columnParticipacaoLucro" msprop:Generator_ColumnPropNameInRow="ParticipacaoLucro" msprop:Generator_ColumnPropNameInTable="ParticipacaoLucroColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ParticipacaoVenda" msprop:Generator_UserColumnName="ParticipacaoVenda" msprop:Generator_ColumnVarNameInTable="columnParticipacaoVenda" msprop:Generator_ColumnPropNameInRow="ParticipacaoVenda" msprop:Generator_ColumnPropNameInTable="ParticipacaoVendaColumn" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
