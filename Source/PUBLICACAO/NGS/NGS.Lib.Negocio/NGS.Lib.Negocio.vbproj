@@ -1248,6 +1248,7 @@
     <Compile Include="NotaFiscal\NotaFiscalXLote.vb" />
     <Compile Include="Novo\NotaFiscalXTitulo.vb" />
     <Compile Include="OnMobile\PedidoOnMobile.vb" />
+    <Compile Include="Pamcard\PamcardNew.vb" />
     <Compile Include="Pedido\PedidoXContrato.vb" />
     <Compile Include="Pedido\PedidoxFinanceiro.vb" />
     <Compile Include="Pedido\PedidoXParcela.vb" />

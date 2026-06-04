@@ -9,7 +9,7 @@ Public Class RecuperarSenha
     Private _sHashToken As String
     Private _bValidarToken As Boolean
 
-    Sub New(sUsuario As String, sBanco)
+    Sub New(sUsuario As String)
         _sUsuario = sUsuario
         _lsEmails = Funcoes.BuscarEmailPorUsuario(_sUsuario)
     End Sub
