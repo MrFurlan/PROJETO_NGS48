@@ -73,6 +73,9 @@
                         <li class="iconConsultar" runat="server">
                             <asp:LinkButton ID="lnkConsultar" Text="Consultar" AccessKey="C" runat="server" />
                         </li>
+                        <li class="iconExcluir" runat="server">
+                            <asp:LinkButton ID="lnkExcluir" Text="Excluir" runat="server" OnClientClick="if(!confirm('Deseja realmente excluir este registro?')) return false;" />
+                        </li>
                         <li class="iconLimpar" runat="server">
                             <asp:LinkButton ID="lnkLimpar" Text="Limpar" runat="server" />
                         </li>

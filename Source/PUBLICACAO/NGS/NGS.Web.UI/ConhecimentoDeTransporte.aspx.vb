@@ -3159,8 +3159,13 @@ Public Class ConhecimentoDeTransporte
             '    inscricaoFornecedor = objNotaFiscal.EnderecoTomador
             'End If
 
+            If objNotaFiscal.CodigoTomador.Length = 0 Then
+                MsgBox(Me.Page, "Verifique a Inscrição Estadual do Tomador " & sCodigoTomador & " no Cadastro de Clientes.", eTitulo.Info, False)
+                Exit Sub
+            End If
+
             codigoFornecedor = objNotaFiscal.CodigoTomador
-            inscricaoFornecedor = objNotaFiscal.EnderecoTomador
+            inscricaoFornecedor = objNotaFiscal.Tomador.InscricaoEstadual
 
         Else
             codigoEmpresa = objNotaFiscal.CodigoTomador
@@ -3492,6 +3497,10 @@ Public Class ConhecimentoDeTransporte
         'UTILIZADO PARA LANÇAR CONHECIMENTO COM NOTA JÁ CANCELADA - FURLAN 28/05/2026
         If txtChaveNFe.Text = "41260563358210000176570010000014491297848963" Then QuantidadeNota = 33630
         If txtChaveNFe.Text = "41260563358210000176570010000015681721149797" Then QuantidadeNota = 31520
+        If txtChaveNFe.Text = "41260363358210000176570010000008161782360780" Then QuantidadeNota = 41140
+        If txtChaveNFe.Text = "41260363358210000176570010000008171992786330" Then QuantidadeNota = 41460
+        If txtChaveNFe.Text = "41260363358210000176570010000008181510306119" Then QuantidadeNota = 41140
+
 
         txtQuantidade.Text = QuantidadeNota
 

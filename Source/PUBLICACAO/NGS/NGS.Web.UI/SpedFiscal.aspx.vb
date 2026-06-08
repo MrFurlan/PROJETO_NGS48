@@ -2326,10 +2326,10 @@ Partial Class SpedFiscal
                             'Registro 03 - Indicador do emitente do documento fiscal: 0 - Emissão própria; 1 - Terceiros
                             If .Item("NossaEmissao") = "S" Then
                                 NossaEmissao = True
-                                linha &= "|1"
+                                linha &= "|0"
                             Else
                                 NossaEmissao = False
-                                linha &= "|0"
+                                linha &= "|1"
                             End If
 
                             'Registro 04 - Código do participante (campo 02 do Registro 0150): - do emitente do documento ou do remetente das mercadorias, no caso de entradas; - do adquirente, no caso de saídas
@@ -7330,6 +7330,7 @@ Partial Class SpedFiscal
               "    AND DocXML.Cliente_Id = NF.Cliente_Id" & vbCrLf &
               "    AND DocXML.Serie_Id   = NF.Serie_Id" & vbCrLf &
              "     AND DocXML.Numero_Id  = NF.Nota_Id" & vbCrLf &
+             "     AND DocXML.Chave_Id   = NFER.ChaveNfe" & vbCrLf &
               " WHERE NF.Serie_Id NOT IN ('D', 'F', 'REC')" & vbCrLf &
               "   AND NF.Empresa_Id ='" & Empresa(0) & "'" & vbCrLf &
               "   AND NF.Movimento BETWEEN '" & PeriodoInicial.ToSqlDate() & "' AND '" & PeriodoFinal.ToSqlDate() & "'" & vbCrLf &

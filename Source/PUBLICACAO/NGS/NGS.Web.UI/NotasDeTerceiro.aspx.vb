@@ -1,15 +1,16 @@
-﻿Imports NGS.Lib.Negocio
-Imports NGS.Lib.Uteis
-Imports System.Data
-Imports System.Data.SqlClient
+﻿Imports System.Data
 Imports System.Data.Sql
+Imports System.Data.SqlClient
 Imports System.Data.SqlTypes
 Imports System.Drawing
-Imports System.Xml
 Imports System.IO
-Imports System.Threading.Tasks
-Imports System.Net.Http
 Imports System.Net
+Imports System.Net.Http
+Imports System.Threading.Tasks
+Imports System.Web.Services.Description
+Imports System.Xml
+Imports NGS.Lib.Negocio
+Imports NGS.Lib.Uteis
 
 Public Class NotasDeTerceiro
     Inherits BasePage
@@ -56,6 +57,14 @@ Public Class NotasDeTerceiro
                 Exit Sub
             End If
         End If
+    End Sub
+
+    Private Sub SessaoSalvaNotaFiscal()
+        Session("objNotaFiscal" & HID.Value) = objNotaFiscal
+    End Sub
+
+    Private Sub SessaoRecuperaNotaFiscal()
+        objNotaFiscal = CType(Session("objNotaFiscal" & HID.Value), [Lib].Negocio.NotaFiscal)
     End Sub
 
     Public Overrides Sub Carregar(ByVal obj As [Lib].Negocio.IBaseEntity)
@@ -290,11 +299,31 @@ Public Class NotasDeTerceiro
             txtSaldo.Text = String.Format("{0:N0}", Decimal.Zero)
         End If
 
+        objNotaFiscal = objNota
+        SessaoSalvaNotaFiscal()
+
+        lnkExcluir.Parent.Visible = True
+
+    End Sub
+
+    Private Sub IniciarExclusaoNotaFiscal()
+        SessaoRecuperaNotaFiscal()
+
+        objNotaFiscal.IUD = "D"
+
+        If objNotaFiscal.Salvar Then
+            MsgBox(Me.Page, "Nota fiscal " & objNotaFiscal.Codigo & " removida com Sucesso.", eTitulo.Sucess)
+
+            LimparCampos()
+        Else
+            MsgBox(Me.Page, HttpContext.Current.Session("ssMessage" & HID.Value))
+        End If
     End Sub
 
     Private Sub LimparCampos()
 
-        ucConsultaPedidosXNotas.SetarHID(HID.Value)
+        Session.Remove("objNotaFiscal" & HID.Value)
+        Session.Remove("objNFConsultaTerceiro" & HID.Value)
 
         lblUsuario.Text = Session("ssNomeUsuario")
 
@@ -309,6 +338,8 @@ Public Class NotasDeTerceiro
         chkSinistro.Checked = False
 
         TabPesoDeChegada.Visible = False
+
+        lnkExcluir.Parent.Visible = False
 
         lblPedido.Text = "0"
         txtNumeroNota.Text = String.Empty
@@ -342,8 +373,13 @@ Public Class NotasDeTerceiro
         HID.Value = Guid.NewGuid().ToString
         ucConsultaPedidosXNotas.SetarHID(HID.Value)
         ucFile.Clear()
+
+        txtNomeEmpresa.Text = String.Empty
+        hdfCodigoEmpresa.Value = String.Empty
+
         txtNomeCliente.Text = String.Empty
         hdfCodigoCliente.Value = String.Empty
+
         ddlTipoDeDocumento.SelectedIndex = 0
         ddlSituacao.SelectedValue = 1
 
@@ -518,6 +554,23 @@ Public Class NotasDeTerceiro
             MsgBox(Me.Page, "Não foi possível consultar a nota, verifique a estrutura do XML. " & verURL & " - " & ex.Message.ToString)
         End Try
     End Sub
+
+    Protected Sub lnkExcluir_Click(sender As Object, e As EventArgs) Handles lnkExcluir.Click
+        Try
+            If Funcoes.VerificaPermissao("NotasDeTerceiro", "EXCLUIR") Then
+                If grdProdutos.Rows.Count > 0 Then
+                    IniciarExclusaoNotaFiscal()
+                Else
+                    MsgBox(Me.Page, "Consulte a Nota para Exclusão.")
+                End If
+            Else
+                MsgBox(Me.Page, "Usuário sem permissão para excluir registro.", eTitulo.Info)
+            End If
+        Catch ex As Exception
+            MsgBox(Me.Page, ex.Message, eTitulo.Erro)
+        End Try
+    End Sub
+
 
     Protected Sub lnkLimpar_Click(sender As Object, e As EventArgs) Handles lnkLimpar.Click
         Try

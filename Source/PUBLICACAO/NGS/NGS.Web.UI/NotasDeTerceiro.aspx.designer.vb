@@ -95,6 +95,15 @@ Partial Public Class NotasDeTerceiro
     Protected WithEvents lnkConsultar As Global.System.Web.UI.WebControls.LinkButton
 
     '''<summary>
+    '''lnkExcluir control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lnkExcluir As Global.System.Web.UI.WebControls.LinkButton
+
+    '''<summary>
     '''lnkLimpar control.
     '''</summary>
     '''<remarks>
