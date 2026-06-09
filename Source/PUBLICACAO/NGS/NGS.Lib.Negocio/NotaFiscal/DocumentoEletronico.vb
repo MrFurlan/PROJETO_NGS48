@@ -200,7 +200,11 @@ Public Class DocumentoEletronico
                 Return "999;Verifique se a chave de NF-e informada está correta.;" & strMsg & ";"
             End If
 
-            Dim strData As String = lstMsg(3).Split(New Char() {"="c}, StringSplitOptions.RemoveEmptyEntries)(1).Trim()
+            Dim strData As String = String.Empty
+
+            If lstMsg.Count > 3 AndAlso Not String.IsNullOrWhiteSpace(lstMsg(3)) Then
+                strData = lstMsg(3).Split(New Char() {"="c}, StringSplitOptions.RemoveEmptyEntries)(1).Trim()
+            End If
 
             If Not String.IsNullOrWhiteSpace(strCodigo) Then
                 Return String.Format("{0};{1};{2}", strCodigo, strMsg, strData)

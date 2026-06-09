@@ -1142,12 +1142,12 @@ Public Class NotasFiscaisGerais
                     Dim verStatusNFe As String = DocumentoEletronico.ConsultaNFEFornecedor(objNotaFiscal)
                     Dim statusNFE As String() = verStatusNFe.Split(";")
 
-                    If statusNFE(0) = "100" Then
+                    If statusNFE(0) = "100" OrElse statusNFE(0) = "526" Then
                         If Not DocumentoEletronico.ManifestoNFe(objNotaFiscal, eTipoManifesto.ConfirmacaoDaOperacao, msgResultado) Then
                             MsgBox(Me.Page, msgResultado)
                             Exit Sub
                         End If
-                    ElseIf statusNFE(0) = "101" Then
+                    ElseIf statusNFE(0) = "Then101" Then
                         MsgBox(Me.Page, "Nota Fiscal Cancelada pelo Fornecedor não pode ser utilizada.")
                         Exit Sub
                     Else
@@ -1284,20 +1284,20 @@ Public Class NotasFiscaisGerais
 
             SessaoRecuperaNotaFiscal()
 
-            If Not objNotaFiscal.VencimentosNota Is Nothing AndAlso objNotaFiscal.VencimentosNota.Count > 0 Then
-                Dim objCarteira As New [Lib].Negocio.CarteiraFinanceira(cmbCarteira.SelectedValue)
+                        If Not objNotaFiscal.VencimentosNota Is Nothing AndAlso objNotaFiscal.VencimentosNota.Count > 0 Then
+                            Dim objCarteira As New [Lib].Negocio.CarteiraFinanceira(cmbCarteira.SelectedValue)
 
-                For Each rowTit As [Lib].Negocio.Titulo In objNotaFiscal.VencimentosNota
-                    rowTit.CodigoCarteira = objCarteira.CodigoCarteira
-                    rowTit.ContaContabilCliente = objCarteira.CodigoContaCliente
-                Next
+                            For Each rowTit As [Lib].Negocio.Titulo In objNotaFiscal.VencimentosNota
+                                rowTit.CodigoCarteira = objCarteira.CodigoCarteira
+                                rowTit.ContaContabilCliente = objCarteira.CodigoContaCliente
+                            Next
 
-                SessaoSalvaNotaFiscal()
+                            SessaoSalvaNotaFiscal()
 
-                grdCondicoes.DataSource = objNotaFiscal.VencimentosNota.Where(Function(s) s.IUD <> "D")
-                grdCondicoes.DataBind()
-            End If
-        End If
+                            grdCondicoes.DataSource = objNotaFiscal.VencimentosNota.Where(Function(s) s.IUD <> "D")
+                            grdCondicoes.DataBind()
+                        End If
+                    End If
     End Sub
 
     Protected Sub ddlTributos_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlTributos.SelectedIndexChanged
