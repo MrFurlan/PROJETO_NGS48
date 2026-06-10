@@ -3500,6 +3500,10 @@ Public Class ConhecimentoDeTransporte
         If txtChaveNFe.Text = "41260363358210000176570010000008161782360780" Then QuantidadeNota = 41140
         If txtChaveNFe.Text = "41260363358210000176570010000008171992786330" Then QuantidadeNota = 41460
         If txtChaveNFe.Text = "41260363358210000176570010000008181510306119" Then QuantidadeNota = 41140
+        If txtChaveNFe.Text = "41260463358210000176570010000013391457552778" Then QuantidadeNota = 40020
+        If txtChaveNFe.Text = "41260463358210000176570010000010981308145830" Then QuantidadeNota = 41320
+        If txtChaveNFe.Text = "41260463358210000176570010000013291374401350" Then QuantidadeNota = 36300
+        If txtChaveNFe.Text = "41260463358210000176570010000010801591944120" Then QuantidadeNota = 33000
 
 
         txtQuantidade.Text = QuantidadeNota

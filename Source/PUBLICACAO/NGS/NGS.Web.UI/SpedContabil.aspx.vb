@@ -410,6 +410,8 @@ Public Class SpedContabil
                             linha &= "|9.00"
                         ElseIf Format(CDate(txtDataFinal.Text), "yyyy") = 2024 Then
                             linha &= "|9.00"
+                        ElseIf Format(CDate(txtDataFinal.Text), "yyyy") = 2025 Then
+                            linha &= "|9.00"
                         End If
                         linha &= "|"
                     End With
@@ -534,7 +536,16 @@ Public Class SpedContabil
                             ElseIf Nivel2 = "105" Then
                                 '    linha &= "|05"
                                 'ElseIf conta = "1050101" Then
-                                linha &= "|01"
+
+                                If Left(Empresa(0), 8) = "40938762" OrElse
+                                    Left(Empresa(0), 8) = "49673784" OrElse
+                                    Left(Empresa(0), 8) = "05366261" OrElse
+                                    Left(Empresa(0), 8) = "53267147" OrElse
+                                    Left(Empresa(0), 8) = "38198213" Then
+                                    linha &= "|05"
+                                Else
+                                    linha &= "|01"
+                                End If
                             ElseIf Nivel2 = "205" Then
                                 linha &= "|05"
                             Else
