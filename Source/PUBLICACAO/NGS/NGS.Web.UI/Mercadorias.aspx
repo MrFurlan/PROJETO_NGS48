@@ -31,6 +31,9 @@
                         <div class="menu_acoes">
                             <div class="acoes">
                                 <ul>
+                                    <li class="iconConsultar" runat="server">
+                                        <asp:linkbutton ID="lnkConsultarPamCard" text="ConsultarPamCard" runat="server" />
+                                    </li>
                                     <li class="iconNovo" runat="server">
                                         <asp:LinkButton ID="lnkNovo" Text="Gravar" runat="server" />
                                     </li>

@@ -12,7 +12,7 @@ Option Explicit On
 
 
 Partial Public Class Mercadorias
-    
+
     '''<summary>
     '''scrmngMercadorias control.
     '''</summary>
@@ -21,7 +21,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents scrmngMercadorias As Global.System.Web.UI.ScriptManager
-    
+
     '''<summary>
     '''ajaxUpdating control.
     '''</summary>
@@ -30,7 +30,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ajaxUpdating As Global.Orea.WebControls.AjaxUpdating
-    
+
     '''<summary>
     '''updpnlMercadorias control.
     '''</summary>
@@ -39,7 +39,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents updpnlMercadorias As Global.System.Web.UI.UpdatePanel
-    
+
     '''<summary>
     '''HID control.
     '''</summary>
@@ -48,7 +48,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents HID As Global.System.Web.UI.WebControls.HiddenField
-    
+
     '''<summary>
     '''TabContainer1 control.
     '''</summary>
@@ -57,7 +57,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents TabContainer1 As Global.AjaxControlToolkit.TabContainer
-    
+
     '''<summary>
     '''TabPanel1 control.
     '''</summary>
@@ -66,7 +66,16 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents TabPanel1 As Global.AjaxControlToolkit.TabPanel
-    
+
+    '''<summary>
+    '''lnkConsultarPamCard control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lnkConsultarPamCard As Global.System.Web.UI.WebControls.LinkButton
+
     '''<summary>
     '''lnkNovo control.
     '''</summary>
@@ -75,7 +84,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents lnkNovo As Global.System.Web.UI.WebControls.LinkButton
-    
+
     '''<summary>
     '''lnkAtualizar control.
     '''</summary>
@@ -84,7 +93,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents lnkAtualizar As Global.System.Web.UI.WebControls.LinkButton
-    
+
     '''<summary>
     '''lnkExcluir control.
     '''</summary>
@@ -93,7 +102,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents lnkExcluir As Global.System.Web.UI.WebControls.LinkButton
-    
+
     '''<summary>
     '''lnkConsultar control.
     '''</summary>
@@ -102,7 +111,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents lnkConsultar As Global.System.Web.UI.WebControls.LinkButton
-    
+
     '''<summary>
     '''lnkLimpar control.
     '''</summary>
@@ -111,7 +120,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents lnkLimpar As Global.System.Web.UI.WebControls.LinkButton
-    
+
     '''<summary>
     '''lnkPdf control.
     '''</summary>
@@ -120,7 +129,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents lnkPdf As Global.System.Web.UI.WebControls.LinkButton
-    
+
     '''<summary>
     '''lnkExcel control.
     '''</summary>
@@ -129,7 +138,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents lnkExcel As Global.System.Web.UI.WebControls.LinkButton
-    
+
     '''<summary>
     '''lnkExcelDados control.
     '''</summary>
@@ -138,7 +147,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents lnkExcelDados As Global.System.Web.UI.WebControls.LinkButton
-    
+
     '''<summary>
     '''lnkAjuda control.
     '''</summary>
@@ -147,7 +156,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents lnkAjuda As Global.System.Web.UI.WebControls.LinkButton
-    
+
     '''<summary>
     '''imgUsuario control.
     '''</summary>
@@ -156,7 +165,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents imgUsuario As Global.System.Web.UI.WebControls.Image
-    
+
     '''<summary>
     '''ddlUsuarios control.
     '''</summary>
@@ -165,7 +174,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ddlUsuarios As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''txtCodigoIndea control.
     '''</summary>
@@ -174,7 +183,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtCodigoIndea As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''ddlSituacao control.
     '''</summary>
@@ -183,7 +192,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ddlSituacao As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''txtCodigoProduto control.
     '''</summary>
@@ -192,7 +201,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtCodigoProduto As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''imgSequencia control.
     '''</summary>
@@ -201,7 +210,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents imgSequencia As Global.System.Web.UI.WebControls.ImageButton
-    
+
     '''<summary>
     '''divProdutoDeTerceiro control.
     '''</summary>
@@ -210,7 +219,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents divProdutoDeTerceiro As Global.System.Web.UI.HtmlControls.HtmlGenericControl
-    
+
     '''<summary>
     '''txtCodigoProdutoTerceiro control.
     '''</summary>
@@ -219,7 +228,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtCodigoProdutoTerceiro As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''ddlGrupoProduto control.
     '''</summary>
@@ -228,7 +237,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ddlGrupoProduto As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''txtNome control.
     '''</summary>
@@ -237,7 +246,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtNome As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''txtDescricao control.
     '''</summary>
@@ -246,7 +255,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtDescricao As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''txtInfaDProd control.
     '''</summary>
@@ -255,7 +264,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtInfaDProd As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''ddlEtapas control.
     '''</summary>
@@ -264,7 +273,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ddlEtapas As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''ddlQualidade control.
     '''</summary>
@@ -273,7 +282,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ddlQualidade As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''rdASim control.
     '''</summary>
@@ -282,7 +291,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents rdASim As Global.System.Web.UI.WebControls.RadioButton
-    
+
     '''<summary>
     '''rdANao control.
     '''</summary>
@@ -291,7 +300,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents rdANao As Global.System.Web.UI.WebControls.RadioButton
-    
+
     '''<summary>
     '''chkControlarRomaneio control.
     '''</summary>
@@ -300,7 +309,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents chkControlarRomaneio As Global.System.Web.UI.WebControls.CheckBox
-    
+
     '''<summary>
     '''txtDescricaoMapa control.
     '''</summary>
@@ -309,7 +318,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtDescricaoMapa As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''txtNCM control.
     '''</summary>
@@ -318,7 +327,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtNCM As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''ddlCnae control.
     '''</summary>
@@ -327,7 +336,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ddlCnae As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''chkFitossanitario control.
     '''</summary>
@@ -336,7 +345,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents chkFitossanitario As Global.System.Web.UI.WebControls.CheckBox
-    
+
     '''<summary>
     '''chkPrecoDePauta control.
     '''</summary>
@@ -345,7 +354,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents chkPrecoDePauta As Global.System.Web.UI.WebControls.CheckBox
-    
+
     '''<summary>
     '''chkControlarPesagem control.
     '''</summary>
@@ -354,7 +363,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents chkControlarPesagem As Global.System.Web.UI.WebControls.CheckBox
-    
+
     '''<summary>
     '''chkPrecoDoProduto control.
     '''</summary>
@@ -363,7 +372,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents chkPrecoDoProduto As Global.System.Web.UI.WebControls.CheckBox
-    
+
     '''<summary>
     '''chkCustoIndireto control.
     '''</summary>
@@ -372,7 +381,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents chkCustoIndireto As Global.System.Web.UI.WebControls.CheckBox
-    
+
     '''<summary>
     '''chkPecasMeios control.
     '''</summary>
@@ -381,7 +390,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents chkPecasMeios As Global.System.Web.UI.WebControls.CheckBox
-    
+
     '''<summary>
     '''chkDecimais control.
     '''</summary>
@@ -390,7 +399,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents chkDecimais As Global.System.Web.UI.WebControls.CheckBox
-    
+
     '''<summary>
     '''chkNumeroDoLote control.
     '''</summary>
@@ -399,7 +408,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents chkNumeroDoLote As Global.System.Web.UI.WebControls.CheckBox
-    
+
     '''<summary>
     '''chkAutorizacaoDeRetirada control.
     '''</summary>
@@ -408,7 +417,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents chkAutorizacaoDeRetirada As Global.System.Web.UI.WebControls.CheckBox
-    
+
     '''<summary>
     '''chkDashboard control.
     '''</summary>
@@ -417,7 +426,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents chkDashboard As Global.System.Web.UI.WebControls.CheckBox
-    
+
     '''<summary>
     '''chkAlmoxarifado control.
     '''</summary>
@@ -426,7 +435,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents chkAlmoxarifado As Global.System.Web.UI.WebControls.CheckBox
-    
+
     '''<summary>
     '''chkControlarEmbalagem control.
     '''</summary>
@@ -435,7 +444,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents chkControlarEmbalagem As Global.System.Web.UI.WebControls.CheckBox
-    
+
     '''<summary>
     '''chkControlarEstoque control.
     '''</summary>
@@ -444,7 +453,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents chkControlarEstoque As Global.System.Web.UI.WebControls.CheckBox
-    
+
     '''<summary>
     '''chkControlarLote control.
     '''</summary>
@@ -453,7 +462,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents chkControlarLote As Global.System.Web.UI.WebControls.CheckBox
-    
+
     '''<summary>
     '''ddlEmbalagem control.
     '''</summary>
@@ -462,7 +471,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ddlEmbalagem As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''ddlPesoQuantidade control.
     '''</summary>
@@ -471,7 +480,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ddlPesoQuantidade As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''ddlUnidadeDeMedida control.
     '''</summary>
@@ -480,7 +489,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ddlUnidadeDeMedida As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''ddlUnidadedeComercializacao control.
     '''</summary>
@@ -489,7 +498,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ddlUnidadedeComercializacao As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''txtPesoDaEmbalagem control.
     '''</summary>
@@ -498,7 +507,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtPesoDaEmbalagem As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''txtPesoDoProduto control.
     '''</summary>
@@ -507,7 +516,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtPesoDoProduto As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''btnAdicionarUnidComercializacao control.
     '''</summary>
@@ -516,7 +525,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents btnAdicionarUnidComercializacao As Global.System.Web.UI.WebControls.ImageButton
-    
+
     '''<summary>
     '''gridUnidadeComercializacao control.
     '''</summary>
@@ -525,7 +534,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents gridUnidadeComercializacao As Global.System.Web.UI.WebControls.GridView
-    
+
     '''<summary>
     '''txtIPI control.
     '''</summary>
@@ -534,7 +543,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtIPI As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''txtEstoqueMinimo control.
     '''</summary>
@@ -543,7 +552,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtEstoqueMinimo As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''ddlEstadoFisico control.
     '''</summary>
@@ -552,7 +561,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ddlEstadoFisico As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''txtRegMinAgr control.
     '''</summary>
@@ -561,7 +570,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtRegMinAgr As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''ddlSeguimentos control.
     '''</summary>
@@ -570,7 +579,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ddlSeguimentos As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''ddlMarca control.
     '''</summary>
@@ -579,7 +588,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ddlMarca As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''ddlCarteiraDeCompras control.
     '''</summary>
@@ -588,7 +597,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ddlCarteiraDeCompras As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''ddlCarteiraDeVendas control.
     '''</summary>
@@ -597,7 +606,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ddlCarteiraDeVendas As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''ddlTipoDoItem control.
     '''</summary>
@@ -606,7 +615,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ddlTipoDoItem As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''txtCodigoDoServico control.
     '''</summary>
@@ -615,7 +624,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtCodigoDoServico As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''txtCodigoEX control.
     '''</summary>
@@ -624,7 +633,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtCodigoEX As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''ddlCodigoDoGenero control.
     '''</summary>
@@ -633,7 +642,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ddlCodigoDoGenero As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''ddlSubCodigoDoGenero control.
     '''</summary>
@@ -651,7 +660,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtGTIN8 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''imgGTIN8 control.
     '''</summary>
@@ -660,7 +669,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents imgGTIN8 As Global.System.Web.UI.WebControls.Image
-    
+
     '''<summary>
     '''txtGTIN12 control.
     '''</summary>
@@ -669,7 +678,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtGTIN12 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''imgGTIN12 control.
     '''</summary>
@@ -678,7 +687,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents imgGTIN12 As Global.System.Web.UI.WebControls.Image
-    
+
     '''<summary>
     '''txtGTIN13 control.
     '''</summary>
@@ -687,7 +696,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtGTIN13 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''imgGTIN13 control.
     '''</summary>
@@ -696,7 +705,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents imgGTIN13 As Global.System.Web.UI.WebControls.Image
-    
+
     '''<summary>
     '''txtGTIN14 control.
     '''</summary>
@@ -705,7 +714,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtGTIN14 As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''imgGTIN14 control.
     '''</summary>
@@ -714,7 +723,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents imgGTIN14 As Global.System.Web.UI.WebControls.Image
-    
+
     '''<summary>
     '''TabEmbalagens control.
     '''</summary>
@@ -723,7 +732,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents TabEmbalagens As Global.AjaxControlToolkit.TabPanel
-    
+
     '''<summary>
     '''lnkAdicionarEmbalagem control.
     '''</summary>
@@ -732,7 +741,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents lnkAdicionarEmbalagem As Global.System.Web.UI.WebControls.LinkButton
-    
+
     '''<summary>
     '''ddlPXEmbalagem control.
     '''</summary>
@@ -741,7 +750,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ddlPXEmbalagem As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''ddlMaterialEmbalagem control.
     '''</summary>
@@ -750,7 +759,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ddlMaterialEmbalagem As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''txtQuantidadeDaEmbalagem control.
     '''</summary>
@@ -759,7 +768,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtQuantidadeDaEmbalagem As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''chkPesoVariavel control.
     '''</summary>
@@ -768,7 +777,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents chkPesoVariavel As Global.System.Web.UI.WebControls.CheckBox
-    
+
     '''<summary>
     '''pnlPesoEmbalagem control.
     '''</summary>
@@ -777,7 +786,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents pnlPesoEmbalagem As Global.System.Web.UI.HtmlControls.HtmlGenericControl
-    
+
     '''<summary>
     '''txtPesoLiquido control.
     '''</summary>
@@ -786,7 +795,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtPesoLiquido As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''txtPesoBruto control.
     '''</summary>
@@ -795,7 +804,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtPesoBruto As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''gridEmbalagem control.
     '''</summary>
@@ -804,7 +813,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents gridEmbalagem As Global.System.Web.UI.WebControls.GridView
-    
+
     '''<summary>
     '''TabPanel5 control.
     '''</summary>
@@ -813,7 +822,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents TabPanel5 As Global.AjaxControlToolkit.TabPanel
-    
+
     '''<summary>
     '''lnkNovoEPrd control.
     '''</summary>
@@ -822,7 +831,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents lnkNovoEPrd As Global.System.Web.UI.WebControls.LinkButton
-    
+
     '''<summary>
     '''lnkAtualizarEPrd control.
     '''</summary>
@@ -831,7 +840,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents lnkAtualizarEPrd As Global.System.Web.UI.WebControls.LinkButton
-    
+
     '''<summary>
     '''lnkExcluirEPrd control.
     '''</summary>
@@ -840,7 +849,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents lnkExcluirEPrd As Global.System.Web.UI.WebControls.LinkButton
-    
+
     '''<summary>
     '''lnkLimparEPrd control.
     '''</summary>
@@ -849,7 +858,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents lnkLimparEPrd As Global.System.Web.UI.WebControls.LinkButton
-    
+
     '''<summary>
     '''ddlEspecificacao control.
     '''</summary>
@@ -858,7 +867,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ddlEspecificacao As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''txtFaixaInicial control.
     '''</summary>
@@ -867,7 +876,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtFaixaInicial As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''txtFaixaFinal control.
     '''</summary>
@@ -876,7 +885,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtFaixaFinal As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''gridEspecificacaoDoProduto control.
     '''</summary>
@@ -885,7 +894,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents gridEspecificacaoDoProduto As Global.System.Web.UI.WebControls.GridView
-    
+
     '''<summary>
     '''TabPanel6 control.
     '''</summary>
@@ -894,7 +903,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents TabPanel6 As Global.AjaxControlToolkit.TabPanel
-    
+
     '''<summary>
     '''lnkNovoEPI control.
     '''</summary>
@@ -903,7 +912,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents lnkNovoEPI As Global.System.Web.UI.WebControls.LinkButton
-    
+
     '''<summary>
     '''lnkAtivarEPI control.
     '''</summary>
@@ -912,7 +921,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents lnkAtivarEPI As Global.System.Web.UI.WebControls.LinkButton
-    
+
     '''<summary>
     '''lnkExcluirEPI control.
     '''</summary>
@@ -921,7 +930,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents lnkExcluirEPI As Global.System.Web.UI.WebControls.LinkButton
-    
+
     '''<summary>
     '''lnkLimparEPI control.
     '''</summary>
@@ -930,7 +939,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents lnkLimparEPI As Global.System.Web.UI.WebControls.LinkButton
-    
+
     '''<summary>
     '''ddlEPI control.
     '''</summary>
@@ -939,7 +948,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ddlEPI As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''gridEPIProduto control.
     '''</summary>
@@ -948,7 +957,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents gridEPIProduto As Global.System.Web.UI.WebControls.GridView
-    
+
     '''<summary>
     '''TabPanel2 control.
     '''</summary>
@@ -957,7 +966,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents TabPanel2 As Global.AjaxControlToolkit.TabPanel
-    
+
     '''<summary>
     '''lnkNovoProcedimento control.
     '''</summary>
@@ -966,7 +975,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents lnkNovoProcedimento As Global.System.Web.UI.WebControls.LinkButton
-    
+
     '''<summary>
     '''lnkAtivarProcedimento control.
     '''</summary>
@@ -975,7 +984,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents lnkAtivarProcedimento As Global.System.Web.UI.WebControls.LinkButton
-    
+
     '''<summary>
     '''lnkExcluirProcedimento control.
     '''</summary>
@@ -984,7 +993,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents lnkExcluirProcedimento As Global.System.Web.UI.WebControls.LinkButton
-    
+
     '''<summary>
     '''lnkLimparProcedimento control.
     '''</summary>
@@ -993,7 +1002,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents lnkLimparProcedimento As Global.System.Web.UI.WebControls.LinkButton
-    
+
     '''<summary>
     '''ddlProcedimento control.
     '''</summary>
@@ -1002,7 +1011,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ddlProcedimento As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''gridProcedimento control.
     '''</summary>
@@ -1011,7 +1020,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents gridProcedimento As Global.System.Web.UI.WebControls.GridView
-    
+
     '''<summary>
     '''TabPanel7 control.
     '''</summary>
@@ -1020,7 +1029,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents TabPanel7 As Global.AjaxControlToolkit.TabPanel
-    
+
     '''<summary>
     '''lnkNovoProdxCons control.
     '''</summary>
@@ -1029,7 +1038,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents lnkNovoProdxCons As Global.System.Web.UI.WebControls.LinkButton
-    
+
     '''<summary>
     '''lnkExcluirProdxCons control.
     '''</summary>
@@ -1038,7 +1047,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents lnkExcluirProdxCons As Global.System.Web.UI.WebControls.LinkButton
-    
+
     '''<summary>
     '''lnkLimparProdxCons control.
     '''</summary>
@@ -1047,7 +1056,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents lnkLimparProdxCons As Global.System.Web.UI.WebControls.LinkButton
-    
+
     '''<summary>
     '''ddlCentroCustoProdxCons control.
     '''</summary>
@@ -1056,7 +1065,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ddlCentroCustoProdxCons As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''ddlPlanoContasProdxCons control.
     '''</summary>
@@ -1065,7 +1074,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ddlPlanoContasProdxCons As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''gridProdxCons control.
     '''</summary>
@@ -1074,7 +1083,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents gridProdxCons As Global.System.Web.UI.WebControls.GridView
-    
+
     '''<summary>
     '''TabPanel4 control.
     '''</summary>
@@ -1083,7 +1092,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents TabPanel4 As Global.AjaxControlToolkit.TabPanel
-    
+
     '''<summary>
     '''lblConsolidaProduto control.
     '''</summary>
@@ -1092,7 +1101,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents lblConsolidaProduto As Global.System.Web.UI.WebControls.Label
-    
+
     '''<summary>
     '''lnkAdPrdAgrp control.
     '''</summary>
@@ -1101,7 +1110,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents lnkAdPrdAgrp As Global.System.Web.UI.WebControls.LinkButton
-    
+
     '''<summary>
     '''txtPrdAgrp control.
     '''</summary>
@@ -1110,7 +1119,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtPrdAgrp As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''btnSelPrdAgrp control.
     '''</summary>
@@ -1119,7 +1128,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents btnSelPrdAgrp As Global.System.Web.UI.WebControls.Button
-    
+
     '''<summary>
     '''HidProdAgr control.
     '''</summary>
@@ -1128,7 +1137,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents HidProdAgr As Global.System.Web.UI.WebControls.HiddenField
-    
+
     '''<summary>
     '''gridProdutoAgrupado control.
     '''</summary>
@@ -1137,7 +1146,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents gridProdutoAgrupado As Global.System.Web.UI.WebControls.GridView
-    
+
     '''<summary>
     '''TabPanel3 control.
     '''</summary>
@@ -1146,7 +1155,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents TabPanel3 As Global.AjaxControlToolkit.TabPanel
-    
+
     '''<summary>
     '''gridConsulta control.
     '''</summary>
@@ -1155,7 +1164,7 @@ Partial Public Class Mercadorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents gridConsulta As Global.System.Web.UI.WebControls.GridView
-    
+
     '''<summary>
     '''ucConsultaProduto control.
     '''</summary>

@@ -2496,6 +2496,11 @@ Partial Class Mercadorias
 
 #End Region
 
+    Protected Sub ConsultaPamCard(ByVal sender As Object, e As EventArgs) Handles lnkConsultarPamCard.Click
+        Dim pamcard As PamcardNew = New PamcardNew()
+        pamcard.ConsultarFavorecido("63358210000176", "48384601000171")
+    End Sub
+
     Protected Sub txtCodigoProduto_TextChanged(sender As Object, e As EventArgs) Handles txtCodigoProduto.TextChanged
         SessaoRecuperaProduto()
         objProduto.Codigo = txtCodigoProduto.Text

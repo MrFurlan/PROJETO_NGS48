@@ -35,14 +35,18 @@ Public Class Login
     Protected Sub btnRecuperarSenha_Click(ByVal sender As Object, ByVal e As EventArgs)
         loginMenu.Visible = False
         recuperarSenhaMenu.Visible = True
+
+        Dim lstBancos = BancoDados.ListarBancoPorUsuarios(txtUsuario.Text)
+
+        For Each obj In lstBancos
+            cmbBancoPorUsuario.Items.Add(New ListItem(String.Format("{0} | {1}", obj.Banco_Id.Trim().PadRight(20 - obj.Banco_Id.Length, "."), obj.HostServidor),
+                                                    String.Format("{0}|{1}", obj.Banco_Id.Trim(), obj.HostServidor)))
+        Next
     End Sub
 
     Protected Sub btnEnviarEmail_Click(ByVal sender As Object, ByVal e As EventArgs)
         Dim sUsuario As String = txtUsuarioRecuperacao.Text
-
-        Dim objRecuperarSenha As RecuperarSenha = New RecuperarSenha(sUsuario)
-
-
+        Dim objRecuperarSenha As RecuperarSenha = New RecuperarSenha(txtUsuario.Text)
 
     End Sub
 
