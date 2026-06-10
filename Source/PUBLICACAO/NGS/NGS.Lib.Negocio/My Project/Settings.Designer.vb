@@ -73,6 +73,16 @@ Namespace My
                 Return CType(Me("NGS_Lib_Negocio_WSPamcard_WSPamcardService"),String)
             End Get
         End Property
+        
+        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.WebServiceUrl),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("https://preproducao.roadcard.com.br/sistemapamcard/services/WSTransacional")>  _
+        Public ReadOnly Property NGS_Lib_Negocio_WSNewPamardH_WSTransacional() As String
+            Get
+                Return CType(Me("NGS_Lib_Negocio_WSNewPamardH_WSTransacional"),String)
+            End Get
+        End Property
     End Class
 End Namespace
 

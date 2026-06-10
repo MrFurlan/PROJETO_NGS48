@@ -1572,6 +1572,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.map</DependentUpon>
     </Compile>
+    <Compile Include="Web References\WSNewPamardH\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
     <Compile Include="Web References\WSPamcard\Reference.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -3848,6 +3853,14 @@
     <None Include="Web References\br.gov.bcb\WSSerieVO.datasource">
       <DependentUpon>Reference.map</DependentUpon>
     </None>
+    <None Include="Web References\WSNewPamardH\executeResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WSNewPamardH\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WSNewPamardH\WSTransacional.wsdl" />
     <None Include="Web References\WSPamcard\Reference.map">
       <Generator>MSDiscoCodeGenerator</Generator>
       <LastGenOutput>Reference.vb</LastGenOutput>
@@ -3874,6 +3887,17 @@
     <WebReferences Include="Web References\" />
   </ItemGroup>
   <ItemGroup>
+    <WebReferenceUrl Include="https://preproducao.roadcard.com.br/sistemapamcardwsdl/WSTransacional-wsdl.xml%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WSNewPamardH\</RelPath>
+      <UpdateFromURL>https://preproducao.roadcard.com.br/sistemapamcardwsdl/WSTransacional-wsdl.xml%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NGS_Lib_Negocio_WSNewPamardH_WSTransacional</CachedSettingsPropName>
+    </WebReferenceUrl>
     <WebReferenceUrl Include="https://www.gps-pamcary.com.br/pamcardbrvisa/services/WSPamcard%3fwsdl">
       <UrlBehavior>Dynamic</UrlBehavior>
       <RelPath>Web References\WSPamcard\</RelPath>

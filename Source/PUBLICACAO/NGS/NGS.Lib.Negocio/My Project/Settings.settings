@@ -8,5 +8,8 @@
     <Setting Name="NGS_Lib_Negocio_WSPamcard_WSPamcardService" Type="(Web Service URL)" Scope="Application">
       <Value Profile="(Default)">https://www.gps-pamcary.com.br/pamcardbrvisa/services/WSPamcard</Value>
     </Setting>
+    <Setting Name="NGS_Lib_Negocio_WSNewPamardH_WSTransacional" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://preproducao.roadcard.com.br/sistemapamcard/services/WSTransacional</Value>
+    </Setting>
   </Settings>
 </SettingsFile>
