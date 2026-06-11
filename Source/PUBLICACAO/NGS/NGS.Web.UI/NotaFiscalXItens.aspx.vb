@@ -8390,7 +8390,7 @@ Public Class NotaFiscalXItens
                 Dim verStatusNFe As String = DocumentoEletronico.ConsultaNFEFornecedor(objNotaFiscal)
                 Dim statusNFE As String() = verStatusNFe.Split(";")
 
-                If statusNFE(0) = "100" Then
+                If statusNFE(0) = "100" OrElse statusNFE(0) = "526" Then
                     If Not DocumentoEletronico.ManifestoNFe(objNotaFiscal, eTipoManifesto.ConfirmacaoDaOperacao, msgResultado) Then
                         MsgBox(Me.Page, msgResultado)
                         Exit Sub

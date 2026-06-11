@@ -758,7 +758,7 @@ Public Class ControleDeFretes
                 t.IndiceTitulo = 0
                 t.IndiceFixo = True
                 t.CodigoIndexador = 3
-                t.ReceberPagar = IIf(rdbPagarLancamento.Checked, "P", "R")
+                't.ReceberPagar = IIf(rdbReceberLancamento.Checked, "R", "P")
                 t.Prorrogacao = CDate(txtVencimento.Text)
                 t.Movimento = CDate(txtVencimento.Text)
 
@@ -787,6 +787,12 @@ Public Class ControleDeFretes
 
                     Dim pesoDeChegada As Decimal = Decimal.Zero
                     If Not String.IsNullOrWhiteSpace(txtPesoChegada.Text) Then pesoDeChegada = CDec(txtPesoChegada.Text)
+
+                    If pesoDeChegada = 0 AndAlso ItemFF.Nota.Itens(0).Encargos.Where(Function(s) s.Codigo.ToUpper().Trim() = "LIQUIDOAPAGAR").Sum(Function(s) s.Valor) = 0 Then
+                        MsgBox(Me.Page, "É necessário informar o peso de chegada pois o valor do título está ficando zerado!")
+                        Exit Sub
+                    End If
+
                     fatura.Itens(0).PesoDeChegada = pesoDeChegada
                     fatura.Itens(0).IUD = "U"
                     fatura.Itens(0).Salvar()
