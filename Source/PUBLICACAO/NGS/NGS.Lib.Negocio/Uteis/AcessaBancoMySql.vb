@@ -31,7 +31,7 @@ Public Class AcessaBancoMySql
     Public Sub New(Optional ByVal pBanco As Integer = 0, Optional pNomeDoServidor As String = "")
         _cnn = New MySqlConnection()
         Select Case pBanco
-            Case 0 : _cnn.ConnectionString = "server=ajuda.ngssolucoes.com.br;User Id=ngs_ajuda;Persist Security Info=True;database=ngs_ajuda;pwd=tbqcp@1fg;port=3306;SslMode=None"
+            Case 0 : _cnn.ConnectionString = "server=ajuda.ngssolucoes.com.br;User Id=ngs_ajuda;Persist Security Info=True;database=ngs_ajuda;pwd=tbqcp@1fg;port=3306"
                 'Case 0 : _cnn.ConnectionString = "server=ajudangs.mysql.uhserver.com;User Id=ngs;Persist Security Info=True;database=ajudangs;password=tbqcp@1fg"
         End Select
         _cmd.Connection = _cnn
